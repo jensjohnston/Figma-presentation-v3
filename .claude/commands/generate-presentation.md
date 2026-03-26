@@ -323,7 +323,52 @@ for (let rowIdx = 0; rowIdx < rows.length; rowIdx++) {
 }
 ```
 
-### 5d. Batch Size
+### 5d. Image Placement
+
+After filling text on a slide, check if the template has `imageSlots` in the registry. If it does AND `assets/library.json` has assets:
+
+1. Read the slide's content context (title, topic keywords)
+2. Match assets from the library by comparing tags to the slide context
+3. For each image slot, copy the image fill from the matched asset node
+
+```javascript
+// Image placement: copy fill from Brand Assets page node to slide placeholder
+// Must switch to Brand Assets page to access the asset node, then back to output page
+
+const assetPage = figma.root.children.find(p => p.id === "ASSET_PAGE_ID");
+await figma.setCurrentPageAsync(assetPage);
+const assetNode = figma.getNodeById("ASSET_NODE_ID");
+const assetFills = JSON.parse(JSON.stringify(assetNode.fills));
+
+const outputPage = figma.root.children.find(p => p.id === "OUTPUT_PAGE_ID");
+await figma.setCurrentPageAsync(outputPage);
+
+// Find the image slot in the cloned slide by name
+function findFrameByName(node, name) {
+  if (node.name === name) return node;
+  if ("children" in node) {
+    for (const c of node.children) {
+      const f = findFrameByName(c, name);
+      if (f) return f;
+    }
+  }
+  return null;
+}
+
+const target = figma.getNodeById("CLONED_IMAGE_SLOT_NODE_ID");
+// Or find by traversal if IDs changed after cloning:
+// const target = findFrameByName(clone, "Bento-50");
+
+target.fills = assetFills;
+```
+
+**Important notes:**
+- Image slots are identified by their original `nodeId` in the registry. After cloning, you need to find the equivalent node in the clone by name or position.
+- If no matching asset exists for a slot, leave it as-is (the template's default fill) and note it in the report.
+- The user can override image choices: *"Use cafe-station-1-hero on slide 4"*
+- If the asset library is empty, skip image placement entirely and note that `/sync-assets` should be run first.
+
+### 5e. Batch Size
 
 - Process slides one at a time (one `use_figma` call per slide)
 - For presentations with 15+ slides, inform the user about progress every 5 slides

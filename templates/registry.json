@@ -18,7 +18,11 @@
       "category": "title",
       "description": "Centered title only. For opening/closing slides with a single strong statement.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide with only a short title, centered. No subtitle or body text. Use for opening or closing slides."
     },
@@ -27,7 +31,11 @@
       "category": "title",
       "description": "Left-aligned title only.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide with only a short title, left-aligned. No subtitle or body text."
     },
@@ -36,8 +44,16 @@
       "category": "title",
       "description": "Centered title with subtitle/body text below. For title slides that need a tagline or context.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Title slide with a subtitle or tagline. Centered layout. Good for cover slides."
     },
@@ -46,8 +62,16 @@
       "category": "title",
       "description": "Left-aligned title with subtitle/body text.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Title slide with a subtitle or tagline. Left-aligned layout."
     },
@@ -56,15 +80,51 @@
       "category": "bullets",
       "description": "Title + 4 bullet points, each with heading and body text. 2x2 grid layout.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-4", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-4",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide with 3-4 key points, each having a heading and short description. NOTE: bullet-body numbering may not match bullet-heading numbering in the Figma file (e.g., bullet-body-2 may belong to bullet-heading-3). Always find by name."
     },
@@ -73,19 +133,73 @@
       "category": "bullets",
       "description": "Title + 6 bullet points, each with heading and body text. 2x3 grid layout.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "nodeId", "nodeId": "50285:14925", "note": "This is bullet 4's body — Figma names it bullet-body-3 (duplicate name). Use nodeId to target the correct one." },
-        { "name": "bullet-heading-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-6", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-6", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "nodeId",
+          "nodeId": "50285:14925",
+          "note": "This is bullet 4's body — Figma names it bullet-body-3 (duplicate name). Use nodeId to target the correct one."
+        },
+        {
+          "name": "bullet-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-6",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide with 5-6 key points. Round up: 5 bullets should use this template. Note: bullet-body-3 name is duplicated in Figma for bullets 3 and 4 — use nodeId for bullet 4's body."
     },
@@ -94,23 +208,91 @@
       "category": "bullets",
       "description": "Title + 8 bullet points, each with heading and body text. 2x4 grid layout.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-6", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-6", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-7", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-7", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-8", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-8", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-8",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide with 7-8 key points. Round up: 7 bullets should use this template."
     },
@@ -119,26 +301,113 @@
       "category": "bullets",
       "description": "Title + intro text + up to 9 technical spec bullets in two columns with a large image area on the left. Each bullet has heading + body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-4", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-5", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-6", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-6", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-7", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-7", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-8", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-8", "type": "text", "findBy": "name" },
-        { "name": "bullet-heading-9", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-9", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-heading-9",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-9",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "50285:14912",
+          "name": "Bento-50",
+          "size": "large"
+        }
       ],
       "matchHints": "Technical specification slide. Use for product specs, feature lists with many items, or technical detail slides. Has a large image/bento area on the left half."
     },
@@ -147,7 +416,11 @@
       "category": "chapter",
       "description": "Chapter divider slide, title left-aligned.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Section divider / chapter break. Short heading only, no body text. Use to separate major sections."
     },
@@ -156,7 +429,11 @@
       "category": "chapter",
       "description": "Chapter divider slide, title centered.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Section divider / chapter break. Centered. Short heading only."
     },
@@ -165,7 +442,11 @@
       "category": "chapter",
       "description": "Chapter divider slide, title right-aligned.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Section divider / chapter break. Right-aligned. Short heading only."
     },
@@ -174,18 +455,78 @@
       "category": "comparison",
       "description": "Title + body + two equal-width sections with headings and 4 points each. Side-by-side comparison in rounded cards.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "section-heading-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-3", "type": "text", "findBy": "name" },
-        { "name": "section-point-4", "type": "text", "findBy": "name" },
-        { "name": "section-heading-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-5", "type": "text", "findBy": "name" },
-        { "name": "section-point-6", "type": "text", "findBy": "name" },
-        { "name": "section-point-7", "type": "text", "findBy": "name" },
-        { "name": "section-point-8", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-8",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "50285:14971",
+          "name": "Bento-50-left",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:14979",
+          "name": "Bento-50-right",
+          "size": "medium"
+        }
       ],
       "matchHints": "Side-by-side comparison of two things. Each side has a heading and up to 4 bullet points. Good for vs. slides, option comparisons."
     },
@@ -194,138 +535,547 @@
       "category": "bento-split",
       "description": "Title + body + two sections: large left (4 points) and small right (2 points). 75/25 split.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "section-heading-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-3", "type": "text", "findBy": "name" },
-        { "name": "section-point-4", "type": "text", "findBy": "name" },
-        { "name": "section-heading-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-5", "type": "text", "findBy": "name" },
-        { "name": "section-point-6", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-6",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Asymmetric split: large left panel with more content, smaller right panel. Use when one topic is primary."
+      "matchHints": "Asymmetric split: large left panel with more content, smaller right panel. Use when one topic is primary.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:14991",
+          "name": "Bento-75",
+          "size": "large"
+        },
+        {
+          "nodeId": "50285:14999",
+          "name": "Bento-25",
+          "size": "small"
+        }
+      ]
     },
     "template-bento-25-75": {
       "nodeId": "50285:15005",
       "category": "bento-split",
       "description": "Title + body + two sections: small left (2 points) and large right (4 points). 25/75 split.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "section-heading-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-2", "type": "text", "findBy": "name" },
-        { "name": "section-heading-2", "type": "text", "findBy": "nodeId", "nodeId": "50285:15017", "note": "Second section heading — shares name 'section-heading-1' in Figma, so use nodeId" },
-        { "name": "section-point-3", "type": "text", "findBy": "name" },
-        { "name": "section-point-4", "type": "text", "findBy": "name" },
-        { "name": "section-point-5", "type": "text", "findBy": "name" },
-        { "name": "section-point-6", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-2",
+          "type": "text",
+          "findBy": "nodeId",
+          "nodeId": "50285:15017",
+          "note": "Second section heading — shares name 'section-heading-1' in Figma, so use nodeId"
+        },
+        {
+          "name": "section-point-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-6",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Asymmetric split: smaller left panel, large right panel with more content. Note: second section heading shares name with first — use nodeId."
+      "matchHints": "Asymmetric split: smaller left panel, large right panel with more content. Note: second section heading shares name with first — use nodeId.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15009",
+          "name": "Bento-25",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15015",
+          "name": "Bento-75",
+          "size": "large"
+        }
+      ]
     },
     "template-bento-66-33": {
       "nodeId": "50285:15023",
       "category": "bento-split",
       "description": "Title + body + two sections: larger left (4 points) and smaller right (2 points). 66/33 split.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "section-heading-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-3", "type": "text", "findBy": "name" },
-        { "name": "section-point-4", "type": "text", "findBy": "name" },
-        { "name": "section-heading-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-5", "type": "text", "findBy": "nodeId", "nodeId": "50285:15039", "note": "Named 'section-point-1' in Figma (duplicate) — mapped as section-point-5 here" },
-        { "name": "section-point-6", "type": "text", "findBy": "nodeId", "nodeId": "50285:15040", "note": "Named 'section-point-2' in Figma (duplicate) — mapped as section-point-6 here" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-5",
+          "type": "text",
+          "findBy": "nodeId",
+          "nodeId": "50285:15039",
+          "note": "Named 'section-point-1' in Figma (duplicate) — mapped as section-point-5 here"
+        },
+        {
+          "name": "section-point-6",
+          "type": "text",
+          "findBy": "nodeId",
+          "nodeId": "50285:15040",
+          "note": "Named 'section-point-2' in Figma (duplicate) — mapped as section-point-6 here"
+        }
       ],
-      "matchHints": "Two-thirds / one-third split. Similar to 75-25 but more balanced. Note: section 2's points have duplicate names in Figma — use nodeId."
+      "matchHints": "Two-thirds / one-third split. Similar to 75-25 but more balanced. Note: section 2's points have duplicate names in Figma — use nodeId.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15027",
+          "name": "Bento-66",
+          "size": "large"
+        },
+        {
+          "nodeId": "50285:15035",
+          "name": "Bento-33",
+          "size": "small"
+        }
+      ]
     },
     "template-bento-33-66": {
       "nodeId": "50285:15041",
       "category": "bento-split",
       "description": "Title + body + two sections: smaller left (2 points) and larger right (4 points). 33/66 split.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "section-heading-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-1", "type": "text", "findBy": "name" },
-        { "name": "section-point-2", "type": "text", "findBy": "name" },
-        { "name": "section-heading-2", "type": "text", "findBy": "name" },
-        { "name": "section-point-3", "type": "text", "findBy": "name" },
-        { "name": "section-point-4", "type": "text", "findBy": "name" },
-        { "name": "section-point-5", "type": "text", "findBy": "name" },
-        { "name": "section-point-6", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "section-point-6",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "One-third / two-thirds split. Opposite of 66-33."
+      "matchHints": "One-third / two-thirds split. Opposite of 66-33.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15045",
+          "name": "Bento-33",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15051",
+          "name": "Bento-66",
+          "size": "large"
+        }
+      ]
     },
     "template-bento2": {
       "nodeId": "50285:15463",
       "category": "bento-grid",
       "description": "Title + body + 2 bento grid cells, each with heading and body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-1", "type": "text", "findBy": "name" },
-        { "name": "cell-body-1", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-2", "type": "text", "findBy": "name" },
-        { "name": "cell-body-2", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "2 items in a bento grid with image areas. Good for showcasing 2 features, products, or categories."
+      "matchHints": "2 items in a bento grid with image areas. Good for showcasing 2 features, products, or categories.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15465",
+          "name": "Bento-cell-1",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15471",
+          "name": "Bento-cell-2",
+          "size": "medium"
+        }
+      ]
     },
     "template-bento3": {
       "nodeId": "50285:15441",
       "category": "bento-grid",
       "description": "Title + body + 3 bento grid cells, each with heading and body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-1", "type": "text", "findBy": "name" },
-        { "name": "cell-body-1", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-2", "type": "text", "findBy": "name" },
-        { "name": "cell-body-2", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-3", "type": "text", "findBy": "name" },
-        { "name": "cell-body-3", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "3 items in a bento grid. Good for showcasing 3 features, pillars, or categories."
+      "matchHints": "3 items in a bento grid. Good for showcasing 3 features, pillars, or categories.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15443",
+          "name": "Bento-cell-1",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15449",
+          "name": "Bento-cell-2",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15455",
+          "name": "Bento-cell-3",
+          "size": "medium"
+        }
+      ]
     },
     "template-bento4": {
       "nodeId": "50285:15479",
       "category": "bento-grid",
       "description": "Title + body + 4 bento grid cells, each with heading and body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-1", "type": "text", "findBy": "name" },
-        { "name": "cell-body-1", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-2", "type": "text", "findBy": "name" },
-        { "name": "cell-body-2", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-3", "type": "text", "findBy": "name" },
-        { "name": "cell-body-3", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-4", "type": "text", "findBy": "name" },
-        { "name": "cell-body-4", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-4",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "4 items in a bento grid. Good for showcasing 4 features or categories."
+      "matchHints": "4 items in a bento grid. Good for showcasing 4 features or categories.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15483",
+          "name": "Bento-cell-1",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15489",
+          "name": "Bento-cell-2",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15495",
+          "name": "Bento-cell-3",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15501",
+          "name": "Bento-cell-4",
+          "size": "medium"
+        }
+      ]
     },
     "template-bento5": {
       "nodeId": "50285:15535",
       "category": "bento-grid",
       "description": "Title + body + 5 bento grid cells, each with heading and body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-1", "type": "text", "findBy": "name" },
-        { "name": "cell-body-1", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-2", "type": "text", "findBy": "name" },
-        { "name": "cell-body-2", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-3", "type": "text", "findBy": "name" },
-        { "name": "cell-body-3", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-4", "type": "text", "findBy": "name" },
-        { "name": "cell-body-4", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-5", "type": "text", "findBy": "name" },
-        { "name": "cell-body-5", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-5",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "5 items in a bento grid."
     },
@@ -334,20 +1084,76 @@
       "category": "bento-grid",
       "description": "Title + body + 6 bento grid cells, each with heading and body.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-1", "type": "text", "findBy": "name" },
-        { "name": "cell-body-1", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-2", "type": "text", "findBy": "name" },
-        { "name": "cell-body-2", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-3", "type": "text", "findBy": "name" },
-        { "name": "cell-body-3", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-4", "type": "text", "findBy": "name" },
-        { "name": "cell-body-4", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-5", "type": "text", "findBy": "name" },
-        { "name": "cell-body-5", "type": "text", "findBy": "name" },
-        { "name": "cell-heading-6", "type": "text", "findBy": "name" },
-        { "name": "cell-body-6", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-6",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "6 items in a bento grid. Maximum density bento layout."
     },
@@ -356,7 +1162,11 @@
       "category": "table",
       "description": "Title + 2-column comparison table. Rows use component instances (Row-title, Table-data). 6 data rows.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "tableConfig": {
         "columns": 2,
@@ -372,7 +1182,11 @@
       "category": "table",
       "description": "Title + 3-column comparison table with header row and 6 data rows.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "tableConfig": {
         "columns": 3,
@@ -388,7 +1202,11 @@
       "category": "table",
       "description": "Title + 4-column comparison table with header row and 6 data rows.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "tableConfig": {
         "columns": 4,
@@ -404,8 +1222,16 @@
       "category": "quote",
       "description": "Single quote with attribution, left-aligned in middle of slide.",
       "slots": [
-        { "name": "quote-1", "type": "text", "findBy": "name" },
-        { "name": "quote-attr-1", "type": "text", "findBy": "name" }
+        {
+          "name": "quote-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "quote-attr-1",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Single testimonial or quote. Use when there is one quote with an author/source attribution."
     },
@@ -414,10 +1240,26 @@
       "category": "quote",
       "description": "Two quotes side by side, each with attribution.",
       "slots": [
-        { "name": "quote-1", "type": "text", "findBy": "name" },
-        { "name": "quote-attr-1", "type": "text", "findBy": "name" },
-        { "name": "quote-2", "type": "text", "findBy": "name" },
-        { "name": "quote-attr-2", "type": "text", "findBy": "name" }
+        {
+          "name": "quote-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "quote-attr-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "quote-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "quote-attr-2",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Two testimonials or quotes side by side. Use when there are exactly 2 quotes."
     },
@@ -426,16 +1268,56 @@
       "category": "metrics",
       "description": "Title + body on left + 4 large metrics with labels in a 2x2 grid on the right.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "metric-1", "type": "text", "findBy": "name" },
-        { "name": "metric-label-1", "type": "text", "findBy": "name" },
-        { "name": "metric-2", "type": "text", "findBy": "name" },
-        { "name": "metric-label-2", "type": "text", "findBy": "name" },
-        { "name": "metric-3", "type": "text", "findBy": "name" },
-        { "name": "metric-label-3", "type": "text", "findBy": "name" },
-        { "name": "metric-4", "type": "text", "findBy": "name" },
-        { "name": "metric-label-4", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-label-4",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Slide showcasing 4 key numbers/metrics/KPIs. Use when there are 3-4 numerical stats to highlight (e.g., 99.99%, 50K+, 24h, $1.2M)."
     },
@@ -444,7 +1326,11 @@
       "category": "fact",
       "description": "Single giant number or fact, centered. Maximum impact.",
       "slots": [
-        { "name": "metric-1", "type": "text", "findBy": "name" }
+        {
+          "name": "metric-1",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "One single dramatic number or short fact. For maximum visual impact. E.g., 'XX%' or '$2.1B'."
     },
@@ -453,8 +1339,16 @@
       "category": "fact",
       "description": "Giant number/fact with small eyebrow text above it.",
       "slots": [
-        { "name": "eyebrow", "type": "text", "findBy": "name" },
-        { "name": "metric-1", "type": "text", "findBy": "name" }
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-1",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Dramatic number with a small label/context above. E.g., eyebrow='Revenue growth' metric='47%'."
     },
@@ -463,8 +1357,16 @@
       "category": "fact",
       "description": "Giant number/fact with explanatory body text below.",
       "slots": [
-        { "name": "metric-1", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "metric-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Dramatic number with explanation below. E.g., metric='99.99%' body='PFAS removal rate, independently verified'."
     },
@@ -473,9 +1375,21 @@
       "category": "info",
       "description": "Eyebrow + title + body text, positioned top-left.",
       "slots": [
-        { "name": "eyebrow", "type": "text", "findBy": "name" },
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Informational slide with a category label (eyebrow), title, and body. Top-left positioning."
     },
@@ -484,8 +1398,16 @@
       "category": "info",
       "description": "Title + body text, positioned middle-left. The most versatile fallback template.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "General-purpose informational slide. Title + body text. FALLBACK TEMPLATE: use this when no other template is a good fit."
     },
@@ -494,8 +1416,16 @@
       "category": "info",
       "description": "Title + body text, positioned bottom-left.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Informational slide. Title + body. Bottom-left positioning."
     },
@@ -504,9 +1434,21 @@
       "category": "info",
       "description": "Eyebrow + title + body text, centered on slide.",
       "slots": [
-        { "name": "eyebrow", "type": "text", "findBy": "name" },
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Centered informational slide with category label, title, and body text."
     },
@@ -515,48 +1457,171 @@
       "category": "info",
       "description": "Title + body text on left + 2 bullet points on right.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Info slide with description on left and 2 supporting points on right."
+      "matchHints": "Info slide with description on left and 2 supporting points on right.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15614",
+          "name": "Bullet-image-1",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15617",
+          "name": "Bullet-image-2",
+          "size": "small"
+        }
+      ]
     },
     "template-info-3bullets": {
       "nodeId": "50285:15619",
       "category": "info",
       "description": "Title + body text on left + 3 bullet points on right.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Info slide with description on left and 3 supporting points on right."
+      "matchHints": "Info slide with description on left and 3 supporting points on right.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15625",
+          "name": "Bullet-image-1",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15628",
+          "name": "Bullet-image-2",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15631",
+          "name": "Bullet-image-3",
+          "size": "small"
+        }
+      ]
     },
     "template-info-4bullets": {
       "nodeId": "50285:15633",
       "category": "info",
       "description": "Title + body text on left + 4 bullet points on right.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-1", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-2", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-3", "type": "text", "findBy": "name" },
-        { "name": "bullet-body-4", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "bullet-body-4",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Info slide with description on left and 4 supporting points on right."
+      "matchHints": "Info slide with description on left and 4 supporting points on right.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15639",
+          "name": "Bullet-image-1",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15642",
+          "name": "Bullet-image-2",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15645",
+          "name": "Bullet-image-3",
+          "size": "small"
+        },
+        {
+          "nodeId": "50285:15648",
+          "name": "Bullet-image-4",
+          "size": "small"
+        }
+      ]
     },
     "template-info-split-top": {
       "nodeId": "50285:15696",
       "category": "info",
       "description": "Eyebrow + title + body, top-aligned with a split layout.",
       "slots": [
-        { "name": "eyebrow", "type": "text", "findBy": "name" },
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" }
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Informational split layout. Category label + title + body text. Top positioning."
     },
@@ -565,35 +1630,116 @@
       "category": "product",
       "description": "Title + 2 product cards, each with image area, product name, and description.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "product-name-1", "type": "text", "findBy": "name" },
-        { "name": "product-desc-1", "type": "text", "findBy": "name" },
-        { "name": "product-name-2", "type": "text", "findBy": "name" },
-        { "name": "product-desc-2", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-name-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-desc-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-name-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-desc-2",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Showcase 2 products with names and descriptions. Has image placeholder areas."
+      "matchHints": "Showcase 2 products with names and descriptions. Has image placeholder areas.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15653",
+          "name": "Product-image-1",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15654",
+          "name": "Product-image-2",
+          "size": "medium"
+        }
+      ]
     },
     "template-product-3": {
       "nodeId": "50285:15661",
       "category": "product",
       "description": "Title + 3 product cards, each with image area, product name, and description.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "product-name-1", "type": "text", "findBy": "name" },
-        { "name": "product-desc-1", "type": "text", "findBy": "name" },
-        { "name": "product-name-2", "type": "text", "findBy": "name" },
-        { "name": "product-desc-2", "type": "text", "findBy": "name" },
-        { "name": "product-name-3", "type": "text", "findBy": "name" },
-        { "name": "product-desc-3", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-name-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-desc-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-name-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-desc-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-name-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "product-desc-3",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "Showcase 3 products with names and descriptions. Has image placeholder areas."
+      "matchHints": "Showcase 3 products with names and descriptions. Has image placeholder areas.",
+      "imageSlots": [
+        {
+          "nodeId": "50285:15664",
+          "name": "Product-image-1",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15665",
+          "name": "Product-image-2",
+          "size": "medium"
+        },
+        {
+          "nodeId": "50285:15666",
+          "name": "Product-image-3",
+          "size": "medium"
+        }
+      ]
     },
     "template-logo-garden-3x3": {
       "nodeId": "50285:15170",
       "category": "logo-garden",
       "description": "Title + 3x3 grid of logo placeholder areas. For partner/client logos.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Grid of logos/partner badges. Use for 'Our Partners', 'Trusted by', or client logo slides. Images must be added manually in Phase 2."
     }
