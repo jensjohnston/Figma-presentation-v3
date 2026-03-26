@@ -1,5 +1,11 @@
 {
   "assetPageId": "51124:14",
   "assetPageName": "Brand Assets",
-  "assets": {}
+  "assets": {
+    "cafe-station-1-hero": {
+      "nodeId": "51121:6380",
+      "tags": ["product", "cafe-station", "hero"],
+      "description": "Café Station 1 front-facing product hero shot"
+    }
+  }
 }
