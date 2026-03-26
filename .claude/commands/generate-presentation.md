@@ -37,7 +37,39 @@ For each page/slide in the PDF, extract:
 
 Build a structured manifest of all slides before proceeding.
 
-## Step 3: Match Each Slide to a Template
+## Step 3: Presentation Preferences
+
+Before matching templates, ask the user two questions using AskUserQuestion. These choices shape how you handle content in all subsequent steps.
+
+### Question 1: Content Length
+
+Ask: **"How should I handle the text content from your PDF?"**
+
+Options:
+- **Keep original text** — Use the exact text from the PDF. Only trim if it physically won't fit a template slot. This is the default.
+- **Condense** — Rewrite text to be shorter and punchier. Reduce bullet points, tighten headlines, cut filler. Aim for ~60% of original length.
+- **Expand** — Flesh out thin slides with more detail. Add context, supporting points, or fuller descriptions where the original is sparse.
+
+### Question 2: Voice & Tone
+
+Ask: **"What voice should the presentation use?"**
+
+Options:
+- **Keep original voice** — Preserve the tone, style, and language of the source PDF as-is.
+- **Bluewater brand voice** — Rewrite all text in the Bluewater brand voice. (See `brand/voice-guide.md` if it exists in the project. If it doesn't exist yet, use a clean, confident, premium-but-approachable tone — short sentences, active voice, no jargon, focus on outcomes over features.)
+
+### How to apply these choices
+
+- **Keep original + Keep voice**: Slot text in verbatim. Only adapt when content doesn't fit a template (e.g., too many bullets → condense to fit the template's slot count).
+- **Keep original + Bluewater voice**: Rewrite for tone while keeping the same information and length.
+- **Condense + Keep voice**: Shorten text while preserving the original style.
+- **Condense + Bluewater voice**: Shorten AND rewrite in brand voice — most transformation.
+- **Expand + Keep voice**: Add detail in the original author's style.
+- **Expand + Bluewater voice**: Add detail in the Bluewater brand voice.
+
+Carry the user's choices forward into Steps 4 and 5. When presenting the slide plan, note any slides where content was adapted and why.
+
+## Step 4: Match Each Slide to a Template
 
 For each extracted slide, select the best template from the registry using these rules (in priority order):
 
@@ -62,10 +94,12 @@ For each extracted slide, select the best template from the registry using these
 11. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
 
 ### Content Adaptation Rules
-- If text is too long for a slot, rewrite it more concisely while preserving meaning
+Apply the user's choices from Step 3 when filling content:
+- **Content length**: If "Keep original", use verbatim text. If "Condense", rewrite shorter. If "Expand", add detail.
+- **Voice**: If "Keep original", preserve the source tone. If "Bluewater brand voice", rewrite in brand voice (or use `brand/voice-guide.md` if available).
+- If text is too long for a slot regardless of length choice, rewrite it more concisely while preserving meaning
 - If a slide has 5 bullets but no template supports exactly 5, use `template-bullets-6` and leave one slot with a space character (" ")
 - For table templates, if the source has more rows than the template supports (6 rows), summarize or truncate to fit
-- Keep the original language and tone — do not add marketing speak that wasn't in the source
 
 ### Present the Slide Plan
 Before generating anything in Figma, present the full slide plan to the user:
@@ -80,9 +114,9 @@ Slide Plan:
 
 Ask the user to confirm before proceeding. They can request changes to template selections.
 
-## Step 4: Generate in Figma
+## Step 5: Generate in Figma
 
-### 4a. Create the Output Page
+### 5a. Create the Output Page
 
 Make a single `use_figma` call to create a new page:
 
@@ -96,7 +130,7 @@ return { pageId: page.id, pageName: page.name };
 
 Always pass `skillNames: "figma-use"` when calling `use_figma`.
 
-### 4b. Generate Each Slide
+### 5b. Generate Each Slide
 
 For each slide, make ONE `use_figma` call that:
 1. Switches to the template page to access templates
@@ -236,7 +270,7 @@ await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ```
 
-### 4c. Table Template Special Handling
+### 5c. Table Template Special Handling
 
 Table templates use component instances for cells. The text is inside instance children. Use this pattern:
 
@@ -289,13 +323,13 @@ for (let rowIdx = 0; rowIdx < rows.length; rowIdx++) {
 }
 ```
 
-### 4d. Batch Size
+### 5d. Batch Size
 
 - Process slides one at a time (one `use_figma` call per slide)
 - For presentations with 15+ slides, inform the user about progress every 5 slides
 - If a slide fails, log the error and continue with the next slide
 
-## Step 5: Verify and Report
+## Step 6: Verify and Report
 
 After all slides are generated:
 
