@@ -13,7 +13,7 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 - **No build step, no runtime, no dependencies.** Claude is the engine.
 - `templates/registry.json` — Maps 41 Bluewater slide templates to Figma node IDs and content slots
 - `.claude/commands/generate-presentation.md` — Slash command orchestrating the full pipeline
-- Figma file: `hOEre1lPHVpPdv2U9u7RFa` (Bluewater Original)
+- Figma file: `GkUiwJTK5Xi65AKw4MOjTL` (Bluewater 2026)
 - Template page: "Templates 4" (id: `50285:14832`)
 
 ## How It Works

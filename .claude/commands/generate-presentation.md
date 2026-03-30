@@ -16,7 +16,7 @@ Before calling any `use_figma` MCP tool, you MUST invoke the `figma:figma-use` s
 ## Step 1: Read the Template Registry
 
 Read the file `templates/registry.json` from the project root. This contains:
-- `fileKey`: The Figma file key (`hOEre1lPHVpPdv2U9u7RFa`)
+- `fileKey`: The Figma file key (`GkUiwJTK5Xi65AKw4MOjTL`)
 - `templatePageId`: The page containing all templates (`50285:14832`)
 - `templates`: A map of all 41 templates with their `nodeId`, `category`, `description`, `slots`, and `matchHints`
 
