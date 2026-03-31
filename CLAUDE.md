@@ -26,7 +26,7 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 
 ## Template Font
 
-Templates are designed with **Suisse Int'l** but we currently override to **Inter** (Semi Bold, Medium, Regular) since custom fonts require Figma Organization plan. When the org plan is active, update the `FONT_MAP` in the slash command and `fontFamily` in `registry.json` back to `Suisse Int'l`.
+Templates use **Suisse Int'l** (Semi Bold, Medium, Regular). Custom fonts are uploaded to the Figma org under Admin → Resources → Fonts.
 
 ## Adding New Templates
 

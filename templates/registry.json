@@ -5,13 +5,7 @@
   "slideWidth": 1920,
   "slideHeight": 1080,
   "slideSpacing": 200,
-  "fontFamily": "Inter",
-  "fontFamilyNote": "Using Inter as temporary substitute for Suisse Int'l until Figma Organization plan enables custom fonts",
-  "fontWeightMap": {
-    "Semi Bold": "Semi Bold",
-    "Medium": "Medium",
-    "Regular": "Regular"
-  },
+  "fontFamily": "Suisse Int'l",
   "templates": {
     "template-title-center": {
       "nodeId": "50285:14963",

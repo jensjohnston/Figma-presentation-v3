@@ -188,18 +188,9 @@ function findTextByNameAtIndex(node, name, targetIndex) {
   return matches[targetIndex] || null;
 }
 
-// Font override: Using Inter as temporary substitute for Suisse Int'l
-// Maps the original font styles to Inter equivalents
-const FONT_MAP = {
-  "Semi Bold": { family: "Inter", style: "Semi Bold" },
-  "Medium": { family: "Inter", style: "Medium" },
-  "Regular": { family: "Inter", style: "Regular" },
-};
-
 async function loadFontAndSetText(textNode, value) {
   if (!textNode || !value) return;
 
-  // Load the ORIGINAL font first (needed to read/modify the node)
   const origFont = textNode.fontName;
   if (origFont === figma.mixed) {
     const len = textNode.characters.length;
@@ -211,34 +202,11 @@ async function loadFontAndSetText(textNode, value) {
     for (const f of fontsToLoad) {
       await figma.loadFontAsync(JSON.parse(f));
     }
-    // Load Inter equivalents and swap
-    for (let i = 0; i < len; i++) {
-      const f = textNode.getRangeFontName(i, i + 1);
-      const interFont = FONT_MAP[f.style] || FONT_MAP["Regular"];
-      await figma.loadFontAsync(interFont);
-    }
   } else {
     await figma.loadFontAsync(origFont);
-    const interFont = FONT_MAP[origFont.style] || FONT_MAP["Regular"];
-    await figma.loadFontAsync(interFont);
   }
 
-  // Set the text content
   textNode.characters = value;
-
-  // Now swap the font to Inter
-  if (origFont !== figma.mixed) {
-    const interFont = FONT_MAP[origFont.style] || FONT_MAP["Regular"];
-    textNode.fontName = interFont;
-  } else {
-    // For mixed fonts, swap each range
-    const len = textNode.characters.length;
-    for (let i = 0; i < len; i++) {
-      const f = textNode.getRangeFontName(i, i + 1);
-      const interFont = FONT_MAP[f.style] || FONT_MAP["Regular"];
-      textNode.setRangeFontName(i, i + 1, interFont);
-    }
-  }
 }
 
 async function setText(parent, slotName, value) {
@@ -409,9 +377,7 @@ Any slides that need manual attention:
 
 ## Important Notes
 
-- Templates originally use "Suisse Int'l" but we override to **Inter** (Semi Bold, Medium, Regular) since custom fonts require Figma Organization plan
-- The `loadFontAndSetText` function handles the font swap automatically: loads the original font, sets text, then swaps to Inter
-- When Suisse Int'l becomes available, update the `FONT_MAP` in the code pattern to use `"Suisse Int'l"` instead of `"Inter"`
+- Templates use **Suisse Int'l** (Semi Bold, Medium, Regular) — the `loadFontAndSetText` function loads the original font and sets text
 - Page context resets between `use_figma` calls — always switch to the correct page at the start of each call
 - Use `await figma.setCurrentPageAsync(page)` — the sync setter (`figma.currentPage = page`) throws an error
 - Do NOT use `figma.notify()` — it throws "not implemented"
