@@ -13,14 +13,26 @@ The user provides a path to a PDF file. You will read it, analyze each slide, ma
 
 Before calling any `use_figma` MCP tool, you MUST invoke the `figma:figma-use` skill. This is mandatory for every session.
 
-## Step 1: Read the Template Registry
+## Step 1: Read the Template Registry and Design Playbook
 
-Read the file `templates/registry.json` from the project root. This contains:
-- `fileKey`: The Figma file key (`GkUiwJTK5Xi65AKw4MOjTL`)
-- `templatePageId`: The page containing all templates (`50285:14832`)
-- `templates`: A map of all 41 templates with their `nodeId`, `category`, `description`, `slots`, and `matchHints`
+Read these files from the project root:
 
-You will use this registry throughout the process.
+1. **`templates/registry.json`** — Contains:
+   - `fileKey`: The Figma file key (`GkUiwJTK5Xi65AKw4MOjTL`)
+   - `templatePageId`: The page containing all templates (`50285:14832`)
+   - `templates`: A map of all 47 templates with their `nodeId`, `category`, `description`, `slots`, and `matchHints`
+
+2. **`brand/presentation-playbook.md`** — The design playbook learned from reference presentations. This is critical — it teaches you:
+   - The "highlight card" pattern (last/best card gets branded gradient treatment)
+   - When and where to use product photography on slides
+   - How to structure ingredient/feature cards with image backgrounds
+   - The pricing/economics card layout with product imagery
+   - The narrative arc that presentations should follow
+   - Color system, typography hierarchy, and visual patterns
+
+**You must read and internalize the playbook before proceeding.** It captures design decisions that go beyond template matching — it tells you HOW to compose each slide to look premium and on-brand.
+
+You will use the registry and playbook together throughout the process.
 
 ## Step 2: Read the Source PDF
 
@@ -69,29 +81,94 @@ Options:
 
 Carry the user's choices forward into Steps 4 and 5. When presenting the slide plan, note any slides where content was adapted and why.
 
+### Question 3: Product / Visual Theme (Scene Templates)
+
+Check `templates/registry.json` for the `sceneTemplates` section. If scene templates exist, ask:
+
+**"Which product or visual style should this deck use?"**
+
+Options (built dynamically from unique `product` values in `sceneTemplates`):
+- List each available product (e.g., "Flowater Pilates — pink gradient, studio partner style")
+- **"Mix freely / best match"** — pick the best-looking scene for each slide regardless of source
+- **"Generic templates only"** — skip scenes entirely, use only layout templates
+
+This sets the `preferredProduct` for scene matching in Step 4.
+
 ## Step 4: Match Each Slide to a Template
 
-For each extracted slide, select the best template from the registry using these rules (in priority order):
+For each extracted slide, first try scene templates, then fall back to generic templates.
+
+### Scene Pre-Match (try first)
+
+If the user selected a product/theme (not "Generic templates only"), check `sceneTemplates` for each slide:
+
+1. **Filter** by `matchCategories` — the scene must cover the slide's detected content category
+2. **Filter** by slot compatibility — the scene must have enough swappable slots for the content
+3. **Score** remaining candidates:
+   - Preferred product match → **+3 points**
+   - Matching audience → **+2 points**
+   - Compatible visual theme with other selected scenes → **+1 point**
+   - Exact slot count match → **+1 point**
+4. **Pick** the highest-scoring scene. If tied, pick any.
+5. If a scene matches → use it. Mark as **★ Scene** in the slide plan.
+6. If no scene matches → fall through to generic matching below.
+
+**Important:** When a scene template has `frozenVisuals: true`, all images, gradients, and visual compositions are baked into the template. Only the text in `slots` will be swapped. Do NOT attempt to modify images or backgrounds on scene slides.
+
+### Generic Matching (fallback)
+
+If no scene template matched, select the best generic template using these rules (in priority order):
 
 ### Matching Priority
 1. **First slide** → Use a title template (`template-title-subtitle-center` if it has a subtitle, `template-title-center` if title only)
-2. **Slide with only a short heading (1-5 words), no body** → Chapter divider (`template-chapter-left` or `template-chapter-center`)
-3. **Single large number/stat** → `template-huge-fact` (number only), `template-huge-fact-eyebrow` (number + label above), or `template-huge-fact-body` (number + explanation below)
-4. **Multiple metrics (3-4 numbers)** → `template-metrics-4`
-5. **Quote with attribution** → `template-quote1-middle` (1 quote) or `template-quote2-middle` (2 quotes)
-6. **Side-by-side comparison** → `template-comparison-50-50`
-7. **Bullet points with headings** → Count bullets, round UP:
+2. **Last slide with CTA / contact info / "get in touch"** → `template-cta-center`
+3. **Slide with only a short heading (1-5 words), no body** → Chapter divider (`template-chapter-left` or `template-chapter-center`)
+4. **Single large number/stat** → `template-huge-fact` (number only), `template-huge-fact-eyebrow` (number + label above), or `template-huge-fact-body` (number + explanation below)
+5. **Multiple metrics (3-4 numbers)** → `template-metrics-4`
+6. **Pricing / economics / scenarios** (3-4 items each with a prominent price/number + label + sublabel) → `template-pricing-cards-3` (3 items) or `template-pricing-cards-4` (4 items)
+7. **Sequential process / steps** (3 numbered actions/phases) → `template-process-steps-3`
+8. **Feature/ingredient cards with metrics** (3-4 items each with name + metric/value + description) → `template-feature-cards-3` (3 items) or `template-feature-cards-4` (4 items)
+9. **Quote with attribution** → `template-quote1-middle` (1 quote) or `template-quote2-middle` (2 quotes)
+10. **Side-by-side comparison** → `template-comparison-50-50`
+11. **Bullet points with headings** → Count bullets, round UP:
    - 1-4 bullets → `template-bullets-4`
    - 5-6 bullets → `template-bullets-6`
    - 7-8 bullets → `template-bullets-8`
    - 9+ bullets → `template-technical-bullets`
-8. **Table/structured data** → Count columns:
+12. **Table/structured data** → Count columns:
    - 2 columns → `template-table-2columns`
    - 3 columns → `template-table-3columns`
    - 4+ columns → `template-table-4columns`
-9. **Product showcase** → `template-product-2` (2 products) or `template-product-3` (3 products)
-10. **Info with supporting bullets** → `template-info-2bullets`, `template-info-3bullets`, or `template-info-4bullets`
-11. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
+13. **Product showcase** → `template-product-2` (2 products) or `template-product-3` (3 products)
+14. **Info with supporting bullets** → `template-info-2bullets`, `template-info-3bullets`, or `template-info-4bullets`
+15. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
+
+### Content Pattern Detection Heuristics
+
+Use these signals to classify ambiguous slides before matching:
+
+**Pricing/economics pattern** → rules 6. Match when:
+- Slide contains 3-4 items where each has a dollar amount, percentage, or large number as the primary element
+- Content discusses costs, pricing tiers, margins, revenue scenarios, or financial projections
+- Structure is: [label] + [big number] + [context/sublabel] repeated 3-4 times
+- Signals: "$", "per month", "per year", "margin", "revenue", "cost", tier names like "Basic/Pro/Enterprise" or "Conservative/Moderate/Strong"
+
+**Process/steps pattern** → rule 7. Match when:
+- Slide describes a sequence of 3 actions, phases, or stages
+- Content uses ordinal language ("First… then… finally", "Step 1/2/3", numbered items)
+- Items have a temporal or causal relationship (order matters)
+- Signals: numbered prefixes, "then", "next", "finally", time durations ("in 30 minutes"), imperative verbs
+
+**Feature cards pattern** → rule 8. Match when:
+- Slide presents 3-4 items where each has a name AND a quantitative detail (dosage, measurement, multiplier) AND a description
+- Differs from bullets (which lack the metric/highlight value per item)
+- Differs from bento (which is more visual/image-oriented)
+- Signals: measurement units (mg, mL, x, %), ingredient/feature names as headings
+
+**CTA/closing pattern** → rule 2. Match when:
+- Slide is the last or near-last slide
+- Contains contact information, a URL, email, or explicit call to action
+- Uses language like "get in touch", "let's talk", "contact us", "get started", "next steps"
 
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
@@ -133,19 +210,58 @@ Always pass `skillNames: "figma-use"` when calling `use_figma`.
 ### 5b. Generate Each Slide
 
 For each slide, make ONE `use_figma` call that:
-1. Switches to the template page to access templates
-2. Clones the template
+1. Switches to the **source page** (template page for generic templates, or the scene's `sourcePageId` for scene templates)
+2. Clones the template/scene
 3. Moves the clone to the output page
-4. Sets all text content
-5. Returns the created node IDs
+4. Sets all text content in the defined slots
+5. **If `frozenVisuals: true`** (scene templates): skip ALL image placement — visuals are baked in
+6. Returns the created node IDs
+
+**Choosing the source page:** Check whether the matched template is from `sceneTemplates` or `templates`:
+- **Scene template** → use `sourcePageId` from the scene entry (e.g., the finished deck page)
+- **Generic template** → use `templatePageId` ("Templates 4") as before
+
+**Finding text nodes in scene templates:** Scene templates often have non-standard text layer names (content used as name, like `"$3.50"` or `"Electrolytes"`). For these slots, the registry uses `"findBy": "nodeId"` with the original node ID. After cloning, child IDs change, so you CANNOT use `figma.getNodeById`. Instead, build a mapping: before cloning, traverse the source template to find the text node by its original ID and record its **path** (parent indices). After cloning, follow the same path in the clone to find the equivalent node.
+
+Here is the helper function for nodeId-based slot lookup in cloned scenes:
+
+```javascript
+// Find a text node in a cloned tree by matching the structure path from the original
+function findTextByOriginalId(originalParent, clonedParent, originalNodeId) {
+  // Build path to the original node
+  function findPath(node, targetId, path = []) {
+    if (node.id === targetId) return path;
+    if ("children" in node) {
+      for (let i = 0; i < node.children.length; i++) {
+        const result = findPath(node.children[i], targetId, [...path, i]);
+        if (result) return result;
+      }
+    }
+    return null;
+  }
+  
+  const path = findPath(originalParent, originalNodeId);
+  if (!path) return null;
+  
+  // Follow the same path in the clone
+  let current = clonedParent;
+  for (const idx of path) {
+    if (!("children" in current) || idx >= current.children.length) return null;
+    current = current.children[idx];
+  }
+  return current.type === "TEXT" ? current : null;
+}
+```
 
 Here is the pattern for a standard text-based template (e.g., bullets, title, info, quote, metrics, etc.):
 
 ```javascript
 // --- Slide N: [TEMPLATE_NAME] ---
-// Step 1: Get template from the templates page
-const templatePage = figma.root.children.find(p => p.id === "TEMPLATE_PAGE_ID");
-await figma.setCurrentPageAsync(templatePage);
+// Step 1: Get template from the appropriate source page
+// For scene templates: use the scene's sourcePageId
+// For generic templates: use TEMPLATE_PAGE_ID
+const sourcePage = figma.root.children.find(p => p.id === "SOURCE_PAGE_ID");
+await figma.setCurrentPageAsync(sourcePage);
 const template = figma.getNodeById("TEMPLATE_NODE_ID");
 
 // Step 2: Clone it

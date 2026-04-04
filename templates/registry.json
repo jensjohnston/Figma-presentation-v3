@@ -6,6 +6,240 @@
   "slideHeight": 1080,
   "slideSpacing": 200,
   "fontFamily": "Suisse Int'l",
+  "scenePages": [
+    {
+      "pageId": "53265:870",
+      "pageName": "Flowater pilates 2",
+      "sourceDeck": "Flowater Pilates",
+      "sourceNodeId": "53265:870"
+    }
+  ],
+  "sceneTemplates": {
+    "scene-flowater-title": {
+      "nodeId": "53265:888",
+      "sourcePageId": "53265:870",
+      "category": "title",
+      "sceneType": "title-gradient-dual-logo",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "pink-gradient",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" }
+      ],
+      "matchCategories": ["title"],
+      "matchHints": "Opening title slide with pink gradient mesh bg, dual logos. Bold white headline + body."
+    },
+    "scene-flowater-product-reveal": {
+      "nodeId": "53265:1147",
+      "sourcePageId": "53265:870",
+      "category": "product",
+      "sceneType": "product-reveal-3-panel",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "pink-gradient",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" }
+      ],
+      "matchCategories": ["product", "title"],
+      "matchHints": "Product reveal with 3-panel image layout (ingredient | bottle | ingredient). Centered title + body."
+    },
+    "scene-flowater-ingredients-4": {
+      "nodeId": "53265:1493",
+      "sourcePageId": "53265:870",
+      "category": "features",
+      "sceneType": "feature-cards-4-with-photos",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "multi-color-cards",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-heading-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1503" },
+        { "name": "card-metric-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1505" },
+        { "name": "card-body-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1507" },
+        { "name": "card-benefit-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1506" },
+        { "name": "card-heading-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1513" },
+        { "name": "card-metric-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1514" },
+        { "name": "card-body-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1516" },
+        { "name": "card-benefit-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1515" },
+        { "name": "card-heading-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1521" },
+        { "name": "card-metric-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1522" },
+        { "name": "card-body-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1524" },
+        { "name": "card-benefit-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1523" },
+        { "name": "card-heading-4", "type": "text", "findBy": "nodeId", "nodeId": "53265:1530" },
+        { "name": "card-metric-4", "type": "text", "findBy": "nodeId", "nodeId": "53265:1531" },
+        { "name": "card-body-4", "type": "text", "findBy": "nodeId", "nodeId": "53265:1534" },
+        { "name": "card-benefit-4", "type": "text", "findBy": "nodeId", "nodeId": "53265:1533" }
+      ],
+      "matchCategories": ["features"],
+      "matchHints": "4 ingredient/feature cards with gradient backgrounds and product imagery. Each has heading, metric, body, and benefit line."
+    },
+    "scene-flowater-bar-chart": {
+      "nodeId": "53265:2030",
+      "sourcePageId": "53265:870",
+      "category": "comparison",
+      "sceneType": "bar-chart-comparison",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "neutral-light",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "nodeId", "nodeId": "53265:2060" }
+      ],
+      "matchCategories": ["comparison"],
+      "matchHints": "Bar chart comparing competitors. Chart bars are frozen — only the title is swappable. Use for competitive comparison data."
+    },
+    "scene-flowater-product-info": {
+      "nodeId": "53265:2187",
+      "sourcePageId": "53265:870",
+      "category": "info",
+      "sceneType": "info-with-product-photo",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "neutral-light",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "nodeId", "nodeId": "53265:2196" }
+      ],
+      "matchCategories": ["info"],
+      "matchHints": "Product info slide with machine photo on right. Eyebrow + title + body + footer. Good for upgrade/integration messaging."
+    },
+    "scene-flowater-pricing-3": {
+      "nodeId": "53265:1641",
+      "sourcePageId": "53265:870",
+      "category": "pricing",
+      "sceneType": "pricing-3-highlight",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "pink-gradient",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-label-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1649" },
+        { "name": "card-value-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1650" },
+        { "name": "card-sublabel-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1651" },
+        { "name": "card-label-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1655" },
+        { "name": "card-value-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1656" },
+        { "name": "card-sublabel-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1657" },
+        { "name": "card-label-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1666" },
+        { "name": "card-value-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1667" },
+        { "name": "card-sublabel-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1668" }
+      ],
+      "matchCategories": ["pricing"],
+      "matchHints": "3-card pricing with highlight card (pink gradient on last card, bottle photo on middle). For cost/price/margin breakdowns."
+    },
+    "scene-flowater-projections-3": {
+      "nodeId": "53265:1593",
+      "sourcePageId": "53265:870",
+      "category": "pricing",
+      "sceneType": "projections-3-highlight",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "pink-gradient",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "scenario-label-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1599" },
+        { "name": "scenario-detail-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1600" },
+        { "name": "revenue-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1605" },
+        { "name": "margin-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:1608" },
+        { "name": "scenario-label-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1623" },
+        { "name": "scenario-detail-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1624" },
+        { "name": "revenue-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1616" },
+        { "name": "margin-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:1619" },
+        { "name": "scenario-label-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1628" },
+        { "name": "scenario-detail-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1629" },
+        { "name": "revenue-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1634" },
+        { "name": "margin-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:1637" },
+        { "name": "footer", "type": "text", "findBy": "nodeId", "nodeId": "53265:1640" }
+      ],
+      "matchCategories": ["pricing"],
+      "matchHints": "3-scenario projection cards (conservative/moderate/strong) with revenue + margin. Highlight card on last scenario."
+    },
+    "scene-flowater-process-3": {
+      "nodeId": "53265:2594",
+      "sourcePageId": "53265:870",
+      "category": "process",
+      "sceneType": "process-3-with-photos",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "pink-gradient",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "step-heading-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2601" },
+        { "name": "step-body-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2602" },
+        { "name": "step-heading-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2606" },
+        { "name": "step-body-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2607" },
+        { "name": "step-heading-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:2613" },
+        { "name": "step-body-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:2614" }
+      ],
+      "matchCategories": ["process"],
+      "matchHints": "3-step process with product photos in each card. Steps numbered in heading text. For how-it-works/getting-started."
+    },
+    "scene-flowater-refill-2": {
+      "nodeId": "53265:2221",
+      "sourcePageId": "53265:870",
+      "category": "product",
+      "sceneType": "refill-cards-2-with-photos",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "neutral-light",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-heading-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2229" },
+        { "name": "card-value-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2230" },
+        { "name": "card-sublabel-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2231" },
+        { "name": "card-heading-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2238" },
+        { "name": "card-value-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2239" },
+        { "name": "card-sublabel-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2240" }
+      ],
+      "matchCategories": ["product", "pricing"],
+      "matchHints": "2-card product/pricing comparison with bottle photography. Single bottle vs. multi-bottle arrangement."
+    },
+    "scene-flowater-operations-3": {
+      "nodeId": "53265:2482",
+      "sourcePageId": "53265:870",
+      "category": "bullets",
+      "sceneType": "operations-3-icons-bullets",
+      "frozenVisuals": true,
+      "sourceDeck": "Flowater Pilates",
+      "product": "flowater-pilates",
+      "audience": "studio-partners",
+      "visualTheme": "neutral-light",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "cell-heading-1", "type": "text", "findBy": "nodeId", "nodeId": "53265:2491" },
+        { "name": "cell-heading-2", "type": "text", "findBy": "nodeId", "nodeId": "53265:2508" },
+        { "name": "cell-heading-3", "type": "text", "findBy": "nodeId", "nodeId": "53265:2525" }
+      ],
+      "matchCategories": ["bullets"],
+      "matchHints": "3 operation cards with icon circles, headings, and bullet lists. For logistics, maintenance, or appendix content."
+    }
+  },
   "templates": {
     "template-title-center": {
       "nodeId": "50285:14963",
@@ -1736,6 +1970,121 @@
         }
       ],
       "matchHints": "Grid of logos/partner badges. Use for 'Our Partners', 'Trusted by', or client logo slides. Images must be added manually in Phase 2."
+    },
+    "template-pricing-cards-3": {
+      "nodeId": "53323:75",
+      "category": "pricing",
+      "description": "Eyebrow + title + 3 pricing/value cards, each with label, large value, and sublabel. Footer text. For economics, pricing tiers, or scenario comparisons.",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-label-1", "type": "text", "findBy": "name" },
+        { "name": "card-value-1", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-1", "type": "text", "findBy": "name" },
+        { "name": "card-label-2", "type": "text", "findBy": "name" },
+        { "name": "card-value-2", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-2", "type": "text", "findBy": "name" },
+        { "name": "card-label-3", "type": "text", "findBy": "name" },
+        { "name": "card-value-3", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-3", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Pricing comparison, cost breakdown, or scenario projection slide. 3 cards each with a prominent number/price and supporting label. Keywords: price, cost, margin, revenue, tier, plan, bundle, scenario, projection, economics."
+    },
+    "template-pricing-cards-4": {
+      "nodeId": "53324:75",
+      "category": "pricing",
+      "description": "Eyebrow + title + 4 pricing/value cards, each with label, large value, and sublabel. Footer text. For 4-tier pricing or 4-scenario comparisons.",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-label-1", "type": "text", "findBy": "name" },
+        { "name": "card-value-1", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-1", "type": "text", "findBy": "name" },
+        { "name": "card-label-2", "type": "text", "findBy": "name" },
+        { "name": "card-value-2", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-2", "type": "text", "findBy": "name" },
+        { "name": "card-label-3", "type": "text", "findBy": "name" },
+        { "name": "card-value-3", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-3", "type": "text", "findBy": "name" },
+        { "name": "card-label-4", "type": "text", "findBy": "name" },
+        { "name": "card-value-4", "type": "text", "findBy": "name" },
+        { "name": "card-sublabel-4", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Pricing comparison with 4 tiers/options. 4 cards each with a prominent number/price and supporting label."
+    },
+    "template-process-steps-3": {
+      "nodeId": "53325:75",
+      "category": "process",
+      "description": "Centered eyebrow + title + 3 numbered steps with headings and body text, connected by visual flow. Footer banner. For how-it-works or getting-started slides.",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "step-heading-1", "type": "text", "findBy": "name" },
+        { "name": "step-body-1", "type": "text", "findBy": "name" },
+        { "name": "step-heading-2", "type": "text", "findBy": "name" },
+        { "name": "step-body-2", "type": "text", "findBy": "name" },
+        { "name": "step-heading-3", "type": "text", "findBy": "name" },
+        { "name": "step-body-3", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Sequential process, timeline, or how-it-works slide. 3 numbered steps. Keywords: step, process, how, getting started, timeline, workflow, phase, stage, ready, minutes."
+    },
+    "template-feature-cards-3": {
+      "nodeId": "53326:75",
+      "category": "features",
+      "description": "Eyebrow + title + 3 colored feature/ingredient cards, each with heading, metric/highlight value, and body description. Footer text.",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-heading-1", "type": "text", "findBy": "name" },
+        { "name": "card-metric-1", "type": "text", "findBy": "name" },
+        { "name": "card-body-1", "type": "text", "findBy": "name" },
+        { "name": "card-heading-2", "type": "text", "findBy": "name" },
+        { "name": "card-metric-2", "type": "text", "findBy": "name" },
+        { "name": "card-body-2", "type": "text", "findBy": "name" },
+        { "name": "card-heading-3", "type": "text", "findBy": "name" },
+        { "name": "card-metric-3", "type": "text", "findBy": "name" },
+        { "name": "card-body-3", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Feature showcase with 3 items where each has a name, a key metric or highlighted value, and a description. Keywords: ingredients, features, pillars, capabilities, active, components, minerals, vitamins."
+    },
+    "template-feature-cards-4": {
+      "nodeId": "53327:75",
+      "category": "features",
+      "description": "Eyebrow + title + 4 colored feature/ingredient cards, each with heading, metric/highlight value, and body description. Footer text.",
+      "slots": [
+        { "name": "eyebrow", "type": "text", "findBy": "name" },
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "card-heading-1", "type": "text", "findBy": "name" },
+        { "name": "card-metric-1", "type": "text", "findBy": "name" },
+        { "name": "card-body-1", "type": "text", "findBy": "name" },
+        { "name": "card-heading-2", "type": "text", "findBy": "name" },
+        { "name": "card-metric-2", "type": "text", "findBy": "name" },
+        { "name": "card-body-2", "type": "text", "findBy": "name" },
+        { "name": "card-heading-3", "type": "text", "findBy": "name" },
+        { "name": "card-metric-3", "type": "text", "findBy": "name" },
+        { "name": "card-body-3", "type": "text", "findBy": "name" },
+        { "name": "card-heading-4", "type": "text", "findBy": "name" },
+        { "name": "card-metric-4", "type": "text", "findBy": "name" },
+        { "name": "card-body-4", "type": "text", "findBy": "name" },
+        { "name": "footer", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Feature showcase with 4 items where each has a name, a key metric or highlighted value, and a description."
+    },
+    "template-cta-center": {
+      "nodeId": "53329:75",
+      "category": "cta",
+      "description": "Centered closing slide with gradient background, title, body text, and a CTA card containing label and contact/action value.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "cta-label", "type": "text", "findBy": "name" },
+        { "name": "cta-value", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Closing slide with call to action. Has title, body text, and a CTA card with contact info or next step. Keywords: get in touch, contact, let's talk, get started, reach out, next steps, thank you, closing."
     }
   }
 }
