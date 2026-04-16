@@ -27,7 +27,7 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 
 ## Design System
 
-- `templates/design-system.md` — Grid construction, typography (including impact rules), bento card rules, color system, creative decision guide
+- `templates/design-system.md` — Three-layer token system: typescale (Minor Third), card size tiers (xs/sm/lg/hero with fixed sizes), impact overrides (content-triggered exceptions). Also covers grid, bento cards, colors (Gray/Blue/Rose/Green token scales), and creative decision guide.
 - `templates/registry.json` — Template registry with `typography` spec and `flexible` metadata per template
 - Templates with `flexible.buildFromScratch: true` can be rebuilt with different item counts using the grid system
 - Templates with `flexible.optionalSlots` allow hiding unused text elements

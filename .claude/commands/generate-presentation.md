@@ -24,11 +24,11 @@ Read both files from the project root:
 - `templates`: All templates with their slots, matchHints, and `flexible` metadata
 
 ### `templates/design-system.md`
+- Three-layer token system: Layer 1 (typescale), Layer 2 (card size tiers with fixed font sizes and padding), Layer 3 (impact overrides)
 - Grid construction rules (6-unit column grid, 32px gaps, 64/80px padding)
 - Bento card construction (radius, colors, text placement)
-- Typography rules including **impact typography** (when to scale up for dramatic numbers)
-- Flexible item count rules (how to build from scratch when templates don't fit)
-- Creative decision guide
+- Color token scales (Gray, Blue, Rose, Green — each 50-950)
+- Flexible item count rules and creative decision guide
 
 **You have creative freedom.** Templates are shortcuts for common patterns, but you can build custom layouts from the design system rules when content doesn't fit a template. The design system is your primary reference — templates are secondary.
 
@@ -117,7 +117,7 @@ Before finalizing template selection, apply these judgment calls:
 
 **Prefer bento grids** when content is a set of distinct items (features, phases, risks, locations). Bento grids are more visually engaging than bullet lists. Use bento2-6 or build a custom bento from the design system.
 
-**Use impact typography** when a slide has a dramatic number, percentage, or short punchy phrase. Scale up the number to 56-140px. This overrides the default heading size.
+**Use impact typography** when a slide has a dramatic number, percentage, or short punchy phrase. Look up the impact size from `design-system.md` Layer 3 based on the card tier. This overrides the default heading size.
 
 **Skip body copy** when headings alone communicate the point. Check each cell: does the body add information, or is it just restating the heading? If the latter, hide it.
 
@@ -138,7 +138,7 @@ Apply the user's choices from Step 3 when filling content:
 ### Flexible Templates & Building from Scratch
 - Check the template's `flexible` field in the registry. If it has `buildFromScratch: true`, you can build a custom version with a different item count using the design system rules.
 - **Optional slots**: Check the `optionalSlots` array. Hide these with `visible = false` when the content doesn't need them. Never fill unused slots with spaces or filler.
-- **Impact slots**: Check the `impactSlots` array. When content in these slots is a dramatic number, percentage, or short punchy phrase (3 words or fewer), scale the font size up to 48-140px per the impact typography rules in `design-system.md`.
+- **Impact slots**: Check the `impactSlots` array. When content in these slots is a dramatic number, percentage, or short punchy phrase (3 words or fewer), look up the impact size from `design-system.md` Layer 3 based on the card tier.
 - **Item count mismatch**: If a slide has 6 items but the best template has 5, build a custom version from scratch using the 6-unit grid system. Do NOT leave empty cells or cram content.
 - **Bento preference**: For any set of 2-6 distinct items (features, phases, risks, locations), prefer bento grids over bullet lists. They're more visually engaging.
 
