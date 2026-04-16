@@ -20,35 +20,35 @@
         "maxWidth": 272,
         "label": { "size": 14, "weight": "Semi Bold", "color": "#3F3F46" },
         "heading": { "size": 24, "weight": "Medium", "color": "#18181B" },
-        "body": { "size": 14, "weight": "Regular", "color": "#71717A" },
-        "padding": 20,
+        "body": { "size": 18, "weight": "Regular", "color": "#71717A" },
+        "padding": 24,
         "labelHeadingGap": 8,
-        "headingBodyGap": 8
+        "headingBodyGap": 12
       },
       "sm": {
         "maxWidth": 576,
         "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
-        "heading": { "size": 28, "weight": "Medium", "color": "#18181B" },
-        "body": { "size": 16, "weight": "Regular", "color": "#71717A" },
-        "padding": 24,
-        "labelHeadingGap": 8,
-        "headingBodyGap": 12
+        "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
+        "body": { "size": 24, "weight": "Medium", "color": "#71717A" },
+        "padding": 48,
+        "labelHeadingGap": 16,
+        "headingBodyGap": 16
       },
       "lg": {
         "maxWidth": 880,
         "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
         "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
-        "body": { "size": 18, "weight": "Medium", "color": "#71717A" },
-        "padding": 28,
-        "labelHeadingGap": 8,
-        "headingBodyGap": 12
+        "body": { "size": 24, "weight": "Medium", "color": "#71717A" },
+        "padding": 48,
+        "labelHeadingGap": 16,
+        "headingBodyGap": 16
       },
       "hero": {
         "label": { "size": 16, "weight": "Semi Bold", "color": "#FFFFFF" },
         "heading": { "size": 56, "weight": "Semi Bold", "color": "#FFFFFF" },
-        "body": { "size": 20, "weight": "Medium", "color": "#FFFFFF" },
-        "padding": 32,
-        "labelHeadingGap": 12,
+        "body": { "size": 24, "weight": "Medium", "color": "#FFFFFF" },
+        "padding": 48,
+        "labelHeadingGap": 16,
         "headingBodyGap": 16
       }
     },

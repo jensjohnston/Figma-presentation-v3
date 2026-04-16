@@ -79,16 +79,16 @@ Every bento card falls into one of four tiers based on its width.
 | Element | xs | sm | lg | hero |
 |---|---|---|---|---|
 | Label/eyebrow | 14 Semi Bold | 16 Semi Bold | 16 Semi Bold | 16 Semi Bold |
-| Heading | 24 Medium | 28 Medium | 36 Semi Bold | 56 Semi Bold |
-| Body | 14 Regular | 16 Regular | 18 Medium | 20 Medium |
+| Heading | 24 Medium | 36 Semi Bold | 36 Semi Bold | 56 Semi Bold |
+| Body | 18 Regular | 24 Medium | 24 Medium | 24 Medium |
 
 ### Padding per tier
 
 | | xs | sm | lg | hero |
 |---|---|---|---|---|
-| Inner padding | 20px | 24px | 28px | 32px |
-| Label -> heading gap | 8px | 8px | 8px | 12px |
-| Heading -> body gap | 8px | 12px | 12px | 16px |
+| Inner padding | 24px | 48px | 48px | 48px |
+| Label -> heading gap | 8px | 16px | 16px | 16px |
+| Heading -> body gap | 12px | 16px | 16px | 16px |
 
 ### Slide-level text (outside cards)
 
