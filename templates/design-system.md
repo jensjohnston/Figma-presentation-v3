@@ -63,32 +63,35 @@ Full reference:
 
 ## Layer 2: Card Size Tiers
 
-Every bento card falls into one of four tiers based on its width.
+Every bento card falls into one of five tiers based on its width AND height.
 
 ### Tier definitions
 
-| Tier | Width | When |
-|---|---|---|
-| **xs** | <=272px (1 unit) | Single-unit cards, half-height cards |
-| **sm** | 273-576px (2 units) | Standard cards, price cards |
-| **lg** | 577-880px (3 units) | Wide cards, offer cards |
-| **hero** | Any size, blue or dark bg | The one emphasized card per slide |
+| Tier | Width | Height | When |
+|---|---|---|---|
+| **xs** | <=272px (1 unit) | Any | Single-unit cards |
+| **sm-compact** | 273-576px (2 units) | <500px | Half-height cards, dense layouts (pricing, timeline) |
+| **sm** | 273-576px (2 units) | >=500px | Standard bento cards with image space |
+| **lg** | 577-880px (3 units) | Any | Wide bento cards |
+| **hero** | Any size, blue or dark bg | Any | The one emphasized card per slide |
+
+**How to pick the tier:** Check width first, then height. A 576px-wide card that's 776px tall (bento grid) uses **sm**. The same 576px-wide card at 394px tall (half-height, custom layout) uses **sm-compact**.
 
 ### Typography per tier
 
-| Element | xs | sm | lg | hero |
-|---|---|---|---|---|
-| Label/eyebrow | 14 Semi Bold | 16 Semi Bold | 16 Semi Bold | 16 Semi Bold |
-| Heading | 24 Medium | 36 Semi Bold | 36 Semi Bold | 56 Semi Bold |
-| Body | 18 Regular | 24 Medium | 24 Medium | 24 Medium |
+| Element | xs | sm-compact | sm | lg | hero |
+|---|---|---|---|---|---|
+| Label/eyebrow | 14 Semi Bold | 16 Semi Bold | 16 Semi Bold | 16 Semi Bold | 16 Semi Bold |
+| Heading | 24 Medium | 28 Medium | 36 Semi Bold | 36 Semi Bold | 56 Semi Bold |
+| Body | 18 Regular | 16 Regular | 24 Medium | 24 Medium | 24 Medium |
 
 ### Padding per tier
 
-| | xs | sm | lg | hero |
-|---|---|---|---|---|
-| Inner padding | 24px | 48px | 48px | 48px |
-| Label -> heading gap | 8px | 16px | 16px | 16px |
-| Heading -> body gap | 12px | 16px | 16px | 16px |
+| | xs | sm-compact | sm | lg | hero |
+|---|---|---|---|---|---|
+| Inner padding | 24px | 24px | 48px | 48px | 48px |
+| Label -> heading gap | 8px | 8px | 16px | 16px | 16px |
+| Heading -> body gap | 12px | 12px | 16px | 16px | 16px |
 
 ### Slide-level text (outside cards)
 

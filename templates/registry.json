@@ -25,8 +25,19 @@
         "labelHeadingGap": 8,
         "headingBodyGap": 12
       },
+      "sm-compact": {
+        "maxWidth": 576,
+        "maxHeight": 499,
+        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
+        "heading": { "size": 28, "weight": "Medium", "color": "#18181B" },
+        "body": { "size": 16, "weight": "Regular", "color": "#71717A" },
+        "padding": 24,
+        "labelHeadingGap": 8,
+        "headingBodyGap": 12
+      },
       "sm": {
         "maxWidth": 576,
+        "minHeight": 500,
         "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
         "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
         "body": { "size": 24, "weight": "Medium", "color": "#71717A" },
