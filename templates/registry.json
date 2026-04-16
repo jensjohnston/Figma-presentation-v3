@@ -6,6 +6,35 @@
   "slideHeight": 1080,
   "slideSpacing": 200,
   "fontFamily": "Suisse Int'l",
+  "typography": {
+    "fontFamily": "Suisse Int'l",
+    "weights": ["Semi Bold", "Medium", "Regular"],
+    "slideTitle": { "size": "48-80", "weight": "Semi Bold", "color": "#1A1A1A" },
+    "slideBody": { "size": "16-20", "weight": "Regular", "color": "#777777" },
+    "cellEyebrow": { "size": "13-16", "weight": "Semi Bold", "color": "#404040", "usage": "Category label, date, tag. No letter-spacing." },
+    "cellHeading": { "size": "22-32", "weight": "Semi Bold", "color": "#1A1A1A", "usage": "Primary content. Scales with cell size." },
+    "cellBody": { "size": "14-17", "weight": "Regular or Medium", "color": "#777777", "usage": "Supporting detail. Medium for emphasis." },
+    "cellCombinations": [
+      "heading-only",
+      "eyebrow+heading",
+      "heading+body",
+      "eyebrow+heading+body",
+      "body-only"
+    ],
+    "rules": {
+      "unusedSlots": "Set visible=false, do not use empty space character",
+      "cellPadding": "20-32px, scales with cell size",
+      "eyebrowToHeadingGap": "8px",
+      "headingToBodyGap": "12px",
+      "footnoteAnchor": "Bottom of cell, 20-32px from bottom edge"
+    },
+    "bentoGrid": {
+      "cornerRadius": 32,
+      "gap": 32,
+      "slidePaddingHorizontal": 64,
+      "slidePaddingVertical": 80
+    }
+  },
   "templates": {
     "template-title-center": {
       "nodeId": "50285:14963",
@@ -847,6 +876,11 @@
         }
       ],
       "matchHints": "2 items in a bento grid with image areas. Good for showcasing 2 features, products, or categories.",
+      "flexible": {
+        "optionalSlots": ["body", "cell-body-1", "cell-body-2"],
+        "impactSlots": ["cell-heading-1", "cell-heading-2"],
+        "notes": "Body slots on slide and cells are optional — hide when not needed. Cell headings can use impact typography for dramatic numbers or short phrases."
+      },
       "imageSlots": [
         {
           "nodeId": "50285:15465",
@@ -907,6 +941,11 @@
         }
       ],
       "matchHints": "3 items in a bento grid. Good for showcasing 3 features, pillars, or categories.",
+      "flexible": {
+        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3"],
+        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3"],
+        "notes": "Body slots are optional. Cell headings can use impact typography. When content has 3 items of any kind, this is a good default."
+      },
       "imageSlots": [
         {
           "nodeId": "50285:15443",
@@ -982,6 +1021,11 @@
         }
       ],
       "matchHints": "4 items in a bento grid. Good for showcasing 4 features or categories.",
+      "flexible": {
+        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4"],
+        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4"],
+        "notes": "Body slots are optional. Cell headings can use impact typography."
+      },
       "imageSlots": [
         {
           "nodeId": "50285:15483",
@@ -1071,7 +1115,12 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "5 items in a bento grid."
+      "matchHints": "5 items in a bento grid.",
+      "flexible": {
+        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4", "cell-body-5"],
+        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4", "cell-heading-5"],
+        "notes": "Body slots are optional. Cell headings can use impact typography."
+      }
     },
     "template-bento6": {
       "nodeId": "50285:15507",
@@ -1149,7 +1198,12 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "6 items in a bento grid. Maximum density bento layout."
+      "matchHints": "6 items in a bento grid. Maximum density bento layout.",
+      "flexible": {
+        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4", "cell-body-5", "cell-body-6"],
+        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4", "cell-heading-5", "cell-heading-6"],
+        "notes": "Body slots are optional. Cell headings can use impact typography."
+      }
     },
     "template-table-2columns": {
       "nodeId": "50285:15140",
@@ -1313,7 +1367,14 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide showcasing 4 key numbers/metrics/KPIs. Use when there are 3-4 numerical stats to highlight (e.g., 99.99%, 50K+, 24h, $1.2M)."
+      "matchHints": "Slide showcasing 4 key numbers/metrics/KPIs. Use when there are 3-4 numerical stats to highlight (e.g., 99.99%, 50K+, 24h, $1.2M).",
+      "flexible": {
+        "minItems": 2,
+        "maxItems": 4,
+        "optionalSlots": ["body", "metric-4", "metric-label-4"],
+        "impactSlots": ["metric-1", "metric-2", "metric-3", "metric-4"],
+        "notes": "Metric values always use impact typography. Hide unused metric slots. For 2-3 metrics, hide metric-4 and its label."
+      }
     },
     "template-huge-fact": {
       "nodeId": "50285:15564",
@@ -1736,6 +1797,109 @@
         }
       ],
       "matchHints": "Grid of logos/partner badges. Use for 'Our Partners', 'Trusted by', or client logo slides. Images must be added manually in Phase 2."
+    },
+    "template-pricing-bento": {
+      "nodeId": "54274:57",
+      "category": "bento-pricing",
+      "description": "Bento grid pricing slide. 6-unit grid, 2 rows. Title cell + 3 price cards (with optional badge) + blue hero hook cell + 2 offer cells. 32px radius, 32px gaps, 64/80px padding.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "price-label-1", "type": "text", "findBy": "name" },
+        { "name": "price-value-1", "type": "text", "findBy": "name" },
+        { "name": "price-label-2", "type": "text", "findBy": "name" },
+        { "name": "price-value-2", "type": "text", "findBy": "name" },
+        { "name": "price-detail-2", "type": "text", "findBy": "name" },
+        { "name": "price-label-3", "type": "text", "findBy": "name" },
+        { "name": "price-value-3", "type": "text", "findBy": "name" },
+        { "name": "price-detail-3", "type": "text", "findBy": "name" },
+        { "name": "hook-label", "type": "text", "findBy": "name" },
+        { "name": "hook-heading", "type": "text", "findBy": "name" },
+        { "name": "hook-body", "type": "text", "findBy": "name" },
+        { "name": "offer-label-1", "type": "text", "findBy": "name" },
+        { "name": "offer-heading-1", "type": "text", "findBy": "name" },
+        { "name": "offer-label-2", "type": "text", "findBy": "name" },
+        { "name": "offer-heading-2", "type": "text", "findBy": "name" },
+        { "name": "offer-body-2", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Pricing slide with bento grid layout. Use for pricing tiers + promotional hooks. Row 1: title + price cards. Row 2: blue hero hook + additional offers. Green badge on best-value tier.",
+      "flexible": {
+        "minItems": 2,
+        "maxItems": 6,
+        "optionalSlots": ["body", "price-detail-2", "price-detail-3", "hook-body", "offer-body-2"],
+        "impactSlots": ["price-value-1", "price-value-2", "price-value-3", "hook-heading"],
+        "buildFromScratch": true,
+        "notes": "Price values should use impact typography (48-80px). Number of price tiers and offers can vary — build from scratch using the grid system if count differs from template."
+      }
+    },
+    "template-timeline-bento": {
+      "nodeId": "54275:57",
+      "category": "bento-timeline",
+      "description": "Bento grid timeline. 5-unit grid, 3 rows. Title cell (2-wide) + milestone cards + blue hero center cell (3-wide, 2-tall) + dark closing card. 32px radius/gaps, 64/80px padding.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "subtitle", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-1", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-1", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-2", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-2", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-3", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-3", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-4", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-4", "type": "text", "findBy": "name" },
+        { "name": "hero-label", "type": "text", "findBy": "name" },
+        { "name": "hero-heading", "type": "text", "findBy": "name" },
+        { "name": "hero-body", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-5", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-5", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-6", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-6", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-7", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-7", "type": "text", "findBy": "name" },
+        { "name": "milestone-label-8", "type": "text", "findBy": "name" },
+        { "name": "milestone-heading-8", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Timeline with bento grid layout. Use for project timelines, roadmaps, critical paths. Blue hero cell highlights the key moment. Dark card for closing milestone. Each cell uses eyebrow (date) + heading (task) pattern.",
+      "flexible": {
+        "minItems": 4,
+        "maxItems": 10,
+        "optionalSlots": ["subtitle", "hero-body"],
+        "impactSlots": ["hero-heading"],
+        "buildFromScratch": true,
+        "notes": "Milestone count can vary. Always include one hero cell (blue, 3u×2rows) for the key moment and optionally a dark closing card. Build from scratch when item count differs."
+      }
+    },
+    "template-timeline-horizontal": {
+      "nodeId": "54276:57",
+      "category": "timeline",
+      "description": "Horizontal timeline with gray cards. 80px title, horizontal line with blue dots, date labels above dots, gray cards below. 5 steps. 32px radius, no shadows, 64/80px padding.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "step-label-1", "type": "text", "findBy": "name" },
+        { "name": "step-heading-1", "type": "text", "findBy": "name" },
+        { "name": "step-body-1", "type": "text", "findBy": "name" },
+        { "name": "step-label-2", "type": "text", "findBy": "name" },
+        { "name": "step-heading-2", "type": "text", "findBy": "name" },
+        { "name": "step-body-2", "type": "text", "findBy": "name" },
+        { "name": "step-label-3", "type": "text", "findBy": "name" },
+        { "name": "step-heading-3", "type": "text", "findBy": "name" },
+        { "name": "step-body-3", "type": "text", "findBy": "name" },
+        { "name": "step-label-4", "type": "text", "findBy": "name" },
+        { "name": "step-heading-4", "type": "text", "findBy": "name" },
+        { "name": "step-body-4", "type": "text", "findBy": "name" },
+        { "name": "step-label-5", "type": "text", "findBy": "name" },
+        { "name": "step-heading-5", "type": "text", "findBy": "name" },
+        { "name": "step-body-5", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Horizontal timeline for sequential steps or next actions. Use for 'What happens now', 'Next steps', or any 4-8 step process. Date/number labels above dots, content in gray cards below. White background.",
+      "flexible": {
+        "minItems": 3,
+        "maxItems": 8,
+        "optionalSlots": ["step-body-1", "step-body-2", "step-body-3", "step-body-4", "step-body-5"],
+        "impactSlots": ["step-heading-1", "step-heading-2", "step-heading-3", "step-heading-4", "step-heading-5"],
+        "buildFromScratch": true,
+        "notes": "Step count is flexible (3-8). Build from scratch with correct number of dots, labels, and cards. Body copy per card is optional — hide when heading alone is clear enough."
+      }
     }
   }
 }

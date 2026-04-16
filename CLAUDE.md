@@ -20,9 +20,18 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 
 1. User provides a PDF
 2. Claude reads it, extracts content per slide
-3. Claude matches each slide to the best template from the registry
-4. Claude generates slides in Figma via `use_figma` MCP tool (clone template → fill text)
-5. Output: new page in the Bluewater Figma file
+3. Claude reads `templates/registry.json` (templates + typography system) and `templates/design-system.md` (grid rules, creative decisions)
+4. Claude matches each slide to the best template — or builds from scratch using design system rules when content needs a custom layout
+5. Claude generates slides in Figma via `use_figma` MCP tool (clone template → fill text, or build custom bento grids)
+6. Output: new page in the Bluewater Figma file
+
+## Design System
+
+- `templates/design-system.md` — Grid construction, typography (including impact rules), bento card rules, color system, creative decision guide
+- `templates/registry.json` — Template registry with `typography` spec and `flexible` metadata per template
+- Templates with `flexible.buildFromScratch: true` can be rebuilt with different item counts using the grid system
+- Templates with `flexible.optionalSlots` allow hiding unused text elements
+- Templates with `flexible.impactSlots` allow scaling up dramatic numbers/phrases
 
 ## Template Font
 

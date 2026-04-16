@@ -13,11 +13,26 @@ The user provides a path to a PDF file. You will read it, analyze each slide, ma
 
 Before calling any `use_figma` MCP tool, you MUST invoke the `figma:figma-use` skill. This is mandatory for every session.
 
-## Step 1: Read the Template Registry
+## Step 1: Read the Template Registry AND Design System
 
-Read the file `templates/registry.json` from the project root. This contains:
+Read both files from the project root:
+
+### `templates/registry.json`
 - `fileKey`: The Figma file key (`GkUiwJTK5Xi65AKw4MOjTL`)
 - `templatePageId`: The page containing all templates (`50285:14832`)
+- `typography`: The typography system (font sizes, weights, colors, spacing rules)
+- `templates`: All templates with their slots, matchHints, and `flexible` metadata
+
+### `templates/design-system.md`
+- Grid construction rules (6-unit column grid, 32px gaps, 64/80px padding)
+- Bento card construction (radius, colors, text placement)
+- Typography rules including **impact typography** (when to scale up for dramatic numbers)
+- Flexible item count rules (how to build from scratch when templates don't fit)
+- Creative decision guide
+
+**You have creative freedom.** Templates are shortcuts for common patterns, but you can build custom layouts from the design system rules when content doesn't fit a template. The design system is your primary reference — templates are secondary.
+
+This contains:
 - `templates`: A map of all 41 templates with their `nodeId`, `category`, `description`, `slots`, and `matchHints`
 
 You will use this registry throughout the process.
@@ -77,29 +92,55 @@ For each extracted slide, select the best template from the registry using these
 1. **First slide** → Use a title template (`template-title-subtitle-center` if it has a subtitle, `template-title-center` if title only)
 2. **Slide with only a short heading (1-5 words), no body** → Chapter divider (`template-chapter-left` or `template-chapter-center`)
 3. **Single large number/stat** → `template-huge-fact` (number only), `template-huge-fact-eyebrow` (number + label above), or `template-huge-fact-body` (number + explanation below)
-4. **Multiple metrics (3-4 numbers)** → `template-metrics-4`
+4. **Multiple metrics (2-4 numbers)** → `template-metrics-4` (hide unused metric slots) or bento2/3 with impact headings
 5. **Quote with attribution** → `template-quote1-middle` (1 quote) or `template-quote2-middle` (2 quotes)
-6. **Side-by-side comparison** → `template-comparison-50-50`
-7. **Bullet points with headings** → Count bullets, round UP:
-   - 1-4 bullets → `template-bullets-4`
+6. **Side-by-side comparison** → `template-comparison-50-50` or `template-bento2`
+7. **Pricing/tiers with promotional hooks** → `template-pricing-bento` (build from scratch if item count differs)
+8. **Timeline/roadmap/milestones** → `template-timeline-bento` (with hero moment) or `template-timeline-horizontal` (sequential steps). Build from scratch for custom item counts.
+9. **Bullet points with headings** → Count bullets:
+   - 2-6 items → Consider bento grid (bento2-6) for visual impact, especially if items don't need body copy
+   - 1-4 bullets with body copy → `template-bullets-4`
    - 5-6 bullets → `template-bullets-6`
    - 7-8 bullets → `template-bullets-8`
    - 9+ bullets → `template-technical-bullets`
-8. **Table/structured data** → Count columns:
-   - 2 columns → `template-table-2columns`
-   - 3 columns → `template-table-3columns`
-   - 4+ columns → `template-table-4columns`
-9. **Product showcase** → `template-product-2` (2 products) or `template-product-3` (3 products)
-10. **Info with supporting bullets** → `template-info-2bullets`, `template-info-3bullets`, or `template-info-4bullets`
-11. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
+10. **Table/structured data** → Count columns:
+    - 2 columns → `template-table-2columns`
+    - 3 columns → `template-table-3columns`
+    - 4+ columns → `template-table-4columns`
+11. **Product showcase** → `template-product-2` (2 products) or `template-product-3` (3 products)
+12. **Info with supporting bullets** → `template-info-2bullets`, `template-info-3bullets`, or `template-info-4bullets`
+13. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
+
+### Creative Decision Rules
+
+Before finalizing template selection, apply these judgment calls:
+
+**Prefer bento grids** when content is a set of distinct items (features, phases, risks, locations). Bento grids are more visually engaging than bullet lists. Use bento2-6 or build a custom bento from the design system.
+
+**Use impact typography** when a slide has a dramatic number, percentage, or short punchy phrase. Scale up the number to 56-140px. This overrides the default heading size.
+
+**Skip body copy** when headings alone communicate the point. Check each cell: does the body add information, or is it just restating the heading? If the latter, hide it.
+
+**Build from scratch** when:
+- Item count doesn't match any template (e.g., 7 bento items → build a custom 7-cell grid)
+- Content has a natural "hero moment" that should be visually dominant (use a hero cell)
+- The slide needs a unique layout (e.g., pricing with badges, timeline with staggered elements)
+
+When building from scratch, follow the rules in `templates/design-system.md`: 6-unit grid, 32px gaps/radius, 64/80px padding, Suisse Int'l typography.
 
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
 - **Content length**: If "Keep original", use verbatim text. If "Condense", rewrite shorter. If "Expand", add detail.
 - **Voice**: If "Keep original", preserve the source tone. If "Bluewater brand voice", rewrite in brand voice (or use `brand/voice-guide.md` if available).
 - If text is too long for a slot regardless of length choice, rewrite it more concisely while preserving meaning
-- If a slide has 5 bullets but no template supports exactly 5, use `template-bullets-6` and leave one slot with a space character (" ")
 - For table templates, if the source has more rows than the template supports (6 rows), summarize or truncate to fit
+
+### Flexible Templates & Building from Scratch
+- Check the template's `flexible` field in the registry. If it has `buildFromScratch: true`, you can build a custom version with a different item count using the design system rules.
+- **Optional slots**: Check the `optionalSlots` array. Hide these with `visible = false` when the content doesn't need them. Never fill unused slots with spaces or filler.
+- **Impact slots**: Check the `impactSlots` array. When content in these slots is a dramatic number, percentage, or short punchy phrase (3 words or fewer), scale the font size up to 48-140px per the impact typography rules in `design-system.md`.
+- **Item count mismatch**: If a slide has 6 items but the best template has 5, build a custom version from scratch using the 6-unit grid system. Do NOT leave empty cells or cram content.
+- **Bento preference**: For any set of 2-6 distinct items (features, phases, risks, locations), prefer bento grids over bullet lists. They're more visually engaging.
 
 ### Present the Slide Plan
 Before generating anything in Figma, present the full slide plan to the user:
