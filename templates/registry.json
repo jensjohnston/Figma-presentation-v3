@@ -9,30 +9,90 @@
   "typography": {
     "fontFamily": "Suisse Int'l",
     "weights": ["Semi Bold", "Medium", "Regular"],
-    "slideTitle": { "size": "48-80", "weight": "Semi Bold", "color": "#1A1A1A" },
-    "slideBody": { "size": "16-20", "weight": "Regular", "color": "#777777" },
-    "cellEyebrow": { "size": "13-16", "weight": "Semi Bold", "color": "#404040", "usage": "Category label, date, tag. No letter-spacing." },
-    "cellHeading": { "size": "22-32", "weight": "Semi Bold", "color": "#1A1A1A", "usage": "Primary content. Scales with cell size." },
-    "cellBody": { "size": "14-17", "weight": "Regular or Medium", "color": "#777777", "usage": "Supporting detail. Medium for emphasis." },
-    "cellCombinations": [
-      "heading-only",
-      "eyebrow+heading",
-      "heading+body",
-      "eyebrow+heading+body",
-      "body-only"
-    ],
-    "rules": {
-      "unusedSlots": "Set visible=false, do not use empty space character",
-      "cellPadding": "20-32px, scales with cell size",
-      "eyebrowToHeadingGap": "8px",
-      "headingToBodyGap": "12px",
-      "footnoteAnchor": "Bottom of cell, 20-32px from bottom edge"
+    "typescale": [12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 48, 56, 64, 80, 96],
+    "lineHeightRules": {
+      "body (12-20px)": "size x 1.4",
+      "heading (24-40px)": "size x 1.2",
+      "display (48px+)": "size x 1.1"
+    },
+    "cardTiers": {
+      "xs": {
+        "maxWidth": 272,
+        "label": { "size": 14, "weight": "Semi Bold", "color": "#3F3F46" },
+        "heading": { "size": 24, "weight": "Medium", "color": "#18181B" },
+        "body": { "size": 14, "weight": "Regular", "color": "#71717A" },
+        "padding": 20,
+        "labelHeadingGap": 8,
+        "headingBodyGap": 8
+      },
+      "sm": {
+        "maxWidth": 576,
+        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
+        "heading": { "size": 28, "weight": "Medium", "color": "#18181B" },
+        "body": { "size": 16, "weight": "Regular", "color": "#71717A" },
+        "padding": 24,
+        "labelHeadingGap": 8,
+        "headingBodyGap": 12
+      },
+      "lg": {
+        "maxWidth": 880,
+        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
+        "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
+        "body": { "size": 18, "weight": "Medium", "color": "#71717A" },
+        "padding": 28,
+        "labelHeadingGap": 8,
+        "headingBodyGap": 12
+      },
+      "hero": {
+        "label": { "size": 16, "weight": "Semi Bold", "color": "#FFFFFF" },
+        "heading": { "size": 56, "weight": "Semi Bold", "color": "#FFFFFF" },
+        "body": { "size": 20, "weight": "Medium", "color": "#FFFFFF" },
+        "padding": 32,
+        "labelHeadingGap": 12,
+        "headingBodyGap": 16
+      }
+    },
+    "slideLevel": {
+      "title": { "size": 48, "weight": "Semi Bold", "color": "#18181B" },
+      "body": { "size": 16, "weight": "Medium", "color": "#3F3F46" },
+      "subtitle": { "size": 16, "weight": "Regular", "color": "#71717A" }
+    },
+    "impact": {
+      "dramaticNumber": { "xs": 40, "sm": 56, "lg": 64, "hero": 80 },
+      "price": { "xs": 36, "sm": 48, "lg": 56, "hero": 64 },
+      "punchyPhrase": { "xs": 28, "sm": 36, "lg": 40, "hero": 56 },
+      "standalone": { "hugeFact": 96, "chapter": 80 }
+    },
+    "colors": {
+      "gray": {
+        "white": "#FFFFFF", "50": "#FAFAFA", "100": "#F4F4F5", "200": "#E4E4E7",
+        "300": "#D4D4D8", "400": "#A1A1AA", "500": "#71717A", "600": "#52525B",
+        "700": "#3F3F46", "800": "#27272A", "900": "#18181B", "950": "#09090B"
+      },
+      "blue": {
+        "50": "#F0F5FF", "100": "#DBEAFE", "200": "#BFDBFE", "300": "#93C5FD",
+        "400": "#60A5FA", "500": "#3B82F6", "600": "#2563EB", "700": "#1D4ED8",
+        "800": "#1E40AF", "900": "#153E88", "950": "#00205B"
+      },
+      "rose": {
+        "50": "#FFF1F2", "100": "#FFE4E6", "200": "#FECACA", "300": "#FDA4AF",
+        "400": "#FF637E", "500": "#F43F5E", "600": "#EC003F", "700": "#BE123C",
+        "800": "#A50036", "900": "#881337", "950": "#4D0218"
+      },
+      "green": {
+        "50": "#F0FCF5", "100": "#DBFCE8", "200": "#BAF7D1", "300": "#87F0AB",
+        "400": "#4ADE80", "500": "#21C45E", "600": "#17A34A", "700": "#14803D",
+        "800": "#176633", "900": "#14542E", "950": "#052E17"
+      }
     },
     "bentoGrid": {
       "cornerRadius": 32,
       "gap": 32,
       "slidePaddingHorizontal": 64,
-      "slidePaddingVertical": 80
+      "slidePaddingVertical": 80,
+      "cardBg": "#F4F4F5",
+      "heroBg": "#2563EB",
+      "darkBg": "#18181B"
     }
   },
   "templates": {
