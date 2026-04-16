@@ -216,9 +216,8 @@ Impact typography is an **earned exception** to the card tier defaults. It trigg
 | Single dramatic number | The number IS the message ("98%", "$2.1B") | 40 | 56 | 64 | 80 |
 | Price/cost | Pricing is the focus of the card | 36 | 48 | 56 | 64 |
 | Short punchy phrase | 3 words or fewer | 28 | 36 | 40 | 56 |
-| Hero cell heading | The one dominant card | — | — | — | 64-80 |
-
-Hero impact size depends on character count: short numbers like "98%" get 80, longer like "$2.1B" get 64.
+| Hero heading (short, <=4 chars) | The one dominant card, short number ("98%") | — | — | — | 80 |
+| Hero heading (long, 5+ chars) | The one dominant card, longer text ("$2.1B") | — | — | — | 64 |
 
 ### What does NOT qualify
 
