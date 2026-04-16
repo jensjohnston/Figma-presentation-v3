@@ -101,6 +101,8 @@ Every bento card falls into one of five tiers based on its width AND height.
 | Slide body | 16 | Medium | Gray/700 #3F3F46 |
 | Slide subtitle | 16 | Regular | Gray/500 #71717A |
 
+**Title spacing rule:** The first element below a slide title must always be **64px** from the title's bottom edge. This applies to bento grids, timeline dots, horizontal lines, or any other content below the title.
+
 Slide titles are always 48px. For giant statements, use `template-huge-fact` (Layer 3 territory).
 
 ### Color system

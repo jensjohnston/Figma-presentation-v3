@@ -1971,6 +1971,80 @@
         "buildFromScratch": true,
         "notes": "Step count is flexible (3-8). Build from scratch with correct number of dots, labels, and cards. Body copy per card is optional — hide when heading alone is clear enough."
       }
+    },
+    "template-timeline-cards": {
+      "nodeId": "54397:120",
+      "category": "timeline",
+      "description": "Title + 8-step timeline with date labels above dots and gray cards below. Similar to timeline-horizontal but with 8 steps and more compact cards. Good for critical paths and detailed roadmaps.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "step-label-1", "type": "text", "findBy": "name" },
+        { "name": "step-heading-1", "type": "text", "findBy": "name" },
+        { "name": "step-body-1", "type": "text", "findBy": "name" },
+        { "name": "step-label-2", "type": "text", "findBy": "name" },
+        { "name": "step-heading-2", "type": "text", "findBy": "name" },
+        { "name": "step-body-2", "type": "text", "findBy": "name" },
+        { "name": "step-label-3", "type": "text", "findBy": "name" },
+        { "name": "step-heading-3", "type": "text", "findBy": "name" },
+        { "name": "step-body-3", "type": "text", "findBy": "name" },
+        { "name": "step-label-4", "type": "text", "findBy": "name" },
+        { "name": "step-heading-4", "type": "text", "findBy": "name" },
+        { "name": "step-body-4", "type": "text", "findBy": "name" },
+        { "name": "step-label-5", "type": "text", "findBy": "name" },
+        { "name": "step-heading-5", "type": "text", "findBy": "name" },
+        { "name": "step-body-5", "type": "text", "findBy": "name" },
+        { "name": "step-label-6", "type": "text", "findBy": "name" },
+        { "name": "step-heading-6", "type": "text", "findBy": "name" },
+        { "name": "step-body-6", "type": "text", "findBy": "name" },
+        { "name": "step-label-7", "type": "text", "findBy": "name" },
+        { "name": "step-heading-7", "type": "text", "findBy": "name" },
+        { "name": "step-body-7", "type": "text", "findBy": "name" },
+        { "name": "step-label-8", "type": "text", "findBy": "name" },
+        { "name": "step-heading-8", "type": "text", "findBy": "name" },
+        { "name": "step-body-8", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "8-step timeline with date labels and cards. Use for critical paths, detailed project roadmaps, or phased rollouts with 6-8 milestones. More compact than timeline-horizontal — fits more steps.",
+      "flexible": {
+        "minItems": 5,
+        "maxItems": 10,
+        "optionalSlots": ["step-body-1", "step-body-2", "step-body-3", "step-body-4", "step-body-5", "step-body-6", "step-body-7", "step-body-8"],
+        "buildFromScratch": true,
+        "notes": "Step count is flexible (5-10). Build from scratch for different counts. Body copy per card is optional."
+      }
+    },
+    "template-checklist-bento": {
+      "nodeId": "54397:172",
+      "category": "bento-grid",
+      "description": "Bento grid checklist. Title card (top-left) + 7 item cards with headings and deadlines. Last card is dark for the final/most critical item. 2 rows, mixed card sizes.",
+      "slots": [
+        { "name": "title", "type": "text", "findBy": "name" },
+        { "name": "body", "type": "text", "findBy": "name" },
+        { "name": "item-heading-1", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-1", "type": "text", "findBy": "name" },
+        { "name": "item-heading-2", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-2", "type": "text", "findBy": "name" },
+        { "name": "item-heading-3", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-3", "type": "text", "findBy": "name" },
+        { "name": "item-heading-4", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-4", "type": "text", "findBy": "name" },
+        { "name": "item-heading-5", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-5", "type": "text", "findBy": "name" },
+        { "name": "item-heading-6", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-6", "type": "text", "findBy": "name" },
+        { "name": "item-heading-7", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-7", "type": "text", "findBy": "name" },
+        { "name": "item-heading-8", "type": "text", "findBy": "name" },
+        { "name": "item-deadline-8", "type": "text", "findBy": "name" }
+      ],
+      "matchHints": "Checklist or task list with deadlines. Use for pre-launch checklists, action item lists, deliverables tracking, or any set of 5-8 tasks with due dates. Title card describes the checklist, item cards show tasks. Dark card for the final critical item.",
+      "flexible": {
+        "minItems": 4,
+        "maxItems": 8,
+        "optionalSlots": ["body", "item-deadline-1", "item-deadline-2", "item-deadline-3", "item-deadline-4", "item-deadline-5", "item-deadline-6", "item-deadline-7", "item-deadline-8"],
+        "impactSlots": ["item-heading-1", "item-heading-2", "item-heading-3", "item-heading-4", "item-heading-5", "item-heading-6", "item-heading-7", "item-heading-8"],
+        "buildFromScratch": true,
+        "notes": "Item count is flexible (4-8). Build from scratch for different counts. Deadlines are optional. Last card should use dark background for emphasis."
+      }
     }
   }
 }
