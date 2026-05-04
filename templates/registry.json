@@ -3866,6 +3866,126 @@
       "matchHints": "Opening cover slide with strong product visual. No meta-left (slide treats imagery as the brand cue).",
       "note": "Stale text nodes 'Beverage Description', 'Beverage title', 'Button', 'Dash', 'Flavor', 'Ingredients' present from copy-paste \u2014 should be cleaned up in a Phase B follow-up.",
       "legacyNodes": "Stale text nodes from copy-paste have been quarantined with '_legacy_' prefix (Beverage Description / Beverage title / Button / Dash / Flavor / Ingredients). Slot finder must skip names starting with '_legacy_'."
+    },
+    "data-viz-bar-chart": {
+      "page": "Template references",
+      "nodeId": "56881:2791",
+      "category": "data-viz",
+      "status": "KEEP",
+      "description": "Comparison bar chart with vertical bars + numeric labels above + category labels below.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "matchHints": "Bar-chart comparison of N items with one numeric metric each. Best when content is 'X has more/less Y than Z'. Up to ~8 bars.",
+      "note": "Bars and per-bar labels are inside the chart frame; the registry slot list only covers slide-level chrome and title. Bar values must be edited in Figma manually OR via a chart-specific helper (out of scope today)."
+    },
+    "unit-economics-3up": {
+      "page": "Template references",
+      "nodeId": "56881:2949",
+      "category": "stat-grid",
+      "status": "KEEP",
+      "description": "3-column unit economics breakdown. Each column = a stakeholder / pricing scenario with stat values and labels. One column highlighted with a colored gradient bg.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "matchHints": "Single-drink / per-unit pricing breakdown across 2-3 stakeholders. Best for pricing logic explanations where each column is a stakeholder view.",
+      "note": "Column slots use custom text node names (Single drink, 10-drink card, $X.XX, per drink, etc.) \u2014 registry-listed slots cover only chrome. Per-column values fill via direct nodeId references when generating."
+    },
+    "unit-economics-3up-scaling": {
+      "page": "Template references",
+      "nodeId": "56881:2986",
+      "category": "stat-grid",
+      "status": "KEEP",
+      "description": "3-column revenue-projection scaling. Each column = a scale tier (100, 500, 1000 locations) with revenue and profit numbers.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "matchHints": "Scale-projection slide: same metric across 3 scenarios. Best for 'at N units this is Y revenue' framings.",
+      "note": "Has a footnote text at y=1023 ('Based on... per drink'). Per-column $ values via nodeId references."
+    },
+    "cover-hero-large": {
+      "page": "Template references",
+      "nodeId": "56881:3330",
+      "category": "cover",
+      "status": "KEEP",
+      "description": "Alt cover slide: full-bleed atmospheric image, large hero subtitle (96 SB) bottom-left, logo top-left, meta-right top-right.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:3331",
+          "role": "background-image"
+        }
+      ],
+      "matchHints": "Opening cover with hero typography on atmospheric image. Use when the deck wants a dramatic, single-line cover statement instead of the 'product cover' style.",
+      "note": "No 'title' slot \u2014 uses 'subtitle' (96 SB Semi Bold) as the hero text. Logo is a separate frame at (48,48). Variant of cover-with-product."
     }
   }
 }
