@@ -3161,6 +3161,11 @@
           "findBy": "name"
         },
         {
+          "name": "subtitle",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
           "name": "label",
           "type": "text",
           "findBy": "name",
@@ -3293,6 +3298,21 @@
           "expectedCount": 3
         },
         {
+          "name": "subtitle-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "subtitle-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "subtitle-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
           "name": "sub",
           "type": "text",
           "findBy": "name",
@@ -3314,7 +3334,8 @@
           "role": "product-3"
         }
       ],
-      "matchHints": "3 products of equal weight. Use when items have a common visual treatment."
+      "matchHints": "3 products of equal weight. Use when items have a common visual treatment.",
+      "legacyNodes": "Stale text nodes from copy-paste have been quarantined with '_legacy_' prefix (Beverage Description / Beverage title / Button / Dash / Flavor / Ingredients). Slot finder must skip names starting with '_legacy_'."
     },
     "pillar-grid-3up-product-with-body": {
       "page": "Template references",
@@ -3455,7 +3476,8 @@
           "role": "product-3"
         }
       ],
-      "matchHints": "Pricing-tiered product slide. 3 products with rent/buy pricing, add-ons, service info."
+      "matchHints": "Pricing-tiered product slide. 3 products with rent/buy pricing, add-ons, service info.",
+      "legacyNodes": "Stale text nodes from copy-paste have been quarantined with '_legacy_' prefix (Beverage Description / Beverage title / Button / Dash / Flavor / Ingredients). Slot finder must skip names starting with '_legacy_'."
     },
     "numbered-list": {
       "page": "Template references",
@@ -3842,7 +3864,8 @@
         }
       ],
       "matchHints": "Opening cover slide with strong product visual. No meta-left (slide treats imagery as the brand cue).",
-      "note": "Stale text nodes 'Beverage Description', 'Beverage title', 'Button', 'Dash', 'Flavor', 'Ingredients' present from copy-paste \u2014 should be cleaned up in a Phase B follow-up."
+      "note": "Stale text nodes 'Beverage Description', 'Beverage title', 'Button', 'Dash', 'Flavor', 'Ingredients' present from copy-paste \u2014 should be cleaned up in a Phase B follow-up.",
+      "legacyNodes": "Stale text nodes from copy-paste have been quarantined with '_legacy_' prefix (Beverage Description / Beverage title / Button / Dash / Flavor / Ingredients). Slot finder must skip names starting with '_legacy_'."
     }
   }
 }

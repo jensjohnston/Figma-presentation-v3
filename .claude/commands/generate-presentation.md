@@ -224,8 +224,10 @@ clone.x = 0;
 clone.y = SLIDE_INDEX * 1280;
 
 // Step 5: Find and set text nodes
+// IMPORTANT: skip text nodes whose name starts with '_legacy_' — those are quarantined
+// stale slots from copy-paste history and are NOT part of the active vocabulary.
 function findTextByName(node, name) {
-  if (node.type === "TEXT" && node.name === name) return node;
+  if (node.type === "TEXT" && node.name === name && !node.name.startsWith("_legacy_")) return node;
   if ("children" in node) {
     for (const child of node.children) {
       const found = findTextByName(child, name);
@@ -242,7 +244,7 @@ function findTextByName(node, name) {
 function findTextByNameAtIndex(node, name, targetIndex) {
   const matches = [];
   function collect(n) {
-    if (n.type === "TEXT" && n.name === name) matches.push(n);
+    if (n.type === "TEXT" && n.name === name && !n.name.startsWith("_legacy_")) matches.push(n);
     if ("children" in n) {
       for (const child of n.children) collect(child);
     }
@@ -286,6 +288,13 @@ async function setTextByIndex(parent, name, index, value) {
   const textNode = findTextByNameAtIndex(parent, name, index);
   await loadFontAndSetText(textNode, value);
 }
+
+// IMPORTANT: All slot finders MUST skip text nodes whose name starts with '_legacy_'.
+// These are quarantined stale nodes from copy-paste history (e.g., 'Beverage Description',
+// 'Beverage title') that are NOT part of the active slot vocabulary. The Phase B harmonization
+// renamed them with the '_legacy_' prefix instead of deleting (so they remain in Figma for
+// reference). Any findByName / findByNameAtIndex implementation must filter them out:
+//   if (n.name.startsWith('_legacy_')) return false;
 
 // Set all slot values for this template
 // For standard slots (findBy: "name"):
