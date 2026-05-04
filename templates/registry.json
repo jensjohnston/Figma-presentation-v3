@@ -8,104 +8,460 @@
   "fontFamily": "Suisse Int'l",
   "typography": {
     "fontFamily": "Suisse Int'l",
-    "weights": ["Semi Bold", "Medium", "Regular"],
-    "typescale": [12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 48, 56, 64, 80, 96],
+    "weights": [
+      "Semi Bold",
+      "Medium",
+      "Regular"
+    ],
+    "typescale": [
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48,
+      56,
+      64,
+      80,
+      96
+    ],
     "lineHeightRules": {
-      "body (12-20px)": "size x 1.4",
-      "heading (24-40px)": "size x 1.2",
-      "display (48px+)": "size x 1.1"
+      "unit": "PERCENT",
+      "body (<=24px)": "134%",
+      "heading (28-40px)": "115%",
+      "display (>=48px)": "110%",
+      "exception": "slide-level eyebrow (32 Medium) uses 110%, not 115%"
     },
     "cardTiers": {
       "xs": {
         "maxWidth": 272,
-        "label": { "size": 14, "weight": "Semi Bold", "color": "#3F3F46" },
-        "heading": { "size": 24, "weight": "Medium", "color": "#18181B" },
-        "body": { "size": 18, "weight": "Regular", "color": "#71717A" },
+        "label": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#3F3F46"
+        },
+        "heading": {
+          "size": 24,
+          "weight": "Semi Bold",
+          "lineHeight": 134,
+          "color": "#18181B"
+        },
+        "body": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
+        "caption": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
         "padding": 24,
-        "labelHeadingGap": 8,
-        "headingBodyGap": 12
+        "itemSpacing": 12
       },
       "sm-compact": {
         "maxWidth": 576,
         "maxHeight": 499,
-        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
-        "heading": { "size": 28, "weight": "Medium", "color": "#18181B" },
-        "body": { "size": 16, "weight": "Regular", "color": "#71717A" },
+        "label": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#3F3F46"
+        },
+        "heading": {
+          "size": 28,
+          "weight": "Semi Bold",
+          "lineHeight": 115,
+          "color": "#18181B"
+        },
+        "body": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
+        "caption": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
         "padding": 24,
-        "labelHeadingGap": 8,
-        "headingBodyGap": 12
+        "itemSpacing": 12
       },
       "sm": {
         "maxWidth": 576,
         "minHeight": 500,
-        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
-        "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
-        "body": { "size": 24, "weight": "Medium", "color": "#71717A" },
+        "label": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#3F3F46"
+        },
+        "heading": {
+          "size": 36,
+          "weight": "Semi Bold",
+          "lineHeight": 115,
+          "color": "#18181B"
+        },
+        "body": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
+        "caption": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
         "padding": 48,
-        "labelHeadingGap": 16,
-        "headingBodyGap": 16
+        "itemSpacing": 16
       },
       "lg": {
         "maxWidth": 880,
-        "label": { "size": 16, "weight": "Semi Bold", "color": "#3F3F46" },
-        "heading": { "size": 36, "weight": "Semi Bold", "color": "#18181B" },
-        "body": { "size": 24, "weight": "Medium", "color": "#71717A" },
+        "label": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#3F3F46"
+        },
+        "heading": {
+          "size": 36,
+          "weight": "Semi Bold",
+          "lineHeight": 115,
+          "color": "#18181B"
+        },
+        "body": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
+        "caption": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134,
+          "color": "#71717A"
+        },
         "padding": 48,
-        "labelHeadingGap": 16,
-        "headingBodyGap": 16
+        "itemSpacing": 16
       },
       "hero": {
-        "label": { "size": 16, "weight": "Semi Bold", "color": "#FFFFFF" },
-        "heading": { "size": 56, "weight": "Semi Bold", "color": "#FFFFFF" },
-        "body": { "size": 24, "weight": "Medium", "color": "#FFFFFF" },
+        "label": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#FFFFFF"
+        },
+        "heading": {
+          "size": 56,
+          "weight": "Semi Bold",
+          "lineHeight": 110,
+          "color": "#FFFFFF"
+        },
+        "body": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134,
+          "color": "#FFFFFF"
+        },
+        "caption": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134,
+          "color": "#FFFFFF"
+        },
         "padding": 48,
-        "labelHeadingGap": 16,
-        "headingBodyGap": 16
+        "itemSpacing": 16
       }
     },
+    "statRowException": "A 4-column stat row always uses sm tier regardless of height (label 24 / body 24).",
+    "statCardException": {
+      "note": "Cards with a dominant impact number (64px+) use 32px X padding instead of the tier default of 48px. Y padding (48px top/bottom) is unchanged.",
+      "paddingX": 32,
+      "paddingY": 48,
+      "appliesWhen": "heading or impact number is 64px or larger and dominates the card visually"
+    },
     "slideLevel": {
-      "title": { "size": 48, "weight": "Semi Bold", "color": "#18181B" },
-      "body": { "size": 16, "weight": "Medium", "color": "#3F3F46" },
-      "subtitle": { "size": 16, "weight": "Regular", "color": "#71717A" }
+      "title": {
+        "size": 64,
+        "weight": "Semi Bold",
+        "lineHeight": 110,
+        "color": "#18181B"
+      },
+      "eyebrow": {
+        "size": 32,
+        "weight": "Medium",
+        "lineHeight": 110,
+        "color": "#3F3F46"
+      },
+      "subtitle": {
+        "size": 32,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#71717A"
+      },
+      "slideParagraph": {
+        "size": 16,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#71717A"
+      },
+      "meta": {
+        "size": 14,
+        "weight": "Regular",
+        "lineHeight": 134,
+        "color": "#71717A"
+      }
+    },
+    "listRow": {
+      "note": "Tabular/list content. Uses its own smaller scale \u2014 one step below lg \u2014 so rows read tabular, not card-like.",
+      "marker": {
+        "size": 20,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#2563EB"
+      },
+      "heading": {
+        "size": 32,
+        "weight": "Semi Bold",
+        "lineHeight": 115,
+        "color": "#18181B"
+      },
+      "body": {
+        "size": 20,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#71717A"
+      },
+      "dividerColor": "#E4E4E7"
+    },
+    "markers": {
+      "cardMarker": {
+        "note": "Single marker at the top of a card; matches the card's label size.",
+        "xs": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134
+        },
+        "sm-compact": {
+          "size": 16,
+          "weight": "Medium",
+          "lineHeight": 134
+        },
+        "sm": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134
+        },
+        "lg": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134
+        },
+        "hero": {
+          "size": 24,
+          "weight": "Medium",
+          "lineHeight": 134
+        }
+      },
+      "denseMarker": {
+        "note": "Marker inside a bullet list, list-row, or stacked ordinal list; one typescale notch smaller than the surrounding body.",
+        "xs-scope": {
+          "size": 14,
+          "weight": "Regular",
+          "lineHeight": 134
+        },
+        "lg-scope": {
+          "size": 20,
+          "weight": "Medium",
+          "lineHeight": 134
+        }
+      }
+    },
+    "textNodeNaming": {
+      "card": [
+        "label",
+        "heading",
+        "body",
+        "caption"
+      ],
+      "slide": [
+        "meta-left",
+        "meta-right",
+        "eyebrow",
+        "title",
+        "subtitle",
+        "slide-paragraph"
+      ],
+      "rule": "Name text nodes by role, not content. Do not reuse 'label' for what is actually a 'heading'. Top-of-slide chrome is named 'meta-left' and 'meta-right' (NOT 'meta')."
+    },
+    "chromePositioning": {
+      "metaLeft": {
+        "x": 48,
+        "y": 48,
+        "size": 14,
+        "weight": "Regular",
+        "lh": 134,
+        "colorOnLight": "#71717A",
+        "colorOnDark": "#A1A1AA"
+      },
+      "metaRight": {
+        "rightX": 1872,
+        "y": 48,
+        "size": 14,
+        "weight": "Regular",
+        "lh": 134,
+        "align": "RIGHT",
+        "colorOnLight": "#71717A",
+        "colorOnDark": "#A1A1AA"
+      },
+      "title": {
+        "x": 48,
+        "y": 115,
+        "width": 1824,
+        "size": 64,
+        "weight": "Semi Bold",
+        "lh": 110,
+        "maxRows": 2,
+        "colorOnLight": "#18181B",
+        "colorOnDark": "#FFFFFF"
+      },
+      "topMetaY": 48,
+      "titleY": 115,
+      "metaToTitleGap": 48,
+      "contentTopY": 287,
+      "lastElementBottomY": 1032,
+      "cardHeight": 745,
+      "note": "Content is pinned at y=287 regardless of title length. Card height is always 745. Title\u2192content gap is variable (~102 for 1-row title at 64/110%, ~32 for 2-row). No bottom meta \u2014 last content element's bottom edge lands at y=1032 (48px from slide bottom). Slot names are 'meta-left', 'meta-right', 'title' \u2014 applyChrome() writes these at the positions above."
+    },
+    "grid": {
+      "slideWidth": 1920,
+      "slideHeight": 1080,
+      "horizontalMargin": 48,
+      "topMargin": 48,
+      "bottomMargin": 48,
+      "gutter": 32,
+      "usableWidth": 1824,
+      "fineColumnWidth": 123,
+      "contentTopY": 287,
+      "cardHeight": 745,
+      "cardWidths": {
+        "xs": 277,
+        "sm": 587,
+        "lg": 896,
+        "full": 1824
+      }
     },
     "impact": {
-      "dramaticNumber": { "xs": 40, "sm": 56, "lg": 64, "hero": 80 },
-      "price": { "xs": 36, "sm": 48, "lg": 56, "hero": 64 },
-      "punchyPhrase": { "xs": 28, "sm": 36, "lg": 40, "hero": 56 },
-      "standalone": { "hugeFact": 96, "chapter": 80 }
+      "note": "Step heading up one size on the typescale when content is a single dramatic number or 3-word punchy phrase. Max one impact element per card, max one hero per slide. The values below are concrete targets per tier.",
+      "dramaticNumber": {
+        "xs": 40,
+        "sm": 56,
+        "lg": 64,
+        "hero": 80
+      },
+      "price": {
+        "xs": 36,
+        "sm": 48,
+        "lg": 56,
+        "hero": 64
+      },
+      "punchyPhrase": {
+        "xs": 28,
+        "sm": 36,
+        "lg": 40,
+        "hero": 56
+      }
     },
     "colors": {
       "gray": {
-        "white": "#FFFFFF", "50": "#FAFAFA", "100": "#F4F4F5", "200": "#E4E4E7",
-        "300": "#D4D4D8", "400": "#A1A1AA", "500": "#71717A", "600": "#52525B",
-        "700": "#3F3F46", "800": "#27272A", "900": "#18181B", "950": "#09090B"
+        "white": "#FFFFFF",
+        "50": "#FAFAFA",
+        "100": "#F4F4F5",
+        "200": "#E4E4E7",
+        "300": "#D4D4D8",
+        "400": "#A1A1AA",
+        "500": "#71717A",
+        "600": "#52525B",
+        "700": "#3F3F46",
+        "800": "#27272A",
+        "900": "#18181B",
+        "950": "#09090B"
       },
       "blue": {
-        "50": "#F0F5FF", "100": "#DBEAFE", "200": "#BFDBFE", "300": "#93C5FD",
-        "400": "#60A5FA", "500": "#3B82F6", "600": "#2563EB", "700": "#1D4ED8",
-        "800": "#1E40AF", "900": "#153E88", "950": "#00205B"
+        "50": "#F0F5FF",
+        "100": "#DBEAFE",
+        "200": "#BFDBFE",
+        "300": "#93C5FD",
+        "400": "#60A5FA",
+        "500": "#3B82F6",
+        "600": "#2563EB",
+        "700": "#1D4ED8",
+        "800": "#1E40AF",
+        "900": "#153E88",
+        "950": "#00205B"
       },
       "rose": {
-        "50": "#FFF1F2", "100": "#FFE4E6", "200": "#FECACA", "300": "#FDA4AF",
-        "400": "#FF637E", "500": "#F43F5E", "600": "#EC003F", "700": "#BE123C",
-        "800": "#A50036", "900": "#881337", "950": "#4D0218"
+        "50": "#FFF1F2",
+        "100": "#FFE4E6",
+        "200": "#FECACA",
+        "300": "#FDA4AF",
+        "400": "#FF637E",
+        "500": "#F43F5E",
+        "600": "#EC003F",
+        "700": "#BE123C",
+        "800": "#A50036",
+        "900": "#881337",
+        "950": "#4D0218"
       },
       "green": {
-        "50": "#F0FCF5", "100": "#DBFCE8", "200": "#BAF7D1", "300": "#87F0AB",
-        "400": "#4ADE80", "500": "#21C45E", "600": "#17A34A", "700": "#14803D",
-        "800": "#176633", "900": "#14542E", "950": "#052E17"
+        "50": "#F0FCF5",
+        "100": "#DBFCE8",
+        "200": "#BAF7D1",
+        "300": "#87F0AB",
+        "400": "#4ADE80",
+        "500": "#21C45E",
+        "600": "#17A34A",
+        "700": "#14803D",
+        "800": "#176633",
+        "900": "#14542E",
+        "950": "#052E17"
       }
     },
     "bentoGrid": {
       "cornerRadius": 32,
       "gap": 32,
-      "slidePaddingHorizontal": 64,
-      "slidePaddingVertical": 80,
+      "slidePaddingHorizontal": 48,
+      "slidePaddingTop": 48,
+      "slidePaddingBottom": 48,
       "cardBg": "#F4F4F5",
       "heroBg": "#2563EB",
       "darkBg": "#18181B"
     }
   },
+  "templatePages": [
+    {
+      "name": "Template references",
+      "id": "56881:463",
+      "status": "primary"
+    },
+    {
+      "name": "Templates 4",
+      "id": "50285:14832",
+      "status": "deprecated"
+    }
+  ],
   "templates": {
     "template-title-center": {
       "nodeId": "50285:14963",
@@ -118,7 +474,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide with only a short title, centered. No subtitle or body text. Use for opening or closing slides."
+      "matchHints": "Slide with only a short title, centered. No subtitle or body text. Use for opening or closing slides.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-title-left": {
       "nodeId": "50285:14965",
@@ -131,7 +489,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide with only a short title, left-aligned. No subtitle or body text."
+      "matchHints": "Slide with only a short title, left-aligned. No subtitle or body text.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-title-subtitle-center": {
       "nodeId": "50285:14957",
@@ -149,7 +509,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Title slide with a subtitle or tagline. Centered layout. Good for cover slides."
+      "matchHints": "Title slide with a subtitle or tagline. Centered layout. Good for cover slides.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-title-subtitle-left": {
       "nodeId": "50285:14960",
@@ -167,7 +529,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Title slide with a subtitle or tagline. Left-aligned layout."
+      "matchHints": "Title slide with a subtitle or tagline. Left-aligned layout.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-bullets-4": {
       "nodeId": "50285:14939",
@@ -220,7 +584,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide with 3-4 key points, each having a heading and short description. NOTE: bullet-body numbering may not match bullet-heading numbering in the Figma file (e.g., bullet-body-2 may belong to bullet-heading-3). Always find by name."
+      "matchHints": "Slide with 3-4 key points, each having a heading and short description. NOTE: bullet-body numbering may not match bullet-heading numbering in the Figma file (e.g., bullet-body-2 may belong to bullet-heading-3). Always find by name.",
+      "status": "DEPRECATE",
+      "page": "Templates 4"
     },
     "template-bullets-6": {
       "nodeId": "50285:14913",
@@ -272,7 +638,7 @@
           "type": "text",
           "findBy": "nodeId",
           "nodeId": "50285:14925",
-          "note": "This is bullet 4's body — Figma names it bullet-body-3 (duplicate name). Use nodeId to target the correct one."
+          "note": "This is bullet 4's body \u2014 Figma names it bullet-body-3 (duplicate name). Use nodeId to target the correct one."
         },
         {
           "name": "bullet-heading-5",
@@ -295,7 +661,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide with 5-6 key points. Round up: 5 bullets should use this template. Note: bullet-body-3 name is duplicated in Figma for bullets 3 and 4 — use nodeId for bullet 4's body."
+      "matchHints": "Slide with 5-6 key points. Round up: 5 bullets should use this template. Note: bullet-body-3 name is duplicated in Figma for bullets 3 and 4 \u2014 use nodeId for bullet 4's body.",
+      "status": "DEPRECATE",
+      "page": "Templates 4"
     },
     "template-bullets-8": {
       "nodeId": "50285:14833",
@@ -388,7 +756,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Slide with 7-8 key points. Round up: 7 bullets should use this template."
+      "matchHints": "Slide with 7-8 key points. Round up: 7 bullets should use this template.",
+      "status": "DEPRECATE",
+      "page": "Templates 4"
     },
     "template-technical-bullets": {
       "nodeId": "50285:14867",
@@ -503,7 +873,9 @@
           "size": "large"
         }
       ],
-      "matchHints": "Technical specification slide. Use for product specs, feature lists with many items, or technical detail slides. Has a large image/bento area on the left half."
+      "matchHints": "Technical specification slide. Use for product specs, feature lists with many items, or technical detail slides. Has a large image/bento area on the left half.",
+      "status": "DEPRECATE",
+      "page": "Templates 4"
     },
     "template-chapter-left": {
       "nodeId": "50285:15558",
@@ -516,7 +888,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Section divider / chapter break. Short heading only, no body text. Use to separate major sections."
+      "matchHints": "Section divider / chapter break. Short heading only, no body text. Use to separate major sections.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-chapter-center": {
       "nodeId": "50285:15561",
@@ -529,7 +903,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Section divider / chapter break. Centered. Short heading only."
+      "matchHints": "Section divider / chapter break. Centered. Short heading only.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-chapter-right": {
       "nodeId": "50285:15575",
@@ -542,7 +918,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Section divider / chapter break. Right-aligned. Short heading only."
+      "matchHints": "Section divider / chapter break. Right-aligned. Short heading only.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-comparison-50-50": {
       "nodeId": "50285:14967",
@@ -622,7 +1000,9 @@
           "size": "medium"
         }
       ],
-      "matchHints": "Side-by-side comparison of two things. Each side has a heading and up to 4 bullet points. Good for vs. slides, option comparisons."
+      "matchHints": "Side-by-side comparison of two things. Each side has a heading and up to 4 bullet points. Good for vs. slides, option comparisons.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento-75-25": {
       "nodeId": "50285:14987",
@@ -692,7 +1072,9 @@
           "name": "Bento-25",
           "size": "small"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento-25-75": {
       "nodeId": "50285:15005",
@@ -729,7 +1111,7 @@
           "type": "text",
           "findBy": "nodeId",
           "nodeId": "50285:15017",
-          "note": "Second section heading — shares name 'section-heading-1' in Figma, so use nodeId"
+          "note": "Second section heading \u2014 shares name 'section-heading-1' in Figma, so use nodeId"
         },
         {
           "name": "section-point-3",
@@ -752,7 +1134,7 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Asymmetric split: smaller left panel, large right panel with more content. Note: second section heading shares name with first — use nodeId.",
+      "matchHints": "Asymmetric split: smaller left panel, large right panel with more content. Note: second section heading shares name with first \u2014 use nodeId.",
       "imageSlots": [
         {
           "nodeId": "50285:15009",
@@ -764,7 +1146,9 @@
           "name": "Bento-75",
           "size": "large"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento-66-33": {
       "nodeId": "50285:15023",
@@ -816,17 +1200,17 @@
           "type": "text",
           "findBy": "nodeId",
           "nodeId": "50285:15039",
-          "note": "Named 'section-point-1' in Figma (duplicate) — mapped as section-point-5 here"
+          "note": "Named 'section-point-1' in Figma (duplicate) \u2014 mapped as section-point-5 here"
         },
         {
           "name": "section-point-6",
           "type": "text",
           "findBy": "nodeId",
           "nodeId": "50285:15040",
-          "note": "Named 'section-point-2' in Figma (duplicate) — mapped as section-point-6 here"
+          "note": "Named 'section-point-2' in Figma (duplicate) \u2014 mapped as section-point-6 here"
         }
       ],
-      "matchHints": "Two-thirds / one-third split. Similar to 75-25 but more balanced. Note: section 2's points have duplicate names in Figma — use nodeId.",
+      "matchHints": "Two-thirds / one-third split. Similar to 75-25 but more balanced. Note: section 2's points have duplicate names in Figma \u2014 use nodeId.",
       "imageSlots": [
         {
           "nodeId": "50285:15027",
@@ -838,7 +1222,9 @@
           "name": "Bento-33",
           "size": "small"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento-33-66": {
       "nodeId": "50285:15041",
@@ -908,7 +1294,9 @@
           "name": "Bento-66",
           "size": "large"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento2": {
       "nodeId": "50285:15463",
@@ -948,9 +1336,16 @@
       ],
       "matchHints": "2 items in a bento grid with image areas. Good for showcasing 2 features, products, or categories.",
       "flexible": {
-        "optionalSlots": ["body", "cell-body-1", "cell-body-2"],
-        "impactSlots": ["cell-heading-1", "cell-heading-2"],
-        "notes": "Body slots on slide and cells are optional — hide when not needed. Cell headings can use impact typography for dramatic numbers or short phrases."
+        "optionalSlots": [
+          "body",
+          "cell-body-1",
+          "cell-body-2"
+        ],
+        "impactSlots": [
+          "cell-heading-1",
+          "cell-heading-2"
+        ],
+        "notes": "Body slots on slide and cells are optional \u2014 hide when not needed. Cell headings can use impact typography for dramatic numbers or short phrases."
       },
       "imageSlots": [
         {
@@ -963,7 +1358,9 @@
           "name": "Bento-cell-2",
           "size": "medium"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento3": {
       "nodeId": "50285:15441",
@@ -1013,8 +1410,17 @@
       ],
       "matchHints": "3 items in a bento grid. Good for showcasing 3 features, pillars, or categories.",
       "flexible": {
-        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3"],
-        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3"],
+        "optionalSlots": [
+          "body",
+          "cell-body-1",
+          "cell-body-2",
+          "cell-body-3"
+        ],
+        "impactSlots": [
+          "cell-heading-1",
+          "cell-heading-2",
+          "cell-heading-3"
+        ],
         "notes": "Body slots are optional. Cell headings can use impact typography. When content has 3 items of any kind, this is a good default."
       },
       "imageSlots": [
@@ -1033,7 +1439,9 @@
           "name": "Bento-cell-3",
           "size": "medium"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento4": {
       "nodeId": "50285:15479",
@@ -1093,8 +1501,19 @@
       ],
       "matchHints": "4 items in a bento grid. Good for showcasing 4 features or categories.",
       "flexible": {
-        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4"],
-        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4"],
+        "optionalSlots": [
+          "body",
+          "cell-body-1",
+          "cell-body-2",
+          "cell-body-3",
+          "cell-body-4"
+        ],
+        "impactSlots": [
+          "cell-heading-1",
+          "cell-heading-2",
+          "cell-heading-3",
+          "cell-heading-4"
+        ],
         "notes": "Body slots are optional. Cell headings can use impact typography."
       },
       "imageSlots": [
@@ -1118,7 +1537,9 @@
           "name": "Bento-cell-4",
           "size": "medium"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento5": {
       "nodeId": "50285:15535",
@@ -1188,10 +1609,25 @@
       ],
       "matchHints": "5 items in a bento grid.",
       "flexible": {
-        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4", "cell-body-5"],
-        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4", "cell-heading-5"],
+        "optionalSlots": [
+          "body",
+          "cell-body-1",
+          "cell-body-2",
+          "cell-body-3",
+          "cell-body-4",
+          "cell-body-5"
+        ],
+        "impactSlots": [
+          "cell-heading-1",
+          "cell-heading-2",
+          "cell-heading-3",
+          "cell-heading-4",
+          "cell-heading-5"
+        ],
         "notes": "Body slots are optional. Cell headings can use impact typography."
-      }
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-bento6": {
       "nodeId": "50285:15507",
@@ -1271,10 +1707,27 @@
       ],
       "matchHints": "6 items in a bento grid. Maximum density bento layout.",
       "flexible": {
-        "optionalSlots": ["body", "cell-body-1", "cell-body-2", "cell-body-3", "cell-body-4", "cell-body-5", "cell-body-6"],
-        "impactSlots": ["cell-heading-1", "cell-heading-2", "cell-heading-3", "cell-heading-4", "cell-heading-5", "cell-heading-6"],
+        "optionalSlots": [
+          "body",
+          "cell-body-1",
+          "cell-body-2",
+          "cell-body-3",
+          "cell-body-4",
+          "cell-body-5",
+          "cell-body-6"
+        ],
+        "impactSlots": [
+          "cell-heading-1",
+          "cell-heading-2",
+          "cell-heading-3",
+          "cell-heading-4",
+          "cell-heading-5",
+          "cell-heading-6"
+        ],
         "notes": "Body slots are optional. Cell headings can use impact typography."
-      }
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-table-2columns": {
       "nodeId": "50285:15140",
@@ -1294,7 +1747,9 @@
         "cellAccess": "instance-traversal",
         "instructions": "Table cells are component instances (Column-title, Row-title, Table-data). Each instance has one text child. Traverse into the instance children to find and set text. Row order: header row first, then data rows top to bottom. Column order: left to right (first column is Row-title / Category, remaining are Table-data)."
       },
-      "matchHints": "Data table with 2 columns. Good for simple comparisons, specifications, or feature lists."
+      "matchHints": "Data table with 2 columns. Good for simple comparisons, specifications, or feature lists.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-table-3columns": {
       "nodeId": "50285:15103",
@@ -1314,7 +1769,9 @@
         "cellAccess": "instance-traversal",
         "instructions": "Same as table-2columns but with 3 data columns. First column is always Row-title (category), remaining 3 are Table-data."
       },
-      "matchHints": "Data table with 3 columns. Good for comparing 3 options or competitors."
+      "matchHints": "Data table with 3 columns. Good for comparing 3 options or competitors.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-table-4columns": {
       "nodeId": "50285:15059",
@@ -1334,7 +1791,9 @@
         "cellAccess": "instance-traversal",
         "instructions": "Same structure. First column is Row-title (category), 3 remaining are Table-data. Header row uses Column-title instances."
       },
-      "matchHints": "Data table with 4 columns. Good for detailed comparisons across multiple dimensions."
+      "matchHints": "Data table with 4 columns. Good for detailed comparisons across multiple dimensions.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-quote1-middle": {
       "nodeId": "50285:15583",
@@ -1352,7 +1811,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Single testimonial or quote. Use when there is one quote with an author/source attribution."
+      "matchHints": "Single testimonial or quote. Use when there is one quote with an author/source attribution.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-quote2-middle": {
       "nodeId": "50285:15587",
@@ -1380,7 +1841,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Two testimonials or quotes side by side. Use when there are exactly 2 quotes."
+      "matchHints": "Two testimonials or quotes side by side. Use when there are exactly 2 quotes.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-metrics-4": {
       "nodeId": "50285:15676",
@@ -1442,10 +1905,21 @@
       "flexible": {
         "minItems": 2,
         "maxItems": 4,
-        "optionalSlots": ["body", "metric-4", "metric-label-4"],
-        "impactSlots": ["metric-1", "metric-2", "metric-3", "metric-4"],
+        "optionalSlots": [
+          "body",
+          "metric-4",
+          "metric-label-4"
+        ],
+        "impactSlots": [
+          "metric-1",
+          "metric-2",
+          "metric-3",
+          "metric-4"
+        ],
         "notes": "Metric values always use impact typography. Hide unused metric slots. For 2-3 metrics, hide metric-4 and its label."
-      }
+      },
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-huge-fact": {
       "nodeId": "50285:15564",
@@ -1458,7 +1932,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "One single dramatic number or short fact. For maximum visual impact. E.g., 'XX%' or '$2.1B'."
+      "matchHints": "One single dramatic number or short fact. For maximum visual impact. E.g., 'XX%' or '$2.1B'.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-huge-fact-eyebrow": {
       "nodeId": "50285:15567",
@@ -1476,7 +1952,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Dramatic number with a small label/context above. E.g., eyebrow='Revenue growth' metric='47%'."
+      "matchHints": "Dramatic number with a small label/context above. E.g., eyebrow='Revenue growth' metric='47%'.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-huge-fact-body": {
       "nodeId": "50285:15571",
@@ -1494,7 +1972,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Dramatic number with explanation below. E.g., metric='99.99%' body='PFAS removal rate, independently verified'."
+      "matchHints": "Dramatic number with explanation below. E.g., metric='99.99%' body='PFAS removal rate, independently verified'.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-info-left-top": {
       "nodeId": "50285:15578",
@@ -1517,7 +1997,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Informational slide with a category label (eyebrow), title, and body. Top-left positioning."
+      "matchHints": "Informational slide with a category label (eyebrow), title, and body. Top-left positioning.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-left-middle": {
       "nodeId": "50285:15595",
@@ -1535,7 +2017,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "General-purpose informational slide. Title + body text. FALLBACK TEMPLATE: use this when no other template is a good fit."
+      "matchHints": "General-purpose informational slide. Title + body text. FALLBACK TEMPLATE: use this when no other template is a good fit.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-left-bottom": {
       "nodeId": "50285:15599",
@@ -1553,7 +2037,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Informational slide. Title + body. Bottom-left positioning."
+      "matchHints": "Informational slide. Title + body. Bottom-left positioning.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-center-center": {
       "nodeId": "50285:15603",
@@ -1576,7 +2062,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Centered informational slide with category label, title, and body text."
+      "matchHints": "Centered informational slide with category label, title, and body text.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-2bullets": {
       "nodeId": "50285:15608",
@@ -1616,7 +2104,9 @@
           "name": "Bullet-image-2",
           "size": "small"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-3bullets": {
       "nodeId": "50285:15619",
@@ -1666,7 +2156,9 @@
           "name": "Bullet-image-3",
           "size": "small"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-4bullets": {
       "nodeId": "50285:15633",
@@ -1726,7 +2218,9 @@
           "name": "Bullet-image-4",
           "size": "small"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-info-split-top": {
       "nodeId": "50285:15696",
@@ -1749,7 +2243,9 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Informational split layout. Category label + title + body text. Top positioning."
+      "matchHints": "Informational split layout. Category label + title + body text. Top positioning.",
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-product-2": {
       "nodeId": "50285:15650",
@@ -1794,7 +2290,9 @@
           "name": "Product-image-2",
           "size": "medium"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-product-3": {
       "nodeId": "50285:15661",
@@ -1854,7 +2352,9 @@
           "name": "Product-image-3",
           "size": "medium"
         }
-      ]
+      ],
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-logo-garden-3x3": {
       "nodeId": "50285:15170",
@@ -1867,184 +2367,1482 @@
           "findBy": "name"
         }
       ],
-      "matchHints": "Grid of logos/partner badges. Use for 'Our Partners', 'Trusted by', or client logo slides. Images must be added manually in Phase 2."
+      "matchHints": "Grid of logos/partner badges. Use for 'Our Partners', 'Trusted by', or client logo slides. Images must be added manually in Phase 2.",
+      "status": "KEEP",
+      "page": "Templates 4"
     },
     "template-pricing-bento": {
       "nodeId": "54274:57",
       "category": "bento-pricing",
       "description": "Bento grid pricing slide. 6-unit grid, 2 rows. Title cell + 3 price cards (with optional badge) + blue hero hook cell + 2 offer cells. 32px radius, 32px gaps, 64/80px padding.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "price-label-1", "type": "text", "findBy": "name" },
-        { "name": "price-value-1", "type": "text", "findBy": "name" },
-        { "name": "price-label-2", "type": "text", "findBy": "name" },
-        { "name": "price-value-2", "type": "text", "findBy": "name" },
-        { "name": "price-detail-2", "type": "text", "findBy": "name" },
-        { "name": "price-label-3", "type": "text", "findBy": "name" },
-        { "name": "price-value-3", "type": "text", "findBy": "name" },
-        { "name": "price-detail-3", "type": "text", "findBy": "name" },
-        { "name": "hook-label", "type": "text", "findBy": "name" },
-        { "name": "hook-heading", "type": "text", "findBy": "name" },
-        { "name": "hook-body", "type": "text", "findBy": "name" },
-        { "name": "offer-label-1", "type": "text", "findBy": "name" },
-        { "name": "offer-heading-1", "type": "text", "findBy": "name" },
-        { "name": "offer-label-2", "type": "text", "findBy": "name" },
-        { "name": "offer-heading-2", "type": "text", "findBy": "name" },
-        { "name": "offer-body-2", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-value-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-value-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-detail-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-value-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "price-detail-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hook-label",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hook-heading",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hook-body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "offer-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "offer-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "offer-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "offer-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "offer-body-2",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Pricing slide with bento grid layout. Use for pricing tiers + promotional hooks. Row 1: title + price cards. Row 2: blue hero hook + additional offers. Green badge on best-value tier.",
       "flexible": {
         "minItems": 2,
         "maxItems": 6,
-        "optionalSlots": ["body", "price-detail-2", "price-detail-3", "hook-body", "offer-body-2"],
-        "impactSlots": ["price-value-1", "price-value-2", "price-value-3", "hook-heading"],
+        "optionalSlots": [
+          "body",
+          "price-detail-2",
+          "price-detail-3",
+          "hook-body",
+          "offer-body-2"
+        ],
+        "impactSlots": [
+          "price-value-1",
+          "price-value-2",
+          "price-value-3",
+          "hook-heading"
+        ],
         "buildFromScratch": true,
-        "notes": "Price values should use impact typography (48-80px). Number of price tiers and offers can vary — build from scratch using the grid system if count differs from template."
-      }
+        "notes": "Price values should use impact typography (48-80px). Number of price tiers and offers can vary \u2014 build from scratch using the grid system if count differs from template."
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-timeline-bento": {
       "nodeId": "54275:57",
       "category": "bento-timeline",
       "description": "Bento grid timeline. 5-unit grid, 3 rows. Title cell (2-wide) + milestone cards + blue hero center cell (3-wide, 2-tall) + dark closing card. 32px radius/gaps, 64/80px padding.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "subtitle", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-1", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-1", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-2", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-2", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-3", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-3", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-4", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-4", "type": "text", "findBy": "name" },
-        { "name": "hero-label", "type": "text", "findBy": "name" },
-        { "name": "hero-heading", "type": "text", "findBy": "name" },
-        { "name": "hero-body", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-5", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-5", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-6", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-6", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-7", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-7", "type": "text", "findBy": "name" },
-        { "name": "milestone-label-8", "type": "text", "findBy": "name" },
-        { "name": "milestone-heading-8", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hero-label",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hero-heading",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "hero-body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-label-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "milestone-heading-8",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Timeline with bento grid layout. Use for project timelines, roadmaps, critical paths. Blue hero cell highlights the key moment. Dark card for closing milestone. Each cell uses eyebrow (date) + heading (task) pattern.",
       "flexible": {
         "minItems": 4,
         "maxItems": 10,
-        "optionalSlots": ["subtitle", "hero-body"],
-        "impactSlots": ["hero-heading"],
+        "optionalSlots": [
+          "subtitle",
+          "hero-body"
+        ],
+        "impactSlots": [
+          "hero-heading"
+        ],
         "buildFromScratch": true,
-        "notes": "Milestone count can vary. Always include one hero cell (blue, 3u×2rows) for the key moment and optionally a dark closing card. Build from scratch when item count differs."
-      }
+        "notes": "Milestone count can vary. Always include one hero cell (blue, 3u\u00d72rows) for the key moment and optionally a dark closing card. Build from scratch when item count differs."
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-timeline-horizontal": {
       "nodeId": "54276:57",
       "category": "timeline",
       "description": "Horizontal timeline with gray cards. 80px title, horizontal line with blue dots, date labels above dots, gray cards below. 5 steps. 32px radius, no shadows, 64/80px padding.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "step-label-1", "type": "text", "findBy": "name" },
-        { "name": "step-heading-1", "type": "text", "findBy": "name" },
-        { "name": "step-body-1", "type": "text", "findBy": "name" },
-        { "name": "step-label-2", "type": "text", "findBy": "name" },
-        { "name": "step-heading-2", "type": "text", "findBy": "name" },
-        { "name": "step-body-2", "type": "text", "findBy": "name" },
-        { "name": "step-label-3", "type": "text", "findBy": "name" },
-        { "name": "step-heading-3", "type": "text", "findBy": "name" },
-        { "name": "step-body-3", "type": "text", "findBy": "name" },
-        { "name": "step-label-4", "type": "text", "findBy": "name" },
-        { "name": "step-heading-4", "type": "text", "findBy": "name" },
-        { "name": "step-body-4", "type": "text", "findBy": "name" },
-        { "name": "step-label-5", "type": "text", "findBy": "name" },
-        { "name": "step-heading-5", "type": "text", "findBy": "name" },
-        { "name": "step-body-5", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-5",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Horizontal timeline for sequential steps or next actions. Use for 'What happens now', 'Next steps', or any 4-8 step process. Date/number labels above dots, content in gray cards below. White background.",
       "flexible": {
         "minItems": 3,
         "maxItems": 8,
-        "optionalSlots": ["step-body-1", "step-body-2", "step-body-3", "step-body-4", "step-body-5"],
-        "impactSlots": ["step-heading-1", "step-heading-2", "step-heading-3", "step-heading-4", "step-heading-5"],
+        "optionalSlots": [
+          "step-body-1",
+          "step-body-2",
+          "step-body-3",
+          "step-body-4",
+          "step-body-5"
+        ],
+        "impactSlots": [
+          "step-heading-1",
+          "step-heading-2",
+          "step-heading-3",
+          "step-heading-4",
+          "step-heading-5"
+        ],
         "buildFromScratch": true,
-        "notes": "Step count is flexible (3-8). Build from scratch with correct number of dots, labels, and cards. Body copy per card is optional — hide when heading alone is clear enough."
-      }
+        "notes": "Step count is flexible (3-8). Build from scratch with correct number of dots, labels, and cards. Body copy per card is optional \u2014 hide when heading alone is clear enough."
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-timeline-cards": {
       "nodeId": "54397:120",
       "category": "timeline",
       "description": "Title + 8-step timeline with date labels above dots and gray cards below. Similar to timeline-horizontal but with 8 steps and more compact cards. Good for critical paths and detailed roadmaps.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "step-label-1", "type": "text", "findBy": "name" },
-        { "name": "step-heading-1", "type": "text", "findBy": "name" },
-        { "name": "step-body-1", "type": "text", "findBy": "name" },
-        { "name": "step-label-2", "type": "text", "findBy": "name" },
-        { "name": "step-heading-2", "type": "text", "findBy": "name" },
-        { "name": "step-body-2", "type": "text", "findBy": "name" },
-        { "name": "step-label-3", "type": "text", "findBy": "name" },
-        { "name": "step-heading-3", "type": "text", "findBy": "name" },
-        { "name": "step-body-3", "type": "text", "findBy": "name" },
-        { "name": "step-label-4", "type": "text", "findBy": "name" },
-        { "name": "step-heading-4", "type": "text", "findBy": "name" },
-        { "name": "step-body-4", "type": "text", "findBy": "name" },
-        { "name": "step-label-5", "type": "text", "findBy": "name" },
-        { "name": "step-heading-5", "type": "text", "findBy": "name" },
-        { "name": "step-body-5", "type": "text", "findBy": "name" },
-        { "name": "step-label-6", "type": "text", "findBy": "name" },
-        { "name": "step-heading-6", "type": "text", "findBy": "name" },
-        { "name": "step-body-6", "type": "text", "findBy": "name" },
-        { "name": "step-label-7", "type": "text", "findBy": "name" },
-        { "name": "step-heading-7", "type": "text", "findBy": "name" },
-        { "name": "step-body-7", "type": "text", "findBy": "name" },
-        { "name": "step-label-8", "type": "text", "findBy": "name" },
-        { "name": "step-heading-8", "type": "text", "findBy": "name" },
-        { "name": "step-body-8", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-label-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-heading-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "step-body-8",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
-      "matchHints": "8-step timeline with date labels and cards. Use for critical paths, detailed project roadmaps, or phased rollouts with 6-8 milestones. More compact than timeline-horizontal — fits more steps.",
+      "matchHints": "8-step timeline with date labels and cards. Use for critical paths, detailed project roadmaps, or phased rollouts with 6-8 milestones. More compact than timeline-horizontal \u2014 fits more steps.",
       "flexible": {
         "minItems": 5,
         "maxItems": 10,
-        "optionalSlots": ["step-body-1", "step-body-2", "step-body-3", "step-body-4", "step-body-5", "step-body-6", "step-body-7", "step-body-8"],
+        "optionalSlots": [
+          "step-body-1",
+          "step-body-2",
+          "step-body-3",
+          "step-body-4",
+          "step-body-5",
+          "step-body-6",
+          "step-body-7",
+          "step-body-8"
+        ],
         "buildFromScratch": true,
         "notes": "Step count is flexible (5-10). Build from scratch for different counts. Body copy per card is optional."
-      }
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
     },
     "template-checklist-bento": {
       "nodeId": "54397:172",
       "category": "bento-grid",
       "description": "Bento grid checklist. Title card (top-left) + 7 item cards with headings and deadlines. Last card is dark for the final/most critical item. 2 rows, mixed card sizes.",
       "slots": [
-        { "name": "title", "type": "text", "findBy": "name" },
-        { "name": "body", "type": "text", "findBy": "name" },
-        { "name": "item-heading-1", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-1", "type": "text", "findBy": "name" },
-        { "name": "item-heading-2", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-2", "type": "text", "findBy": "name" },
-        { "name": "item-heading-3", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-3", "type": "text", "findBy": "name" },
-        { "name": "item-heading-4", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-4", "type": "text", "findBy": "name" },
-        { "name": "item-heading-5", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-5", "type": "text", "findBy": "name" },
-        { "name": "item-heading-6", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-6", "type": "text", "findBy": "name" },
-        { "name": "item-heading-7", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-7", "type": "text", "findBy": "name" },
-        { "name": "item-heading-8", "type": "text", "findBy": "name" },
-        { "name": "item-deadline-8", "type": "text", "findBy": "name" }
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-5",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-6",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-7",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-heading-8",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "item-deadline-8",
+          "type": "text",
+          "findBy": "name"
+        }
       ],
       "matchHints": "Checklist or task list with deadlines. Use for pre-launch checklists, action item lists, deliverables tracking, or any set of 5-8 tasks with due dates. Title card describes the checklist, item cards show tasks. Dark card for the final critical item.",
       "flexible": {
         "minItems": 4,
         "maxItems": 8,
-        "optionalSlots": ["body", "item-deadline-1", "item-deadline-2", "item-deadline-3", "item-deadline-4", "item-deadline-5", "item-deadline-6", "item-deadline-7", "item-deadline-8"],
-        "impactSlots": ["item-heading-1", "item-heading-2", "item-heading-3", "item-heading-4", "item-heading-5", "item-heading-6", "item-heading-7", "item-heading-8"],
+        "optionalSlots": [
+          "body",
+          "item-deadline-1",
+          "item-deadline-2",
+          "item-deadline-3",
+          "item-deadline-4",
+          "item-deadline-5",
+          "item-deadline-6",
+          "item-deadline-7",
+          "item-deadline-8"
+        ],
+        "impactSlots": [
+          "item-heading-1",
+          "item-heading-2",
+          "item-heading-3",
+          "item-heading-4",
+          "item-heading-5",
+          "item-heading-6",
+          "item-heading-7",
+          "item-heading-8"
+        ],
         "buildFromScratch": true,
         "notes": "Item count is flexible (4-8). Build from scratch for different counts. Deadlines are optional. Last card should use dark background for emphasis."
-      }
+      },
+      "status": "OVERLAP",
+      "page": "Templates 4"
+    },
+    "split-portrait": {
+      "page": "Template references",
+      "nodeId": "56881:887",
+      "category": "split-portrait",
+      "status": "KEEP",
+      "description": "50/50 layout: text content on the left (label/body), full-bleed photo on the right.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "fig-marker",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "fig-caption",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:898",
+          "role": "right-card",
+          "w": 900,
+          "h": 1023
+        }
+      ],
+      "matchHints": "Testimonial, person, place, before/after. 50/50 image + text. Title fits 2 rows at 880 width."
+    },
+    "bento-mix-center-hero": {
+      "page": "Template references",
+      "nodeId": "56881:506",
+      "category": "bento-mix",
+      "status": "KEEP",
+      "description": "Multi-card bento with center-column hero image. 4-6 mixed cards (text, color-block stat, image).",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cust-eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cust-eyebrow-h",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "plan-eyebrow",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "plan-eyebrow-h",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "phrase-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "phrase-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "phrase-4",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:513",
+          "role": "small-image-1"
+        },
+        {
+          "nodeId": "56881:555",
+          "role": "center-hero-image"
+        },
+        {
+          "nodeId": "56881:559",
+          "role": "small-image-2"
+        }
+      ],
+      "matchHints": "4-6 distinct items where one image is the hero centerpiece. Mixes text, color-block stats, and image cards."
+    },
+    "pillar-grid-4up-image": {
+      "page": "Template references",
+      "nodeId": "56881:566",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "4 equal columns, each = full-bleed image card with label/heading/body text below.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 4
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 4
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 4
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:593",
+          "role": "pillar-1-image"
+        },
+        {
+          "nodeId": "56881:600",
+          "role": "pillar-2-image"
+        },
+        {
+          "nodeId": "56881:608",
+          "role": "pillar-3-image"
+        }
+      ],
+      "optionalSlots": [
+        "body"
+      ],
+      "matchHints": "4 distinct items of equal weight, each with a label/heading/body. Image-rich. Body copy may be hidden per item."
+    },
+    "pillar-grid-3up-functional": {
+      "page": "Template references",
+      "nodeId": "56881:616",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "3 equal columns with functional product imagery + caption.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "caption",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:619",
+          "role": "col-1-image"
+        },
+        {
+          "nodeId": "56881:624",
+          "role": "col-2-image"
+        },
+        {
+          "nodeId": "56881:625",
+          "role": "col-3-image"
+        },
+        {
+          "nodeId": "56881:630",
+          "role": "background-pattern"
+        }
+      ],
+      "matchHints": "3 functional product offerings (Energy, Hydrate, Zen pattern). Image-led."
+    },
+    "pillar-grid-3up-product": {
+      "page": "Template references",
+      "nodeId": "56881:664",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "3 equal columns each showing a product (image + label/heading + sub).",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        },
+        {
+          "name": "sub",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:674",
+          "role": "product-1"
+        },
+        {
+          "nodeId": "56881:714",
+          "role": "product-2"
+        },
+        {
+          "nodeId": "56881:719",
+          "role": "product-3"
+        }
+      ],
+      "matchHints": "3 products of equal weight. Use when items have a common visual treatment."
+    },
+    "pillar-grid-3up-product-with-body": {
+      "page": "Template references",
+      "nodeId": "56881:638",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "3 equal product columns with full label/heading/body stack (longer copy variant).",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all",
+          "expectedCount": 3
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:643",
+          "role": "product-1"
+        },
+        {
+          "nodeId": "56881:648",
+          "role": "product-2"
+        },
+        {
+          "nodeId": "56881:653",
+          "role": "product-3"
+        }
+      ],
+      "matchHints": "Same shape as pillar-grid-3up-product but with body copy per item. Use when each product needs a fuller description."
+    },
+    "pillar-grid-3up-pricing": {
+      "page": "Template references",
+      "nodeId": "56881:744",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "3 product columns with pricing \u2014 image + heading/body + add-ons + price (rent/buy) + service caption.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "addons-label",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "addons-content",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "price-label",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "price-value",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "service-caption",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:753",
+          "role": "product-1"
+        },
+        {
+          "nodeId": "56881:846",
+          "role": "product-2"
+        },
+        {
+          "nodeId": "56881:868",
+          "role": "product-3"
+        }
+      ],
+      "matchHints": "Pricing-tiered product slide. 3 products with rent/buy pricing, add-ons, service info."
+    },
+    "numbered-list": {
+      "page": "Template references",
+      "nodeId": "56881:720",
+      "category": "numbered-list",
+      "status": "KEEP",
+      "description": "Numbered list with marker (01, 02...) + heading + body per row. Best for install/service/process steps.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "marker",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        }
+      ],
+      "matchHints": "Numbered process or step list. Replaces info-bullet templates when content has a clear sequential structure."
+    },
+    "closing-pure-title": {
+      "page": "Template references",
+      "nodeId": "56881:658",
+      "category": "closing",
+      "status": "KEEP",
+      "description": "Closing/CTA slide with title at y=400 (centered), CTAs and contact info below.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "ctas",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "contact",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "chromeException": "title.y=400 (intentional, centered closing slide; not a chrome-drift bug)",
+      "matchHints": "Closing/CTA slide. Big centered title with contact details."
+    },
+    "split-portrait-product-family": {
+      "page": "Template references",
+      "nodeId": "56881:3233",
+      "category": "split-portrait",
+      "status": "KEEP",
+      "description": "Half-width title on left, 4 product images stacked on right with cell-heading/body per item.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-4",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-4",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:3241",
+          "role": "product-1"
+        },
+        {
+          "nodeId": "56881:3247",
+          "role": "product-2"
+        },
+        {
+          "nodeId": "56881:3253",
+          "role": "product-3"
+        },
+        {
+          "nodeId": "56881:3256",
+          "role": "product-4"
+        }
+      ],
+      "matchHints": "Product family overview. Title + brief description on left, list of 4 product images with names on right."
+    },
+    "pillar-grid-large-image": {
+      "page": "Template references",
+      "nodeId": "56881:3096",
+      "category": "pillar-grid",
+      "status": "KEEP",
+      "description": "Multi-flavor showcase grid (7+ items, each = small image card with name + tagline).",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name",
+          "occurrence": "all"
+        }
+      ],
+      "matchHints": "Variety/flavor showcase with 7+ items. No slide title (title text exists as 'Ingredients.' free text).",
+      "note": "No 'title' slot \u2014 the visible title text is named 'Ingredients.' Custom layout with 9 image slots."
+    },
+    "full-bleed-tech-hero": {
+      "page": "Template references",
+      "nodeId": "56881:1334",
+      "category": "full-bleed",
+      "status": "KEEP",
+      "description": "Full-bleed image with technology branding overlay (large product/feature name + tagline).",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:1336",
+          "role": "background-image",
+          "w": 3157,
+          "h": 1776
+        }
+      ],
+      "matchHints": "Technology/feature showcase with full-bleed atmospheric image. Custom title overlay (not a 'title' slot).",
+      "note": "Title text is two text nodes ('SuperiorOsmosis' + tagline) overlaid on the image, not named 'title'."
+    },
+    "pentagrid-right": {
+      "page": "Template references",
+      "nodeId": "56881:3159",
+      "category": "pentagrid",
+      "status": "KEEP",
+      "description": "1 dominant hero card on the right (impact stat + image) + 3 stacked supporting cards on the left.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "heading",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "matchHints": "One dominant idea + 3 supporting points. Hero stat (e.g., 99.7%) on right, stat cards on left.",
+      "note": "No slide-level title \u2014 the title text lives inside the top-left card. Custom slot vocabulary inside cards."
+    },
+    "full-bleed-hero": {
+      "page": "Template references",
+      "nodeId": "56881:1350",
+      "category": "full-bleed",
+      "status": "KEEP",
+      "description": "Image fills entire slide. Eyebrow + 2-line title + body anchored bottom-left. Chapter dividers, dramatic statements.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:1351",
+          "role": "background-image"
+        }
+      ],
+      "matchHints": "Chapter divider or dramatic single-statement slide. Title bottom-left over full-bleed image. Title position is custom (NOT y=115).",
+      "note": "Title is anchored bottom-left over the image, not at canonical y=115. The image is the slide."
+    },
+    "bento-3up-delivery": {
+      "page": "Template references",
+      "nodeId": "56881:3132",
+      "category": "bento-grid",
+      "status": "KEEP",
+      "description": "3-column bento with image cards + cell-heading/cell-body each.",
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:3133",
+          "role": "cell-1"
+        },
+        {
+          "nodeId": "56881:3134",
+          "role": "cell-2"
+        },
+        {
+          "nodeId": "56881:3135",
+          "role": "cell-3"
+        }
+      ],
+      "matchHints": "3 distinct items with imagery and dense per-item copy."
+    },
+    "cover-with-product": {
+      "page": "Template references",
+      "nodeId": "56881:464",
+      "category": "cover",
+      "status": "KEEP",
+      "description": "Cover slide with full-bleed product imagery + subtitle + title. Variant of cover used as opening slide.",
+      "slots": [
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "imageSlots": [
+        {
+          "nodeId": "56881:465",
+          "role": "background-image"
+        }
+      ],
+      "matchHints": "Opening cover slide with strong product visual. No meta-left (slide treats imagery as the brand cue).",
+      "note": "Stale text nodes 'Beverage Description', 'Beverage title', 'Button', 'Dash', 'Flavor', 'Ingredients' present from copy-paste \u2014 should be cleaned up in a Phase B follow-up."
     }
   }
 }

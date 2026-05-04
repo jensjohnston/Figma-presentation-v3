@@ -234,3 +234,56 @@ A prior naive build (without the helpers) had every meta + title at (0,0) due to
 - **Asset library expansion.** The asset library currently has one synced item (`cafe-station-1-hero`). FIG placeholders cover the gap, but the patterns shine when real imagery is available. A separate task should expand the library.
 - **Pattern-to-reference matching.** When the generator picks a pattern, it could optionally compare its output to the `referenceNodeId` (via `get_screenshot`) and flag visual deviations. Useful but not required for the first ship.
 - **PowerPoint export.** Phase 2.
+
+---
+
+## Implementation update — 2026-05-04
+
+After this spec was first approved, deeper work in the Bluewater Figma file revealed the pivot was bigger than 5 patterns. The Template references page (`56881:463`) had **35 top-level frames**, not 13. Eleven were already production-ready, three needed chrome added, nine were drifted versions of old templates that needed harmonization, and the rest were experiments to skip. The architecture also shifted from "build patterns from scratch" to **"clone the reference and replace text/images"** — same mechanism the existing 41 templates already use.
+
+### Plan executed
+
+Per `/Users/jens.johnston/.claude/plans/thank-you-but-peaceful-blossom.md`:
+
+- **Phase A — Audit.** Read-only walk of all 35 frames; saved to `templates/references-audit.json`.
+- **Phase B — Harmonize in Figma.** Added `meta-left`, `meta-right`, and (where appropriate) repositioned `title` to (48, 115) on **16 frames**. Pentagrids and Liquid Rock got chrome added; drifted `template-bento*` / `template-table-*` / `template-pricing-bento` / `template-timeline-*` got chrome aligned to canonical positions; 1px drift fixed on `slide-14-delivery`. After this, every reference except documented exceptions reports a clean `auditChrome()`.
+- **Phase C — Build registry entries.** Added `templatePages` block to `templates/registry.json`. Added **16 new template entries** (one per production-ready reference) with `nodeId`, `slots`, `imageSlots`, `optionalSlots`, `matchHints`. Each new entry has `page: "Template references"` and `status: "KEEP"`.
+- **Phase D — Categorize existing 46.** Added `status` field to every existing template:
+  - **17 KEEP** — `template-title-*`, `template-chapter-*`, `template-huge-fact*`, `template-quote*`, `template-table-Ncolumns`, `template-logo-garden-3x3`, `template-metrics-4`.
+  - **25 OVERLAP** — `template-bento*`, `template-comparison-50-50`, `template-pricing-bento`, `template-timeline-*`, `template-info-Nbullets`, `template-product-2/3`, `template-info-center-center`, `template-info-left-*`, `template-info-split-top`, `template-checklist-bento`.
+  - **4 DEPRECATE** — `template-bullets-4/6/8`, `template-technical-bullets`. Removed from default matching priority.
+- **Phase E — Rewrite Step 4 priority.** `.claude/commands/generate-presentation.md` now uses a 26-rule priority that puts Template references first (rules 1–12), KEEP templates next (13–18), OVERLAP templates as fallback (19–25), and the Creative escape hatch as the last resort (26). DEPRECATE templates do not appear in the default flow.
+- **Phase F — design-system.md updates.** Added `applyChrome()` and `auditChrome()` helpers as canonical snippets. Added "Creative escape hatch" section listing the strict rules for from-scratch builds. Tightened the divider rule (List Row only). Updated `textNodeNaming` to use `meta-left` / `meta-right` (was `meta`).
+- **Phase G — This update + commit.**
+
+### Final template inventory
+
+| Page | Count | Notes |
+|---|---|---|
+| Template references | 16 | Primary, all KEEP |
+| Templates 4 | 46 | 17 KEEP, 25 OVERLAP, 4 DEPRECATE |
+| **Total** | **62** | |
+
+### Naming standardization
+
+- Slide chrome slots: `meta-left`, `meta-right`, `title` (canonical). All three are slide-level direct children.
+- Card slots: `label`, `heading`, `body`, `caption`.
+- Slide-level: `eyebrow`, `subtitle`, `slide-paragraph`.
+- Multi-instance slots in pillar grids use either numeric suffixes (`cell-heading-1/2/3`) or `occurrence: "all"` in the registry.
+
+### Chrome exceptions (documented)
+
+Some patterns intentionally don't have a canonical `title` at y=115:
+- `full-bleed-hero` — title bottom-left over image.
+- `pentagrid-*` — title text inside top-left card.
+- `closing-pure-title` — title at y=400.
+- `cover-with-product` — title nested in layout.
+
+For these, `applyChrome()` is called without `titleText`, and `auditChrome()` skips the title check when no slide-root `title` node exists.
+
+### Verification status
+
+- All 16 frames touched in Phase B return zero `auditChrome` issues post-harmonization.
+- Registry validated by `jq` after script-driven update — 62 entries, statuses applied.
+- Pending end-to-end smoke test with a real PDF (out of scope for this spec; will follow in implementation closeout).
+

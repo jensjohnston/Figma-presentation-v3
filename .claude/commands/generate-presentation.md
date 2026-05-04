@@ -89,44 +89,66 @@ Carry the user's choices forward into Steps 4 and 5. When presenting the slide p
 For each extracted slide, select the best template from the registry using these rules (in priority order):
 
 ### Matching Priority
-1. **First slide** → Use a title template (`template-title-subtitle-center` if it has a subtitle, `template-title-center` if title only)
-2. **Slide with only a short heading (1-5 words), no body** → Chapter divider (`template-chapter-left` or `template-chapter-center`)
-3. **Single large number/stat** → `template-huge-fact` (number only), `template-huge-fact-eyebrow` (number + label above), or `template-huge-fact-body` (number + explanation below)
-4. **Multiple metrics (2-4 numbers)** → `template-metrics-4` (hide unused metric slots) or bento2/3 with impact headings
-5. **Quote with attribution** → `template-quote1-middle` (1 quote) or `template-quote2-middle` (2 quotes)
-6. **Side-by-side comparison** → `template-comparison-50-50` or `template-bento2`
-7. **Pricing/tiers with promotional hooks** → `template-pricing-bento` (build from scratch if item count differs)
-8. **Timeline/roadmap/milestones** → `template-timeline-bento` (with hero moment) or `template-timeline-horizontal` (sequential steps). Build from scratch for custom item counts.
-9. **Bullet points with headings** → Count bullets:
-   - 2-6 items → Consider bento grid (bento2-6) for visual impact, especially if items don't need body copy
-   - 1-4 bullets with body copy → `template-bullets-4`
-   - 5-6 bullets → `template-bullets-6`
-   - 7-8 bullets → `template-bullets-8`
-   - 9+ bullets → `template-technical-bullets`
-10. **Table/structured data** → Count columns:
-    - 2 columns → `template-table-2columns`
-    - 3 columns → `template-table-3columns`
-    - 4+ columns → `template-table-4columns`
-11. **Product showcase** → `template-product-2` (2 products) or `template-product-3` (3 products)
-12. **Info with supporting bullets** → `template-info-2bullets`, `template-info-3bullets`, or `template-info-4bullets`
-13. **Title + body paragraph** → `template-info-left-middle` (this is the fallback for anything that doesn't match above)
+
+The registry has two `templatePages`: **"Template references"** (status `primary`, page id `56881:463`) and **"Templates 4"** (status `deprecated`, id `50285:14832`). Each template entry has a `page` field plus a `status` field (`KEEP` / `OVERLAP` / `DEPRECATE`). Walk the priority list below — references-page templates come first, deprecated ones last.
+
+1. **First slide** → opening title:
+   - With imagery → `cover-with-product` (Template references)
+   - Title + subtitle, no imagery → `template-title-subtitle-center` or `template-title-subtitle-left` (KEEP)
+   - Title only → `template-title-center` or `template-title-left` (KEEP)
+2. **Closing / CTA slide** → `closing-pure-title` (Template references — large centered title at y=400 with CTAs and contact)
+3. **Section divider (1–5 word heading)** → `template-chapter-left`, `-center`, or `-right` (KEEP)
+4. **Single dramatic visual statement (chapter divider with imagery)** → `full-bleed-hero` (Template references — image fills slide, title overlay bottom-left)
+5. **Tech / feature hero with full-bleed atmospheric image** → `full-bleed-tech-hero` (Template references)
+6. **One dominant idea + 3 supporting points** → `pentagrid-right` (Template references — 1 hero card right + 3 stacked left)
+7. **2–4 distinct items of equal weight, image-rich** → `pillar-grid-4up-image` or `pillar-grid-3up-product` (Template references). Use `-with-body` variant when items need fuller copy. `pillar-grid-3up-functional` for product-functional pattern.
+8. **Pricing tiers with rent/buy/add-ons** → `pillar-grid-3up-pricing` (Template references). Fall back to `template-pricing-bento` (OVERLAP) if structure doesn't match.
+9. **Person/place/testimonial split** → `split-portrait` (Template references — 50/50 text + photo). Variant: `split-portrait-product-family` for "title left + 4 product list right".
+10. **4–6 mixed items with one hero visual** → `bento-mix-center-hero` (Template references)
+11. **Variety/flavor showcase, 7+ small image cards** → `pillar-grid-large-image` (Template references)
+12. **3-column bento with image + dense per-cell copy** → `bento-3up-delivery` (Template references)
+13. **Single dramatic number alone** → `template-huge-fact`, `template-huge-fact-eyebrow`, or `template-huge-fact-body` (KEEP)
+14. **2–4 metrics in a row** → `template-metrics-4` (KEEP)
+15. **Quote with attribution** → `template-quote1-middle` or `template-quote2-middle` (KEEP)
+16. **Numbered process/steps** → `numbered-list` (Template references)
+17. **Tabular data** → `template-table-2columns`, `-3columns`, `-4columns` (KEEP, by column count)
+18. **Logos** → `template-logo-garden-3x3` (KEEP)
+19. **Side-by-side comparison** → `template-comparison-50-50` (OVERLAP)
+20. **Timeline / roadmap** → `template-timeline-bento`, `-timeline-cards`, or `-timeline-horizontal` (OVERLAP)
+21. **Generic 2–6 bento (no clear hero, no imagery available)** → `template-bento2`/`-bento3`/`-bento4`/`-bento5`/`-bento6`, or asymmetric `template-bento-25-75` / `-33-66` / `-66-33` / `-75-25` (OVERLAP)
+22. **Title + 2-4 supporting bullets** → `template-info-2bullets`, `-3bullets`, or `-4bullets` (OVERLAP)
+23. **Title + paragraph + image** → `template-info-left-middle`, `-info-left-top`, `-info-left-bottom`, `-info-center-center`, `-info-split-top` (OVERLAP)
+24. **Product showcase, 2–3 products without pricing** → `template-product-2` or `template-product-3` (OVERLAP)
+25. **Checklist** → `template-checklist-bento` (OVERLAP)
+26. **Anything that fits no template above** → **CREATIVE ESCAPE HATCH** (build from scratch — see Creative Decision Rules)
+
+**DEPRECATE — do not use unless user explicitly opts in:** `template-bullets-4`, `-bullets-6`, `-bullets-8`, `template-technical-bullets`. The new pillar-grid / bento patterns above replace these for nearly every content shape that previously matched bullet templates.
 
 ### Creative Decision Rules
 
 Before finalizing template selection, apply these judgment calls:
 
-**Prefer bento grids** when content is a set of distinct items (features, phases, risks, locations). Bento grids are more visually engaging than bullet lists. Use bento2-6 or build a custom bento from the design system.
+**Prefer Template references over Templates 4.** When two candidates match (e.g., a 4-item shape could fit `pillar-grid-4up-image` OR `template-bento4`), pick the references-page entry. The references are the canonical Bluewater style; Templates 4 entries are kept for fallback only.
+
+**Image-rich is better than text-only.** When a slide has 2–4 distinct items, prefer `pillar-grid-*` (image cards on top) over `template-bento*` (text-only). If no asset matches, the image cards render with FIG placeholders — visually clear that imagery is missing.
 
 **Use impact typography** when a slide has a dramatic number, percentage, or short punchy phrase. Look up the impact size from `design-system.md` Layer 3 based on the card tier. This overrides the default heading size.
 
-**Skip body copy** when headings alone communicate the point. Check each cell: does the body add information, or is it just restating the heading? If the latter, hide it.
+**Skip body copy** when headings alone communicate the point. Templates with `optionalSlots: ["body"]` (most pillar-grid variants) support this — hide the body slot per item with `visible = false`.
 
-**Build from scratch** when:
-- Item count doesn't match any template (e.g., 7 bento items → build a custom 7-cell grid)
-- Content has a natural "hero moment" that should be visually dominant (use a hero cell)
-- The slide needs a unique layout (e.g., pricing with badges, timeline with staggered elements)
+**Creative mix directive (decks ≥6 content slides):** Vary patterns. No more than **3 of any single pattern in a row**, no more than **60% of content slides** in any one pattern. Tables, quotes, and chapter dividers count toward variety.
 
-When building from scratch, follow the rules in `templates/design-system.md`: 6-unit grid, 32px gaps/radius, 64/80px padding, Suisse Int'l typography.
+**Build from scratch (escape hatch)** when:
+- The slide content fits NO template above, even loosely.
+- Item count exceeds what any template supports (e.g., 9 distinct items).
+- Content has a unique constraint (e.g., a custom diagram, a one-off pricing comparison).
+
+When using the escape hatch, follow the **Creative escape hatch** section in `templates/design-system.md`:
+- Always call `applyChrome(slide, { metaLeftText, metaRightText, titleText, isDark })` first.
+- Always run `auditChrome(slide)` before returning. Issues array must be empty.
+- Use only typescale Layer 1 sizes; only Gray/Blue/Rose/Green tokens; only 32px gap and corner radius; only 48px outer margins.
+- Draw layout inspiration from frames on the Template references page (id `56881:463`) — pick the closest pattern and adapt.
+- Document the deviation in the slide frame's name (e.g., `Slide 12 — Custom · 7 cells`).
 
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
