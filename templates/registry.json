@@ -211,6 +211,14 @@
         "lineHeight": 134,
         "color": "#71717A"
       },
+      "body": {
+        "size": 32,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#71717A",
+        "titleGap": 15,
+        "note": "The `body` node directly under the slide title is a subtitle: 32 Medium 134% Gray/500, positioned 15px below the title (y=200), full content width. NOT 20px — 20 is a legacy deviation. Source of truth: Template references pillar-grid-3up-* frames."
+      },
       "slideParagraph": {
         "size": 16,
         "weight": "Medium",

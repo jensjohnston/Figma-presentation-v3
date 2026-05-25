@@ -120,8 +120,13 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 | Slide title | 64 | Semi Bold | 110% | Gray/900 #18181B |
 | Slide eyebrow (above title) | 32 | Medium | 110% | Gray/700 on light · Blue/600 on dark |
 | Slide subtitle | 32 | Medium | 134% | Gray/500 #71717A |
+| Slide body (the `body` node, under the title) | 32 | Medium | 134% | Gray/500 #71717A |
 | Slide paragraph | 16 | Medium | 134% | Gray/500 #71717A |
 | Top meta | 14 | Regular | 134% | Gray/500 #71717A |
+
+**`body` = subtitle treatment.** The node named `body` that sits directly under the slide title is a subtitle: **32 Medium 134% Gray/500**, positioned **15px below the title** (title bottom y=185 → body y=200), full content width (x=48, w=1776). It is **NOT 20px** — 20px on some existing slides (e.g. `Slide 17 — Channel mix`) is a legacy deviation, not the standard. Do not propagate it when cloning.
+
+> ⚠️ **Source of truth.** When this doc, `registry.json`, and a built slide disagree, the **Template references page (`56881:463`) wins** — specifically `pillar-grid-3up-functional` / `pillar-grid-3up-product-with-body` (title 64 / body 32 / 15px gap). Verify against those frames before trusting any single slide.
 
 **`slide-paragraph`** is supporting context text below a bento row — for example the "Onboard purification runs continuously…" line beneath a stat row. Use it when the content is a short paragraph that explains or qualifies the bento above, not a full subtitle.
 
@@ -240,7 +245,9 @@ y=0    ─────────────── slide top
 y=48   ─── top meta (14 Regular, height ~19 → bottom ~67)
        ↕ 48px gap
 y=115  ─── slide title (64 Semi Bold 110%, 70px per line)
-       ↕ variable gap — absorbs title height difference
+       ↕ 15px gap (fixed)
+y=200  ─── slide body / subtitle (32 Medium 134%, when present)
+       ↕ variable gap — absorbs title + body height
 y=287  ─── content starts (FIXED)
        ...
 y=1032 ─── last content element ends (content height always 745px)
@@ -284,6 +291,7 @@ Cards expand to fill the 1824 usable width. Standard tier widths:
 - Bottom margin: **48px** (last content element's bottom edge at y=1032)
 - Horizontal margin: **48px** each side (content between x=48 and x=1872)
 - Meta → title: **48px** gap (title top edge at y=115)
+- Title → body/subtitle: **15px** gap (body at y=200 when present); body is **32 Medium 134% Gray/500**, full width
 - Content top: **y=287 (FIXED)** — does not shift based on title length
 - Card height: **745px** (= 1032 − 287)
 - Title → content gap: **variable** — computed as `287 − (title_y + title_height)`. Typically ~102 for 1-row titles, ~32 for 2-row titles.
@@ -543,7 +551,7 @@ function applyChrome(slide, opts) {
 
 ## auditChrome — validate before returning
 
-After every from-scratch slide build, call `auditChrome(slide)`. If the issues array is non-empty, fix the offending nodes before returning:
+After every from-scratch slide build, call `auditChrome(slide)`. It validates meta + title positions **and** that the slide `body` is 32px with a 15px title gap. If the issues array is non-empty, fix the offending nodes before returning:
 
 ```js
 function auditChrome(slide) {
@@ -562,6 +570,15 @@ function auditChrome(slide) {
     const maxH = 64 * 1.1 * 2 + 1;  // 64 SB at 110% line height, max 2 rows
     if (tt.height > maxH)
       issues.push({ node: "title", reason: "exceeds 2 rows", h: tt.height, maxAllowed: maxH });
+  }
+
+  // body / subtitle directly under the title: must be 32px, 15px below the title
+  const bd = slide.children.find(n => n.type === "TEXT" && n.name === "body");
+  if (bd) {
+    if (bd.fontSize !== 32)
+      issues.push({ node: "body", reason: "size must be 32", size: bd.fontSize });
+    if (tt && Math.round(bd.y - (tt.y + tt.height)) !== 15)
+      issues.push({ node: "body", reason: "title→body gap must be 15", gap: Math.round(bd.y - (tt.y + tt.height)) });
   }
   return issues;
 }
