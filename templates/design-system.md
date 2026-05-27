@@ -119,14 +119,15 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 |---|---|---|---|---|
 | Slide title | 64 | Semi Bold | 110% | Gray/900 #18181B |
 | Slide eyebrow (above title) | 32 | Medium | 110% | Gray/700 on light · Blue/600 on dark |
-| Slide subtitle | 32 | Medium | 134% | Gray/500 #71717A |
-| Slide body (the `body` node, under the title) | 32 | Medium | 134% | Gray/500 #71717A |
+| Slide subtitle | 28 | Medium | 134% | Gray/500 #71717A |
+| Slide body (the `body` node, under the title) | 28 | Medium | 134% | Gray/500 #71717A |
+| Slide hero body (primary text, no competing title) | 40 | Medium | 134% | Gray/500 #71717A |
 | Slide paragraph | 16 | Medium | 134% | Gray/500 #71717A |
 | Top meta | 14 | Regular | 134% | Gray/500 #71717A |
 
-**`body` = subtitle treatment.** The node named `body` that sits directly under the slide title is a subtitle: **32 Medium 134% Gray/500**, positioned **15px below the title** (title bottom y=185 → body y=200), full content width (x=48, w=1776). It is **NOT 20px** — 20px on some existing slides (e.g. `Slide 17 — Channel mix`) is a legacy deviation, not the standard. Do not propagate it when cloning.
+**`body` = supporting copy (28px).** The node named `body` that sits directly under the slide title is a subtitle: **28 Medium 134% Gray/500**, positioned **15px below the title** (title bottom y=185 → body y=200), content width. When the body sits **beside** the title instead (top-right header paragraph), it is **top-aligned with the title (y=115)** in a fixed right column **587px wide, flush to x=1872 (starts x=1285), left-aligned**; the title's left region then caps at ~1205px so the two don't collide. A **hero body** — the slide's primary text with no competing 64px title (e.g. `full-bleed-hero`) — steps up to **40px**. The old 32px subtitle and 20px deck deviations are retired; do not propagate them when cloning.
 
-> ⚠️ **Source of truth.** When this doc, `registry.json`, and a built slide disagree, the **Template references page (`56881:463`) wins** — specifically `pillar-grid-3up-functional` / `pillar-grid-3up-product-with-body` (title 64 / body 32 / 15px gap). Verify against those frames before trusting any single slide.
+> ⚠️ **Source of truth.** When this doc, `registry.json`, and a built slide disagree, the **Template references page (`56881:463`) wins** — specifically `pillar-grid-3up-functional` / `pillar-grid-3up-product-with-body` (title 64 / body 28 / 15px gap). Verify against those frames before trusting any single slide.
 
 **`slide-paragraph`** is supporting context text below a bento row — for example the "Onboard purification runs continuously…" line beneath a stat row. Use it when the content is a short paragraph that explains or qualifies the bento above, not a full subtitle.
 
@@ -209,13 +210,15 @@ Use the minimum needed:
 4. **Eyebrow + Heading + Body** — full stack ("Primary" + "Health-conscious" + "Read labels...")
 5. **Body only** — rare, for footnotes or supporting context
 
-**Rule:** Hide unused text elements (`visible = false`), never fill them with spaces.
+**Rule:** Hide unused text elements (`visible = false`), never fill them with spaces. After hiding a slot, **re-anchor** any container that should stay bottom-justified — see the [Bottom-anchor rule](#bottom-anchor-rule-re-justify-after-hiding-content). Hiding a slot inside a hugging auto-layout frame shrinks the frame but leaves it pinned at its top, floating the rest mid-region.
 
 ---
 
 ## Layer 3: Impact Overrides
 
 When a card's content is a **single dramatic number or 3-word punchy phrase** (e.g. "3L", "98%", "Any"), step the heading up one size on the typescale above the tier default. Body and label stay at tier default.
+
+**Card-heading default is 36 (sm/lg tier).** When the heading itself is a **single word or ≤3-word phrase** carrying the card (e.g. "Hydrate.", "Energy.", "Install", "Service"), use **48 Semi Bold 110%** — the one sanctioned step above 36 for headings (skip 40). Canonical examples: `pillar-grid-3up-functional`, `numbered-list`. Every other standard card heading stays **36**; do not use 32 (a retired deviation). Small cards (xs/sm-compact) keep their tier headings (24/28), hero cards 56.
 
 **Constraints:**
 - **Max one impact element per card.**
@@ -305,6 +308,26 @@ Content area is always 745px tall (y=287 → y=1032). When a slide has multiple 
 - **Asymmetric**: the hero or primary row takes more height; supporting rows compress
 
 Single-row slides use the full 745px.
+
+### Bottom-anchor rule (re-justify after hiding content)
+
+Template content regions are designed so the **last visible element's bottom edge sits at y=1032** (48px from the slide bottom), or **48px above a card/column's bottom edge** for content inside a card. This is the "justified-between" look: chrome/heading pinned to the top, primary copy or stat pinned to the bottom.
+
+**The pitfall (why slides drift mid-region):** most template containers are **auto-layout frames that HUG their content**. When you hide an optional slot (`visible = false`) or remove a child, the frame shrinks — but it stays pinned at its original **top** `y`, so the remaining content floats in the middle of the region instead of dropping to the bottom. No error is thrown; the slide is just silently wrong.
+
+**The rule:** after hiding or removing any optional slot, **re-anchor** the affected container so its bottom edge returns to the design position:
+
+```js
+// slide-level block (direct child of the slide frame): bottom edge → y=1032
+block.y = 1032 - block.height;
+
+// in-card block (child of a card/column): bottom edge → 48px above the card bottom
+block.y = (cardHeight - 48) - block.height;   // cardHeight = 745 for a full-height column
+```
+
+Re-read `block.height` AFTER the slot is hidden — an auto-layout frame only reports its shrunken height once the child is invisible.
+
+**Currently tagged** (`bottomAnchored` in `registry.json`, applied automatically by `anchorBottom`): `split-portrait` (body → slide bottom), `comparison-3up` and `unit-economics-3up-scaling` (per-column metric/caption block → 48px above card bottom), `pillar-grid-3up-pricing` (per-column price block → 48px above card bottom). A coverage sweep verified that bento grids, pillar-grid product/functional/with-body, tables, timelines, metrics-4, checklist-bento, and pillar-grid-4up-image are **top-aligned or absolutely positioned** and do **not** float — so they need no tag. Always applies to **every escape-hatch build**. If you hid a slot and did not re-anchor, treat the slide as broken even though nothing errored. Pair this with `auditChrome` as a standing post-build check; when a newly-used template floats on slot-hide, add a `bottomAnchored` entry after verifying its frame name.
 
 ## Auto-layout
 

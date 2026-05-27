@@ -160,6 +160,7 @@ Apply the user's choices from Step 3 when filling content:
 ### Flexible Templates & Building from Scratch
 - Check the template's `flexible` field in the registry. If it has `buildFromScratch: true`, you can build a custom version with a different item count using the design system rules.
 - **Optional slots**: Check the `optionalSlots` array. Hide these with `visible = false` when the content doesn't need them. Never fill unused slots with spaces or filler.
+- **Re-anchor after hiding (REQUIRED):** template containers are auto-layout frames that **hug** their content. Hiding a slot shrinks the frame but leaves it pinned at its original top `y`, floating the rest mid-region. After hiding any slot, re-anchor each bottom-justified block so its bottom edge returns to position: slide-level block → `block.y = 1032 - block.height`; in-card block → `block.y = (cardHeight - 48) - block.height` (read `block.height` AFTER hiding). See `design-system.md` → "Bottom-anchor rule". This bit slides 8/12/15/18/26 in the first Beam build — split-portrait body and comparison-3up stat blocks floated mid-slide until re-anchored.
 - **Impact slots**: Check the `impactSlots` array. When content in these slots is a dramatic number, percentage, or short punchy phrase (3 words or fewer), look up the impact size from `design-system.md` Layer 3 based on the card tier.
 - **Item count mismatch**: If a slide has 6 items but the best template has 5, build a custom version from scratch using the 6-unit grid system. Do NOT leave empty cells or cram content.
 - **Bento preference**: For any set of 2-6 distinct items (features, phases, risks, locations), prefer bento grids over bullet lists. They're more visually engaging.
@@ -408,7 +409,41 @@ target.fills = assetFills;
 - The user can override image choices: *"Use cafe-station-1-hero on slide 4"*
 - If the asset library is empty, skip image placement entirely and note that `/sync-assets` should be run first.
 
-### 5e. Batch Size
+### 5e. Re-anchor bottom-justified content (REQUIRED)
+
+Template containers are auto-layout frames that **hug** their content. When you hide an optional slot, the frame shrinks but stays pinned at its original top `y`, so the remaining content floats mid-slide instead of bottom-anchoring. You will not get an error — the slide is just silently wrong (this bit slides 8/12/15/18/26 in the first Beam build).
+
+**The system:** the registry tags the affected containers per template under a `bottomAnchored` array, e.g. `"bottomAnchored": [{ "frame": "Frame 2956", "region": "slide" }]`. `region: "slide"` means the frame's bottom edge belongs at **y=1032** (48px from the slide bottom). `region: "card"` means its bottom belongs **48px above its parent card/column's bottom**. `"occurrence": "all"` re-anchors every frame of that name (e.g. comparison-3up has one per column).
+
+**Run `anchorBottom(clone, template)` at the END of every slide build** — after all text is set and all slots hidden, so each frame reports its final shrunken height:
+
+```js
+// Re-anchor every bottomAnchored container declared for this template in registry.json.
+// `anchors` = registry.templates[templateName].bottomAnchored  (pass [] if absent)
+function anchorBottom(clone, anchors) {
+  const moved = [];
+  for (const a of (anchors || [])) {
+    const frames = (a.occurrence === "all")
+      ? clone.findAll(n => n.name === a.frame && n.type === "FRAME")
+      : [clone.findOne(n => n.name === a.frame && n.type === "FRAME")].filter(Boolean);
+    for (const f of frames) {
+      // height is correct only AFTER hidden children shrank the hugging frame
+      if (a.region === "slide") {
+        f.y = 1032 - f.height;                       // bottom edge → y=1032
+      } else if (a.region === "card") {
+        const parentH = f.parent.height;             // card/column height (e.g. 745)
+        f.y = (parentH - 48) - f.height;             // 48px above the card bottom
+      }
+      moved.push({ frame: f.name, y: Math.round(f.y) });
+    }
+  }
+  return moved;
+}
+```
+
+This is the executable counterpart to the design-system "Bottom-anchor rule". When you use a template that floats content on slot-hide and it is **not** yet tagged, add a `bottomAnchored` entry to that template in `registry.json` (verify the container frame name first) — that's how coverage grows. Untagged templates are not auto-corrected.
+
+### 5f. Batch Size
 
 - Process slides one at a time (one `use_figma` call per slide)
 - For presentations with 15+ slides, inform the user about progress every 5 slides

@@ -37,6 +37,10 @@
       "display (>=48px)": "110%",
       "exception": "slide-level eyebrow (32 Medium) uses 110%, not 115%"
     },
+    "headingRule": {
+      "default": 36,
+      "note": "Standard card heading is 36 (sm/lg tier). A single word or <=3-word punchy phrase carrying the card -> 48 Semi Bold 110% (skip 40); canonical examples: pillar-grid-3up-functional, numbered-list. Small cards keep their tier headings (xs 24, sm-compact 28); hero 56. 32 is a retired deviation."
+    },
     "cardTiers": {
       "xs": {
         "maxWidth": 272,
@@ -206,18 +210,25 @@
         "color": "#3F3F46"
       },
       "subtitle": {
-        "size": 32,
+        "size": 28,
         "weight": "Medium",
         "lineHeight": 134,
         "color": "#71717A"
       },
       "body": {
-        "size": 32,
+        "size": 28,
         "weight": "Medium",
         "lineHeight": 134,
         "color": "#71717A",
         "titleGap": 15,
-        "note": "The `body` node directly under the slide title is a subtitle: 32 Medium 134% Gray/500, positioned 15px below the title (y=200), full content width. NOT 20px — 20 is a legacy deviation. Source of truth: Template references pillar-grid-3up-* frames."
+        "note": "Supporting copy: 28 Medium 134% Gray/500. Under the title: 15px below it (y=200), content width. Beside the title (top-right header paragraph): top-aligned with the title at y=115, fixed right column 587px wide flush to x=1872 (starts x=1285), left-aligned; title left region caps at ~1205px. Retired: the 32px subtitle and 20px deck deviations. Source of truth: Template references pillar-grid-3up-* frames."
+      },
+      "heroBody": {
+        "size": 40,
+        "weight": "Medium",
+        "lineHeight": 134,
+        "color": "#71717A",
+        "note": "Primary slide text with no competing 64px title (e.g. full-bleed-hero, pillar-grid-large-image). Steps up from the 28px supporting body."
       },
       "slideParagraph": {
         "size": 16,
@@ -1307,7 +1318,7 @@
       "page": "Templates 4"
     },
     "template-bento2": {
-      "nodeId": "50285:15463",
+      "nodeId": "56881:1356",
       "category": "bento-grid",
       "description": "Title + body + 2 bento grid cells, each with heading and body.",
       "slots": [
@@ -1357,18 +1368,19 @@
       },
       "imageSlots": [
         {
-          "nodeId": "50285:15465",
+          "nodeId": "56881:1365",
           "name": "Bento-cell-1",
           "size": "medium"
         },
         {
-          "nodeId": "50285:15471",
+          "nodeId": "56881:1358",
           "name": "Bento-cell-2",
           "size": "medium"
         }
       ],
-      "status": "OVERLAP",
-      "page": "Templates 4"
+      "status": "KEEP",
+      "page": "Template references",
+      "repointedFrom": "50285:15463 (Templates 4)"
     },
     "template-bento3": {
       "nodeId": "50285:15441",
@@ -1738,7 +1750,7 @@
       "page": "Templates 4"
     },
     "template-table-2columns": {
-      "nodeId": "50285:15140",
+      "nodeId": "57361:597",
       "category": "table",
       "description": "Title + 2-column comparison table. Rows use component instances (Row-title, Table-data). 6 data rows.",
       "slots": [
@@ -1757,10 +1769,11 @@
       },
       "matchHints": "Data table with 2 columns. Good for simple comparisons, specifications, or feature lists.",
       "status": "KEEP",
-      "page": "Templates 4"
+      "page": "Template references",
+      "repointedFrom": "50285:15140 (Templates 4)"
     },
     "template-table-3columns": {
-      "nodeId": "50285:15103",
+      "nodeId": "57361:560",
       "category": "table",
       "description": "Title + 3-column comparison table with header row and 6 data rows.",
       "slots": [
@@ -1779,10 +1792,11 @@
       },
       "matchHints": "Data table with 3 columns. Good for comparing 3 options or competitors.",
       "status": "KEEP",
-      "page": "Templates 4"
+      "page": "Template references",
+      "repointedFrom": "50285:15103 (Templates 4)"
     },
     "template-table-4columns": {
-      "nodeId": "50285:15059",
+      "nodeId": "56881:3356",
       "category": "table",
       "description": "Title + 4-column comparison table with header row and 6 data rows.",
       "slots": [
@@ -1801,7 +1815,8 @@
       },
       "matchHints": "Data table with 4 columns. Good for detailed comparisons across multiple dimensions.",
       "status": "KEEP",
-      "page": "Templates 4"
+      "page": "Template references",
+      "repointedFrom": "50285:15059 (Templates 4)"
     },
     "template-quote1-middle": {
       "nodeId": "50285:15583",
@@ -2380,7 +2395,7 @@
       "page": "Templates 4"
     },
     "template-pricing-bento": {
-      "nodeId": "54274:57",
+      "nodeId": "57361:627",
       "category": "bento-pricing",
       "description": "Bento grid pricing slide. 6-unit grid, 2 rows. Title cell + 3 price cards (with optional badge) + blue hero hook cell + 2 offer cells. 32px radius, 32px gaps, 64/80px padding.",
       "slots": [
@@ -2495,11 +2510,12 @@
         "buildFromScratch": true,
         "notes": "Price values should use impact typography (48-80px). Number of price tiers and offers can vary \u2014 build from scratch using the grid system if count differs from template."
       },
-      "status": "OVERLAP",
-      "page": "Templates 4"
+      "status": "KEEP",
+      "page": "Template references",
+      "repointedFrom": "54274:57 (Templates 4)"
     },
     "template-timeline-bento": {
-      "nodeId": "54275:57",
+      "nodeId": "57361:656",
       "category": "bento-timeline",
       "description": "Bento grid timeline. 5-unit grid, 3 rows. Title cell (2-wide) + milestone cards + blue hero center cell (3-wide, 2-tall) + dark closing card. 32px radius/gaps, 64/80px padding.",
       "slots": [
@@ -2623,11 +2639,12 @@
         "buildFromScratch": true,
         "notes": "Milestone count can vary. Always include one hero cell (blue, 3u\u00d72rows) for the key moment and optionally a dark closing card. Build from scratch when item count differs."
       },
-      "status": "OVERLAP",
-      "page": "Templates 4"
+      "status": "KEEP",
+      "page": "Template references",
+      "repointedFrom": "54275:57 (Templates 4)"
     },
     "template-timeline-horizontal": {
-      "nodeId": "54276:57",
+      "nodeId": "57361:688",
       "category": "timeline",
       "description": "Horizontal timeline with gray cards. 80px title, horizontal line with blue dots, date labels above dots, gray cards below. 5 steps. 32px radius, no shadows, 64/80px padding.",
       "slots": [
@@ -2733,8 +2750,9 @@
         "buildFromScratch": true,
         "notes": "Step count is flexible (3-8). Build from scratch with correct number of dots, labels, and cards. Body copy per card is optional \u2014 hide when heading alone is clear enough."
       },
-      "status": "OVERLAP",
-      "page": "Templates 4"
+      "status": "KEEP",
+      "page": "Template references",
+      "repointedFrom": "54276:57 (Templates 4)"
     },
     "template-timeline-cards": {
       "nodeId": "54397:120",
@@ -3020,6 +3038,9 @@
       "category": "split-portrait",
       "status": "KEEP",
       "description": "50/50 layout: text content on the left (label/body), full-bleed photo on the right.",
+      "bottomAnchored": [
+        { "frame": "Frame 2956", "region": "slide", "note": "Body holder hugs content; re-anchor its bottom edge to y=1032 (48px from slide bottom) after the body text is set/shortened." }
+      ],
       "slots": [
         {
           "name": "meta-left",
@@ -3411,6 +3432,9 @@
       "category": "pillar-grid",
       "status": "KEEP",
       "description": "3 product columns with pricing \u2014 image + heading/body + add-ons + price (rent/buy) + service caption.",
+      "bottomAnchored": [
+        { "frame": "bottom", "region": "card", "occurrence": "all", "note": "Per-column price block (divider + price + service-caption) hugs and sits at the card bottom; hiding service-caption floats the price up. Re-anchor each to 48px above its card bottom." }
+      ],
       "slots": [
         {
           "name": "meta-left",
@@ -3938,6 +3962,9 @@
       "category": "stat-grid",
       "status": "KEEP",
       "description": "3-column revenue-projection scaling. Each column = a scale tier (100, 500, 1000 locations) with revenue and profit numbers.",
+      "bottomAnchored": [
+        { "frame": "Frame 2866", "region": "card", "occurrence": "all", "note": "Same metric+caption block as comparison-3up (one per column), anchored 48px above the column bottom. Re-anchor when the caption/second metric is hidden." }
+      ],
       "slots": [
         {
           "name": "meta-left",
@@ -3994,6 +4021,166 @@
       ],
       "matchHints": "Opening cover with hero typography on atmospheric image. Use when the deck wants a dramatic, single-line cover statement instead of the 'product cover' style.",
       "note": "No 'title' slot \u2014 uses 'subtitle' (96 SB Semi Bold) as the hero text. Logo is a separate frame at (48,48). Variant of cover-with-product."
+    },
+    "comparison-3up": {
+      "nodeId": "56881:2822",
+      "page": "Template references",
+      "category": "comparison",
+      "status": "KEEP",
+      "description": "3-column comparison of named options. Each column: option heading + sub-line + two labeled metrics (a/b) + caption. Title at chrome (y=115); columns at x=48/667/1286, content y=287-1032.",
+      "bottomAnchored": [
+        { "frame": "Frame 2866", "region": "card", "occurrence": "all", "note": "Metric/caption block per column hugs content; when metric-b/caption are hidden (stat-card use) re-anchor each so its bottom sits 48px above the column bottom (column height 745)." }
+      ],
+      "slots": [
+        {
+          "name": "meta-left",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "meta-right",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-value-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-label-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-value-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-caption-1",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-value-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-label-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-value-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-caption-2",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-heading-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-body-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-a-value-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-label-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "metric-b-value-3",
+          "type": "text",
+          "findBy": "name"
+        },
+        {
+          "name": "cell-caption-3",
+          "type": "text",
+          "findBy": "name"
+        }
+      ],
+      "flexible": {
+        "buildFromScratch": true,
+        "optionalSlots": [
+          "cell-body-1",
+          "cell-body-2",
+          "cell-body-3",
+          "metric-b-label-1",
+          "metric-b-value-1",
+          "metric-b-label-2",
+          "metric-b-value-2",
+          "metric-b-label-3",
+          "metric-b-value-3",
+          "cell-caption-1",
+          "cell-caption-2",
+          "cell-caption-3"
+        ],
+        "impactSlots": [
+          "metric-a-value-1",
+          "metric-a-value-2",
+          "metric-a-value-3",
+          "metric-b-value-1",
+          "metric-b-value-2",
+          "metric-b-value-3"
+        ],
+        "notes": "Columns flexible 2-4 (build from scratch for other counts). Second metric (b) and caption are optional - hide for single-metric comparisons. Metric values are impact-scale (48). Headings 36; sub-line/caption 24; metric labels 20."
+      },
+      "matchHints": "Comparing 3 named options/tiers/scenarios side by side, each carrying one or two key numbers (e.g. Conservative/Moderate/Strong projections, pricing tiers, plan comparison). Note: 56881:3037 is a related single-metric value-breakdown variant, left unregistered.",
+      "derivedFrom": "former references-page 'template-info-left-top' frame (56881:2822); distinct from the simple eyebrow+title+body template-info-left-top on Templates 4"
     }
   }
 }
