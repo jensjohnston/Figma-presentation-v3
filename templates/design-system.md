@@ -135,6 +135,10 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **Long-title cap:** Slide titles may wrap to **maximum 2 rows** at 64 Semi Bold 110%. If the content won't fit in 2 rows, shorten the title or split it into a shorter title plus a `subtitle`. 3+ row titles are not allowed.
 
+**No widows (multi-line titles & display text):** a wrapped title (or any large display string) must never leave a **single word alone on the last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to titles, hero headings, and any 2-line display copy.
+
+**Prose max-width (body paragraphs):** body/paragraph copy must read as prose, not a narrow ribbon. Two canonical widths: a `body`/`subtitle` **under** the title uses content width (full or to the card edge); a paragraph **beside** the title (top-right header column) uses the fixed **587px** column flush to x=1872 (starts x=1285), 28 Medium 134%. Never leave a header paragraph at an arbitrary narrow width (e.g. 410px) — it wraps into an awkward column. If a one-off needs a custom width, cap it around a 50–75 character measure.
+
 Chrome positioning and title spacing rules are defined in the Grid System section below (Vertical rhythm).
 
 ### Color system
@@ -531,6 +535,8 @@ Chrome (top-meta and slide title) MUST go at exact positions defined in `registr
 | `meta-left`  | 48   | 48  | 14 Regular, Gray/500 (light) or Gray/400 (dark) |
 | `meta-right` | 1872 - width | 48 | 14 Regular, RIGHT-aligned, same color tier |
 | `title`      | 48   | 115 | 64 Semi Bold 110%, Gray/900 (light) or White (dark), max 2 rows |
+
+> ⚠️ **`meta-right` must be RIGHT-anchored — re-pin after editing its text (clone path).** `meta-right`'s **right edge belongs at x=1872** (48px from the slide edge). Some templates ship it **LEFT-aligned at a fixed x** (e.g. tables, comparison, timeline pin it at x=1659 to match a placeholder width). When you clone such a template and replace the text, a left-aligned hugging box keeps its left x and the right edge **drifts** — a shorter string lands ~105px from the slide edge instead of 48px. After setting `meta-right` text on a cloned template, always re-pin: `m.textAlignHorizontal = "RIGHT"; m.x = 1872 - m.width;` (load the font first — alignment is a font-dependent mutation). `applyChrome` already does this for from-scratch builds; the clone path must do it explicitly. `meta-left` is LEFT-anchored at x=48 and grows rightward, so it never needs re-pinning.
 
 **Never hand-position chrome elements in a from-scratch build.** Use this helper:
 

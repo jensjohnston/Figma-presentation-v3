@@ -1383,7 +1383,7 @@
       "repointedFrom": "50285:15463 (Templates 4)"
     },
     "template-bento3": {
-      "nodeId": "50285:15441",
+      "nodeId": "56881:2901",
       "category": "bento-grid",
       "description": "Title + body + 3 bento grid cells, each with heading and body.",
       "slots": [
@@ -1445,23 +1445,25 @@
       },
       "imageSlots": [
         {
-          "nodeId": "50285:15443",
+          "nodeId": "56881:2905",
           "name": "Bento-cell-1",
           "size": "medium"
         },
         {
-          "nodeId": "50285:15449",
+          "nodeId": "56881:2916",
           "name": "Bento-cell-2",
           "size": "medium"
         },
         {
-          "nodeId": "50285:15455",
+          "nodeId": "56881:2922",
           "name": "Bento-cell-3",
-          "size": "medium"
+          "size": "medium",
+          "note": "Frame 1195 group wrapping 3 wood-card frames (1345/1346/1347) in the references-page bento3. Replacing this group replaces the whole cell-3 image arrangement."
         }
       ],
-      "status": "OVERLAP",
-      "page": "Templates 4"
+      "status": "KEEP",
+      "page": "Template references",
+      "repointedFrom": "50285:15441 (Templates 4)"
     },
     "template-bento4": {
       "nodeId": "50285:15479",

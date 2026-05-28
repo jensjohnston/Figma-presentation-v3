@@ -517,7 +517,7 @@
       "x": 35685,
       "type": "bento",
       "category": "production",
-      "registeredAs": null,
+      "registeredAs": "template-bento3",
       "chrome": {
         "metaLeft": [
           48,

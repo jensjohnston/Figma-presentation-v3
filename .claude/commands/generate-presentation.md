@@ -443,6 +443,25 @@ function anchorBottom(clone, anchors) {
 
 This is the executable counterpart to the design-system "Bottom-anchor rule". When you use a template that floats content on slot-hide and it is **not** yet tagged, add a `bottomAnchored` entry to that template in `registry.json` (verify the container frame name first) — that's how coverage grows. Untagged templates are not auto-corrected.
 
+**Re-pin `meta-right` after editing its text (REQUIRED).** `meta-right`'s right edge belongs at x=1872 (48px from the slide edge). Several templates (tables, comparison, timeline) ship it LEFT-aligned at a fixed x to match a placeholder width — so when you replace the text on the clone, the right edge drifts (a shorter string lands ~105px from the edge). After setting `meta-right` on any cloned slide, re-pin it:
+
+```js
+async function repinMetaRight(clone) {
+  const m = clone.findOne(n => n.type === "TEXT" && n.name === "meta-right");
+  if (!m) return null;
+  const f = m.fontName;                       // load font first — alignment is a font-dependent mutation
+  if (f === figma.mixed) { for (let i=0;i<m.characters.length;i++) await figma.loadFontAsync(m.getRangeFontName(i,i+1)); }
+  else { await figma.loadFontAsync(f); }
+  m.textAlignHorizontal = "RIGHT";
+  m.x = 1872 - m.width;                        // right edge → 1872
+  return m.id;
+}
+```
+
+`meta-left` is LEFT-anchored at x=48 and grows rightward, so it never drifts. See design-system.md → applyChrome note.
+
+**Titles & display copy:** never leave a single-word widow on a wrapped title — bind the final 2–3 words with non-breaking spaces (` `) so the last line carries ≥2 words; do not hard-break with `\n`. Header paragraphs beside the title use the 587px prose column (x=1285, right edge 1872), not an arbitrary narrow width. See design-system.md → "No widows" and "Prose max-width".
+
 ### 5f. Batch Size
 
 - Process slides one at a time (one `use_figma` call per slide)
