@@ -11,10 +11,10 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 ## Architecture
 
 - **No build step, no runtime, no dependencies.** Claude is the engine.
-- `templates/registry.json` — Maps 41 Bluewater slide templates to Figma node IDs and content slots
+- `templates/registry.json` — Maps the Bluewater slide templates to Figma node IDs and content slots
 - `.claude/commands/generate-presentation.md` — Slash command orchestrating the full pipeline
 - Figma file: `GkUiwJTK5Xi65AKw4MOjTL` (Bluewater 2026)
-- Template page: "Templates 4" (id: `50285:14832`)
+- Template page: "Template references" (id: `56881:463`) — single canonical source. ("Templates 4" `50285:14832` is retired.)
 
 ## How It Works
 
@@ -39,6 +39,55 @@ Templates use **Suisse Int'l** (Semi Bold, Medium, Regular). Custom fonts are up
 
 ## Adding New Templates
 
-1. Design the template in Figma on "Templates 4" page
-2. Use semantic text layer names: `title`, `body`, `bullet-heading-N`, `bullet-body-N`, `cell-heading-N`, `cell-body-N`, etc.
-3. Add entry to `templates/registry.json` with nodeId, slots, and matchHints
+1. Design the template in Figma on the "Template references" page, conforming to `slideContract` (48px margins, title 64@y115, body 28, content y287→1032)
+2. Use semantic text layer names: `title`, `body`, `bullet-heading-N`, `bullet-body-N`, `cell-heading-N`, `cell-body-N`, etc.; include `meta-left` / `meta-right`
+3. Run `auditFrame` (design-system.md) — must pass — then add an entry to `templates/registry.json` with nodeId, slots, and matchHints
+
+## 1. Plan Mode Default
+- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
+- If something goes sideways, STOP and re-plan immediately – don't keep pushing
+- Use plan mode for verification steps, not just building
+- Write detailed specs upfront to reduce ambiguity
+
+## 2. Subagent Strategy
+- Use subagents liberally to keep main context window clean
+- Offload research, exploration, and parallel analysis to subagents
+- For complex problems, throw more compute at it via subagents
+- One task per subagent for focused execution
+
+## 3. Self-Improvement Loop
+- After ANY correction from the user: update `tasks/lessons.md` with the pattern
+- Write rules for yourself that prevent the same mistake
+- Ruthlessly iterate on these lessons until mistake rate drops
+- Review lessons at session start for relevant project
+
+## 4. Verification Before Done
+- Never mark a task complete without proving it works
+- Diff behavior between main and your changes when relevant
+- Ask yourself: "Would a staff engineer approve this?"
+- Run tests, check logs, demonstrate correctness
+
+## 5. Demand Elegance (Balanced)
+- For non-trivial changes: pause and ask "is there a more elegant way?"
+- If a fix feels hacky: "Knowing everything I know now, implement the elegant solution"
+- Skip this for simple, obvious fixes – don't over-engineer
+- Challenge your own work before presenting it
+
+## 6. Autonomous Bug Fixing
+- When given a bug report: just fix it. Don't ask for hand-holding
+- Point at logs, errors, failing tests – then resolve them
+- Zero context switching required from the user
+- Go fix failing CI tests without being told how
+
+# Task Management
+1. **Plan First**: Write plan to `tasks/todo.md` with checkable items
+2. **Verify Plan**: Check in before starting implementation
+3. **Track Progress**: Mark items complete as you go
+4. **Explain Changes**: High-level summary at each step
+5. **Document Results**: Add review section to `tasks/todo.md`
+6. **Capture Lessons**: Update `tasks/lessons.md` after corrections
+
+# Core Principles
+- **Simplicity First**: Make every change as simple as possible. Impact minimal code.
+- **No Laziness**: Find root causes. No temporary fixes. Senior developer standards.
+- **Minimal Impact**: Changes should only touch what's necessary. Avoid introducing bugs.
