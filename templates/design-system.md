@@ -621,6 +621,76 @@ function auditChrome(slide) {
 
 For these, omit `titleText` from `applyChrome()`. `auditChrome()` skips the title check when no `title` node exists at the slide root.
 
+## The geometry contract — `auditFrame` (source guard) + `auditSlide` (output gate)
+
+**Root cause of the 2026-05-29 JPD off-spec slides (now fixed at the root):** the generator clones template frames and only replaces text, so output is only as correct as the frame. There used to be two divergent sources of truth — the harmonized **Template references** page and the un-harmonized **Templates 4** page (`50285:14832`), whose frames shipped pre-harmonization geometry (title 80–120px, 64px margins, body 20–30px, cards ~80px off the bottom). Cloning a stale frame produced a silently off-spec slide.
+
+**The root fix (2026-05-29 consolidation):** every generator template was harmonized and moved onto the **Template references** page; Templates 4 is `retired` / non-routable. There is now **one source of truth**, and it is verified — not assumed.
+
+**Two guards keep it that way (the contract lives in `registry.json → slideContract`):**
+
+1. **`auditFrame(frame, kind)` — the source guard (primary).** Audits a *template frame* against the contract + chrome presence. Run it over every registry template after any template edit; it must be empty for all. This catches drift at the source, so per-output repair is never needed. This is the standing regression test for the template library.
+
+2. **`auditSlide(slide, kind)` — the output gate (defense-in-depth).** Run at the END of every generated slide. Because templates now conform, this should always pass; if it ever fails, a frame has drifted — fix the frame (run `auditFrame` to find which), don't patch the slide. `kind` is `"content"` (default), `"intro"` (title 96 / body 40), or `"skip"` (covers, heroes, full-bleed, closing, clones of finished slides, custom one-offs — exempt).
+
+```js
+// Mirror of registry.slideContract.
+const CONTRACT = { metaY:48, titleX:48, titleY:115, titleSize:64, titleLH:110,
+  contentL:48, contentR:1872, contentTopY:287, bottomY:1032,
+  bodySize:28, introTitleSize:96, introBodySize:40 };
+
+function auditSlide(slide, kind = "content") {
+  if (kind === "skip") return [];
+  const issues = [];
+  const T = n => slide.findOne(x => x.type === "TEXT" && x.name === n);
+  const title = T("title"), body = T("body");
+  const ml = slide.findOne(x => x.type === "TEXT" && x.name === "meta-left");
+  if (ml && Math.round(ml.y) !== CONTRACT.metaY) issues.push({ node:"meta-left", y:Math.round(ml.y) });
+  if (title) {
+    const want = kind === "intro" ? CONTRACT.introTitleSize : CONTRACT.titleSize;
+    if (Math.round(title.fontSize) !== want) issues.push({ node:"title", size:Math.round(title.fontSize), want });
+  }
+  if (body) {
+    const want = kind === "intro" ? CONTRACT.introBodySize : CONTRACT.bodySize;
+    const bs = Math.round(body.fontSize);
+    // card-internal bodies (24/16) are valid; only the slide-level body slot must hit `want`
+    if (bs !== want && bs !== 24 && bs !== 16) issues.push({ node:"body", size:bs, want });
+  }
+  // content bounding box: direct children that are not chrome text and not the full-bleed bg
+  let L=1e9, R=-1e9, B=-1e9, n=0;
+  for (const c of slide.children) {
+    if (c.type === "TEXT") continue;
+    if (c.width >= 1900 && c.height >= 1000) continue;
+    L=Math.min(L,c.x); R=Math.max(R,c.x+c.width); B=Math.max(B,c.y+c.height); n++;
+  }
+  if (n) {
+    if (Math.abs(L - CONTRACT.contentL) > 1) issues.push({ content:"left", at:Math.round(L), want:CONTRACT.contentL });
+    if (Math.abs(R - CONTRACT.contentR) > 1) issues.push({ content:"right", at:Math.round(R), want:CONTRACT.contentR });
+    if (B < CONTRACT.bottomY - 12 || B > CONTRACT.bottomY + 8) issues.push({ content:"bottom", at:Math.round(B), want:CONTRACT.bottomY });
+  }
+  return issues;
+}
+```
+
+**`auditFrame` — the source guard.** Same checks as `auditSlide` but run over the *template frames* themselves (and it also requires `meta-left` + `meta-right` to exist). Run it across every `registry.json → templates` entry whenever templates change; the issue list must be empty for all. This is what proves the single source of truth is intact.
+
+```js
+function auditFrame(frame, kind = "content") {
+  const issues = auditSlide(frame, kind);            // reuse the same geometry checks
+  if (kind !== "skip") {
+    if (!frame.findOne(x => x.type==="TEXT" && x.name==="meta-left"))  issues.push({ node:"meta-left",  missing:true });
+    if (!frame.findOne(x => x.type==="TEXT" && x.name==="meta-right")) issues.push({ node:"meta-right", missing:true });
+  }
+  // NOTE: left/centered/partial-width layouts (quotes, logo-garden, info-left-*, info-center, split-top)
+  // legitimately don't span 48→1872 — treat their content L/R as informational, not failures.
+  return issues;
+}
+```
+
+**If `auditFrame` ever fails, fix the frame at the source** (snap title to 64@(48,115)/110, slide body to 28, content frame to x48/y287/w1824) and re-run the audit — never patch the cloned output per-slide. There is intentionally no routine "normalize the clone" step: the templates conform, so clones conform.
+
+**Single source of truth (done).** All shapes the generator needs — 4/5/6-cell bento, NN-split, 50/50 comparison, N-bullet info, title/chapter, quote, huge-fact, metrics, logo, product, checklist, timeline — now exist as harmonized frames on the **Template references** page, grouped into labelled "Harmonized · …" sections. Templates 4 is retired. So there is nothing to normalize on clone: pick the references template, set text, run `auditSlide` as the regression gate. If a new shape is needed, build it on the references page to the contract and run `auditFrame` before adding it to the registry.
+
 ## Creative escape hatch
 
 The presentation generator's primary path is **clone the closest reference template from the registry and replace text/image content**. Use this escape hatch only when no template fits — for example, content with 7+ distinct items, custom diagrams, or one-off pricing comparisons.

@@ -19,7 +19,7 @@ Read both files from the project root:
 
 ### `templates/registry.json`
 - `fileKey`: The Figma file key (`GkUiwJTK5Xi65AKw4MOjTL`)
-- `templatePageId`: The page containing all templates (`50285:14832`)
+- `templatePageId`: The canonical template page — **Template references** (`56881:463`)
 - `typography`: The typography system (font sizes, weights, colors, spacing rules)
 - `templates`: All templates with their slots, matchHints, and `flexible` metadata
 
@@ -90,7 +90,7 @@ For each extracted slide, select the best template from the registry using these
 
 ### Matching Priority
 
-The registry has two `templatePages`: **"Template references"** (status `primary`, page id `56881:463`) and **"Templates 4"** (status `deprecated`, id `50285:14832`). Each template entry has a `page` field plus a `status` field (`KEEP` / `OVERLAP` / `DEPRECATE`). Walk the priority list below — references-page templates come first, deprecated ones last.
+All templates live on the **"Template references"** page (`56881:463`, status `primary`). The **"Templates 4"** page (`50285:14832`) is `retired` / `routable: false` — never clone from it. Every `registry.json → templates` entry has `page: "Template references"` and `status: KEEP`; walk the priority list below to pick the best shape.
 
 1. **First slide** → opening title:
    - With imagery → `cover-with-product` (Template references)
@@ -122,13 +122,13 @@ The registry has two `templatePages`: **"Template references"** (status `primary
 25. **Checklist** → `template-checklist-bento` (OVERLAP)
 26. **Anything that fits no template above** → **CREATIVE ESCAPE HATCH** (build from scratch — see Creative Decision Rules)
 
-**DEPRECATE — do not use unless user explicitly opts in:** `template-bullets-4`, `-bullets-6`, `-bullets-8`, `template-technical-bullets`. The new pillar-grid / bento patterns above replace these for nearly every content shape that previously matched bullet templates.
+**Bullet templates (`template-bullets-4/6/8`, `template-technical-bullets`)** were harmonized and restored to the references page on 2026-05-29 (status `KEEP`): clean text-bullet grids with heading + body per item (4-up/6-up = 36px headings, 8-up = 28px, technical = 20px spec rows + a left image area). Prefer image-rich `pillar-grid-*` / `bento*` when the content suits imagery; reach for the bullet grids when you want a clean text-only list of headed points.
 
 ### Creative Decision Rules
 
 Before finalizing template selection, apply these judgment calls:
 
-**Prefer Template references over Templates 4.** When two candidates match (e.g., a 4-item shape could fit `pillar-grid-4up-image` OR `template-bento4`), pick the references-page entry. The references are the canonical Bluewater style; Templates 4 entries are kept for fallback only.
+**Every template lives on Template references — one canonical source.** As of 2026-05-29 all generator templates were harmonized and consolidated onto the **Template references** page; the **Templates 4** page is `retired` / `routable: false` (kept for history only). Never route to or clone from Templates 4. Every entry in `registry.json → templates` already points at a harmonized references frame, so a clone is on-spec by construction: clone → set text → done, no geometry post-processing.
 
 **Image-rich is better than text-only.** When a slide has 2–4 distinct items, prefer `pillar-grid-*` (image cards on top) over `template-bento*` (text-only). If no asset matches, the image cards render with FIG placeholders — visually clear that imagery is missing.
 
@@ -467,6 +467,16 @@ async function repinMetaRight(clone) {
 - Process slides one at a time (one `use_figma` call per slide)
 - For presentations with 15+ slides, inform the user about progress every 5 slides
 - If a slide fails, log the error and continue with the next slide
+
+### 5g. Audit slide geometry (regression gate)
+
+All registry templates now conform to `slideContract` at the source (every frame passes the `auditFrame` template-contract test — see `design-system.md`). So a clone is on-spec by construction. `auditSlide` is the **regression gate** that proves it — not a crutch you lean on to repair broken frames.
+
+**After building each slide, run `auditSlide(slide, kind)`** (defined in `design-system.md`). It checks the slide against `registry.json → slideContract` (margins 48, title 64@y115 / intro 96, slide body 28 / intro 40, content top y287, last element bottom y1032). `kind` is `"content"`, `"intro"`, or `"skip"` (covers/heroes/full-bleed/closing/clones of finished slides/custom one-offs).
+
+- If `auditSlide` returns issues, that means a **template frame has drifted** — STOP and fix the frame at the source (and run the `auditFrame` template-contract test to find any others), don't paper over it per-slide.
+- This is the executable counterpart to `auditChrome` but covers **margins, title size, card-body size, and card-bottom anchoring**, not just chrome position.
+- At the end of the build, re-run `auditSlide` across every generated slide as a final gate and report any remaining deviations in the summary.
 
 ## Step 6: Verify and Report
 
