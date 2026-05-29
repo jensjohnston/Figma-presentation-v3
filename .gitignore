@@ -1,1 +1,5 @@
 .DS_Store
+
+# local task scratch (keep lessons.md tracked)
+tasks/*
+!tasks/lessons.md
