@@ -1,0 +1,263 @@
+{
+  "fileKey": "GkUiwJTK5Xi65AKw4MOjTL",
+  "_doc": "Product packs: finished, on-brand product slides the generator can clone-and-rewrite. Mirrors templates/registry.json. Source of truth = Figma; this file is a generated index (rebuild via /index-product). Slots show the current (editable) text the generator rewrites; meta chrome, ™ shards, and decorative wordmarks are intentionally omitted. Images reference assets/library.json by assetKey. Validated by tools/validate_products.py.",
+  "roleVocabulary": ["hero", "key-specs", "how-it-works", "value-prop", "comparison", "pricing", "sustainability", "use-case", "cta"],
+  "products": {
+    "kitchen-station": {
+      "displayName": "Kitchen Station",
+      "pageId": "61219:17724",
+      "aliases": ["kitchen station", "kitchen-station", "kitchenstation", "kitchen station 1", "bluewater o", "liquid rock"],
+      "slides": [
+        {
+          "role": "hero",
+          "nodeId": "61219:17725",
+          "frameName": "ks-cover",
+          "matchHints": "Product cover / opening slide for Kitchen Station — full-bleed lifestyle render with the product title bottom-left.",
+          "slots": { "title": "Kitchen Station 1" }
+        },
+        {
+          "role": "how-it-works",
+          "nodeId": "61219:17731",
+          "frameName": "ks-how-it-works-3up",
+          "matchHints": "Three-step how-it-works: Purify → Mineralize → Dispense. Use for a process/3-step explainer of how the system makes water.",
+          "slots": {
+            "title": "Kitchen Station 1",
+            "body": "We turn any water source into clean, mineralized Bluewater.",
+            "cell-heading-1": "Purify", "cell-body-1": "SuperiorOsmosis™ removes contaminants down to the molecular level",
+            "cell-heading-2": "Mineralize", "cell-body-2": "Inline mineralization infuses Liquid Rock® electrolytes at exact dosages.",
+            "cell-heading-3": "Dispense", "cell-body-3": "Functional, mineralized water on demand — zero effort."
+          }
+        },
+        {
+          "role": "value-prop",
+          "nodeId": "61219:17868",
+          "frameName": "ks-statement-cafe",
+          "matchHints": "Emotive brand statement / origin story over a café backdrop — large hero body paragraph. Here: the Liquid Rock® mineral story.",
+          "slots": {
+            "title": "Liquid Rock®",
+            "body": "From Sweden’s ancient bedrock comes Liquid Rock® — a natural blend of electrolytes that rebuilds water for optimal hydration.\n\nOur scientists perfected a 2:1 calcium-to magnesium ratio, restoring essential \nminerals your body can truly absorb."
+          }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:17771",
+          "frameName": "ks-section-cafe",
+          "matchHints": "Section-divider over a café backdrop, title only — introduces a new chapter (here: Bluewater O).",
+          "slots": { "title": "Meet Bluewater O" }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:17777",
+          "frameName": "ks-range-3up",
+          "matchHints": "Bluewater O tap-control explainer — three faucet states (Municipal / Mineralized / Standby) as labeled cards.",
+          "slots": {
+            "title": "Bluewater O", "title-2": "let’s you tap for control.",
+            "cell-heading-1": "Municipal", "cell-body-1": "Orange means municipal water.",
+            "cell-heading-2": "Mineralized", "cell-body-2": "Spinning Blue means mineralized Bluewater.",
+            "cell-heading-3": "Standby", "cell-body-3": "When your faucet is not in use, the O blends into your kitchen."
+          }
+        },
+        {
+          "role": "value-prop",
+          "nodeId": "61219:17794",
+          "frameName": "ks-app-feature",
+          "matchHints": "App feature highlight — short punchy title + app screen + supporting paragraph. Here: 'Swipe for taste' Bluewater App.",
+          "slots": {
+            "title": "Swipe for taste.",
+            "body": "From feather-light to mountain-bold — your water now adapts to you. The Bluewater App lets you slide between four mineral profiles."
+          }
+        },
+        {
+          "role": "how-it-works",
+          "nodeId": "61219:17798",
+          "frameName": "ks-features-4up",
+          "matchHints": "Four-up bento of options/variants with app screens. Here: four mineral intensities (Light / Original / Medium / Bold).",
+          "slots": {
+            "title": "Four mineral intensities",
+            "cell-heading-1": "Light", "cell-body-1": "Crisp, low-mineral finish. \nThe water of the Mediterranean.",
+            "cell-heading-2": "Original", "cell-body-2": "Soft and balanced. Inspired by Swedish northern springs.",
+            "cell-heading-3": "Medium", "cell-body-3": "Fuller body, more presence. Inspired by the French Alps.",
+            "cell-heading-4": "Bold", "cell-body-4": "Rich mineral character. A trip to the Swiss Alps in a glass."
+          }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:17829",
+          "frameName": "ks-ecosystem",
+          "matchHints": "System/ecosystem overview — a grid of the components that make up the product (with one optional *footnote caption). Here: Purifier, Dosing pump, Bluewater O, Liquid Rock®, App, Control Box.",
+          "slots": {
+            "title": "Kitchen Station 1", "title-2": "components.",
+            "cell-heading-1": "Purifier", "cell-body-1": "Purifier compatible with all purifiers",
+            "cell-heading-2": "Dosing pump", "cell-body-2": "Adds precise doses of Liquid Rock® .",
+            "cell-heading-3": "Bluewater O", "cell-body-3": "Smart tap-to-use water control and monitoring.",
+            "cell-heading-4": "Liquid Rock®", "cell-body-4": "A natural, balanced blend of electrolytes.", "cell-caption-4": "*Sold separately",
+            "cell-heading-5": "Bluewater App", "cell-body-5": "Control your water from anywhere.",
+            "cell-heading-6": "Control Box", "cell-body-6": "The intelligent hub that connects all components."
+          }
+        }
+      ],
+      "content": {
+        "valueProps": [
+          "SuperiorOsmosis™ removes contaminants down to the molecular level",
+          "Inline mineralization infuses Liquid Rock® electrolytes at exact dosages",
+          "Functional, mineralized water on demand — zero effort",
+          "Four mineral intensities to match your taste: Light, Original, Medium, Bold",
+          "Liquid Rock® — a 2:1 calcium-to-magnesium electrolyte blend from Sweden's ancient bedrock"
+        ],
+        "components": ["Purifier", "Dosing pump", "Bluewater O", "Liquid Rock®", "Bluewater App", "Control Box"]
+      },
+      "images": [
+        { "assetKey": "kitchen-station-palma-lifestyle" },
+        { "assetKey": "liquid-rock-bottle-with-pump" },
+        { "assetKey": "bluewater-dosing-pump-front" },
+        { "assetKey": "bluewater-app-mineral-profiles" },
+        { "assetKey": "cafe-coffee-lifestyle-kitchen" }
+      ]
+    },
+    "purifiers": {
+      "displayName": "All purifiers",
+      "pageId": "61219:14889",
+      "aliases": ["purifier", "purifiers", "water purifier", "bluewater purifier", "cleone", "superiorosmosis", "superior osmosis"],
+      "slides": [
+        {
+          "role": "hero",
+          "nodeId": "61219:17965",
+          "frameName": "purifier-cover",
+          "matchHints": "Deck cover for the purifier range — very large title + cover image.",
+          "slots": { "title": "Bluewater Purifiers" }
+        },
+        {
+          "role": "how-it-works",
+          "nodeId": "61219:17971",
+          "frameName": "purifier-filtration-spectrum",
+          "matchHints": "Filtration-spectrum diagram — 'Every filter has a limit' mapped across the particle→SuperiorOsmosis micron scale. Use to explain where a technology sits on the filtration spectrum.",
+          "slots": {
+            "title": "Every filter has a limit.",
+            "body": "Bluewater SuperiorOsmosis™ technology removes them all.",
+            "spectrum-label-1": "Particle filtration", "spectrum-spec-1": ">1000-1.0 µm",
+            "spectrum-label-2": "Microfiltration", "spectrum-spec-2": ">1.0-0.1 µm",
+            "spectrum-label-3": "Ultrafiltration", "spectrum-spec-3": ">0.1-0.01 µm",
+            "spectrum-label-4": "Nanofiltration", "spectrum-spec-4": ">0.01-0.001 µm",
+            "spectrum-label-5": "Reverse osmosis", "spectrum-spec-5": ">0.001-0.0001 µm",
+            "spectrum-label-6": "SuperiorOsmosis™", "spectrum-spec-6": ">0.0001 µm"
+          }
+        },
+        {
+          "role": "value-prop",
+          "nodeId": "61219:18156",
+          "frameName": "purifier-tech-superiorosmosis",
+          "matchHints": "Technology value-prop with a headline stat and supporting mini-stats. Here: SuperiorOsmosis™, 99.7% contaminants removed, 0.0001 µm, up to 80% recovery, 4–6 yr membrane.",
+          "slots": {
+            "eyebrow-2": "Technology", "heading": "SuperiorOsmosis",
+            "body": "The world's most efficient compact water purification.",
+            "eyebrow": "Engineered for Purity", "stat-value": "99.7%",
+            "stat-label": "contaminants removed — including \nPFAS, microplastics, lead, bacteria, viruses, arsenic, chlorine and more.",
+            "cell-heading-1": "0.0001 μm", "cell-body-1": "Filtration level — 5,000× finer than standard carbon filters.",
+            "cell-heading-2": "Up to 80%", "cell-body-2": "Water recovery — vs. ~25% for \nconventional RO. 82% less waste.",
+            "cell-heading-3": "4–6 yrs", "cell-body-3": "Membrane life through continuous \nself-cleaning  (vs. 1–2 years standard RO)."
+          }
+        },
+        {
+          "role": "comparison",
+          "nodeId": "61219:18130",
+          "frameName": "purifier-options-3up",
+          "matchHints": "Lineup overview — three product options as cards, each with a one-line positioning statement. Here: Cleone / Spirit / Pro. (Plan originally mislabeled this 'certifications'.)",
+          "slots": {
+            "title": "Three options.",
+            "cell-heading-1": "Cleone", "cell-body-1": "Tank-based RO purification for apartments and small households.",
+            "cell-heading-2": "Spirit", "cell-body-2": "High-performance purification with direct flow. Fits under any standard counter.",
+            "cell-heading-3": "Pro", "cell-body-3": "Maximum direct flow output for large houses and heavy daily use."
+          }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:18007",
+          "frameName": "purifier-profile-cleone",
+          "matchHints": "Single-product profile — product name + descriptor, purification method block, and two stat blocks (recovery %, flow). Here: Cleone (tank-based RO, 1–2 people).",
+          "slots": {
+            "product-name": "Cleone",
+            "product-desc": "The smart choice for smaller-scale needs. An affordable and premium water purifier.",
+            "eyebrow": "Purification method", "heading": "Reverse osmosis",
+            "body": "Removes up to 99% of dissolved contaminants — including heavy metals, bacteria, viruses, and other harmful substances.",
+            "stat-prefix-1": "Up to", "stat-value-1": "50%", "stat-label-1": "Water recovery. Conventional \nRO reaches ~25%.",
+            "stat-prefix-2": "Up to", "stat-value-2": "2.75 L/min", "stat-label-2": "Flow from tank. Cleone produces up to 610 L/day. \n12 L tank required — flow rate depends on tank level."
+          }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:18042",
+          "frameName": "purifier-profile-spirit",
+          "matchHints": "Single-product profile (same template as Cleone/Pro). Here: Spirit (direct-flow SuperiorOsmosis, family home).",
+          "slots": {
+            "product-name": "Spirit",
+            "product-desc": "Powerful yet compact. Perfect for family homes.",
+            "eyebrow": "Purification method", "heading": "SuperiorOsmosis™",
+            "body": "Goes beyond ordinary filtration, using a self-cleaning ultra-membrane that removes up to 99.7% of contaminants for water that's pure, safe, and trusted.",
+            "stat-prefix-1": "Up to", "stat-value-1": "70%", "stat-label-1": "Water recovery. Conventional \nRO reaches ~25%.",
+            "stat-prefix-2": "Up to", "stat-value-2": "3 L/min", "stat-label-2": "Pure water flow rate. Spirit produces up to 3,800 L/day. No tank needed."
+          }
+        },
+        {
+          "role": "use-case",
+          "nodeId": "61219:18086",
+          "frameName": "purifier-profile-pro",
+          "matchHints": "Single-product profile (same template as Cleone/Spirit). Here: Pro (max direct-flow, large household).",
+          "slots": {
+            "product-name": "Pro",
+            "product-desc": "Made in Sweden. Powerful purifier. \nBuilt for large households.",
+            "eyebrow": "Purification method", "heading": "SuperiorOsmosis™",
+            "body": "Goes beyond ordinary filtration, using a self-cleaning ultra-membrane that removes up to 99.7% of contaminants for water that's pure, safe, and trusted.",
+            "stat-prefix-1": "Up to", "stat-value-1": "80%", "stat-label-1": "Water recovery. Conventional \nRO reaches ~25%.",
+            "stat-prefix-2": "Up to", "stat-value-2": "6 L/min", "stat-label-2": "Pure water flow rate. Pro produces up to 7,600 L/day. No tank needed."
+          }
+        },
+        {
+          "role": "comparison",
+          "nodeId": "61219:17997",
+          "frameName": "purifier-lineup",
+          "matchHints": "Lineup intro / decision prompt with all product renders — 'Which is right for you?' Use before a detailed comparison table.",
+          "slots": { "title": "Which Bluewater purifier is right for you?" }
+        },
+        {
+          "role": "comparison",
+          "nodeId": "61219:17872",
+          "frameName": "purifier-comparison-table",
+          "matchHints": "Full side-by-side spec table — three product columns across many spec rows (install size, purification rate, recovery, flow, technology, best-for, included, certifications).",
+          "slots": {
+            "col-heading-1": "Cleone", "col-heading-2": "Spirit", "col-heading-3": "Pro",
+            "row-label-1": "Installation (W×D×H)", "cell-1-1": "235×400×436 mm", "cell-1-2": "170x385x482 mm", "cell-1-3": "245x480x486 mm",
+            "row-label-2": "Water purification rate", "cell-2-1": "99%", "cell-2-2": "99.7%", "cell-2-3": "99.7%",
+            "row-label-3": "Recovery rate", "cell-3-1": "50%", "cell-3-2": "70%", "cell-3-3": "80%",
+            "row-label-4": "Flow per day", "cell-4-1": "Up to 610 L/day", "cell-4-2": "Up to 3,800 L/day", "cell-4-3": "Up to 7,600 L/day",
+            "row-label-5": "Purification technology", "cell-5-1": "Reverse osmosis", "cell-5-2": "SuperiorOsmosis™", "cell-5-3": "SuperiorOsmosis™",
+            "row-label-6": "Best for", "cell-6-1": "1–2 people", "cell-6-2": "Family home", "cell-6-3": "Large household",
+            "row-label-7": "Included", "cell-7-1": "Purifier, 12 L tank", "cell-7-2": "Purifier, no tank needed", "cell-7-3": "Purifier, no tank needed",
+            "row-label-8": "Certifications", "cell-8-1": "WQA - NSF/ANSI/CAN 372", "cell-8-2": "NSF/ANSI/CAN 372", "cell-8-3": "NSF/ANSI/CAN 372"
+          }
+        }
+      ],
+      "content": {
+        "keySpecs": [
+          "Cleone: 99% purification / 50% recovery / up to 610 L/day / tank-based reverse osmosis / best for 1–2 people",
+          "Spirit: 99.7% purification / 70% recovery / up to 3,800 L/day / SuperiorOsmosis™ direct flow / best for a family home",
+          "Pro: 99.7% purification / 80% recovery / up to 7,600 L/day / SuperiorOsmosis™ direct flow / best for a large household"
+        ],
+        "valueProps": [
+          "SuperiorOsmosis™ removes up to 99.7% of contaminants — PFAS, microplastics, lead, bacteria, viruses, arsenic, chlorine and more",
+          "Up to 80% water recovery vs ~25% for conventional RO — 82% less waste",
+          "Filtration down to 0.0001 µm — 5,000× finer than standard carbon filters",
+          "Self-cleaning membrane lasts 4–6 years vs 1–2 years for standard RO"
+        ]
+      },
+      "images": [
+        { "assetKey": "bluewater-purifiers-cover-hero" },
+        { "assetKey": "bluewater-cleone-purifier-front" },
+        { "assetKey": "bluewater-cleone-purifier-side" },
+        { "assetKey": "bluewater-spirit-purifier-front" },
+        { "assetKey": "bluewater-pro-purifier-front" },
+        { "assetKey": "superiorosmosis-membrane-zoom" },
+        { "assetKey": "cafe-coffee-lifestyle-purifier" }
+      ]
+    }
+  }
+}

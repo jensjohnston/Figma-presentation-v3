@@ -1,11 +1,73 @@
 {
   "assetPageId": "51124:14",
   "assetPageName": "Brand Assets",
+  "note": "Asset nodeIds are global — product-image entries below live on the Kitchen Station (61219:17724) and All purifiers (61219:14889) pages, not the Brand Assets page. The generator clones by nodeId, so page location does not matter.",
   "assets": {
     "cafe-station-1-hero": {
       "nodeId": "51121:6380",
       "tags": ["product", "cafe-station", "hero"],
       "description": "Café Station 1 front-facing product hero shot"
+    },
+
+    "kitchen-station-palma-lifestyle": {
+      "nodeId": "61219:17726",
+      "tags": ["product", "kitchen-station", "hero", "lifestyle"],
+      "description": "Kitchen Station 1 (Palma) product render in a café/kitchen setting — countertop hero"
+    },
+    "cafe-coffee-lifestyle-kitchen": {
+      "nodeId": "61219:17869",
+      "tags": ["lifestyle", "cafe", "kitchen-station"],
+      "description": "Café coffee-bar lifestyle backdrop used on the Kitchen Station Liquid Rock statement slide"
+    },
+    "cafe-coffee-lifestyle-purifier": {
+      "nodeId": "61219:17972",
+      "tags": ["lifestyle", "cafe", "purifier"],
+      "description": "Café/kitchen lifestyle backdrop used on the purifier filtration-spectrum slide"
+    },
+    "liquid-rock-bottle-with-pump": {
+      "nodeId": "61219:17844",
+      "tags": ["product", "liquid-rock", "accessory", "kitchen-station"],
+      "description": "Liquid Rock® mineral bottle with dosing-pump bubble"
+    },
+    "bluewater-dosing-pump-front": {
+      "nodeId": "61219:17849",
+      "tags": ["product", "dosing-pump", "accessory", "kitchen-station"],
+      "description": "Bluewater dosing pump, front view"
+    },
+    "bluewater-app-mineral-profiles": {
+      "nodeId": "61219:17796",
+      "tags": ["product", "app", "kitchen-station"],
+      "description": "Bluewater App screen — slide between four mineral profiles (Light/Original/Medium/Bold)"
+    },
+    "bluewater-cleone-purifier-front": {
+      "nodeId": "61219:17998",
+      "tags": ["product", "purifier", "cleone"],
+      "description": "Cleone tank-based purifier, front view (high-res lineup render)"
+    },
+    "bluewater-cleone-purifier-side": {
+      "nodeId": "61219:18017",
+      "tags": ["product", "purifier", "cleone"],
+      "description": "Cleone purifier, side view"
+    },
+    "bluewater-spirit-purifier-front": {
+      "nodeId": "61219:18000",
+      "tags": ["product", "purifier", "spirit"],
+      "description": "Spirit direct-flow purifier, front view (high-res lineup render)"
+    },
+    "bluewater-pro-purifier-front": {
+      "nodeId": "61219:17840",
+      "tags": ["product", "purifier", "pro"],
+      "description": "Pro direct-flow purifier, front view"
+    },
+    "superiorosmosis-membrane-zoom": {
+      "nodeId": "61219:18012",
+      "tags": ["product", "purifier", "technology", "superiorosmosis"],
+      "description": "SuperiorOsmosis™ membrane macro/zoom detail"
+    },
+    "bluewater-purifiers-cover-hero": {
+      "nodeId": "61219:17966",
+      "tags": ["product", "purifier", "hero"],
+      "description": "All-purifiers deck cover hero image"
     }
   }
 }
