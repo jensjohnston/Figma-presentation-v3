@@ -69,15 +69,17 @@ Follow the **existing** convention from `templates/registry.json` + `design-syst
 
 ## Phase 0 — Archive duplicate purifier slides
 
-### Task 1: Move stale purifier frames off the Template references page
+> **RUNTIME NOTE (2026-05-30, executed):** Review page created — **"Archive — old purifiers (review)" `61244:2`**. All 9 stale frames moved off `56881:463` (now 69 children, 0 of the 9 remain) and confirmed on the review page. **`products/registry.json` must NOT reference `61244:2`** — it is a holding pen for human review only.
+
+### Task 1: Move stale purifier frames off the Template references page ✅ DONE
 
 **Files:** Figma only (no repo files).
 
-- [ ] **Step 1: Load the figma-use skill**
+- [x] **Step 1: Load the figma-use skill**
 
 Invoke the `figma-use` skill (MANDATORY before any `use_figma` call).
 
-- [ ] **Step 2: Create a review page and move the 9 stale frames**
+- [x] **Step 2: Create a review page and move the 9 stale frames**
 
 Run via `use_figma` (file `GkUiwJTK5Xi65AKw4MOjTL`):
 
@@ -95,17 +97,24 @@ return { movedCount: moved.length, moved, pageId: page.id };
 
 Expected: `movedCount: 9`.
 
-- [ ] **Step 3: Verify removal from the template page**
+- [x] **Step 3: Verify removal from the template page**
 
-Run `get_metadata` on `56881:463`; confirm none of the 9 IDs remain as children (re-run the page-children parse from the session, or grep the saved dump). Expected: 0 of the 9 present on `56881:463`; all 9 present under the new page.
+Run `get_metadata` on `56881:463`; confirm none of the 9 IDs remain as children (re-run the page-children parse from the session, or grep the saved dump). Expected: 0 of the 9 present on `56881:463`; all 9 present under the new page. **Verified: 0 remain on template, 9 on review page.**
 
-- [ ] **Step 4: Commit (doc note only — Figma has no git)**
+- [x] **Step 4: Commit (doc note only — Figma has no git)**
 
-No repo change yet; record the new review-page id in the plan's runtime notes for Task 9 (registry must NOT reference it).
+No repo change yet; record the new review-page id in the plan's runtime notes for Task 9 (registry must NOT reference it). **Done — see RUNTIME NOTE above (`61244:2`).**
 
 ---
 
 ## Phase 1 — Semantic layer naming (17 slides)
+
+> **RUNTIME NOTE (2026-05-30, executed — all 17 slides named, verification PASSED: 17 unique frame names, 0 content-named text nodes remaining, 17 frames captured to `tasks/product-index-scratch.json`).** Deviations from the pre-captured plan, each confirmed against actual Figma content:
+> - **™ shards → `title-trademark` / `heading-trademark`** (not the generic `title-end`). Every shard turned out to be a ™ glyph; this matches Task 12's established `heading-trademark` and tells the generator "fixed brand mark, don't rewrite."
+> - **`18130` was mislabeled** in the plan as `purifier-certifications-3up` (role sustainability). Actual content = a Cleone/Spirit/Pro options overview ("Three options."). Renamed **`purifier-options-3up`, role `comparison`**. The "cert logos" the plan saw are small NSF/seal badges on the product cards (images, handled in Phase 2). No standalone certifications slide exists.
+> - **Profiles (cleone/spirit/pro) are richer than the plan**: each has TWO stat blocks, not one. Mapped recovery%=`stat-*-1` (headline differentiator, consistent across all three), flow=`stat-*-2`; method block = `eyebrow`/`heading`/`body`.
+> - **Custom slot vocab where a unique layout required it**: `spectrum-label-N`/`spectrum-spec-N` (filtration diagram), `wordmark`/`wordmark-2` (decorative SuperiorOsmosis brand-mark graphics — cleanup only, excluded from registry content slots), `body-2`/`title-2`/`eyebrow-2` (second instances).
+> - Right-side supporting sentences (e.g. ks-how-it-works `body`) named `body`, not `eyebrow` — they're 24px prose, not 32px Medium eyebrow labels.
 
 Each task below is one slide: read it, rename its frame + content-named text nodes per the Convention, capture slot text to scratch, verify. Every task starts assuming the `figma-use` skill is already loaded (from Task 1); reload it if starting a fresh session.
 
@@ -176,17 +185,19 @@ Frame → `purifier-lineup`. `Which Bluewater purifier is right for you?`(18005)
 ### Task 18: `purifier-comparison-table` (`61219:17872`)
 Frame → `purifier-comparison-table`. Container frames `Specs Table`/`Header`/`Row`/`C0..C3`/`Div` keep. Column headers: `Cleone`(17878)→`col-heading-1`, `Spirit`(17880)→`col-heading-2`, `Pro`(17882)→`col-heading-3`; empty header (17876) → `row-label-header`. Row labels (C0 cells): `Installation (W×D×H)`(17886)→`row-label-1`, `Water purification rate`(17896)→`row-label-2`, `Recovery rate`(17906)→`row-label-3`, `Flow per day`(17916)→`row-label-4`, `Purification technology`(17926)→`row-label-5`, `Best for`(17936)→`row-label-6`, `Included`(17946)→`row-label-7`, `Certifications`(17956)→`row-label-8`. Data cells `cell-<row>-<col>`: row1 (17888/17890/17892)=`cell-1-1/1-2/1-3`; row2 (17898/17900/17902); row3 (17908/17910/17912); row4 (17918/17920/17922); row5 (17928/17930/17932); row6 (17938/17940/17942); row7 (17948/17950/17952); row8 (17958/17960/17962). `meta-left/right` keep.
 
-- [ ] **Phase 1 verification (after Tasks 2–18):** Run a scan over fresh `get_metadata` of both pages confirming: every slide frame has its unique target name; no text node's `name` equals its own rendered text (no content-named text nodes remain); `tasks/product-index-scratch.json` has an entry for all 17 frames. Commit any repo artifacts (scratch is gitignored).
+- [x] **Phase 1 verification (after Tasks 2–18):** Run a scan over fresh `get_metadata` of both pages confirming: every slide frame has its unique target name; no text node's `name` equals its own rendered text (no content-named text nodes remain); `tasks/product-index-scratch.json` has an entry for all 17 frames. Commit any repo artifacts (scratch is gitignored). **PASSED — 17/17 frames, 0 content-named nodes, scratch valid + gitignored. No committable repo artifacts in Phase 1 (scratch is gitignored; only the plan doc changed).**
 
 ---
 
 ## Phase 2 — Image index
 
-### Task 19: Inventory product images and add them to `assets/library.json`
+### Task 19: Inventory product images and add them to `assets/library.json` ✅ DONE
+
+> **RUNTIME NOTE (2026-05-30):** Indexed **12 curated product/lifestyle images** (+1 existing = 13 total) with SEO keys. Deduped by subject; picked the cleanest/largest source node per subject. **Deliberately NOT indexed** (ambiguous without exporting — avoided mislabeling per SEO rule): cert badges `image 10/11/12` (can't confirm WQA vs NSF), blue-sphere graphic `image 11` (18032), generic `product-image`/`Bento-3` fills, the `Spritit_View` node on ks-cover. Re-run `/index-product` later to add any of these once identified.
 
 **Files:** Modify `assets/library.json`.
 
-- [ ] **Step 1: Collect image-bearing nodes**
+- [x] **Step 1: Collect image-bearing nodes**
 
 From the captured metadata, list every `rounded-rectangle`/image node under the 17 slides whose name is a render filename (e.g. `KS1_Palma_Stills_3.1.1`, `Cleone - Side 1`, `Spirit - Front 4`, `Pro - Front 1`, `Osmosis _Zoom_thumb 1`, `iPhone 16e`, `image 10/11/12`, café `Coffee_Gemini…`, `image (3) 1`, `Bottle_with pump bubble 4`, `Pump_Front 1`). Deduplicate by visual subject.
 
@@ -223,7 +234,9 @@ git commit -m "feat(assets): index Kitchen Station + purifier product images"
 
 ## Phase 3 — Product registry + validator
 
-### Task 20: Write the registry validator (the regression gate)
+> **RUNTIME NOTE (2026-05-30):** Phase 3 complete — validator created and `products/registry.json` built with all 17 slides. `python3 tools/validate_products.py` → **`OK — 2 products, 17 slides`**. Aliases trimmed from the plan's draft to drop generic single words (`pro`, bare `spirit`, `reverse osmosis`, `kitchen`) that would false-match unrelated decks; kept distinctive ones (`cleone`, `superiorosmosis`, `purifier`, `kitchen station`, `bluewater o`, `liquid rock`). Detection needs only enough distinctive hits to identify the product, then loads the whole pack.
+
+### Task 20: Write the registry validator (the regression gate) ✅ DONE
 
 **Files:** Create `tools/validate_products.py`.
 
@@ -461,3 +474,36 @@ git add -A && git commit -m "chore: product content library increment complete"
 **Type/name consistency:** Slot vocabulary, role set, and node IDs are used identically across naming tasks, the validator (`ROLES`), and the registry. Frame names in the tables match those referenced in Tasks 2–18 and the registry `frameName` fields.
 
 **Scope:** One cohesive feature delivered in 5 phases with commit checkpoints; Phase boundaries (0→1→2→3→4→5) are natural review gates if you prefer to pause between them.
+
+---
+
+## Review — Execution Complete (2026-05-30)
+
+All 5 phases executed in-session. Outcomes:
+
+| Phase | Result |
+|---|---|
+| 0 — Archive duplicates | 9 stale purifier frames moved off Template references (`56881:463`, back to 69 children) to new review page **"Archive — old purifiers (review)" `61244:2`**. Nothing deleted — Jens to vet. |
+| 1 — Semantic naming | All **17 slides** named (8 Kitchen Station + 9 purifier). Verification: 17 unique frame names, **0 content-named text nodes remaining**. Pilot (`ks-cover`) screenshot-confirmed zero visual change. |
+| 2 — Image index | **12 product/lifestyle images** added to `assets/library.json` (13 total). Ambiguous ones (cert badges, decorative sphere) deliberately skipped + noted. |
+| 3 — Validator + registry | `tools/validate_products.py` + `products/registry.json` (2 products, 17 slides). `validate_products.py` → **`OK — 2 products, 17 slides`**. |
+| 4 — `/index-product` | `.claude/commands/index-product.md` authored (self-contained: convention + roles + validate gate). |
+| 5 — Generator + docs | Product detection + product-first wired into `generate-presentation.md` (incl. "Cloning a product slide" build pattern). `CLAUDE.md` documents the layer + "Adding a New Product". |
+
+**Detection dry-run (Task 25 Step 2):** deck text mentioning "Kitchen Station 1" + "Cleone … purifier" →
+detected **both** products (kitchen-station via `kitchen station`; purifiers via `purifier`, `cleone`).
+A spec-comparison slide intent → product-first pick **`purifier-comparison-table` (`61219:17872`)** from
+the three comparison-role candidates. A deck with none of the alias terms → `[]` → from-scratch path
+unchanged. ✅
+
+**Key deviations from the as-written plan** (all confirmed against live Figma — see per-phase RUNTIME NOTEs above):
+1. `18130` was mislabeled "certifications/sustainability" → corrected to **`purifier-options-3up`, role `comparison`**.
+2. ™ shards → `title-trademark`/`heading-trademark` (not generic `title-end`).
+3. Profiles carry **two** stat blocks each (recovery `-1` + flow `-2`), not one.
+4. Aliases trimmed to drop generic single words that would false-match unrelated decks.
+5. Curated image index (12) rather than indexing every raw node — ambiguous subjects skipped, not mislabeled.
+
+**Repo artifacts (uncommitted — awaiting Jens's git preference):** `products/registry.json` (new),
+`tools/validate_products.py` (new), `.claude/commands/index-product.md` (new), `assets/library.json` (mod),
+`.claude/commands/generate-presentation.md` (mod), `CLAUDE.md` (mod), this plan doc (mod).
+`tasks/product-index-scratch.json` is gitignored.

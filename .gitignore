@@ -3,3 +3,7 @@
 # local task scratch (keep lessons.md tracked)
 tasks/*
 !tasks/lessons.md
+
+# python bytecode
+__pycache__/
+*.pyc
