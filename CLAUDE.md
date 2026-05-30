@@ -12,7 +12,11 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 
 - **No build step, no runtime, no dependencies.** Claude is the engine.
 - `templates/registry.json` — Maps the Bluewater slide templates to Figma node IDs and content slots
+- `products/registry.json` — **Product packs**: finished, on-brand product slides (Kitchen Station, purifiers) the generator can clone-and-rewrite (see Product Content Library below)
+- `assets/library.json` — Brand + product image index (keyed by SEO name → Figma nodeId, tags, description)
 - `.claude/commands/generate-presentation.md` — Slash command orchestrating the full pipeline
+- `.claude/commands/index-product.md` — Slash command that indexes a finished product deck into `products/registry.json`
+- `tools/validate_products.py` — Regression gate for `products/registry.json`
 - Figma file: `GkUiwJTK5Xi65AKw4MOjTL` (Bluewater 2026)
 - Template page: "Template references" (id: `56881:463`) — single canonical source. ("Templates 4" `50285:14832` is retired.)
 
@@ -42,6 +46,21 @@ Templates use **Suisse Int'l** (Semi Bold, Medium, Regular). Custom fonts are up
 1. Design the template in Figma on the "Template references" page, conforming to `slideContract` (48px margins, title 64@y115, body 28, content y287→1032)
 2. Use semantic text layer names: `title`, `body`, `bullet-heading-N`, `bullet-body-N`, `cell-heading-N`, `cell-body-N`, etc.; include `meta-left` / `meta-right`
 3. Run `auditFrame` (design-system.md) — must pass — then add an entry to `templates/registry.json` with nodeId, slots, and matchHints
+
+## Product Content Library
+
+A **product-aware** layer on top of the generic templates. `products/registry.json` holds **product packs** — finished, on-brand, hand-built product slides the team is happy with, indexed so the generator can reuse them:
+
+- Each product has `aliases` (detection terms), `slides[]` (each with `role`, `nodeId`, `frameName`, `matchHints`, and `slots` = the editable text), a `content` block (verified `valueProps`/`keySpecs`), and `images[]` (`assetKey` refs into `assets/library.json`).
+- **Role vocabulary** (controlled, shared): `hero · key-specs · how-it-works · value-prop · comparison · pricing · sustainability · use-case · cta`.
+- **Product-first matching**: when a deck mentions a known product, `generate-presentation` checks the product pack *before* generic templates. If a product slide's `role` + `matchHints` fit an incoming slide, it **clones the finished slide and rewrites only the text** (always-rewrite); otherwise it falls back to from-scratch (today's behavior), still preferring product `content` + images. Purely additive — zero product matches → identical behavior to before.
+- **Single source of truth**: product slides live only in Figma (registry is a generated mirror); images live only in `assets/library.json` (referenced by `assetKey`, never duplicated).
+
+### Adding a New Product
+
+1. Build the finished product deck in Figma on its own page (any page — node IDs are global).
+2. Run `/index-product <slug>` — Claude names the layers semantically, indexes images into `assets/library.json`, proposes `role` + `matchHints` per slide (you confirm), and writes the `products/registry.json` entry.
+3. It runs `python3 tools/validate_products.py` — must end `OK`.
 
 ## 1. Plan Mode Default
 - Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)

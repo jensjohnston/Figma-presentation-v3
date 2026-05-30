@@ -37,6 +37,20 @@ This contains:
 
 You will use this registry throughout the process.
 
+### `products/registry.json` (product packs)
+
+Also read `products/registry.json`. This is the **product-aware** layer: finished,
+on-brand, hand-built product slides the team is happy with (e.g. Kitchen Station, the
+purifier range), each indexed as a **product pack**:
+- `products.<slug>.aliases` — detection terms (used in Step 2 to decide which products a deck is about)
+- `products.<slug>.slides[]` — finished slides with `role`, `nodeId`, `frameName`, `matchHints`, and `slots` (the editable text the generator rewrites)
+- `products.<slug>.content` — verified `valueProps` / `keySpecs` / `components` to fill thin slides
+- `products.<slug>.images[]` — `assetKey` references into `assets/library.json`
+
+These are **finished shells**: when a product slide fits an incoming slide, you **clone it and
+rewrite only the text** (Step 4 product-first rule). This is purely additive — if no product is
+detected or none fits, the pipeline behaves exactly as before (from-scratch with generic templates).
+
 ## Step 2: Read the Source PDF
 
 Use the Read tool to read the PDF file provided by the user. Claude can read PDFs natively.
@@ -51,6 +65,15 @@ For each page/slide in the PDF, extract:
 7. **Visual layout hints** — is it a comparison? A grid? A single statement?
 
 Build a structured manifest of all slides before proceeding.
+
+### Detect products (additive)
+
+After building the slide manifest, **scan the deck's full text** (all extracted titles, bodies,
+bullets) against every `products.<slug>.aliases` list in `products/registry.json`. Record the set
+of **matched product slugs** (zero, one, or several). For each matched product, load its pack
+(slides + content + images) — you will prefer it during matching (Step 4) and filling (Step 5).
+
+If **no** product matches, skip the product-first path entirely and proceed exactly as today.
 
 ## Step 3: Presentation Preferences
 
@@ -87,6 +110,24 @@ Carry the user's choices forward into Steps 4 and 5. When presenting the slide p
 ## Step 4: Match Each Slide to a Template
 
 For each extracted slide, select the best template from the registry using these rules (in priority order):
+
+### Product-first (check BEFORE template matching)
+
+If one or more products were detected in Step 2, check the product pack(s) **before** reaching for
+a generic template:
+
+- If a matched product has a slide whose **`role` + `matchHints` fit this incoming slide's intent**,
+  **clone that finished product slide and rewrite only its text slots** from the incoming PDF
+  (apply the Step 3 length/voice choices to the rewrite). Where the PDF is thin, fill from the
+  product's `content` block (`valueProps` / `keySpecs` / `components`) rather than inventing facts.
+  Then place any referenced product `images` (by `assetKey` → `assets/library.json`).
+- Role gives the coarse filter (does the deck's intent map to a role the product has?), `matchHints`
+  resolves the fine call. **Ties resolve toward reusing the product slide** — it is already on-brand and approved.
+- Only if **no** product slide fits this slide → fall through to the generic Matching Priority below
+  (today's behavior), but still **prefer the product's `content` + `images`** when filling those generic templates.
+
+Product slides are finished shells — see Step 5b "Cloning a product slide" for the build pattern.
+This path is skipped entirely when no product was detected.
 
 ### Matching Priority
 
@@ -310,6 +351,41 @@ await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 
 return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ```
+
+### 5b-product. Cloning a product slide (product-first path)
+
+When Step 4 chose a **product slide** instead of a generic template, the build is the same
+clone-move-fill pattern as 5b, with three differences:
+1. The source page is the product's `pageId` (from `products/registry.json`), not the template page.
+2. The slide is a **finished, on-brand shell** — only rewrite text slots. Do not restructure it.
+3. Fill slots by their **semantic name** (the `slots` keys in the registry: `title`, `body`,
+   `cell-heading-N`, `product-name`, `stat-value-1`, `col-heading-N`, `row-label-N`, `cell-<r>-<c>`,
+   etc.). Leave any slot you have no content for at its current (verified) text — these are real
+   product facts, not placeholders. **Never touch** `meta-*`, `wordmark*`, or `*-trademark` nodes.
+
+```javascript
+// --- Slide N: PRODUCT clone (e.g. purifiers / purifier-comparison-table) ---
+const productPage = figma.root.children.find(p => p.id === "PRODUCT_PAGE_ID"); // products.<slug>.pageId
+await figma.setCurrentPageAsync(productPage);
+const source = await figma.getNodeByIdAsync("PRODUCT_SLIDE_NODE_ID");          // slide.nodeId
+const clone = source.clone();
+
+const outputPage = figma.root.children.find(p => p.id === "OUTPUT_PAGE_ID");
+await figma.setCurrentPageAsync(outputPage);
+outputPage.appendChild(clone);
+clone.x = 0;
+clone.y = SLIDE_INDEX * 1280;
+
+// Reuse setText / findTextByName / loadFontAndSetText from 5b. Set only the slots you have copy for:
+await setText(clone, "title", "REWRITTEN TITLE");
+await setText(clone, "body", "REWRITTEN BODY");
+// duplicate-named cells: use setTextByIndex(clone, "cell-heading-1", 0, "...") etc. as in 5b
+return { slideIndex: SLIDE_INDEX, nodeId: clone.id, product: "PRODUCT_SLUG", frame: "FRAME_NAME" };
+```
+
+**Audit:** product slides are finished/custom layouts — audit them with `kind: "skip"` (covers
+"clones of finished slides"), so the slideContract content-grid checks don't fight their bespoke
+geometry. Re-pin `meta-right` and re-anchor bottom content only if you hid a slot (you usually won't).
 
 ### 5c. Table Template Special Handling
 
