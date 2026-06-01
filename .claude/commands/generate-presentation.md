@@ -355,13 +355,27 @@ return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ### 5b-product. Cloning a product slide (product-first path)
 
 When Step 4 chose a **product slide** instead of a generic template, the build is the same
-clone-move-fill pattern as 5b, with three differences:
+clone-move-fill pattern as 5b, with these differences:
 1. The source page is the product's `pageId` (from `products/registry.json`), not the template page.
 2. The slide is a **finished, on-brand shell** — only rewrite text slots. Do not restructure it.
 3. Fill slots by their **semantic name** (the `slots` keys in the registry: `title`, `body`,
    `cell-heading-N`, `product-name`, `stat-value-1`, `col-heading-N`, `row-label-N`, `cell-<r>-<c>`,
    etc.). Leave any slot you have no content for at its current (verified) text — these are real
-   product facts, not placeholders. **Never touch** `meta-*`, `wordmark*`, or `*-trademark` nodes.
+   product facts, not placeholders. **Never rewrite** `wordmark*` or `*-trademark` nodes — those are
+   fixed brand marks (the ™/® and decorative SuperiorOsmosis wordmarks), NOT content.
+4. **Re-chrome every cloned slide (REQUIRED).** A product source slide carries *its own* deck's
+   chrome — a stale page number (e.g. `meta-right` "3/14" from the original 14-slide deck), a
+   cover-specific `meta-top-right`, or **no meta at all** (the Kitchen Station slides were built
+   without it). `meta-*` is per-deck chrome, not brand content — so call `applyDeckChrome(clone, …)`
+   on every clone to set a consistent `meta-left` (deck label) + `meta-right` ("N/total" for THIS
+   deck), re-pin `meta-right` to the right edge, and create the nodes when the source lacked them.
+5. **Fit copy to the shell — never overflow (REQUIRED).** Each shell text box is sized for its
+   *original* copy length (most are `textAutoResize:"HEIGHT"`: fixed width, auto-growing height, so
+   longer copy silently grows DOWN into the elements below — no error). So **rewrite each slot to
+   roughly the original slot's length** (the original text is in the registry `slots`); if your copy
+   is materially longer, condense it (apply the Step 3 "Condense" treatment to that slot regardless
+   of the deck-wide choice). Fill via `fitShellText`, which condenses-then-shrinks-then-flags as a
+   safety net. Anything it flags as `overflow:true` goes in the Step 6 summary for a human glance.
 
 ```javascript
 // --- Slide N: PRODUCT clone (e.g. purifiers / purifier-comparison-table) ---
@@ -376,16 +390,56 @@ outputPage.appendChild(clone);
 clone.x = 0;
 clone.y = SLIDE_INDEX * 1280;
 
-// Reuse setText / findTextByName / loadFontAndSetText from 5b. Set only the slots you have copy for:
-await setText(clone, "title", "REWRITTEN TITLE");
-await setText(clone, "body", "REWRITTEN BODY");
-// duplicate-named cells: use setTextByIndex(clone, "cell-heading-1", 0, "...") etc. as in 5b
-return { slideIndex: SLIDE_INDEX, nodeId: clone.id, product: "PRODUCT_SLUG", frame: "FRAME_NAME" };
+// Fill slots with overflow protection (reuse setText from 5b inside fitShellText):
+const flags = [];
+flags.push(await fitShellText(clone, "title", "REWRITTEN TITLE"));   // condense to ~original length
+flags.push(await fitShellText(clone, "body",  "REWRITTEN BODY"));
+// duplicate-named cells: fitShellText resolves by name; for the Nth duplicate use the index variant.
+
+// Re-chrome with THIS deck's labels + page number (update-or-create; covers keep their top label).
+await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });
+
+return { slideIndex: SLIDE_INDEX, nodeId: clone.id, product: "PRODUCT_SLUG", frame: "FRAME_NAME",
+         overflow: flags.filter(f => f && f.overflow).map(f => f.slot) };
+```
+
+```javascript
+// Update-or-create per-deck chrome on a cloned slide. (mkText: see design-system.md applyChrome.)
+async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, isDark = false }) {
+  const gray = isDark ? {r:0xA1/255,g:0xA1/255,b:0xAA/255} : {r:0x71/255,g:0x71/255,b:0x7A/255};
+  const find = (name) => slide.findOne(n => n.type === "TEXT" && n.name === name);
+  // Cover convention: a single meta-top-right label, no page number — just refresh its text.
+  const coverMeta = find("meta-top-right") || find("meta-top-left");
+  if (coverMeta && !find("meta-left")) { await setText(coverMeta, coverMeta.name, metaLeftText); return { cover: coverMeta.id }; }
+  // Content slide: deck label (left) + page number (right), created if the source had none.
+  let ml = find("meta-left");
+  if (ml) await setText(ml, "meta-left", metaLeftText);
+  else ml = mkText(slide, metaLeftText, { size:14, style:"Regular", color:gray, x:48, y:48, name:"meta-left" });
+  let mr = find("meta-right");
+  const page = `${slideNumber}/${totalSlides}`;
+  if (mr) await setText(mr, "meta-right", page);
+  else { mr = mkText(slide, page, { size:14, style:"Regular", color:gray, name:"meta-right" }); mr.y = 48; }
+  mr.textAlignHorizontal = "RIGHT"; mr.x = 1872 - mr.width;   // always re-pin right edge to x=1872
+  return { metaLeft: ml.id, metaRight: mr.id };
+}
+
+// Fill a shell slot without overflowing it: condense (your job, in the value) → shrink → flag.
+async function fitShellText(slide, slotName, value, { maxGrowth = 1.15 } = {}) {
+  const t = slide.findOne(n => n.type === "TEXT" && n.name === slotName);
+  if (!t) return { slot: slotName, set: false };
+  const origH = t.height;                                 // height the shell was designed for
+  await setText(t, slotName, value);                      // HEIGHT auto-resizes on new characters
+  let shrunk = 0;
+  while (t.height > origH * maxGrowth && t.fontSize > 14 && shrunk < 6) { t.fontSize = t.fontSize - 2; shrunk++; }
+  return { slot: slotName, set: true, origH: Math.round(origH), grewTo: Math.round(t.height),
+           shrunkBy: shrunk * 2, overflow: t.height > origH * maxGrowth };
+}
 ```
 
 **Audit:** product slides are finished/custom layouts — audit them with `kind: "skip"` (covers
 "clones of finished slides"), so the slideContract content-grid checks don't fight their bespoke
-geometry. Re-pin `meta-right` and re-anchor bottom content only if you hid a slot (you usually won't).
+geometry. `applyDeckChrome` already re-pins `meta-right`; re-anchor bottom content only if you hid a
+slot (you usually won't). Report any `fitShellText` `overflow:true` slots in the Step 6 summary.
 
 ### 5c. Table Template Special Handling
 
