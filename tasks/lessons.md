@@ -1,5 +1,16 @@
 # Lessons
 
+## 2026-06-01 — Cloning a finished slide means re-chroming and re-fitting it, not freezing it
+**Correction:** After the product-first demo, the user flagged that meta labels were inconsistent across the generated slides (one had letter-spacing, one had no meta at all, one showed a stale "3/14" on a 5-slide deck) and that a rewritten body overflowed its box.
+
+**Root cause — I conflated two different kinds of "leave it alone."** In the product-clone instructions I wrote "**Never touch `meta-*`, `wordmark*`, or `*-trademark`**." That correctly protects brand content (the ™/® shards and decorative wordmarks) — but `meta-*` is **per-deck chrome**, not brand content. A cloned slide carries its *source* deck's chrome verbatim: a stale page number, a cover-only `meta-top-right`, or (Kitchen Station slides) no meta at all. Freezing it guarantees inconsistency.
+
+**Second root cause — a finished slide is a shell sized for a specific copy length.** Its text boxes are `textAutoResize:"HEIGHT"` (fixed width, auto-growing height). Pour in longer copy and the box silently grows DOWN into the elements below — no error, just overflow. I rewrote a 54-char line as 104 chars and it doubled in height.
+
+**Fix:** the clone path must (1) run `applyDeckChrome(clone, …)` on **every** slide — update-or-create `meta-left` (deck label) + `meta-right` ("N/total" for THIS deck), re-pin the right edge, create where missing; and (2) fit copy to the shell — rewrite to ~the original slot length, with `fitShellText` as a condense→shrink→flag safety net. Both now live in `generate-presentation.md` §5b-product.
+
+**Rule for myself:** "Reuse a finished asset" ≠ "freeze every node." Split the nodes into *brand-fixed* (never rewrite: wordmarks, ™), *per-deck chrome* (always refresh: meta, page numbers), and *content* (rewrite to fit). And a shell has a **size budget** — new copy must fit the box the designer sized, or be condensed/shrunk, never left to overflow silently.
+
 ## 2026-05-29 — Root cause vs. band-aid: never compensate downstream for a broken source of truth
 **Correction:** User flagged that the `normalizeSlide` / "normalize every clone" prevention I added felt like a temporary fix, not a senior root-cause solution. They were right.
 
