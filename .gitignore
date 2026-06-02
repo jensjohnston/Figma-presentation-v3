@@ -7,3 +7,7 @@ tasks/*
 # python bytecode
 __pycache__/
 *.pyc
+
+# HubSpot CLI auth (contains secrets — never commit)
+hubspot.config.yml
+*.hubspot.config.yml
