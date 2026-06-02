@@ -1,0 +1,27 @@
+{
+  "_doc": "Newsletter packs: finished, on-brand product newsletters the generator clones-and-rewrites (mirrors products/registry.json). templatePath = the coded email template in the HubSpot Design Manager; its source of truth is renderers/email/templates/product-newsletter.html (upload via `hs cms upload`). Slots are filled by overriding content.widgets[name] (see renderers/email/HUBSPOT-INTEGRATION.md). heroAsset references assets/library.json by key (rendered from Figma + hosted in HubSpot File Manager at generate time). Validated by tools/validate_newsletters.py.",
+  "hubspot": {
+    "portalId": "8076719",
+    "templatePath": "bluewater-designer/product-newsletter.html"
+  },
+  "slotVocabulary": ["hero_image", "eyebrow", "headline", "intro", "spec_1", "spec_2", "spec_3", "cta"],
+  "newsletters": {
+    "kitchen-station": {
+      "displayName": "Kitchen Station",
+      "product": "kitchen-station",
+      "heroAsset": "kitchen-station-palma-lifestyle",
+      "subject": "Meet Kitchen Station — clean, mineralized water on demand",
+      "previewText": "Clean, mineralized water on demand — meet Kitchen Station.",
+      "ctaUrl": "https://www.bluewatergroup.com",
+      "slots": {
+        "eyebrow": "New from Bluewater",
+        "headline": "Kitchen Station",
+        "intro": "Turn any water source into clean, mineralized Bluewater — purified, remineralized, and dispensed on demand.",
+        "spec_1": { "heading": "Purify", "body": "SuperiorOsmosis™ removes contaminants down to the molecular level." },
+        "spec_2": { "heading": "Mineralize", "body": "Inline mineralization infuses Liquid Rock® electrolytes at exact dosages." },
+        "spec_3": { "heading": "Dispense", "body": "Functional, mineralized water on demand — zero effort." },
+        "cta": "Explore Kitchen Station"
+      }
+    }
+  }
+}

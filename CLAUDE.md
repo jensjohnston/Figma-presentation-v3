@@ -62,6 +62,32 @@ A **product-aware** layer on top of the generic templates. `products/registry.js
 2. Run `/index-product <slug>` — Claude names the layers semantically, indexes images into `assets/library.json`, proposes `role` + `matchHints` per slide (you confirm), and writes the `products/registry.json` entry.
 3. It runs `python3 tools/validate_products.py` — must end `OK`.
 
+## Email Renderer (Newsletters → HubSpot)
+
+A second output renderer alongside the Figma slide pipeline: turns a product into a
+finished, on-brand **draft** HubSpot marketing email. Built on the same shared core
+(`products/registry.json` + `assets/library.json`) — a newsletter and a slide for the
+same product read the same verified facts.
+
+- **One command:** `/generate-newsletter <product-slug>` → a finished draft appears in
+  HubSpot automatically (Marketing → Email). **Draft only — never published/sent;** a
+  human reviews and sends.
+- **Coded template:** `renderers/email/templates/product-newsletter.html` (source of
+  truth) is uploaded to the HubSpot Design Manager via `hs cms upload`. Named HubL
+  module slots (`hero_image · eyebrow · headline · intro · spec_1-3 · cta`) are filled by
+  overriding `content.widgets`.
+- **Registry:** `renderers/email/newsletters/registry.json` — newsletter packs (finished
+  slot copy + `heroAsset` + `product` ref), mirroring `products/registry.json`. Gate:
+  `python3 tools/validate_newsletters.py` (must end `OK`).
+- **Engine:** `tools/hs_newsletter.py` — deterministic plumbing (Figma node → File
+  Manager image → create draft). `generate --slug` is the one-shot path.
+- **Auth (hybrid):** Private App token at `~/.hubspot_token` (scopes `content` + `files`)
+  for drafts + image hosting; `hs` CLI / PAK (`cms.source_code.write`) for template
+  uploads. Full details + the verified API in `renderers/email/HUBSPOT-INTEGRATION.md`.
+- **Email constraints:** 600px single column, table layout, **Helvetica, Arial,
+  sans-serif** (no web fonts — Suisse Int'l is Figma-only), inline styles, CAN-SPAM
+  footer. Brand colors from `core/brand-tokens.json`.
+
 ## 1. Plan Mode Default
 - Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
 - If something goes sideways, STOP and re-plan immediately – don't keep pushing
