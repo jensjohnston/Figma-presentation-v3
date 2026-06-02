@@ -1,0 +1,63 @@
+{
+  "_doc": "Medium-agnostic Bluewater brand tokens. Canonical color source for the email renderer; the Figma renderer still reads colors from templates/design-system.md (repoint later if desired). Font stacks differ per medium because email cannot use custom web fonts.",
+  "colors": {
+    "gray": {
+      "white": "#FFFFFF",
+      "50": "#FAFAFA",
+      "100": "#F4F4F5",
+      "200": "#E4E4E7",
+      "300": "#D4D4D8",
+      "400": "#A1A1AA",
+      "500": "#71717A",
+      "600": "#52525B",
+      "700": "#3F3F46",
+      "800": "#27272A",
+      "900": "#18181B",
+      "950": "#09090B"
+    },
+    "blue": {
+      "50": "#F0F5FF",
+      "100": "#DBEAFE",
+      "200": "#BFDBFE",
+      "300": "#93C5FD",
+      "400": "#60A5FA",
+      "500": "#3B82F6",
+      "600": "#2563EB",
+      "700": "#1D4ED8",
+      "800": "#1E40AF",
+      "900": "#153E88",
+      "950": "#00205B"
+    },
+    "rose": {
+      "50": "#FFF1F2",
+      "100": "#FFE4E6",
+      "200": "#FECACA",
+      "300": "#FDA4AF",
+      "400": "#FF637E",
+      "500": "#F43F5E",
+      "600": "#EC003F",
+      "700": "#BE123C",
+      "800": "#A50036",
+      "900": "#881337",
+      "950": "#4D0218"
+    },
+    "green": {
+      "50": "#F0FCF5",
+      "100": "#DBFCE8",
+      "200": "#BAF7D1",
+      "300": "#87F0AB",
+      "400": "#4ADE80",
+      "500": "#21C45E",
+      "600": "#17A34A",
+      "700": "#14803D",
+      "800": "#176633",
+      "900": "#14542E",
+      "950": "#052E17"
+    }
+  },
+  "fontStacks": {
+    "figma": "Suisse Int'l",
+    "email": "Helvetica, Arial, sans-serif"
+  },
+  "typescaleRatio": 1.2
+}
