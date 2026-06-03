@@ -36,7 +36,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See renderers/email/design-system.md (reverse-engineered from reference email 187950269215).
 FF = "Helvetica,Arial,sans-serif"
 ACCENT = "#2563EB"   # blue/600 — buttons + links (canonical email accent, both themes)
-BODY_WEIGHT = "500"  # body copy is medium (clients without a 500 face round to the nearest)
+BODY_WEIGHT = "600"  # body copy is semibold (Jens's call — guarantees visible weight on Arial/Helvetica)
 
 # Per-variant color themes. light = default; dark = Emergency Station (inverted).
 THEMES = {

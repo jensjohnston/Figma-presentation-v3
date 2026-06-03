@@ -47,7 +47,7 @@ Family: `Helvetica, Arial, sans-serif` (`fontStacks.email`). One ramp, three rol
 |---|---|---|---|---|
 | **Hero headline** | 37px / 115% | center | `#000000` | true black |
 | **Section / feature headline** | 30px / 115% | left | `#18181B` | gray/900 |
-| **Body** | 16px / 145% **medium (500)** | left | `#71717A` | gray/500 |
+| **Body** | 16px / 145% **semibold (600)** | left | `#71717A` | gray/500 |
 | **Body lead sentence** | 16px / 145% **bold** | left | `#71717A` | gray/500, `<strong>` |
 | **Button label** | 16px **bold** | — | `#FFFFFF` | white |
 | **Footer** | 12px | center | `#23496D` | HubSpot default — **see improvement #4** |
@@ -57,10 +57,10 @@ Notes
   — **harmonize to one** (improvement #2).
 - Body is `gray/500` (`#71717A`) here — lighter than the current engine's intro color
   `gray/600` (`#52525B`). The reference (lighter) wins; reconcile the engine to it.
-- Lead sentences are set bold to open a feature, then medium for the explanation.
-- **Body weight is medium (`font-weight:500`)**, not regular — applied to intro, feature body,
-  and the spec-grid continuation. Web-safe stacks without a 500 face round to the nearest weight
-  (Apple Mail / iOS render Helvetica Neue medium correctly). Headings and `<strong>` leads remain bold.
+- Lead sentences are set bold to open a feature, then semibold for the explanation.
+- **Body weight is semibold (`font-weight:600`)**, not regular — applied to intro, feature body,
+  and the spec-grid continuation, so the weight is visible even on web-safe Arial/Helvetica.
+  Headings and `<strong>` leads remain bold (700). Controlled by `BODY_WEIGHT` in `hs_newsletter.py`.
 
 ---
 
@@ -203,6 +203,7 @@ Same structure (masthead, hero, feature rows, spec grid, footer) — only the to
   `bluewater-designer/product-newsletter-dark.html`); the light template is untouched.
 - A pack opts in with `"variant": "dark"`; the engine then picks `hubspot.templatePathDark`
   and the dark color theme. Default (no `variant`) stays light.
-- **Logo caveat:** no reverse/white Bluewater logo asset exists yet, so the dark template uses a
-  **white masthead band** (black logo) above the dark body. Once a white logo is hosted, swap the
-  masthead to dark for a fully inverted look.
+- **Logo:** the dark masthead uses a **reverse/white Bluewater logo**, divider-bracketed (gray/800
+  `#27272A`), on the dark body. The white logo was derived from the black source (luminance → alpha,
+  transparent PNG) and hosted at
+  `…/hubfs/8076719/bluewater-designer/Bluewater_Logo_Horizontal_White_RGB.png`.
