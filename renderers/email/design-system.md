@@ -47,7 +47,7 @@ Family: `Helvetica, Arial, sans-serif` (`fontStacks.email`). One ramp, three rol
 |---|---|---|---|---|
 | **Hero headline** | 37px / 115% | center | `#000000` | true black |
 | **Section / feature headline** | 30px / 115% | left | `#18181B` | gray/900 |
-| **Body** | 16px / 145% | left | `#71717A` | gray/500 |
+| **Body** | 16px / 145% **medium (500)** | left | `#71717A` | gray/500 |
 | **Body lead sentence** | 16px / 145% **bold** | left | `#71717A` | gray/500, `<strong>` |
 | **Button label** | 16px **bold** | — | `#FFFFFF` | white |
 | **Footer** | 12px | center | `#23496D` | HubSpot default — **see improvement #4** |
@@ -57,7 +57,10 @@ Notes
   — **harmonize to one** (improvement #2).
 - Body is `gray/500` (`#71717A`) here — lighter than the current engine's intro color
   `gray/600` (`#52525B`). The reference (lighter) wins; reconcile the engine to it.
-- Lead sentences are set bold to open a feature, then regular for the explanation.
+- Lead sentences are set bold to open a feature, then medium for the explanation.
+- **Body weight is medium (`font-weight:500`)**, not regular — applied to intro, feature body,
+  and the spec-grid continuation. Web-safe stacks without a 500 face round to the nearest weight
+  (Apple Mail / iOS render Helvetica Neue medium correctly). Headings and `<strong>` leads remain bold.
 
 ---
 
@@ -183,11 +186,23 @@ All of the following are now live in `product-newsletter.html` + `hs_newsletter.
 is produced by `/generate-newsletter <slug>` against `product-newsletter.html`; the only
 variation between products is the slot content (hero headline, features, specs, images).
 
-### Planned variant — Emergency Station (inverted / dark)
-Emergency Station emails invert the palette: **content background gray/950 `#09090B`** with
-**body text ~gray/400 `#A1A1AA`** and white/near-white headings. Same structure (masthead,
-hero, feature rows, spec grid, footer) — only the color tokens flip. Button stays blue/600
-(it reads well on dark). The masthead would need the **white/reverse** Bluewater logo asset.
-**Not built yet** — when needed, add it as a second coded template (e.g.
-`product-newsletter-dark.html`) selected per-pack via a `variant` field, so the light template
-stays untouched.
+### Variant — Emergency Station (inverted / dark) — BUILT 2026-06-03
+Emergency Station emails invert the palette via the `dark` theme:
+
+| Role | Light | Dark |
+|---|---|---|
+| Content bg | `#FFFFFF` | gray/950 `#09090B` (page `#000000`) |
+| Heading / ink | gray/900 `#18181B` | gray/50 `#FAFAFA` |
+| Body | gray/500 `#71717A` | gray/400 `#A1A1AA` |
+| Spec divider | gray/200 `#E4E4E7` | gray/700 `#3F3F46` |
+| Button | blue/600 `#2563EB` | blue/600 `#2563EB` (reads on dark) |
+| Footer links | blue/600 | blue/400 `#60A5FA` |
+
+Same structure (masthead, hero, feature rows, spec grid, footer) — only the tokens flip.
+- Template: `renderers/email/templates/product-newsletter-dark.html` (uploaded as
+  `bluewater-designer/product-newsletter-dark.html`); the light template is untouched.
+- A pack opts in with `"variant": "dark"`; the engine then picks `hubspot.templatePathDark`
+  and the dark color theme. Default (no `variant`) stays light.
+- **Logo caveat:** no reverse/white Bluewater logo asset exists yet, so the dark template uses a
+  **white masthead band** (black logo) above the dark body. Once a white logo is hosted, swap the
+  masthead to dark for a fully inverted look.

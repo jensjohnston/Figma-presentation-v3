@@ -21,18 +21,25 @@ def main():
     products = json.load(open(root / "products" / "registry.json")).get("products", {})
     asset_keys = set(json.load(open(root / "assets" / "library.json")).get("assets", {}))
 
+    hub = reg.get("hubspot", {})
     errors = []
-    if not reg.get("hubspot", {}).get("templatePath"):
+    if not hub.get("templatePath"):
         errors.append("hubspot.templatePath is missing")
     newsletters = reg.get("newsletters", {})
     if not newsletters:
         errors.append("no newsletters defined")
     for slug, n in newsletters.items():
-        for field in ("displayName", "product", "heroHeadline", "features"):
+        for field in ("displayName", "heroHeadline", "features"):
             if field not in n:
                 errors.append(f"{slug}: missing '{field}'")
-        if n.get("product") not in products:
+        # product is an optional link to the shared content core; validate only if present
+        if "product" in n and n.get("product") not in products:
             errors.append(f"{slug}: product {n.get('product')!r} not in products/registry.json")
+        variant = n.get("variant", "light")
+        if variant not in ("light", "dark"):
+            errors.append(f"{slug}: unknown variant {variant!r} (expected light or dark)")
+        if variant == "dark" and not hub.get("templatePathDark"):
+            errors.append(f"{slug}: variant dark but hubspot.templatePathDark is missing")
         features = n.get("features", [])
         if not features:
             errors.append(f"{slug}: features is empty")

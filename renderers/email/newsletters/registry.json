@@ -2,7 +2,8 @@
   "_doc": "Newsletter packs: finished, on-brand product newsletters the generator clones-and-rewrites (mirrors products/registry.json). templatePath = the coded email template in the HubSpot Design Manager; its source of truth is renderers/email/templates/product-newsletter.html (upload via `hs cms upload`). The template renders a logo masthead, a centered heroHeadline, an optional intro, and a stack of feature rows. Each feature has an `image` (an assetKey into assets/library.json, rendered from Figma + hosted in HubSpot File Manager at generate time — or a direct https URL), a `headline`, a `body`, and an optional `ctaLabel`/`ctaUrl`. Slots are filled by overriding content.widgets[name] (see renderers/email/HUBSPOT-INTEGRATION.md). System: renderers/email/design-system.md. Validated by tools/validate_newsletters.py.",
   "hubspot": {
     "portalId": "8076719",
-    "templatePath": "bluewater-designer/product-newsletter.html"
+    "templatePath": "bluewater-designer/product-newsletter.html",
+    "templatePathDark": "bluewater-designer/product-newsletter-dark.html"
   },
   "slotVocabulary": ["hero_headline", "intro", "features", "specs"],
   "newsletters": {
@@ -45,6 +46,42 @@
         { "heading": "Liquid Rock® minerals.", "body": "A 2:1 calcium-to-magnesium electrolyte blend from Sweden's ancient bedrock." },
         { "heading": "Four mineral intensities.", "body": "Light, Original, Medium, and Bold — matched to your taste." },
         { "heading": "On demand, zero effort.", "body": "Functional, mineralized water straight from the tap." }
+      ]
+    },
+    "emergency-station": {
+      "displayName": "Emergency Station",
+      "variant": "dark",
+      "subject": "Introducing Emergency Station™",
+      "previewText": "Pure, mineral-enriched water whenever you need it — built for emergencies.",
+      "heroHeadline": "Clean Water, Anywhere",
+      "intro": "Meet the Bluewater Emergency Station™ — a blend of innovation, reliability, and sustainability for emergency hydration.",
+      "ctaUrl": "https://www.bluewatergroup.com/en-gb/bluewater-stations/emergency-station",
+      "features": [
+        {
+          "image": "https://8076719.fs1.hubspotusercontent-na1.net/hubfs/8076719/EMW%20-%20Closed%20-%20Duo1.png",
+          "headline": "Built for Emergencies",
+          "body": "<strong>The Emergency Station™ is designed for humanitarian organizations, defense, emergency response, and off-grid events</strong> — a seamless blend of advanced technology and ease of use.",
+          "ctaLabel": "Learn more"
+        },
+        {
+          "image": "https://8076719.fs1.hubspotusercontent-na1.net/hubfs/8076719/EMW%20-%20Open%20-%20Duo2.png",
+          "headline": "Pure, Mineral-Enriched Water",
+          "body": "Our system gives you pure, mineral-enriched water whenever you need it — clean water in emergencies, with innovation that helps the environment.",
+          "ctaLabel": "Learn more"
+        },
+        {
+          "image": "https://8076719.fs1.hubspotusercontent-na1.net/hubfs/8076719/EMW%20-%20Closed%20-%20Zoom2.png",
+          "headline": "Rapid, Reliable Deployment",
+          "body": "Designed for quick setup and easy use, delivering up to 16.5 litres per minute to meet the high-demand needs of emergency scenarios.",
+          "ctaLabel": "Learn more"
+        }
+      ],
+      "specs": [
+        { "heading": "Reliable Purity.", "body": "99.7% purification with SuperiorOsmosis™ — every drop free from contaminants." },
+        { "heading": "Rapid Deployment.", "body": "Quick setup and easy use for immediate access to clean water." },
+        { "heading": "High Capacity.", "body": "Up to 16.5 litres per minute for high-demand scenarios." },
+        { "heading": "Durability.", "body": "Built to withstand harsh conditions for long-lasting performance." },
+        { "heading": "Eco-Friendly.", "body": "Reduces single-use plastic bottles, promoting sustainability." }
       ]
     }
   }

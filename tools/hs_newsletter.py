@@ -35,9 +35,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Brand tokens (mirror of core/brand-tokens.json — email font stack + key colors).
 # See renderers/email/design-system.md (reverse-engineered from reference email 187950269215).
 FF = "Helvetica,Arial,sans-serif"
-ACCENT = "#2563EB"  # blue/600 — buttons + links (canonical email accent)
-INK = "#18181B"     # gray/900 — hero + feature headlines (one ink)
-BODY = "#71717A"    # gray/500 — intro + feature body
+ACCENT = "#2563EB"   # blue/600 — buttons + links (canonical email accent, both themes)
+BODY_WEIGHT = "500"  # body copy is medium (clients without a 500 face round to the nearest)
+
+# Per-variant color themes. light = default; dark = Emergency Station (inverted).
+THEMES = {
+    "light": {"ink": "#18181B", "body": "#71717A", "divider": "#E4E4E7"},  # gray 900/500/200
+    "dark":  {"ink": "#FAFAFA", "body": "#A1A1AA", "divider": "#3F3F46"},  # gray 50/400/700
+}
 
 
 def _read_token(path):
@@ -123,13 +128,13 @@ def create_draft(payload):
 # Layout mirrors the reference email: logo masthead -> centered hero headline -> optional
 # intro -> N stacked feature rows (image, headline, body, button). See design-system.md.
 
-def _hero_headline(t):
+def _hero_headline(t, th):
     return (f"<h1 style='margin:0; font-size:37px; line-height:115%; text-align:center; "
-            f"color:{INK}; font-family:{FF};'>{t}</h1>")
+            f"color:{th['ink']}; font-family:{FF};'>{t}</h1>")
 
-def _intro(t):
-    return (f"<p style='margin:0; font-size:16px; line-height:145%; text-align:center; "
-            f"color:{BODY}; font-family:{FF};'>{t}</p>")
+def _intro(t, th):
+    return (f"<p style='margin:0; font-size:16px; line-height:145%; font-weight:{BODY_WEIGHT}; "
+            f"text-align:center; color:{th['body']}; font-family:{FF};'>{t}</p>")
 
 def _button(label, url):
     return (f"<table role='presentation' cellpadding='0' cellspacing='0' border='0'><tr>"
@@ -138,7 +143,7 @@ def _button(label, url):
             f"font-size:16px; font-weight:bold; color:#FFFFFF; text-decoration:none; border-radius:25px;'>{label}</a>"
             f"</td></tr></table>")
 
-def _feature_row(img_url, headline, body, label, url, alt):
+def _feature_row(img_url, headline, body, label, url, alt, th):
     """One stacked feature: full-width image -> headline -> body -> left button. 48px gap below."""
     return (
         f"<table role='presentation' width='100%' cellpadding='0' cellspacing='0' border='0' style='margin:0 0 48px;'>"
@@ -146,16 +151,17 @@ def _feature_row(img_url, headline, body, label, url, alt):
         f"<a href='{url}'><img src='{img_url}' width='552' alt='{alt}' "
         f"style='display:block; width:100%; max-width:552px; height:auto; border:0;'></a></td></tr>"
         f"<tr><td style='padding:0 0 8px; font-family:{FF};'>"
-        f"<h2 style='margin:0; font-size:30px; line-height:115%; color:{INK}; font-family:{FF};'>{headline}</h2></td></tr>"
+        f"<h2 style='margin:0; font-size:30px; line-height:115%; color:{th['ink']}; font-family:{FF};'>{headline}</h2></td></tr>"
         f"<tr><td style='padding:0 0 16px; font-family:{FF};'>"
-        f"<p style='margin:0; font-size:16px; line-height:145%; color:{BODY}; font-family:{FF};'>{body}</p></td></tr>"
+        f"<p style='margin:0; font-size:16px; line-height:145%; font-weight:{BODY_WEIGHT}; "
+        f"color:{th['body']}; font-family:{FF};'>{body}</p></td></tr>"
         f"<tr><td>{_button(label, url)}</td></tr>"
         f"</table>")
 
 
-def _spec_grid(specs):
+def _spec_grid(specs, th):
     """A 2-up grid of small spec items, each with a divider rule above (Apple-style).
-    Each spec is {heading, body} -> bold lead + muted continuation. Cells stack on mobile."""
+    Each spec is {heading, body} -> bold lead + medium continuation. Cells stack on mobile."""
     if not specs:
         return ""
     rows = []
@@ -164,10 +170,10 @@ def _spec_grid(specs):
         tds = []
         for j, s in enumerate(pair):
             pad = "16px 12px 28px 0" if j == 0 else "16px 0 28px 12px"
-            item = (f"<strong style='color:{INK};'>{s.get('heading','')}</strong> "
-                    f"<span style='color:{BODY};'>{s.get('body','')}</span>")
+            item = (f"<strong style='color:{th['ink']};'>{s.get('heading','')}</strong> "
+                    f"<span style='font-weight:{BODY_WEIGHT}; color:{th['body']};'>{s.get('body','')}</span>")
             tds.append(f"<td class='bw-grid-cell' valign='top' width='50%' "
-                       f"style='padding:{pad}; border-top:1px solid #E4E4E7; font-family:{FF}; "
+                       f"style='padding:{pad}; border-top:1px solid {th['divider']}; font-family:{FF}; "
                        f"font-size:15px; line-height:145%;'>{item}</td>")
         if len(pair) == 1:  # keep the grid balanced on an odd count
             tds.append("<td class='bw-grid-cell' width='50%' style='padding:0;'>&nbsp;</td>")
@@ -197,21 +203,30 @@ def generate(slug):
     if not features:
         sys.exit(f"newsletter {slug!r} has no features")
 
+    variant = n.get("variant", "light")
+    th = THEMES.get(variant)
+    if not th:
+        sys.exit(f"unknown variant {variant!r} (expected one of {list(THEMES)})")
+    hub = reg["hubspot"]
+    template_path = hub["templatePathDark"] if variant == "dark" else hub["templatePath"]
+    if not template_path:
+        sys.exit(f"variant {variant!r} has no template path in registry hubspot block")
+
     rows = []
     for f in features:
         img_url = _resolve_image(f, lib, slug)
         alt = f.get("alt", f.get("headline", ""))
         rows.append(_feature_row(img_url, f["headline"], f["body"],
                                  f.get("ctaLabel", "Learn more"),
-                                 f.get("ctaUrl", n.get("ctaUrl", "#")), alt))
+                                 f.get("ctaUrl", n.get("ctaUrl", "#")), alt, th))
 
     widgets = {
-        "hero_headline": _hero_headline(n["heroHeadline"]),
+        "hero_headline": _hero_headline(n["heroHeadline"], th),
         # always send intro (empty blanks the slot, so the template default never leaks)
-        "intro": _intro(n["intro"]) if n.get("intro") else "",
+        "intro": _intro(n["intro"], th) if n.get("intro") else "",
         "features": "".join(rows),
         # always send specs (empty blanks the slot when a pack has none)
-        "specs": _spec_grid(n.get("specs", [])),
+        "specs": _spec_grid(n.get("specs", []), th),
         "preview_text": {"type": "text", "name": "preview_text",
                          "body": {"value": n.get("previewText", "")}},
     }
@@ -219,7 +234,7 @@ def generate(slug):
     return create_draft({
         "name": f"Bluewater Newsletter — {n['displayName']}",
         "subject": n.get("subject", n["displayName"]),
-        "templatePath": reg["hubspot"]["templatePath"],
+        "templatePath": template_path,
         "widgets": widgets,
     })
 
