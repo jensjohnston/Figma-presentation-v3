@@ -133,6 +133,8 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **No bottom meta.** Slides end at the content. The 48px bottom padding is the only space below the last content element. Do not place page counters or section labels at the bottom — they live in the top meta row only.
 
+**Titles end with a period.** Every slide title/headline ends in a full stop (brand rule, shared with the newsletter renderer) — e.g. "Reverse osmosis in plain English." — **unless** it already ends in terminal punctuation (a question "…Safe?" or "!"). Applies to the `title` node and hero headings; not to eyebrows, subtitles, body, labels, or meta. When cloning a template, add the period if the source title lacks one.
+
 **Long-title cap:** Slide titles may wrap to **maximum 2 rows** at 64 Semi Bold 110%. If the content won't fit in 2 rows, shorten the title or split it into a shorter title plus a `subtitle`. 3+ row titles are not allowed.
 
 **No widows (multi-line titles & display text):** a wrapped title (or any large display string) must never leave a **single word alone on the last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to titles, hero headings, and any 2-line display copy.

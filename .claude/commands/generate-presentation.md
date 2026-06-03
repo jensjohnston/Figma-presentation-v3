@@ -193,6 +193,7 @@ When using the escape hatch, follow the **Creative escape hatch** section in `te
 
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
+- **Titles end with a period** (brand rule): every slide `title`/headline ends in a full stop — unless it already ends in terminal punctuation (`?`/`!`). Add the dot when filling or cloning. Does not apply to eyebrows, subtitles, body, labels, or meta. See `design-system.md` → "Titles end with a period."
 - **Content length**: If "Keep original", use verbatim text. If "Condense", rewrite shorter. If "Expand", add detail.
 - **Voice**: If "Keep original", preserve the source tone. If "Bluewater brand voice", rewrite in brand voice (or use `brand/voice-guide.md` if available).
 - If text is too long for a slot regardless of length choice, rewrite it more concisely while preserving meaning
