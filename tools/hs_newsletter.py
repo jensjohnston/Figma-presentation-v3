@@ -128,9 +128,16 @@ def create_draft(payload):
 # Layout mirrors the reference email: logo masthead -> centered hero headline -> optional
 # intro -> N stacked feature rows (image, headline, body, button). See design-system.md.
 
+def _ensure_dot(text):
+    """Brand rule: headlines end with a period — unless they already end in terminal
+    punctuation (e.g. a question like 'Is Your Tap Water Safe?')."""
+    t = (text or "").rstrip()
+    return t if (not t or t[-1] in ".!?…") else t + "."
+
+
 def _hero_headline(t, th):
     return (f"<h1 style='margin:0; font-size:37px; line-height:115%; text-align:center; "
-            f"color:{th['ink']}; font-family:{FF};'>{t}</h1>")
+            f"color:{th['ink']}; font-family:{FF};'>{_ensure_dot(t)}</h1>")
 
 def _intro(t, th):
     return (f"<p style='margin:0; font-size:16px; line-height:145%; font-weight:{BODY_WEIGHT}; "
@@ -151,7 +158,7 @@ def _feature_row(img_url, headline, body, label, url, alt, th):
         f"<a href='{url}'><img src='{img_url}' width='552' alt='{alt}' "
         f"style='display:block; width:100%; max-width:552px; height:auto; border:0;'></a></td></tr>"
         f"<tr><td style='padding:0 0 8px; font-family:{FF};'>"
-        f"<h2 style='margin:0; font-size:30px; line-height:115%; color:{th['ink']}; font-family:{FF};'>{headline}</h2></td></tr>"
+        f"<h2 style='margin:0; font-size:30px; line-height:115%; color:{th['ink']}; font-family:{FF};'>{_ensure_dot(headline)}</h2></td></tr>"
         f"<tr><td style='padding:0 0 16px; font-family:{FF};'>"
         f"<p style='margin:0; font-size:16px; line-height:145%; font-weight:{BODY_WEIGHT}; "
         f"color:{th['body']}; font-family:{FF};'>{body}</p></td></tr>"

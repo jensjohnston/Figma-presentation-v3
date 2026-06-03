@@ -61,6 +61,9 @@ Notes
 - **Body weight is semibold (`font-weight:600`)**, not regular — applied to intro, feature body,
   and the spec-grid continuation, so the weight is visible even on web-safe Arial/Helvetica.
   Headings and `<strong>` leads remain bold (700). Controlled by `BODY_WEIGHT` in `hs_newsletter.py`.
+- **Headlines end with a period.** The hero headline and every feature headline end in a full stop
+  (brand rule) — unless they already end in terminal punctuation (e.g. a question, "…Safe?").
+  Enforced in code by `_ensure_dot()` in `hs_newsletter.py`, so registry copy needn't include the dot.
 
 ---
 

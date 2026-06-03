@@ -39,7 +39,9 @@ Auth is already configured: `~/.hubspot_token` (Private App) + `~/.figma_token`.
        - `image`: an assetKey from `assets/library.json` whose `tags` include the product
          (prefer hero/lifestyle for the first row, then components). May also be a direct
          https URL for art already hosted (e.g. an animated GIF Figma can't render).
-       - `headline`: the feature name (bind single-word widows with `&nbsp;` if needed).
+       - `headline`: the feature name (bind single-word widows with `&nbsp;` if needed). Headlines
+       end with a period (brand rule) — but the engine appends it via `_ensure_dot()`, so don't
+       hand-add dots in the registry (and `?`/`!` endings are left as-is).
        - `body`: 1–2 sentences from a value prop / component; a bold `<strong>` lead is OK.
        - `ctaLabel`: e.g. "Learn more". Set top-level `ctaUrl` to the product page
          (default `https://www.bluewatergroup.com` if unknown — confirm with the user);
