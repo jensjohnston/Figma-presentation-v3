@@ -33,11 +33,11 @@ V3 = "https://api.hubapi.com/marketing/v3/emails"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Brand tokens (mirror of core/brand-tokens.json — email font stack + key colors).
+# See renderers/email/design-system.md (reverse-engineered from reference email 187950269215).
 FF = "Helvetica,Arial,sans-serif"
-NAVY = "#00205B"   # blue/950 — eyebrow accent + CTA
-INK = "#18181B"    # gray/900 — headline + spec heading
-BODY = "#52525B"   # gray/600 — intro
-MUTED = "#71717A"  # gray/500 — spec body
+ACCENT = "#2563EB"  # blue/600 — buttons + links (canonical email accent)
+INK = "#18181B"     # gray/900 — hero + feature headlines (one ink)
+BODY = "#71717A"    # gray/500 — intro + feature body
 
 
 def _read_token(path):
@@ -120,31 +120,71 @@ def create_draft(payload):
 
 
 # ---- slot rendering (one place; keeps override HTML consistent with the template) ----
+# Layout mirrors the reference email: logo masthead -> centered hero headline -> optional
+# intro -> N stacked feature rows (image, headline, body, button). See design-system.md.
 
-def _hero(url):
-    return (f"<img src='{url}' width='600' alt='' style='display:block; width:100%; "
-            f"max-width:600px; height:auto; border:0;'>")
-
-def _eyebrow(t):
-    return f"<p style='margin:0 0 8px; font-size:14px; font-weight:bold; color:{NAVY}; font-family:{FF};'>{t}</p>"
-
-def _headline(t):
-    return f"<h1 style='margin:0; font-size:30px; line-height:36px; color:{INK}; font-family:{FF};'>{t}</h1>"
+def _hero_headline(t):
+    return (f"<h1 style='margin:0; font-size:37px; line-height:115%; text-align:center; "
+            f"color:{INK}; font-family:{FF};'>{t}</h1>")
 
 def _intro(t):
-    return f"<p style='margin:0; font-size:16px; line-height:24px; color:{BODY}; font-family:{FF};'>{t}</p>"
+    return (f"<p style='margin:0; font-size:16px; line-height:145%; text-align:center; "
+            f"color:{BODY}; font-family:{FF};'>{t}</p>")
 
-def _spec(s):
-    h, b = s.get("heading", ""), s.get("body", "")
-    return (f"<p style='margin:0 0 4px; font-size:16px; font-weight:bold; color:{INK}; font-family:{FF};'>{h}</p>"
-            f"<p style='margin:0; font-size:14px; line-height:20px; color:{MUTED}; font-family:{FF};'>{b}</p>")
-
-def _cta(label, url):
+def _button(label, url):
     return (f"<table role='presentation' cellpadding='0' cellspacing='0' border='0'><tr>"
-            f"<td align='center' bgcolor='{NAVY}' style='border-radius:6px;'>"
-            f"<a href='{url}' style='display:inline-block; padding:14px 28px; font-family:{FF}; "
-            f"font-size:16px; font-weight:bold; color:#FFFFFF; text-decoration:none; border-radius:6px;'>{label}</a>"
+            f"<td align='center' bgcolor='{ACCENT}' style='border-radius:25px;'>"
+            f"<a href='{url}' style='display:inline-block; padding:12px 28px; font-family:{FF}; "
+            f"font-size:16px; font-weight:bold; color:#FFFFFF; text-decoration:none; border-radius:25px;'>{label}</a>"
             f"</td></tr></table>")
+
+def _feature_row(img_url, headline, body, label, url, alt):
+    """One stacked feature: full-width image -> headline -> body -> left button. 48px gap below."""
+    return (
+        f"<table role='presentation' width='100%' cellpadding='0' cellspacing='0' border='0' style='margin:0 0 48px;'>"
+        f"<tr><td style='padding:0 0 16px;'>"
+        f"<a href='{url}'><img src='{img_url}' width='552' alt='{alt}' "
+        f"style='display:block; width:100%; max-width:552px; height:auto; border:0;'></a></td></tr>"
+        f"<tr><td style='padding:0 0 8px; font-family:{FF};'>"
+        f"<h2 style='margin:0; font-size:30px; line-height:115%; color:{INK}; font-family:{FF};'>{headline}</h2></td></tr>"
+        f"<tr><td style='padding:0 0 16px; font-family:{FF};'>"
+        f"<p style='margin:0; font-size:16px; line-height:145%; color:{BODY}; font-family:{FF};'>{body}</p></td></tr>"
+        f"<tr><td>{_button(label, url)}</td></tr>"
+        f"</table>")
+
+
+def _spec_grid(specs):
+    """A 2-up grid of small spec items, each with a divider rule above (Apple-style).
+    Each spec is {heading, body} -> bold lead + muted continuation. Cells stack on mobile."""
+    if not specs:
+        return ""
+    rows = []
+    for i in range(0, len(specs), 2):
+        pair = specs[i:i + 2]
+        tds = []
+        for j, s in enumerate(pair):
+            pad = "16px 12px 28px 0" if j == 0 else "16px 0 28px 12px"
+            item = (f"<strong style='color:{INK};'>{s.get('heading','')}</strong> "
+                    f"<span style='color:{BODY};'>{s.get('body','')}</span>")
+            tds.append(f"<td class='bw-grid-cell' valign='top' width='50%' "
+                       f"style='padding:{pad}; border-top:1px solid #E4E4E7; font-family:{FF}; "
+                       f"font-size:15px; line-height:145%;'>{item}</td>")
+        if len(pair) == 1:  # keep the grid balanced on an odd count
+            tds.append("<td class='bw-grid-cell' width='50%' style='padding:0;'>&nbsp;</td>")
+        rows.append("<tr>" + "".join(tds) + "</tr>")
+    return (f"<table role='presentation' width='100%' cellpadding='0' cellspacing='0' border='0'>"
+            f"{''.join(rows)}</table>")
+
+
+def _resolve_image(feature, lib, slug):
+    """A feature image is either a direct URL or an assetKey rendered from Figma + hosted."""
+    img = feature["image"]
+    if isinstance(img, str) and img.startswith("http"):
+        return img
+    node = (lib.get("assets", {}).get(img) or {}).get("nodeId")
+    if not node:
+        sys.exit(f"feature image {img!r} not found in assets/library.json")
+    return upload_image(node, f"{slug}-{img}")
 
 
 def generate(slug):
@@ -153,24 +193,29 @@ def generate(slug):
     n = reg.get("newsletters", {}).get(slug)
     if not n:
         sys.exit(f"unknown newsletter slug: {slug!r} (see renderers/email/newsletters/registry.json)")
-    node = (lib.get("assets", {}).get(n["heroAsset"]) or {}).get("nodeId")
-    if not node:
-        sys.exit(f"heroAsset {n['heroAsset']!r} not found in assets/library.json")
-    hero_url = upload_image(node, n["heroAsset"])
-    s = n["slots"]
-    cta_url = n.get("ctaUrl", "#")
+    features = n.get("features", [])
+    if not features:
+        sys.exit(f"newsletter {slug!r} has no features")
+
+    rows = []
+    for f in features:
+        img_url = _resolve_image(f, lib, slug)
+        alt = f.get("alt", f.get("headline", ""))
+        rows.append(_feature_row(img_url, f["headline"], f["body"],
+                                 f.get("ctaLabel", "Learn more"),
+                                 f.get("ctaUrl", n.get("ctaUrl", "#")), alt))
+
     widgets = {
-        "hero_image": _hero(hero_url),
-        "eyebrow": _eyebrow(s["eyebrow"]),
-        "headline": _headline(s["headline"]),
-        "intro": _intro(s["intro"]),
-        "spec_1": _spec(s["spec_1"]),
-        "spec_2": _spec(s["spec_2"]),
-        "spec_3": _spec(s["spec_3"]),
-        "cta": _cta(s["cta"], cta_url),
+        "hero_headline": _hero_headline(n["heroHeadline"]),
+        # always send intro (empty blanks the slot, so the template default never leaks)
+        "intro": _intro(n["intro"]) if n.get("intro") else "",
+        "features": "".join(rows),
+        # always send specs (empty blanks the slot when a pack has none)
+        "specs": _spec_grid(n.get("specs", [])),
         "preview_text": {"type": "text", "name": "preview_text",
                          "body": {"value": n.get("previewText", "")}},
     }
+
     return create_draft({
         "name": f"Bluewater Newsletter — {n['displayName']}",
         "subject": n.get("subject", n["displayName"]),

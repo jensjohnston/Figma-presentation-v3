@@ -13,10 +13,13 @@ Argument: `$ARGUMENTS` (a product slug, e.g. `kitchen-station`). If empty, ask w
 ## How it works
 
 The rigid template lives in HubSpot (`bluewater-designer/product-newsletter.html`,
-source: `renderers/email/templates/product-newsletter.html`). Its named module slots
-(`hero_image · eyebrow · headline · intro · spec_1 · spec_2 · spec_3 · cta`) are filled
-by overriding `content.widgets`. The deterministic plumbing (Figma image → File Manager
-→ create draft) is `tools/hs_newsletter.py`. See `renderers/email/HUBSPOT-INTEGRATION.md`.
+source: `renderers/email/templates/product-newsletter.html`). It renders a **logo masthead
+→ centered hero headline → optional intro → a stack of N feature rows → footer** (the system
+is documented in `renderers/email/design-system.md`, reverse-engineered from the approved
+reference email). Named module slots (`hero_headline · intro · features`) are filled by
+overriding `content.widgets`; the `features` stack is built by the engine from the pack's
+`features[]`. The deterministic plumbing (Figma image → File Manager → create draft) is
+`tools/hs_newsletter.py`. See `renderers/email/HUBSPOT-INTEGRATION.md`.
 
 Auth is already configured: `~/.hubspot_token` (Private App) + `~/.figma_token`.
 
@@ -29,16 +32,18 @@ Auth is already configured: `~/.hubspot_token` (Private App) + `~/.figma_token`.
 3. **If it does NOT exist, compose one (clone-and-rewrite):**
    - Read the product from `products/registry.json` (verified `content`: valueProps,
      keySpecs, and slide slots) — this is the source of truth for copy. Do **not** invent specs.
-   - Pick a `heroAsset` from `assets/library.json`: an asset whose `tags` include the
-     product and `hero`/`lifestyle` (prefer a clean front-facing or lifestyle hero).
-   - Map content to slots, honoring the brand voice and the **title-case eyebrow** rule
-     (never ALL CAPS):
-     - `eyebrow`: a short kicker, e.g. "New from Bluewater" (title case).
-     - `headline`: the product display name (bind single-word widows with `&nbsp;` if needed).
-     - `intro`: 1–2 sentences from the product's strongest value prop.
-     - `spec_1/2/3`: three `{ "heading", "body" }` pairs from keySpecs / how-it-works.
-     - `cta`: a button label, e.g. "Explore <Product>". Set `ctaUrl` to the product page
-       (default `https://www.bluewatergroup.com` if unknown — confirm with the user).
+   - Map content to the pack shape, honoring brand voice (title case, never ALL CAPS):
+     - `heroHeadline`: a short, benefit-led campaign line (e.g. "Clean Water, On Demand").
+     - `intro` (optional): one lead-in sentence under the hero; omit to skip.
+     - `features[]`: **2–5** feature rows, each `{ image, headline, body, ctaLabel }`.
+       - `image`: an assetKey from `assets/library.json` whose `tags` include the product
+         (prefer hero/lifestyle for the first row, then components). May also be a direct
+         https URL for art already hosted (e.g. an animated GIF Figma can't render).
+       - `headline`: the feature name (bind single-word widows with `&nbsp;` if needed).
+       - `body`: 1–2 sentences from a value prop / component; a bold `<strong>` lead is OK.
+       - `ctaLabel`: e.g. "Learn more". Set top-level `ctaUrl` to the product page
+         (default `https://www.bluewatergroup.com` if unknown — confirm with the user);
+         a feature may override with its own `ctaUrl`.
      - `subject` + `previewText`: benefit-led, no ALL CAPS, no spammy punctuation.
    - Add the entry under `newsletters.<slug>` in
      `renderers/email/newsletters/registry.json` (match the existing shape exactly).

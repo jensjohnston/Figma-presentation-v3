@@ -28,12 +28,19 @@ def test_real_registry_passes():
     assert r.stdout.startswith("OK"), r.stdout
 
 
-def test_unknown_slot_fails(tmp_path):
+def test_unknown_feature_image_fails(tmp_path):
     reg = _base()
-    reg["newsletters"]["kitchen-station"]["slots"]["not-a-real-slot"] = "x"
+    reg["newsletters"]["kitchen-station"]["features"][0]["image"] = "no-such-asset"
     r = run(_env(tmp_path, reg))
     assert r.returncode == 1
-    assert "not-a-real-slot" in r.stdout
+    assert "no-such-asset" in r.stdout
+
+
+def test_direct_url_feature_image_passes(tmp_path):
+    reg = _base()
+    reg["newsletters"]["kitchen-station"]["features"][0]["image"] = "https://example.com/x.png"
+    r = run(_env(tmp_path, reg))
+    assert r.returncode == 0, r.stdout + r.stderr
 
 
 def test_unknown_product_ref_fails(tmp_path):
@@ -44,12 +51,20 @@ def test_unknown_product_ref_fails(tmp_path):
     assert "does-not-exist" in r.stdout
 
 
-def test_unknown_hero_asset_fails(tmp_path):
+def test_feature_missing_headline_fails(tmp_path):
     reg = _base()
-    reg["newsletters"]["kitchen-station"]["heroAsset"] = "no-such-asset"
+    del reg["newsletters"]["kitchen-station"]["features"][0]["headline"]
     r = run(_env(tmp_path, reg))
     assert r.returncode == 1
-    assert "no-such-asset" in r.stdout
+    assert "headline" in r.stdout
+
+
+def test_spec_missing_body_fails(tmp_path):
+    reg = _base()
+    del reg["newsletters"]["kitchen-station"]["specs"][0]["body"]
+    r = run(_env(tmp_path, reg))
+    assert r.returncode == 1
+    assert "spec 0" in r.stdout
 
 
 def test_missing_template_path_fails(tmp_path):

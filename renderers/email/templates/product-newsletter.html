@@ -4,11 +4,15 @@
   label: Bluewater Product Newsletter
 -->
 <!--
-  Rigid product-newsletter template. Named module tags are the editable SLOTS
-  that generate-newsletter fills via content.widgets[name].body.html.
-  Slots - hero_image, eyebrow, headline, intro, spec_1, spec_2, spec_3, cta.
-  Email constraints - 600px single column, table layout, Helvetica (no web fonts),
-  inline styles. Brand tokens from core/brand-tokens.json.
+  Coded product-newsletter template (v2, feature-showcase). Matches the reference email
+  Kitchen Station 1 (HubSpot 187950269215). System - renderers/email/design-system.md.
+  Named module slots filled by /generate-newsletter via content.widgets[name].body.html -
+    hero_headline - centered campaign headline (37px)
+    intro         - optional lead paragraph (16px) under the hero
+    features      - engine-built stack of N feature rows (image, headline, body, button)
+  Logo masthead (real Bluewater logo) + CAN-SPAM footer are fixed chrome.
+  Accent blue-600 #2563EB. One ink #18181B. Body gray-500 #71717A.
+  Email constraints - 600px single column, table layout, Helvetica, inline styles.
 -->
 <!doctype html>
 <html lang="en">
@@ -19,71 +23,63 @@
     <title>{% if content.html_title %}{{ content.html_title }}{% else %}{{ content.subject }}{% endif %}</title>
     {{ email_header_includes }}
     <style>
-      /* Stack the 3-up spec columns on narrow screens */
+      /* Spec grid: stack the 2-up cells on narrow screens */
       @media only screen and (max-width:480px) {
-        .bw-spec { display:block !important; width:100% !important; padding:0 0 24px 0 !important; }
+        .bw-grid-cell { display:block !important; width:100% !important; padding-right:0 !important; padding-left:0 !important; }
       }
     </style>
   </head>
-  <body style="margin:0; padding:0; background-color:#F4F4F5;">
+  <body style="margin:0; padding:0; background-color:#FAFAFA;">
     <div style="display:none; max-height:0; overflow:hidden;">
       {% module "preview_text" path="@hubspot/preview_text" %}
     </div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F4F4F5;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FAFAFA;">
       <tr>
         <td align="center" style="padding:24px 12px;">
           <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#FFFFFF;">
 
-            <!-- Logo (fixed chrome) -->
+            <!-- Masthead divider (top) -->
+            <tr><td height="1" style="height:1px; line-height:1px; font-size:1px; background-color:#E4E4E7;">&nbsp;</td></tr>
+
+            <!-- Logo masthead (fixed chrome): real Bluewater horizontal wordmark -->
             <tr>
-              <td align="center" style="padding:32px 40px 8px; font-family:Helvetica,Arial,sans-serif;">
-                <span style="font-size:22px; font-weight:bold; letter-spacing:0.5px; color:#00205B;">Bluewater</span>
+              <td align="center" style="padding:24px 40px;">
+                <a href="https://www.bluewatergroup.com/" target="_blank" style="text-decoration:none;">
+                  <img src="https://8076719.fs1.hubspotusercontent-na1.net/hubfs/8076719/Bluewater_Logo_Horizontal_Black_RGB.jpg"
+                       width="110" height="20" alt="Bluewater"
+                       style="display:block; width:110px; height:auto; border:0;">
+                </a>
               </td>
             </tr>
 
-            <!-- SLOT: hero_image (rich text holding a full-width <img>) -->
+            <!-- Masthead divider (bottom) -->
+            <tr><td height="1" style="height:1px; line-height:1px; font-size:1px; background-color:#E4E4E7;">&nbsp;</td></tr>
+
+            <!-- SLOT: hero_headline (centered campaign headline) -->
             <tr>
-              <td style="padding:16px 0 0;">
-                {% module "hero_image" path="@hubspot/rich_text", html="<img src='https://via.placeholder.com/600x360/E4E4E7/71717A?text=Product' width='600' alt='Product' style='display:block; width:100%; max-width:600px; height:auto; border:0;'>" %}
+              <td style="padding:40px 24px 8px; font-family:Helvetica,Arial,sans-serif;">
+                {% module "hero_headline" path="@hubspot/rich_text", html="<h1 style='margin:0; font-size:37px; line-height:115%; text-align:center; color:#18181B; font-family:Helvetica,Arial,sans-serif;'>Clean Water, On Demand</h1>" %}
               </td>
             </tr>
 
-            <!-- SLOTS: eyebrow + headline + intro -->
+            <!-- SLOT: intro (optional lead paragraph) -->
             <tr>
-              <td style="padding:32px 40px 8px; font-family:Helvetica,Arial,sans-serif;">
-                {% module "eyebrow" path="@hubspot/rich_text", html="<p style='margin:0 0 8px; font-size:14px; font-weight:bold; color:#00205B; font-family:Helvetica,Arial,sans-serif;'>New from Bluewater</p>" %}
-                {% module "headline" path="@hubspot/rich_text", html="<h1 style='margin:0; font-size:30px; line-height:36px; color:#18181B; font-family:Helvetica,Arial,sans-serif;'>Product name</h1>" %}
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:8px 40px 24px; font-family:Helvetica,Arial,sans-serif;">
-                {% module "intro" path="@hubspot/rich_text", html="<p style='margin:0; font-size:16px; line-height:24px; color:#52525B; font-family:Helvetica,Arial,sans-serif;'>A short, one or two sentence introduction to the product.</p>" %}
+              <td style="padding:0 24px 24px; font-family:Helvetica,Arial,sans-serif;">
+                {% module "intro" path="@hubspot/rich_text", html="<p style='margin:0; font-size:16px; line-height:145%; text-align:center; color:#71717A; font-family:Helvetica,Arial,sans-serif;'>A short lead-in to the product.</p>" %}
               </td>
             </tr>
 
-            <!-- SLOTS: spec_1 / spec_2 / spec_3 (fixed 3-up; each holds heading + body) -->
+            <!-- SLOT: features (engine-built stack of N feature rows) -->
             <tr>
-              <td style="padding:0 32px 8px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="bw-spec" valign="top" width="33%" style="padding:0 8px; font-family:Helvetica,Arial,sans-serif;">
-                      {% module "spec_1" path="@hubspot/rich_text", html="<p style='margin:0 0 4px; font-size:16px; font-weight:bold; color:#18181B; font-family:Helvetica,Arial,sans-serif;'>Spec one</p><p style='margin:0; font-size:14px; line-height:20px; color:#71717A; font-family:Helvetica,Arial,sans-serif;'>Supporting detail.</p>" %}
-                    </td>
-                    <td class="bw-spec" valign="top" width="33%" style="padding:0 8px; font-family:Helvetica,Arial,sans-serif;">
-                      {% module "spec_2" path="@hubspot/rich_text", html="<p style='margin:0 0 4px; font-size:16px; font-weight:bold; color:#18181B; font-family:Helvetica,Arial,sans-serif;'>Spec two</p><p style='margin:0; font-size:14px; line-height:20px; color:#71717A; font-family:Helvetica,Arial,sans-serif;'>Supporting detail.</p>" %}
-                    </td>
-                    <td class="bw-spec" valign="top" width="33%" style="padding:0 8px; font-family:Helvetica,Arial,sans-serif;">
-                      {% module "spec_3" path="@hubspot/rich_text", html="<p style='margin:0 0 4px; font-size:16px; font-weight:bold; color:#18181B; font-family:Helvetica,Arial,sans-serif;'>Spec three</p><p style='margin:0; font-size:14px; line-height:20px; color:#71717A; font-family:Helvetica,Arial,sans-serif;'>Supporting detail.</p>" %}
-                    </td>
-                  </tr>
-                </table>
+              <td style="padding:8px 24px 24px;">
+                {% module "features" path="@hubspot/rich_text", html="<p style='font-family:Helvetica,Arial,sans-serif; color:#71717A;'>Feature rows are generated by /generate-newsletter.</p>" %}
               </td>
             </tr>
 
-            <!-- SLOT: cta (rich text holding a bulletproof button) -->
+            <!-- SLOT: specs (engine-built 2-up spec grid; divider above each item) -->
             <tr>
-              <td align="center" style="padding:24px 40px 40px;">
-                {% module "cta" path="@hubspot/rich_text", html="<table role='presentation' cellpadding='0' cellspacing='0' border='0'><tr><td align='center' bgcolor='#00205B' style='border-radius:6px;'><a href='https://www.bluewatergroup.com' style='display:inline-block; padding:14px 28px; font-family:Helvetica,Arial,sans-serif; font-size:16px; font-weight:bold; color:#FFFFFF; text-decoration:none; border-radius:6px;'>Learn more</a></td></tr></table>" %}
+              <td style="padding:0 24px 16px;">
+                {% module "specs" path="@hubspot/rich_text", html="" %}
               </td>
             </tr>
 
@@ -91,10 +87,10 @@
             <tr>
               <td align="center" style="padding:24px 40px 32px; border-top:1px solid #E4E4E7; font-family:Helvetica,Arial,sans-serif; font-size:12px; line-height:18px; color:#71717A;">
                 {{ site_settings.company_name }}<br>
-                {{ site_settings.company_street_address_1 }}{% if site_settings.company_city %}, {{ site_settings.company_city }}{% endif %}<br>
-                <a href="{{ unsubscribe_link }}" style="color:#71717A; text-decoration:underline;">Unsubscribe</a>
+                {{ site_settings.company_street_address_1 }}{% if site_settings.company_city %}, {{ site_settings.company_city }}{% endif %}{% if site_settings.company_state %}, {{ site_settings.company_state }}{% endif %}<br>
+                <a href="{{ unsubscribe_link }}" style="color:#2563EB; text-decoration:underline;">Unsubscribe</a>
                 &nbsp;·&nbsp;
-                <a href="{{ unsubscribe_link_all }}" style="color:#71717A; text-decoration:underline;">Manage preferences</a>
+                <a href="{{ unsubscribe_link_all }}" style="color:#2563EB; text-decoration:underline;">Manage preferences</a>
               </td>
             </tr>
 

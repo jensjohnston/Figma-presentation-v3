@@ -1,27 +1,51 @@
 {
-  "_doc": "Newsletter packs: finished, on-brand product newsletters the generator clones-and-rewrites (mirrors products/registry.json). templatePath = the coded email template in the HubSpot Design Manager; its source of truth is renderers/email/templates/product-newsletter.html (upload via `hs cms upload`). Slots are filled by overriding content.widgets[name] (see renderers/email/HUBSPOT-INTEGRATION.md). heroAsset references assets/library.json by key (rendered from Figma + hosted in HubSpot File Manager at generate time). Validated by tools/validate_newsletters.py.",
+  "_doc": "Newsletter packs: finished, on-brand product newsletters the generator clones-and-rewrites (mirrors products/registry.json). templatePath = the coded email template in the HubSpot Design Manager; its source of truth is renderers/email/templates/product-newsletter.html (upload via `hs cms upload`). The template renders a logo masthead, a centered heroHeadline, an optional intro, and a stack of feature rows. Each feature has an `image` (an assetKey into assets/library.json, rendered from Figma + hosted in HubSpot File Manager at generate time — or a direct https URL), a `headline`, a `body`, and an optional `ctaLabel`/`ctaUrl`. Slots are filled by overriding content.widgets[name] (see renderers/email/HUBSPOT-INTEGRATION.md). System: renderers/email/design-system.md. Validated by tools/validate_newsletters.py.",
   "hubspot": {
     "portalId": "8076719",
     "templatePath": "bluewater-designer/product-newsletter.html"
   },
-  "slotVocabulary": ["hero_image", "eyebrow", "headline", "intro", "spec_1", "spec_2", "spec_3", "cta"],
+  "slotVocabulary": ["hero_headline", "intro", "features", "specs"],
   "newsletters": {
     "kitchen-station": {
       "displayName": "Kitchen Station",
       "product": "kitchen-station",
-      "heroAsset": "kitchen-station-palma-lifestyle",
-      "subject": "Meet Kitchen Station — clean, mineralized water on demand",
-      "previewText": "Clean, mineralized water on demand — meet Kitchen Station.",
-      "ctaUrl": "https://www.bluewatergroup.com",
-      "slots": {
-        "eyebrow": "New from Bluewater",
-        "headline": "Kitchen Station",
-        "intro": "Turn any water source into clean, mineralized Bluewater — purified, remineralized, and dispensed on demand.",
-        "spec_1": { "heading": "Purify", "body": "SuperiorOsmosis™ removes contaminants down to the molecular level." },
-        "spec_2": { "heading": "Mineralize", "body": "Inline mineralization infuses Liquid Rock® electrolytes at exact dosages." },
-        "spec_3": { "heading": "Dispense", "body": "Functional, mineralized water on demand — zero effort." },
-        "cta": "Explore Kitchen Station"
-      }
+      "subject": "Clean Water, On Demand",
+      "previewText": "Tap water can hide invisible contaminants like PFAS, chlorine, and microplastics — linked to health risks and off-flavors.",
+      "heroHeadline": "Clean Water, On Demand",
+      "intro": "Meet the Kitchen Station — purified, remineralized Bluewater straight from your tap.",
+      "ctaUrl": "https://www.bluewatergroup.com/en-gb/bluewater-stations/kitchen-station",
+      "features": [
+        {
+          "image": "kitchen-station-palma-lifestyle",
+          "headline": "Is Your Tap Water Safe?",
+          "body": "<strong>Tap water can hide invisible contaminants like PFAS, chlorine, and microplastics — linked to health risks and off-flavors.</strong> The Kitchen Station removes them at the source.",
+          "ctaLabel": "Learn more"
+        },
+        {
+          "image": "liquid-rock-bottle-with-pump",
+          "headline": "Purified and Remineralised Water",
+          "body": "SuperiorOsmosis™ purifies water up to 99.7%, removing PFAS, chlorine, and microplastics. Then it adds back essential Swedish minerals — calcium and magnesium — for cleaner, balanced water that tastes great.",
+          "ctaLabel": "Learn more"
+        },
+        {
+          "image": "bluewater-dosing-pump-front",
+          "headline": "Bluewater O",
+          "body": "A user-friendly control for the Kitchen Station 1™, enabling easy switching between municipal and purified, mineralized water.",
+          "ctaLabel": "Learn more"
+        },
+        {
+          "image": "bluewater-app-mineral-profiles",
+          "headline": "Bluewater App",
+          "body": "Allows you to precisely adjust your mineral intake, offering complete control over water's taste and health benefits.",
+          "ctaLabel": "Learn more"
+        }
+      ],
+      "specs": [
+        { "heading": "SuperiorOsmosis™ purification.", "body": "Removes contaminants down to the molecular level." },
+        { "heading": "Liquid Rock® minerals.", "body": "A 2:1 calcium-to-magnesium electrolyte blend from Sweden's ancient bedrock." },
+        { "heading": "Four mineral intensities.", "body": "Light, Original, Medium, and Bold — matched to your taste." },
+        { "heading": "On demand, zero effort.", "body": "Functional, mineralized water straight from the tap." }
+      ]
     }
   }
 }

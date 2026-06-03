@@ -3,8 +3,9 @@
 
 Regression gate for the newsletter library. Mirrors tools/validate_products.py.
 Checks that the HubSpot template path is set, every newsletter has the required
-fields, every slot key is in slotVocabulary, every `product` resolves in
-products/registry.json, and every `heroAsset` resolves in assets/library.json.
+fields (displayName, product, heroHeadline, features), every `product` resolves in
+products/registry.json, and every feature has a headline/body and an `image` that
+resolves in assets/library.json (unless it is a direct https URL).
 
 Honors the NEWSLETTER_REGISTRY env var (used by tests); otherwise reads the repo file.
 """
@@ -20,26 +21,32 @@ def main():
     products = json.load(open(root / "products" / "registry.json")).get("products", {})
     asset_keys = set(json.load(open(root / "assets" / "library.json")).get("assets", {}))
 
-    vocab = set(reg.get("slotVocabulary", []))
     errors = []
     if not reg.get("hubspot", {}).get("templatePath"):
         errors.append("hubspot.templatePath is missing")
-    if not vocab:
-        errors.append("slotVocabulary is empty")
     newsletters = reg.get("newsletters", {})
     if not newsletters:
         errors.append("no newsletters defined")
     for slug, n in newsletters.items():
-        for field in ("displayName", "product", "heroAsset", "slots"):
+        for field in ("displayName", "product", "heroHeadline", "features"):
             if field not in n:
                 errors.append(f"{slug}: missing '{field}'")
         if n.get("product") not in products:
             errors.append(f"{slug}: product {n.get('product')!r} not in products/registry.json")
-        if n.get("heroAsset") not in asset_keys:
-            errors.append(f"{slug}: heroAsset {n.get('heroAsset')!r} not in assets/library.json")
-        for key in n.get("slots", {}):
-            if key not in vocab:
-                errors.append(f"{slug}: slot {key!r} not in slotVocabulary")
+        features = n.get("features", [])
+        if not features:
+            errors.append(f"{slug}: features is empty")
+        for i, f in enumerate(features):
+            for field in ("image", "headline", "body"):
+                if not f.get(field):
+                    errors.append(f"{slug}: feature {i}: missing '{field}'")
+            img = f.get("image", "")
+            if not (isinstance(img, str) and img.startswith("http")) and img not in asset_keys:
+                errors.append(f"{slug}: feature {i}: image {img!r} not in assets/library.json")
+        for i, s in enumerate(n.get("specs", [])):  # specs are optional; validate shape if present
+            for field in ("heading", "body"):
+                if not s.get(field):
+                    errors.append(f"{slug}: spec {i}: missing '{field}'")
     if errors:
         print("FAIL")
         for e in errors:
