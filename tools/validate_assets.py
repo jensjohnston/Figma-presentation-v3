@@ -4,7 +4,7 @@
 Regression gate for the asset library. Every asset must carry the
 vision-index metadata (visual block) and provenance (source block) the
 generator's image matching depends on. Also validates
-assets/preferences.json when it exists (see Task 3).
+assets/preferences.json when it exists.
 
 Honors ASSETS_LIBRARY / ASSETS_PREFERENCES env vars (used by tests);
 otherwise reads the repo files.
@@ -68,17 +68,46 @@ def check_assets(lib):
     return errors
 
 
+def check_preferences(prefs, asset_keys, template_names):
+    errors = []
+    for i, p in enumerate(prefs.get("imagePicks", [])):
+        for k in [p.get("chosen"), *p.get("rejected", [])]:
+            if k not in asset_keys:
+                errors.append(f"imagePicks[{i}]: unknown assetKey {k!r}")
+        if "context" not in p or "date" not in p:
+            errors.append(f"imagePicks[{i}]: missing context/date")
+    for i, p in enumerate(prefs.get("templatePicks", [])):
+        for k in [p.get("chosen"), *p.get("rejected", [])]:
+            # "custom" = escape-hatch build; "product:<slug>/<role>" = product-pack slide
+            if k not in template_names and k != "custom" and not str(k).startswith("product:"):
+                errors.append(f"templatePicks[{i}]: unknown template {k!r}")
+        if "context" not in p or "date" not in p:
+            errors.append(f"templatePicks[{i}]: missing context/date")
+    return errors
+
+
 def main():
     root = pathlib.Path(__file__).resolve().parent.parent
     lib_path = os.environ.get("ASSETS_LIBRARY", str(root / "assets" / "library.json"))
     lib = json.load(open(lib_path))
     errors = check_assets(lib)
+
+    prefs_path = pathlib.Path(os.environ.get(
+        "ASSETS_PREFERENCES", str(root / "assets" / "preferences.json")))
+    n_picks = 0
+    if prefs_path.exists():
+        prefs = json.load(open(prefs_path))
+        reg = json.load(open(root / "templates" / "registry.json"))
+        errors += check_preferences(prefs, set(lib.get("assets", {})),
+                                    set(reg.get("templates", {})))
+        n_picks = len(prefs.get("imagePicks", [])) + len(prefs.get("templatePicks", []))
+
     if errors:
         print("FAIL")
         for e in errors:
             print(" -", e)
         sys.exit(1)
-    print(f"OK — {len(lib.get('assets', {}))} assets")
+    print(f"OK — {len(lib.get('assets', {}))} assets, {n_picks} preference records")
 
 
 if __name__ == "__main__":

@@ -123,3 +123,50 @@ def test_real_library_passes():
     r = run()
     assert r.returncode == 0, r.stdout + r.stderr
     assert r.stdout.startswith("OK"), r.stdout
+
+
+def _good_prefs():
+    return {
+        "imagePicks": [
+            {"context": {"role": "hero", "topic": "spirit purifier", "slot": "full-bleed"},
+             "chosen": "spirit-front", "rejected": [], "date": "2026-06-11"}
+        ],
+        "templatePicks": [
+            {"context": {"contentShape": "4 items, image-rich", "deck": "demo"},
+             "chosen": "template-bento4", "rejected": ["pillar-grid-4up-image"],
+             "date": "2026-06-11"}
+        ],
+    }
+
+
+def test_good_preferences_pass(tmp_path):
+    r = run(_env(tmp_path, _base(), prefs=_good_prefs()))
+    assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_missing_preferences_file_passes(tmp_path):
+    r = run(_env(tmp_path, _base()))  # prefs=None -> env points at missing file
+    assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_unknown_image_pick_fails(tmp_path):
+    prefs = _good_prefs()
+    prefs["imagePicks"][0]["chosen"] = "no-such-asset"
+    r = run(_env(tmp_path, _base(), prefs=prefs))
+    assert r.returncode == 1
+    assert "no-such-asset" in r.stdout
+
+
+def test_unknown_template_pick_fails(tmp_path):
+    prefs = _good_prefs()
+    prefs["templatePicks"][0]["chosen"] = "template-does-not-exist"
+    r = run(_env(tmp_path, _base(), prefs=prefs))
+    assert r.returncode == 1
+    assert "template-does-not-exist" in r.stdout
+
+
+def test_custom_template_pick_passes(tmp_path):
+    prefs = _good_prefs()
+    prefs["templatePicks"][0]["chosen"] = "custom"  # escape-hatch builds log as "custom"
+    r = run(_env(tmp_path, _base(), prefs=prefs))
+    assert r.returncode == 0, r.stdout + r.stderr
