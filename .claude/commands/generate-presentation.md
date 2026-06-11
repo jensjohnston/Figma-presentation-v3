@@ -96,6 +96,16 @@ Options:
 - **Keep original voice** — Preserve the tone, style, and language of the source PDF as-is.
 - **Bluewater brand voice** — Rewrite all text in the Bluewater brand voice. (See `brand/voice-guide.md` if it exists in the project. If it doesn't exist yet, use a clean, confident, premium-but-approachable tone — short sentences, active voice, no jargon, focus on outcomes over features.)
 
+### Question 3: Review mode
+
+Ask: **"How do you want to review the deck?"**
+
+Options:
+- **Curated** — For ambiguous slides I render up to 3 layout alternatives you pick from; then every image slide gets an alternates strip for quick swaps before we finalize. This is the default.
+- **Direct** — One-shot build, no review rounds (the previous behavior). For quick throwaway decks.
+
+In Direct mode, skip Step 4.5, Step 5.5 and Step 5.6 entirely.
+
 ### How to apply these choices
 
 - **Keep original + Keep voice**: Slot text in verbatim. Only adapt when content doesn't fit a template (e.g., too many bullets → condense to fit the template's slot count).
@@ -165,6 +175,8 @@ All templates live on the **"Template references"** page (`56881:463`, status `p
 
 **Bullet templates (`template-bullets-4/6/8`, `template-technical-bullets`)** were harmonized and restored to the references page on 2026-05-29 (status `KEEP`): clean text-bullet grids with heading + body per item (4-up/6-up = 36px headings, 8-up = 28px, technical = 20px spec rows + a left image area). Prefer image-rich `pillar-grid-*` / `bento*` when the content suits imagery; reach for the bullet grids when you want a clean text-only list of headed points.
 
+**Preference tie-breaker:** before finalizing each slide's template, check `assets/preferences.json → templatePicks` for records with a similar `contentShape`. A template repeatedly chosen (≥2) for similar content wins ties and close calls; one repeatedly rejected is demoted below its rivals. Preferences never override the structural rules above (item counts, content types) — they only settle close calls. In Curated mode this also reorders which 3 candidates become the A/B/C alternatives (most-preferred = A).
+
 ### Creative Decision Rules
 
 Before finalizing template selection, apply these judgment calls:
@@ -219,6 +231,18 @@ Slide Plan:
 ```
 
 Ask the user to confirm before proceeding. They can request changes to template selections.
+
+In **Curated mode**, the plan confirmation is lightweight (the real review happens on rendered slides in Step 4.5) — present the plan, apply any corrections, and continue without a blocking confirm.
+
+## Step 4.5: Layout pass (Curated mode only)
+
+The curator judges finished, rendered slides — never template names.
+
+1. **Variant count per slide (adaptive):** while matching in Step 4, score the top template candidates 1–10 for fit. A slide is **ambiguous** when the top two scores are within 2 points → build the top **3** candidates as alternatives. One clear answer → 1 variant. Always 1 variant for: covers, chapter dividers, closing slides, and product-pack clones (already-approved layouts).
+2. **Build the review grid:** build every variant as a complete slide (full §5 build — text, images per §5d, chrome, audit). Position: slide i at x = i·2120; variant A (the recommendation) at y = 0, B at y = 1280, C at y = 2560. Frame names: `S04-A — pillar-grid-4up-image (recommended)`, `S04-B — template-bento4`, …
+3. **Collect picks:** `get_screenshot` each ambiguous slide's column (or the grid in chunks) and show the curator. Ask per ambiguous slide via AskUserQuestion ("Slide 4: A, B, or C?") or accept compact chat answers ("4→B, 9→C, rest A"). Unmentioned slides default to A.
+4. **Assemble the final deck row:** move each chosen variant to y = 0 at its slide x; rename sequentially (`Slide 04 — <title>`); refresh page numbers via `applyDeckChrome` (total = final slide count); DELETE all losing variants.
+5. **Log every decision** per Step 5.6 — including default-A confirms (chosen = A's template, rejected = B's and C's).
 
 ## Step 5: Generate in Figma
 
@@ -623,6 +647,32 @@ All registry templates now conform to `slideContract` at the source (every frame
 - If `auditSlide` returns issues, that means a **template frame has drifted** — STOP and fix the frame at the source (and run the `auditFrame` template-contract test to find any others), don't paper over it per-slide.
 - This is the executable counterpart to `auditChrome` but covers **margins, title size, card-body size, and card-bottom anchoring**, not just chrome position.
 - At the end of the build, re-run `auditSlide` across every generated slide as a final gate and report any remaining deviations in the summary.
+
+## Step 5.5: Image pass (Curated mode only)
+
+After assembly, for every slide with `imageSlots` where §5d.1 ranked ≥2 passing candidates:
+
+1. **Build the alternates strip** below the slide (y = slide.y + 1180): for each runner-up (max 3), a rectangle 300px wide (height per the candidate's aspect) filled with the candidate image (FILL), laid out left-to-right with 32px gaps from the slide's x. Label each with a 24px text node: `S04-B`, `S04-C`, `S04-D`. Group strip + labels in a frame named `S04-alternates`. Slides whose slot had only one passing candidate get no strip.
+2. **Collect swaps:** `get_screenshot` the deck row with strips; show the curator; accept "4 → C"-style answers (AskUserQuestion or chat). Unmentioned slides keep their top pick.
+3. **Apply swaps:** copy the chosen alternate's fill onto the slide's slot per §5d.2 — including the tone rule: if the new image's `visual.tone` differs, flip the text variant to match.
+4. **On final confirm:** DELETE every `S*-alternates` frame; re-run `auditSlide` on swapped slides; proceed to Step 6 (the imagery QA gate covers the swapped images too).
+
+## Step 5.6: Log preferences (Curated mode only)
+
+Append one record per curation decision to `assets/preferences.json` (create as `{"imagePicks": [], "templatePicks": []}` if missing):
+
+```jsonc
+// layout pick (one per slide that had alternatives; confirming A counts)
+{ "context": { "contentShape": "<e.g. '4 items, image-rich'>", "deck": "<deck label>" },
+  "chosen": "<template name, 'custom', or 'product:<slug>/<role>'>",
+  "rejected": ["<losing template names>"], "date": "<YYYY-MM-DD>" }
+
+// image pick (one per slide that had a strip; keeping the top pick counts)
+{ "context": { "role": "<slot role or template category>", "topic": "<slide topic>", "slot": "<imageSlot name/role>" },
+  "chosen": "<winning assetKey>", "rejected": ["<losing assetKeys>"], "date": "<YYYY-MM-DD>" }
+```
+
+Then run `python3 tools/validate_assets.py` — must end `OK`. These records feed the §5d.1 preference boost and the Step 4 template tie-breaker on every future run.
 
 ## Step 6: Verify and Report
 
