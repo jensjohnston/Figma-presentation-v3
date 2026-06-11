@@ -170,3 +170,18 @@ def test_custom_template_pick_passes(tmp_path):
     prefs["templatePicks"][0]["chosen"] = "custom"  # escape-hatch builds log as "custom"
     r = run(_env(tmp_path, _base(), prefs=prefs))
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_null_image_picks_passes(tmp_path):
+    prefs = _good_prefs()
+    prefs["imagePicks"] = None
+    r = run(_env(tmp_path, _base(), prefs=prefs))
+    assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_missing_chosen_fails_clearly(tmp_path):
+    prefs = _good_prefs()
+    del prefs["imagePicks"][0]["chosen"]
+    r = run(_env(tmp_path, _base(), prefs=prefs))
+    assert r.returncode == 1
+    assert "missing 'chosen'" in r.stdout

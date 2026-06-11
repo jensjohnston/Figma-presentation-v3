@@ -70,14 +70,20 @@ def check_assets(lib):
 
 def check_preferences(prefs, asset_keys, template_names):
     errors = []
-    for i, p in enumerate(prefs.get("imagePicks", [])):
-        for k in [p.get("chosen"), *p.get("rejected", [])]:
+    for i, p in enumerate(prefs.get("imagePicks") or []):
+        for k in [p.get("chosen"), *(p.get("rejected") or [])]:
+            if k is None:
+                errors.append(f"imagePicks[{i}]: missing 'chosen'")
+                continue
             if k not in asset_keys:
                 errors.append(f"imagePicks[{i}]: unknown assetKey {k!r}")
         if "context" not in p or "date" not in p:
             errors.append(f"imagePicks[{i}]: missing context/date")
-    for i, p in enumerate(prefs.get("templatePicks", [])):
-        for k in [p.get("chosen"), *p.get("rejected", [])]:
+    for i, p in enumerate(prefs.get("templatePicks") or []):
+        for k in [p.get("chosen"), *(p.get("rejected") or [])]:
+            if k is None:
+                errors.append(f"templatePicks[{i}]: missing 'chosen'")
+                continue
             # "custom" = escape-hatch build; "product:<slug>/<role>" = product-pack slide
             if k not in template_names and k != "custom" and not str(k).startswith("product:"):
                 errors.append(f"templatePicks[{i}]: unknown template {k!r}")
@@ -100,7 +106,7 @@ def main():
         reg = json.load(open(root / "templates" / "registry.json"))
         errors += check_preferences(prefs, set(lib.get("assets", {})),
                                     set(reg.get("templates", {})))
-        n_picks = len(prefs.get("imagePicks", [])) + len(prefs.get("templatePicks", []))
+        n_picks = len(prefs.get("imagePicks") or []) + len(prefs.get("templatePicks") or [])
 
     if errors:
         print("FAIL")
