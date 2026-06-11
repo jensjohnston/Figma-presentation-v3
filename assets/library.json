@@ -255,6 +255,90 @@
         "quality": "high"
       }
     },
+    "cleone-purifier-new-perspective": {
+      "nodeId": "63107:2",
+      "tags": ["product", "purifier", "cleone", "render", "new-design"],
+      "description": "New Cleone purifier three-quarter perspective render, light gray unit on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone - Persp.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card", "detail"], "quality": "high" }
+    },
+    "cleone-purifier-new-front": {
+      "nodeId": "63108:2",
+      "tags": ["product", "purifier", "cleone", "render", "new-design"],
+      "description": "New Cleone purifier front view render, centered on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone - Front.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "high" }
+    },
+    "cleone-purifier-inside-cutaway": {
+      "nodeId": "63109:2",
+      "tags": ["product", "purifier", "cleone", "technology", "cutaway", "how-it-works"],
+      "description": "Translucent technical cutaway of the new Cleone interior — filters and tank ghosted in pale line render, very light",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone Inside1.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "medium" }
+    },
+    "cleone-under-counter-scene": {
+      "nodeId": "63110:2",
+      "tags": ["product", "purifier", "cleone", "installation", "scene", "use-case"],
+      "description": "Cleone with tank installed in an open under-counter cabinet — wood-front kitchen unit with sink, white backdrop",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/Purifier_Scene_Front_Cleone_Tank.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "full-bleed", "card"], "quality": "high" }
+    },
+    "pro-purifier-new-perspective": {
+      "nodeId": "63111:2",
+      "tags": ["product", "purifier", "pro", "render", "new-design"],
+      "description": "New Pro purifier three-quarter perspective render, light gray unit on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro - Persp.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card", "detail"], "quality": "high" }
+    },
+    "pro-purifier-new-front": {
+      "nodeId": "63112:2",
+      "tags": ["product", "purifier", "pro", "render", "new-design"],
+      "description": "New Pro purifier front view render with control panel, centered on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro - Front.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "high" }
+    },
+    "pro-purifier-inside-cutaway": {
+      "nodeId": "63113:2",
+      "tags": ["product", "purifier", "pro", "technology", "cutaway", "how-it-works"],
+      "description": "Translucent technical cutaway of the new Pro interior — filter columns and plumbing ghosted in pale line render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro Inside.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "medium" }
+    },
+    "pro-under-counter-scene": {
+      "nodeId": "63114:2",
+      "tags": ["product", "purifier", "pro", "installation", "scene", "use-case"],
+      "description": "Pro installed in an open under-counter cabinet — wood-front kitchen unit with sink, white backdrop",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/Purifier_Scene_Front_Only Pro.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "full-bleed", "card"], "quality": "high" }
+    },
+    "isak-station-faucet-system": {
+      "nodeId": "63115:2",
+      "tags": ["product", "station", "isak", "faucet", "system"],
+      "description": "Isak Station system overview — purifier unit, bottle and counter-top faucet connected by blue tubing, on white",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Isak Station/Isak Station 01.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "card"], "quality": "high" }
+    },
+    "cafe-station-installation-cabinet": {
+      "nodeId": "63117:2",
+      "tags": ["product", "station", "cafe-station", "installation", "illustration"],
+      "description": "Café Station installation illustration — open under-sink cabinet with faucet, purifier and tank units, white 3D render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Café Station/2026 updates/Café-station-installation.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 0.83, "orientation": "portrait", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "medium" }
+    },
+    "hotel-station-bottling-line": {
+      "nodeId": "63116:2",
+      "tags": ["product", "station", "hotel-station", "bottling", "machinery"],
+      "description": "Hotel Station 1 bottling line — row of washing/filling/capping machines in a panoramic strip render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Hotel Station/Hotel Station 1/Content/Stills/Hotel_Station1.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 4.5, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "high" }
+    },
+    "restaurant-station-faucet-scene": {
+      "nodeId": "63118:2",
+      "tags": ["product", "station", "restaurant-station", "faucet", "scene", "app"],
+      "description": "Restaurant Station faucet on a stone counter with ordering tablet showing the Bluewater interface",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Beverage station (draft)/RestaurantStation_Scene_with tablet_Natural.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card"], "quality": "high" }
+    },
     "bluewater-purifiers-cover-hero": {
       "nodeId": "61219:17966",
       "tags": ["product", "purifier", "hero"],
