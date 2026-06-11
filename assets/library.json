@@ -1,73 +1,357 @@
 {
   "assetPageId": "51124:14",
   "assetPageName": "Brand Assets",
-  "note": "Asset nodeIds are global — product-image entries below live on the Kitchen Station (61219:17724) and All purifiers (61219:14889) pages, not the Brand Assets page. The generator clones by nodeId, so page location does not matter.",
+  "note": "Asset nodeIds are global — product-image entries below live on the Kitchen Station (61219:17724) and All purifiers (61219:14889) pages, not the Brand Assets page. The generator clones by nodeId, so page location does not matter. v2 schema: aspect uses the node's rendered (visible) dimensions, which can differ from the layer bounding box when groups contain hidden/clipped content.",
   "assets": {
     "cafe-station-1-hero": {
       "nodeId": "51121:6380",
-      "tags": ["product", "cafe-station", "hero"],
-      "description": "Café Station 1 front-facing product hero shot"
+      "tags": ["cafe-station", "event", "lifestyle", "coffee", "booth"],
+      "description": "Bluewater x NIA trade-show booth with 'The Coffee Water' wall and the Café Station 1 demo counter, baristas serving visitors",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["hero", "card"],
+        "quality": "high"
+      }
     },
-
     "kitchen-station-palma-lifestyle": {
       "nodeId": "61219:17726",
-      "tags": ["product", "kitchen-station", "hero", "lifestyle"],
-      "description": "Kitchen Station 1 (Palma) product render in a café/kitchen setting — countertop hero"
+      "tags": ["product", "kitchen-station", "hero", "lifestyle", "dark"],
+      "description": "Kitchen Station 1 (Palma) dispenser glowing blue on a dark countertop — moody low-light product hero",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": ["hero", "full-bleed", "card"],
+        "quality": "high"
+      }
     },
     "cafe-coffee-lifestyle-kitchen": {
       "nodeId": "61219:17869",
-      "tags": ["lifestyle", "cafe", "kitchen-station"],
-      "description": "Café coffee-bar lifestyle backdrop used on the Kitchen Station Liquid Rock statement slide"
+      "tags": ["liquid-rock", "mineral", "texture", "kitchen-station", "dark"],
+      "description": "Macro of a crystalline mineral formation embedded in dark rock — Liquid Rock statement backdrop",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": ["full-bleed", "hero", "texture"],
+        "quality": "high"
+      }
     },
     "cafe-coffee-lifestyle-purifier": {
       "nodeId": "61219:17972",
-      "tags": ["lifestyle", "cafe", "purifier"],
-      "description": "Café/kitchen lifestyle backdrop used on the purifier filtration-spectrum slide"
+      "tags": ["filtration", "water", "texture", "purifier"],
+      "description": "Clear water channel with suspended black carbon particles on white — filtration-spectrum backdrop with open space above",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "bottom",
+        "suitability": ["full-bleed", "hero", "texture"],
+        "quality": "high"
+      }
     },
     "liquid-rock-bottle-with-pump": {
       "nodeId": "61219:17844",
       "tags": ["product", "liquid-rock", "accessory", "kitchen-station"],
-      "description": "Liquid Rock® mineral bottle with dosing-pump bubble"
+      "description": "Liquid Rock® glass mineral bottle with blue dosing-pump cap, light gray studio backdrop",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.71,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "medium"
+      }
     },
     "bluewater-dosing-pump-front": {
       "nodeId": "61219:17849",
       "tags": ["product", "dosing-pump", "accessory", "kitchen-station"],
-      "description": "Bluewater dosing pump, front view"
+      "description": "Bluewater dosing pump front view — deep blue illuminated ring device on light gray",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.28,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "low"
+      }
     },
     "bluewater-app-mineral-profiles": {
       "nodeId": "61219:17796",
       "tags": ["product", "app", "kitchen-station"],
-      "description": "Bluewater App screen — slide between four mineral profiles (Light/Original/Medium/Bold)"
+      "description": "Three iPhone screens with the Bluewater App mineral profiles (Light/Original/Bold), white backdrop",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.85,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
     },
     "bluewater-cleone-purifier-front": {
       "nodeId": "61219:17998",
       "tags": ["product", "purifier", "cleone"],
-      "description": "Cleone tank-based purifier, front view (high-res lineup render)"
+      "description": "Cleone purifier front panel cropped lower-left with generous white space right — light studio render",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.45,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": ["hero", "card", "full-bleed"],
+        "quality": "high"
+      }
     },
     "bluewater-cleone-purifier-side": {
       "nodeId": "61219:18017",
       "tags": ["product", "purifier", "cleone"],
-      "description": "Cleone purifier, side view"
+      "description": "Cleone purifier full front view with Bluewater wordmark, light gray studio render (key says 'side' for historical reasons — image is a front view)",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.02,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "medium"
+      }
     },
     "bluewater-spirit-purifier-front": {
       "nodeId": "61219:18000",
       "tags": ["product", "purifier", "spirit"],
-      "description": "Spirit direct-flow purifier, front view (high-res lineup render)"
+      "description": "Spirit purifier top-panel detail cropped right — filter/calibration controls, white space left",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.18,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": ["hero", "card", "detail"],
+        "quality": "high"
+      }
     },
     "bluewater-pro-purifier-front": {
       "nodeId": "61219:17840",
       "tags": ["product", "purifier", "pro"],
-      "description": "Pro direct-flow purifier, front view"
+      "description": "Pro purifier upper panel cropped lower-right — controls and Pro SuperiorOsmosis™ wordmark, white space left",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": ["card", "detail"],
+        "quality": "low"
+      }
     },
     "superiorosmosis-membrane-zoom": {
       "nodeId": "61219:18012",
       "tags": ["product", "purifier", "technology", "superiorosmosis"],
-      "description": "SuperiorOsmosis™ membrane macro/zoom detail"
+      "description": "SuperiorOsmosis™ membrane macro — layered white filter cylinder cross-section on white",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.11,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": ["texture", "detail", "hero"],
+        "quality": "medium"
+      }
+    },
+    "under-sink-plumbing-installation": {
+      "nodeId": "60292:160",
+      "tags": ["installation", "under-sink", "plumbing", "illustration"],
+      "description": "Under-sink plumbing close-up — chrome P-trap, braided supply hoses and shut-off valves beneath a stainless sink, white background (AI-generated)",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-render-front": {
+      "nodeId": "63090:2",
+      "tags": ["product", "purifier", "spirit", "render"],
+      "description": "Spirit purifier full front view, centered on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Front.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-render-side": {
+      "nodeId": "63091:2",
+      "tags": ["product", "purifier", "spirit", "render"],
+      "description": "Spirit purifier side profile showing two-tone casing depth, centered on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Side.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-render-perspective": {
+      "nodeId": "63092:2",
+      "tags": ["product", "purifier", "spirit", "render", "hero"],
+      "description": "Spirit purifier three-quarter perspective view, unit left-of-center on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Persp.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": ["hero", "card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-casing-macro": {
+      "nodeId": "63093:2",
+      "tags": ["product", "purifier", "spirit", "detail", "texture"],
+      "description": "Extreme close-up of the Spirit casing top with Bluewater logo and indicator icons, soft shadow, fills right of frame",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Zoom.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": ["detail", "texture", "hero"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-panel-zoom": {
+      "nodeId": "63094:2",
+      "tags": ["product", "purifier", "spirit", "detail"],
+      "description": "Mid-zoom on the Spirit indicator panel and casing seam, unit along left edge, white space right",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Zoom2.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": ["detail", "texture"],
+        "quality": "high"
+      }
+    },
+    "cleone-purifier-new-perspective": {
+      "nodeId": "63107:2",
+      "tags": ["product", "purifier", "cleone", "render", "new-design"],
+      "description": "New Cleone purifier three-quarter perspective render, light gray unit on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone - Persp.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card", "detail"], "quality": "high" }
+    },
+    "cleone-purifier-new-front": {
+      "nodeId": "63108:2",
+      "tags": ["product", "purifier", "cleone", "render", "new-design"],
+      "description": "New Cleone purifier front view render, centered on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone - Front.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "high" }
+    },
+    "cleone-purifier-inside-cutaway": {
+      "nodeId": "63109:2",
+      "tags": ["product", "purifier", "cleone", "technology", "cutaway", "how-it-works"],
+      "description": "Translucent technical cutaway of the new Cleone interior — filters and tank ghosted in pale line render, very light",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/New Cleone/Cleone Inside1.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "medium" }
+    },
+    "cleone-under-counter-scene": {
+      "nodeId": "63110:2",
+      "tags": ["product", "purifier", "cleone", "installation", "scene", "use-case"],
+      "description": "Cleone with tank installed in an open under-counter cabinet — wood-front kitchen unit with sink, white backdrop",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/Cleone/Content/Renders/Purifier_Scene_Front_Cleone_Tank.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "full-bleed", "card"], "quality": "high" }
+    },
+    "pro-purifier-new-perspective": {
+      "nodeId": "63111:2",
+      "tags": ["product", "purifier", "pro", "render", "new-design"],
+      "description": "New Pro purifier three-quarter perspective render, light gray unit on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro - Persp.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card", "detail"], "quality": "high" }
+    },
+    "pro-purifier-new-front": {
+      "nodeId": "63112:2",
+      "tags": ["product", "purifier", "pro", "render", "new-design"],
+      "description": "New Pro purifier front view render with control panel, centered on white — current product design",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro - Front.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "high" }
+    },
+    "pro-purifier-inside-cutaway": {
+      "nodeId": "63113:2",
+      "tags": ["product", "purifier", "pro", "technology", "cutaway", "how-it-works"],
+      "description": "Translucent technical cutaway of the new Pro interior — filter columns and plumbing ghosted in pale line render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/New Pro/Pro Inside.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "medium" }
+    },
+    "pro-under-counter-scene": {
+      "nodeId": "63114:2",
+      "tags": ["product", "purifier", "pro", "installation", "scene", "use-case"],
+      "description": "Pro installed in an open under-counter cabinet — wood-front kitchen unit with sink, white backdrop",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Purifiers/PRO/Content/Renders/Purifier_Scene_Front_Only Pro.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "full-bleed", "card"], "quality": "high" }
+    },
+    "isak-station-faucet-system": {
+      "nodeId": "63115:2",
+      "tags": ["product", "station", "isak", "faucet", "system"],
+      "description": "Isak Station system overview — purifier unit, bottle and counter-top faucet connected by blue tubing, on white",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Isak Station/Isak Station 01.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.78, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["hero", "card"], "quality": "high" }
+    },
+    "cafe-station-installation-cabinet": {
+      "nodeId": "63117:2",
+      "tags": ["product", "station", "cafe-station", "installation", "illustration"],
+      "description": "Café Station installation illustration — open under-sink cabinet with faucet, purifier and tank units, white 3D render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Café Station/2026 updates/Café-station-installation.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 0.83, "orientation": "portrait", "tone": "light", "subject": "center", "suitability": ["card", "detail"], "quality": "medium" }
+    },
+    "hotel-station-bottling-line": {
+      "nodeId": "63116:2",
+      "tags": ["product", "station", "hotel-station", "bottling", "machinery"],
+      "description": "Hotel Station 1 bottling line — row of washing/filling/capping machines in a panoramic strip render",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Hotel Station/Hotel Station 1/Content/Stills/Hotel_Station1.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 4.5, "orientation": "landscape", "tone": "light", "subject": "center", "suitability": ["detail", "texture"], "quality": "high" }
+    },
+    "restaurant-station-faucet-scene": {
+      "nodeId": "63118:2",
+      "tags": ["product", "station", "restaurant-station", "faucet", "scene", "app"],
+      "description": "Restaurant Station faucet on a stone counter with ordering tablet showing the Bluewater interface",
+      "source": { "type": "onedrive-sync", "path": "Product Categories/Bluewater Stations/Beverage station (draft)/RestaurantStation_Scene_with tablet_Natural.png", "importedAt": "2026-06-11" },
+      "visual": { "aspect": 1.0, "orientation": "square", "tone": "light", "subject": "center", "suitability": ["hero", "card"], "quality": "high" }
     },
     "bluewater-purifiers-cover-hero": {
       "nodeId": "61219:17966",
       "tags": ["product", "purifier", "hero"],
-      "description": "All-purifiers deck cover hero image"
+      "description": "Two purifiers in tight panoramic crop, ReverseOsmosis wordmark visible — light gray cover hero",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 2.44,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["hero", "full-bleed"],
+        "quality": "high"
+      }
     }
   }
 }

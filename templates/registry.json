@@ -2864,19 +2864,11 @@
         }
       ],
       "imageSlots": [
-        {
-          "nodeId": "56881:513",
-          "role": "small-image-1"
-        },
-        {
-          "nodeId": "56881:555",
-          "role": "center-hero-image"
-        },
-        {
-          "nodeId": "56881:559",
-          "role": "small-image-2"
-        }
+        {"nodeId": "56881:513", "role": "hero-image", "w": 587, "h": 915},
+        {"nodeId": "56881:555", "role": "small-image-1", "w": 277, "h": 287},
+        {"nodeId": "56881:559", "role": "small-image-2", "w": 277, "h": 287}
       ],
+      "imageSlotsNote": "Roles corrected 2026-06-11: 56881:513 is the large hero card (587x915); 555/559 are the small square cards (277x287). Dims are the clipping card frames, not the overflowing image nodes.",
       "matchHints": "4-6 distinct items where one image is the hero centerpiece. Mixes text, color-block stats, and image cards."
     },
     "pillar-grid-4up-image": {
@@ -2929,19 +2921,11 @@
         }
       ],
       "imageSlots": [
-        {
-          "nodeId": "56881:593",
-          "role": "pillar-1-image"
-        },
-        {
-          "nodeId": "56881:600",
-          "role": "pillar-2-image"
-        },
-        {
-          "nodeId": "56881:608",
-          "role": "pillar-3-image"
-        }
+        {"nodeId": "56881:593", "role": "pillar-2-image", "w": 432, "h": 745},
+        {"nodeId": "56881:600", "role": "pillar-3-image", "w": 432, "h": 745},
+        {"nodeId": "56881:608", "role": "pillar-4-image", "w": 432, "h": 745}
       ],
+      "imageSlotsNote": "Pillar 1 is a vector stat card by design (no image). Exactly 3 image slots are required — do not treat the 4th pillar as a missing image.",
       "optionalSlots": [
         "body"
       ],

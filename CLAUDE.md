@@ -13,7 +13,10 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 - **No build step, no runtime, no dependencies.** Claude is the engine.
 - `templates/registry.json` — Maps the Bluewater slide templates to Figma node IDs and content slots
 - `products/registry.json` — **Product packs**: finished, on-brand product slides (Kitchen Station, purifiers) the generator can clone-and-rewrite (see Product Content Library below)
-- `assets/library.json` — Brand + product image index (keyed by SEO name → Figma nodeId, tags, description)
+- `assets/library.json` — Brand + product image index, v2: every asset carries vision metadata (`visual`: aspect/orientation/tone/subject/suitability/quality) + `source` provenance
+- `assets/preferences.json` — Curation memory: every layout/image pick from Curated mode, read back as a ranking tie-breaker by the matchers
+- `.claude/commands/import-assets.md` — Slash command: synced-SharePoint search → Figma "Import inbox" visual curation → vision-indexed library entries
+- `tools/validate_assets.py` — Regression gate for `assets/library.json` (v2) + `assets/preferences.json`
 - `.claude/commands/generate-presentation.md` — Slash command orchestrating the full pipeline
 - `.claude/commands/index-product.md` — Slash command that indexes a finished product deck into `products/registry.json`
 - `tools/validate_products.py` — Regression gate for `products/registry.json`
@@ -36,6 +39,14 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 - Templates with `flexible.buildFromScratch: true` can be rebuilt with different item counts using the grid system
 - Templates with `flexible.optionalSlots` allow hiding unused text elements
 - Templates with `flexible.impactSlots` allow scaling up dramatic numbers/phrases
+
+## Image Pipeline
+
+- **Library v2**: every asset in `assets/library.json` is vision-indexed (see `visual` block) — the generator matches semantically (tags/description) then geometrically (aspect vs slot, suitability, quality). Gate: `python3 tools/validate_assets.py` (must end `OK`).
+- **Import**: `/import-assets <terms>` searches the locally synced SharePoint library (`~/Library/CloudStorage/OneDrive-SharedLibraries-BluewaterGroup/Marketing - Documents/`), stages candidates in a visual "Import inbox" grid on the Brand Assets page, and indexes the keepers. Curation is always visual — never by filename. Primary source folders: `Product Categories/Bluewater Stations` + `Bluewater Purifiers`.
+- **No-placeholder gate**: a slide with no passing image candidate is re-routed to a text-first template (§5d.3 table); FIG placeholders never ship.
+- **Curated mode** (default in `/generate-presentation`): ambiguous slides get up to 3 rendered layout alternatives to pick from (Step 4.5); image slides get alternates strips for instant swaps (Step 5.5). Every pick is logged to `assets/preferences.json` (Step 5.6) and improves future ranking. `Direct` mode = one-shot build.
+- Spec: `docs/superpowers/specs/2026-06-11-image-pipeline-design.md` · Spike: `docs/superpowers/specs/2026-06-11-import-spike-result.md`.
 
 ## Template Font
 
