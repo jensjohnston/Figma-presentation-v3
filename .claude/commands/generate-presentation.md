@@ -495,50 +495,65 @@ for (let rowIdx = 0; rowIdx < rows.length; rowIdx++) {
 }
 ```
 
-### 5d. Image Placement
+### 5d. Image Placement (vision-indexed)
 
-After filling text on a slide, check if the template has `imageSlots` in the registry. If it does AND `assets/library.json` has assets:
+Image choice is a two-stage match against `assets/library.json` (v2: every asset carries a `visual` block), with preference boosts from `assets/preferences.json`. If the library is empty, skip image placement and note that `/import-assets` or `/sync-assets` should be run first.
 
-1. Read the slide's content context (title, topic keywords)
-2. Match assets from the library by comparing tags to the slide context
-3. For each image slot, copy the image fill from the matched asset node
+#### 5d.1 Rank candidates per image slot
+
+For each entry in the template's `imageSlots`:
+
+1. **Semantic score (0–3):** compare the slide's title/topic/keywords against each asset's `tags` + `description`. 3 = direct subject match (slide about Spirit → asset tagged `spirit`); 2 = same family (any purifier asset for a purifier-range slide); 1 = generic brand-fit only (lifestyle/texture); 0 = unrelated. Discard 0s.
+2. **Geometric filter (hard pass/fail):**
+   - Slot aspect: from the registry entry's `w`/`h` when present (e.g. split-portrait 900×1023 → 0.88); otherwise by `size` tier: `small` ≈ 0.8–1.3, `medium` ≈ 1.0–1.6, `large` ≈ 1.4–1.9; `background-image` roles = 1.78 (full slide).
+   - PASS when the asset's `visual.aspect` is within ±25% of the slot aspect, OR `visual.subject` is `center` (center-subject images crop safely under FILL).
+   - `background-image` / hero roles additionally require `full-bleed` or `hero` in `visual.suitability` AND `visual.quality == "high"`.
+   - Card/cell slots require at least one of `card`/`detail`/`hero` in `suitability`.
+3. **Preference boost (tie-breaker):** read `assets/preferences.json → imagePicks`. +1 to an asset `chosen` for a similar context (same role or topic family); −1 when `rejected` in ≥2 similar contexts. Boosts never rescue a geometric FAIL.
+4. **Rank** passing candidates by semantic score + boost. Top pick is applied now; the next 2–3 become the alternates strip in Curated mode (Step 5.5).
+
+#### 5d.2 Apply with tone/subject rules
+
+Copy the fill from the asset node to the slot (same page-switch pattern as before), forcing FILL:
 
 ```javascript
-// Image placement: copy fill from Brand Assets page node to slide placeholder
-// Must switch to Brand Assets page to access the asset node, then back to output page
-
 const assetPage = figma.root.children.find(p => p.id === "ASSET_PAGE_ID");
 await figma.setCurrentPageAsync(assetPage);
-const assetNode = figma.getNodeById("ASSET_NODE_ID");
-const assetFills = JSON.parse(JSON.stringify(assetNode.fills));
+const assetNode = await figma.getNodeByIdAsync("ASSET_NODE_ID");
+const fills = JSON.parse(JSON.stringify(assetNode.fills));
+for (const f of fills) if (f.type === "IMAGE") f.scaleMode = "FILL";
 
 const outputPage = figma.root.children.find(p => p.id === "OUTPUT_PAGE_ID");
 await figma.setCurrentPageAsync(outputPage);
-
-// Find the image slot in the cloned slide by name
-function findFrameByName(node, name) {
-  if (node.name === name) return node;
-  if ("children" in node) {
-    for (const c of node.children) {
-      const f = findFrameByName(c, name);
-      if (f) return f;
-    }
-  }
-  return null;
-}
-
-const target = figma.getNodeById("CLONED_IMAGE_SLOT_NODE_ID");
-// Or find by traversal if IDs changed after cloning:
-// const target = findFrameByName(clone, "Bento-50");
-
-target.fills = assetFills;
+const target = clone.findOne(n => n.name === "SLOT_NAME");  // or by role/position per registry note
+target.fills = fills;
 ```
 
-**Important notes:**
-- Image slots are identified by their original `nodeId` in the registry. After cloning, you need to find the equivalent node in the clone by name or position.
-- If no matching asset exists for a slot, leave it as-is (the template's default fill) and note it in the report.
-- The user can override image choices: *"Use cafe-station-1-hero on slide 4"*
-- If the asset library is empty, skip image placement entirely and note that `/sync-assets` should be run first.
+Note: asset nodeIds are global — the asset node may live on any page (see `assets/library.json` note); switch to the page that holds it, or rely on `getNodeByIdAsync` which loads it regardless.
+
+On image-overlay templates (`full-bleed-hero`, `full-bleed-tech-hero`, `cover-with-product`):
+- Text variant follows the asset's `visual.tone`: `light` image → dark text (`isDark: false` chrome), `dark`/`mixed` → light text (`isDark: true`).
+- Prefer candidates whose `visual.subject` keeps the bottom-left title zone clear (`right`/`top` best; `bottom`/`left` allowed only if nothing better passes — flag for Step 6 QA legibility check).
+
+#### 5d.3 No-placeholder gate (REQUIRED)
+
+A FIG placeholder must NEVER survive into the final deck. If ranking leaves any required image slot without a passing candidate, do not build the image template — **re-route the slide to its text-first equivalent** and record the re-route for the Step 6 summary:
+
+| Image template | Text-first re-route |
+|---|---|
+| `pillar-grid-4up-image` | `template-bento4` |
+| `pillar-grid-3up-*` | `template-bento3` |
+| `pillar-grid-large-image` | `template-bento6` |
+| `bento-mix-center-hero` | `template-bento5` |
+| `full-bleed-hero` / `full-bleed-tech-hero` | `template-chapter-left` |
+| `cover-with-product` | `template-title-subtitle-left` |
+| `split-portrait` | `template-info-left-middle` |
+| `template-product-2` / `-3` | `template-bento2` / `-bento3` |
+| `bento-3up-delivery` | `template-bento3` |
+| `template-info-Nbullets` | same template, image slots hidden (`optionalSlots`) + re-anchor (5e) |
+| anything else | nearest no-`imageSlots` template with the same item count |
+
+**All-or-nothing per slide:** if a multi-slot template (e.g. 3 pillars) has passing candidates for only SOME slots, re-route anyway — a mix of real images and placeholders is worse than a clean text slide. Exception: slots listed in the template's `optionalSlots` may be hidden instead (then re-anchor per 5e).
 
 ### 5e. Re-anchor bottom-justified content (REQUIRED)
 
@@ -613,8 +628,13 @@ All registry templates now conform to `slideContract` at the source (every frame
 
 After all slides are generated:
 
-1. Use `get_screenshot` on a few slides from the output page to visually verify
-2. Present a summary to the user:
+1. **Imagery QA gate (REQUIRED):** `get_screenshot` EVERY slide that carries an image (placed asset or overlay). Check each against:
+   - Real image present — no FIG placeholder survived (if one did, the 5d.3 gate was skipped: re-route the slide now).
+   - Text legible over the image (overlay templates): title/meta readable against the actual pixels behind them. If not, flip the text variant per `visual.tone`, or swap to the next-ranked candidate and re-check.
+   - No awkward crop: the subject isn't cut off by FILL cropping. If it is, swap to the next-ranked candidate (prefer `subject: center`) and re-check.
+   Fix what is fixable; anything still failing goes in the summary as "needs manual attention" with the reason.
+2. `get_screenshot` a few text-only slides as a spot check.
+3. Present a summary to the user:
 
 ```
 Presentation generated successfully!
@@ -631,9 +651,12 @@ Slide summary:
 Any slides that need manual attention:
 - Slide 7: Content was condensed from 5 to 4 bullets
 - Slide 12: Logo garden template used — logos need to be added manually
+
+Re-routed slides:
+- Slide 9: pillar-grid-4up-image → template-bento4 (no passing image candidates)
 ```
 
-3. Ask if they want to iterate on any specific slides
+4. Ask if they want to iterate on any specific slides
 
 ## Error Handling
 
