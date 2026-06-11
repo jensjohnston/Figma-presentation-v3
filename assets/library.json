@@ -171,6 +171,20 @@
         "quality": "medium"
       }
     },
+    "under-sink-plumbing-installation": {
+      "nodeId": "60292:160",
+      "tags": ["installation", "under-sink", "plumbing", "illustration"],
+      "description": "Under-sink plumbing close-up — chrome P-trap, braided supply hoses and shut-off valves beneath a stainless sink, white background (AI-generated)",
+      "source": { "type": "figma" },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
     "spirit-purifier-render-front": {
       "nodeId": "63090:2",
       "tags": ["product", "purifier", "spirit", "render"],
