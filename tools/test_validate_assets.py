@@ -101,3 +101,19 @@ def test_unknown_source_type_fails(tmp_path):
     r = run(_env(tmp_path, lib))
     assert r.returncode == 1
     assert "source.type" in r.stdout
+
+
+def test_corrupt_orientation_reports_once(tmp_path):
+    lib = _base()
+    lib["assets"]["spirit-front"]["visual"]["orientation"] = "sideways"
+    r = run(_env(tmp_path, lib))
+    assert r.returncode == 1
+    assert r.stdout.count("orientation") == 1
+
+
+def test_empty_visual_dict_fails(tmp_path):
+    lib = _base()
+    lib["assets"]["spirit-front"]["visual"] = {}
+    r = run(_env(tmp_path, lib))
+    assert r.returncode == 1
+    assert "aspect" in r.stdout

@@ -36,25 +36,26 @@ def check_assets(lib):
             if field not in a:
                 errors.append(f"{key}: missing '{field}'")
         node = a.get("nodeId")
-        if node in seen_nodes:
-            errors.append(f"{key}: duplicate nodeId {node} (also {seen_nodes[node]})")
-        seen_nodes[node] = key
+        if node is not None:
+            if node in seen_nodes:
+                errors.append(f"{key}: duplicate nodeId {node} (also {seen_nodes[node]})")
+            seen_nodes[node] = key
         if not isinstance(a.get("tags"), list) or not a.get("tags"):
             errors.append(f"{key}: tags must be a non-empty list")
         src = a.get("source", {})
         if src.get("type") not in SOURCE_TYPES:
             errors.append(f"{key}: bad source.type {src.get('type')!r}")
-        v = a.get("visual", {})
-        if not v:
+        if "visual" not in a:
             continue
+        v = a.get("visual") or {}
         aspect = v.get("aspect")
         if not isinstance(aspect, (int, float)) or aspect <= 0:
             errors.append(f"{key}: visual.aspect must be a positive number")
-        elif v.get("orientation") != orientation_for(aspect):
-            errors.append(f"{key}: orientation {v.get('orientation')!r} "
-                          f"inconsistent with aspect {aspect}")
-        if v.get("orientation") not in ORIENTATIONS:
-            errors.append(f"{key}: bad orientation {v.get('orientation')!r}")
+        orientation = v.get("orientation")
+        if orientation not in ORIENTATIONS:
+            errors.append(f"{key}: bad orientation {orientation!r}")
+        elif isinstance(aspect, (int, float)) and aspect > 0 and orientation != orientation_for(aspect):
+            errors.append(f"{key}: orientation {orientation!r} inconsistent with aspect {aspect}")
         if v.get("tone") not in TONES:
             errors.append(f"{key}: bad tone {v.get('tone')!r}")
         if v.get("subject") not in SUBJECTS:
