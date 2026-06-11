@@ -1,4 +1,36 @@
 {
-  "imagePicks": [],
-  "templatePicks": []
+  "imagePicks": [
+    {
+      "context": { "role": "background-image", "topic": "purifier support training cover", "slot": "cover-with-product/background-image" },
+      "chosen": "bluewater-purifiers-cover-hero",
+      "rejected": ["kitchen-station-palma-lifestyle", "cleone-under-counter-scene", "cafe-coffee-lifestyle-purifier"],
+      "date": "2026-06-11"
+    }
+  ],
+  "templatePicks": [
+    {
+      "context": { "contentShape": "4 concept cards with body intro", "deck": "beam-support-training" },
+      "chosen": "template-bento4",
+      "rejected": ["template-bullets-4", "template-info-4bullets"],
+      "date": "2026-06-11"
+    },
+    {
+      "context": { "contentShape": "5 sequential questions / checklist", "deck": "beam-support-training" },
+      "chosen": "numbered-list",
+      "rejected": ["template-info-left-middle"],
+      "date": "2026-06-11"
+    },
+    {
+      "context": { "contentShape": "definition list + narrow callout, asymmetric", "deck": "beam-support-training" },
+      "chosen": "template-bento-66-33",
+      "rejected": ["template-comparison-50-50", "template-bullets-4"],
+      "date": "2026-06-11"
+    },
+    {
+      "context": { "contentShape": "3 metrics with formula intro", "deck": "beam-support-training" },
+      "chosen": "template-metrics-4",
+      "rejected": ["template-bento3"],
+      "date": "2026-06-11"
+    }
+  ]
 }
