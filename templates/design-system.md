@@ -623,6 +623,8 @@ function auditChrome(slide) {
 
 For these, omit `titleText` from `applyChrome()`. `auditChrome()` skips the title check when no `title` node exists at the slide root.
 
+**Covers carry NO top-meta (hard rule).** Cover / title / opening slides have **no `meta-left` and no `meta-right`** — the brand lockup IS the content, so the top-meta row stays empty. Never put "Bluewater × …", a section label, or a page counter on a cover. When building a cover, skip `applyChrome` (or call it with no meta args) and do not add meta nodes; if you clone a template onto a cover, delete its `meta-left` / `meta-right`. The sequential page counter still treats the cover as slide 1 of N — it's simply not rendered on the cover, so content slides begin at `02 / N`. (Codified 2026-06-08 after the Culligan deck shipped a cover with `Bluewater × Culligan` · `01 / 08` meta.)
+
 ## The geometry contract — `auditFrame` (source guard) + `auditSlide` (output gate)
 
 **Root cause of the 2026-05-29 JPD off-spec slides (now fixed at the root):** the generator clones template frames and only replaces text, so output is only as correct as the frame. There used to be two divergent sources of truth — the harmonized **Template references** page and the un-harmonized **Templates 4** page (`50285:14832`), whose frames shipped pre-harmonization geometry (title 80–120px, 64px margins, body 20–30px, cards ~80px off the bottom). Cloning a stale frame produced a silently off-spec slide.
