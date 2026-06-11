@@ -505,7 +505,7 @@ For each entry in the template's `imageSlots`:
 
 1. **Semantic score (0–3):** compare the slide's title/topic/keywords against each asset's `tags` + `description`. 3 = direct subject match (slide about Spirit → asset tagged `spirit`); 2 = same family (any purifier asset for a purifier-range slide); 1 = generic brand-fit only (lifestyle/texture); 0 = unrelated. Discard 0s.
 2. **Geometric filter (hard pass/fail):**
-   - Slot aspect: from the registry entry's `w`/`h` when present (e.g. split-portrait 900×1023 → 0.88); otherwise by `size` tier: `small` ≈ 0.8–1.3, `medium` ≈ 1.0–1.6, `large` ≈ 1.4–1.9; `background-image` roles = 1.78 (full slide).
+   - Slot aspect: from the registry entry's `w`/`h` when present (e.g. split-portrait 900×1023 → 0.88); otherwise by `size` tier using a single representative aspect: `small` = 1.3, `medium` = 1.6, `large` = 1.9; `background-image` roles = 1.78 (full slide). A slot with neither `w`/`h` nor `size` skips the aspect check (semantic + suitability filters still apply). Required slots = the registry's `imageSlots` entries only — a template may have more visual cards than image slots (see `imageSlotsNote`).
    - PASS when the asset's `visual.aspect` is within ±25% of the slot aspect, OR `visual.subject` is `center` (center-subject images crop safely under FILL).
    - `background-image` / hero roles additionally require `full-bleed` or `hero` in `visual.suitability` AND `visual.quality == "high"`.
    - Card/cell slots require at least one of `card`/`detail`/`hero` in `suitability`.
@@ -543,14 +543,14 @@ A FIG placeholder must NEVER survive into the final deck. If ranking leaves any 
 |---|---|
 | `pillar-grid-4up-image` | `template-bento4` |
 | `pillar-grid-3up-*` | `template-bento3` |
-| `pillar-grid-large-image` | `template-bento6` |
+| `pillar-grid-large-image` | nearest no-`imageSlots` template matching the item count; if >6 items, condense to the 6 strongest and list the dropped items in the Step 6 summary |
 | `bento-mix-center-hero` | `template-bento5` |
-| `full-bleed-hero` / `full-bleed-tech-hero` | `template-chapter-left` |
+| `full-bleed-hero` / `full-bleed-tech-hero` | `template-chapter-left` (title only — body is dropped; if the body copy is substantive, use `template-info-left-middle` instead) |
 | `cover-with-product` | `template-title-subtitle-left` |
 | `split-portrait` | `template-info-left-middle` |
 | `template-product-2` / `-3` | `template-bento2` / `-bento3` |
 | `bento-3up-delivery` | `template-bento3` |
-| `template-info-Nbullets` | same template, image slots hidden (`optionalSlots`) + re-anchor (5e) |
+| `template-info-Nbullets` | same template — find each `Bullet-image-N` frame on the clone, set `visible = false`, then re-anchor per 5e (these frames are NOT in `optionalSlots`; hide them directly) |
 | anything else | nearest no-`imageSlots` template with the same item count |
 
 **All-or-nothing per slide:** if a multi-slot template (e.g. 3 pillars) has passing candidates for only SOME slots, re-route anyway — a mix of real images and placeholders is worse than a clean text slide. Exception: slots listed in the template's `optionalSlots` may be hidden instead (then re-anchor per 5e).
