@@ -238,11 +238,11 @@ In **Curated mode**, the plan confirmation is lightweight (the real review happe
 
 The curator judges finished, rendered slides — never template names.
 
-1. **Variant count per slide (adaptive):** while matching in Step 4, score the top template candidates 1–10 for fit. A slide is **ambiguous** when the top two scores are within 2 points → build the top **3** candidates as alternatives. One clear answer → 1 variant. Always 1 variant for: covers, chapter dividers, closing slides, and product-pack clones (already-approved layouts).
-2. **Build the review grid:** build every variant as a complete slide (full §5 build — text, images per §5d, chrome, audit). Position: slide i at x = i·2120; variant A (the recommendation) at y = 0, B at y = 1280, C at y = 2560. Frame names: `S04-A — pillar-grid-4up-image (recommended)`, `S04-B — template-bento4`, …
+1. **Variant count per slide (adaptive):** while matching in Step 4, score the top template candidates 1–10 for fit. A slide is **ambiguous** when the top two scores are within 2 points → build the top **3** candidates as alternatives. One clear answer → 1 variant. Always 1 variant for: covers, chapter dividers, closing slides, and product-pack clones (already-approved layouts). To generate candidates, walk the Step 4 priority list past the first match and take the next 2 templates that could also hold the content (same item count or compatible layout category) — those are B and C. Rubric: 10 = exact structural match; 7–9 = strong fit, minor compromises; 4–6 = workable but less ideal; 1–3 = stretch. Score all candidates before deciding ambiguity.
+2. **Build the review grid:** build every variant as a complete slide (full §5 build — text, images per §5d, chrome, audit). Position: slide i at x = i·2120; variant A (the recommendation) at y = 0, B at y = 1280, C at y = 2560. Frame names: `S04-A — pillar-grid-4up-image (recommended)`, `S04-B — template-bento4`, … For review-grid variant builds, treat `auditSlide` issues as warnings (append them to the variant's frame name, e.g. `S04-B — template-bento4 ⚠ title-size`) — the §5g STOP rule applies only to the assembled final deck. Report surviving variant audit issues after picks are confirmed.
 3. **Collect picks:** `get_screenshot` each ambiguous slide's column (or the grid in chunks) and show the curator. Ask per ambiguous slide via AskUserQuestion ("Slide 4: A, B, or C?") or accept compact chat answers ("4→B, 9→C, rest A"). Unmentioned slides default to A.
-4. **Assemble the final deck row:** move each chosen variant to y = 0 at its slide x; rename sequentially (`Slide 04 — <title>`); refresh page numbers via `applyDeckChrome` (total = final slide count); DELETE all losing variants.
-5. **Log every decision** per Step 5.6 — including default-A confirms (chosen = A's template, rejected = B's and C's).
+4. **Assemble the final deck row:** move each chosen variant to y = 0 at its slide x; rename sequentially (`Slide 04 — <title>`); refresh page numbers via `applyDeckChrome` (total = final slide count); write the Step 5.6 records for the layout picks FIRST, then DELETE all losing variants.
+5. **Log every decision** per Step 5.6 (written before the losing variants are deleted, per item 4) — including default-A confirms (chosen = A's template, rejected = B's and C's).
 
 ## Step 5: Generate in Figma
 
@@ -286,9 +286,10 @@ const outputPage = figma.root.children.find(p => p.id === "OUTPUT_PAGE_ID");
 await figma.setCurrentPageAsync(outputPage);
 outputPage.appendChild(clone);
 
-// Step 4: Position (slide index * (1080 + 200) spacing)
-clone.x = 0;
-clone.y = SLIDE_INDEX * 1280;
+// Step 4: Position — horizontal deck row (the project's canonical layout)
+// In Curated mode, Step 4.5 dictates positions instead (variant A y=0, B y=1280, C y=2560).
+clone.x = SLIDE_INDEX * 2120;
+clone.y = 0;
 
 // Step 5: Find and set text nodes
 // IMPORTANT: skip text nodes whose name starts with '_legacy_' — those are quarantined
@@ -412,8 +413,8 @@ const clone = source.clone();
 const outputPage = figma.root.children.find(p => p.id === "OUTPUT_PAGE_ID");
 await figma.setCurrentPageAsync(outputPage);
 outputPage.appendChild(clone);
-clone.x = 0;
-clone.y = SLIDE_INDEX * 1280;
+clone.x = SLIDE_INDEX * 2120;
+clone.y = 0;
 
 // Fill slots with overflow protection (reuse setText from 5b inside fitShellText):
 const flags = [];
@@ -653,7 +654,7 @@ All registry templates now conform to `slideContract` at the source (every frame
 After assembly, for every slide with `imageSlots` where §5d.1 ranked ≥2 passing candidates:
 
 1. **Build the alternates strip** below the slide (y = slide.y + 1180): for each runner-up (max 3), a rectangle 300px wide (height per the candidate's aspect) filled with the candidate image (FILL), laid out left-to-right with 32px gaps from the slide's x. Label each with a 24px text node: `S04-B`, `S04-C`, `S04-D`. Group strip + labels in a frame named `S04-alternates`. Slides whose slot had only one passing candidate get no strip.
-2. **Collect swaps:** `get_screenshot` the deck row with strips; show the curator; accept "4 → C"-style answers (AskUserQuestion or chat). Unmentioned slides keep their top pick.
+2. **Collect swaps:** `get_screenshot` each slide column including its strip — capture from y = 0 down to the strip bottom (≈ y = 1700), not just the 1080px slide; show the curator; accept "4 → C"-style answers (AskUserQuestion or chat). Unmentioned slides keep their top pick.
 3. **Apply swaps:** copy the chosen alternate's fill onto the slide's slot per §5d.2 — including the tone rule: if the new image's `visual.tone` differs, flip the text variant to match.
 4. **On final confirm:** DELETE every `S*-alternates` frame; re-run `auditSlide` on swapped slides; proceed to Step 6 (the imagery QA gate covers the swapped images too).
 
@@ -671,6 +672,8 @@ Append one record per curation decision to `assets/preferences.json` (create as 
 { "context": { "role": "<slot role or template category>", "topic": "<slide topic>", "slot": "<imageSlot name/role>" },
   "chosen": "<winning assetKey>", "rejected": ["<losing assetKeys>"], "date": "<YYYY-MM-DD>" }
 ```
+
+Records must be complete to be useful: populate every `context` sub-key (the §5d.1 boost and the Step 4 tie-breaker match on them — an empty context validates but never matches), and product picks must use the full `product:<slug>/<role>` form, never a bare `product:<slug>`.
 
 Then run `python3 tools/validate_assets.py` — must end `OK`. These records feed the §5d.1 preference boost and the Step 4 template tie-breaker on every future run.
 
