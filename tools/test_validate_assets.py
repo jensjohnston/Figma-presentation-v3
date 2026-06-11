@@ -117,3 +117,9 @@ def test_empty_visual_dict_fails(tmp_path):
     r = run(_env(tmp_path, lib))
     assert r.returncode == 1
     assert "aspect" in r.stdout
+
+
+def test_real_library_passes():
+    r = run()
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert r.stdout.startswith("OK"), r.stdout
