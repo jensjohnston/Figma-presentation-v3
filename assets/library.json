@@ -171,6 +171,76 @@
         "quality": "medium"
       }
     },
+    "spirit-purifier-render-front": {
+      "nodeId": "63090:2",
+      "tags": ["product", "purifier", "spirit", "render"],
+      "description": "Spirit purifier full front view, centered on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Front.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-render-side": {
+      "nodeId": "63091:2",
+      "tags": ["product", "purifier", "spirit", "render"],
+      "description": "Spirit purifier side profile showing two-tone casing depth, centered on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Side.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-render-perspective": {
+      "nodeId": "63092:2",
+      "tags": ["product", "purifier", "spirit", "render", "hero"],
+      "description": "Spirit purifier three-quarter perspective view, unit left-of-center on white — previous-generation Spirit casing",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Persp.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": ["hero", "card", "detail"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-casing-macro": {
+      "nodeId": "63093:2",
+      "tags": ["product", "purifier", "spirit", "detail", "texture"],
+      "description": "Extreme close-up of the Spirit casing top with Bluewater logo and indicator icons, soft shadow, fills right of frame",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Zoom.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": ["detail", "texture", "hero"],
+        "quality": "high"
+      }
+    },
+    "spirit-purifier-panel-zoom": {
+      "nodeId": "63094:2",
+      "tags": ["product", "purifier", "spirit", "detail"],
+      "description": "Mid-zoom on the Spirit indicator panel and casing seam, unit along left edge, white space right",
+      "source": { "type": "onedrive-sync", "path": "Distributor Folder/Content (Images, Videos and Renders)/Spirit/Renders/Spirit - Zoom2.png", "importedAt": "2026-06-11" },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": ["detail", "texture"],
+        "quality": "high"
+      }
+    },
     "bluewater-purifiers-cover-hero": {
       "nodeId": "61219:17966",
       "tags": ["product", "purifier", "hero"],
