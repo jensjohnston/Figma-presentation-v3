@@ -117,7 +117,7 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 | Element | Size | Weight | Line height | Color |
 |---|---|---|---|---|
-| Slide title | 64 | Semi Bold | 110% | Gray/900 #18181B |
+| Slide title | 64 | Semi Bold | 110% | Gray/800 #27272A |
 | Slide eyebrow (above title) | 32 | Medium | 110% | Gray/700 on light · Blue/600 on dark |
 | Slide subtitle | 28 | Medium | 134% | Gray/500 #71717A |
 | Slide body (the `body` node, under the title) | 28 | Medium | 134% | Gray/500 #71717A |
@@ -188,7 +188,7 @@ Four token scales from the design system: Gray, Blue, Rose, Green (each 50-950).
 
 | Role | Token | Hex |
 |---|---|---|
-| Headings | Gray/900 | #18181B |
+| Headings | Gray/800 | #27272A |
 | Labels/eyebrows | Gray/700 | #3F3F46 |
 | Body copy | Gray/500 | #71717A |
 | Card backgrounds | Gray/100 | #F4F4F5 |
@@ -205,6 +205,16 @@ Four token scales from the design system: Gray, Blue, Rose, Green (each 50-950).
 - Rose and Green are **contextual** — only when content is about health or sustainability
 - Blue is used sparingly: hero cards and accent dots only
 - All other UI is grayscale
+
+**Gray/100 bento card text colors:**
+When a bento card has a **Gray/100 (`#F4F4F5`) background**, use **Gray/600 (`#52525B`)** for body copy and eyebrows/labels — one step darker than the default Gray/500, for legibility on the light card surface.
+
+| Element | Default | On Gray/100 card |
+|---|---|---|
+| Body copy | Gray/500 `#71717A` | **Gray/600 `#52525B`** |
+| Eyebrow / label | Gray/700 `#3F3F46` | **Gray/600 `#52525B`** |
+
+Headings stay at **Gray/800 `#27272A`** regardless of card background.
 
 ### Valid text combinations per cell
 
@@ -536,7 +546,7 @@ Chrome (top-meta and slide title) MUST go at exact positions defined in `registr
 |---|---|---|---|
 | `meta-left`  | 48   | 48  | 14 Regular, Gray/500 (light) or Gray/400 (dark) |
 | `meta-right` | 1872 - width | 48 | 14 Regular, RIGHT-aligned, same color tier |
-| `title`      | 48   | 115 | 64 Semi Bold 110%, Gray/900 (light) or White (dark), max 2 rows |
+| `title`      | 48   | 115 | 64 Semi Bold 110%, Gray/800 (light) or White (dark), max 2 rows |
 
 > ⚠️ **`meta-right` must be RIGHT-anchored — re-pin after editing its text (clone path).** `meta-right`'s **right edge belongs at x=1872** (48px from the slide edge). Some templates ship it **LEFT-aligned at a fixed x** (e.g. tables, comparison, timeline pin it at x=1659 to match a placeholder width). When you clone such a template and replace the text, a left-aligned hugging box keeps its left x and the right edge **drifts** — a shorter string lands ~105px from the slide edge instead of 48px. After setting `meta-right` text on a cloned template, always re-pin: `m.textAlignHorizontal = "RIGHT"; m.x = 1872 - m.width;` (load the font first — alignment is a font-dependent mutation). `applyChrome` already does this for from-scratch builds; the clone path must do it explicitly. `meta-left` is LEFT-anchored at x=48 and grows rightward, so it never needs re-pinning.
 
