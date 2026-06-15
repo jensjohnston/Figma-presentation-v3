@@ -1,0 +1,59 @@
+{
+  "note": "Industry logo garden registry. Each entry maps an industry to a cloneable Figma frame on the Template references page. Generator clones by nodeId and rewrites the title slot; logos stay as-is. Matched before generic templates when slide intent is logo-garden / social-proof / 'as seen in'.",
+  "industries": {
+    "general": {
+      "nodeId": "63807:1397",
+      "frameName": "logo-garden-general",
+      "logoCount": 9,
+      "logos": ["W Hotels", "Volvo", "Four Seasons", "PGA Tour", "Apple", "Equinox", "Lululemon", "Red Bull", "Airbnb"],
+      "aliases": ["our clients", "customers", "partners", "brands", "trusted by", "who we work with"],
+      "matchHints": ["our clients", "trusted by", "brands drinking", "logo garden", "customers", "clients", "partners", "who trusts us"],
+      "defaultTitle": "Brands drinking Bluewater."
+    },
+    "gym-fitness": {
+      "nodeId": "63807:1376",
+      "frameName": "logo-garden-gym-fitness",
+      "logoCount": 9,
+      "logos": ["Equinox", "CrossFit", "F45 Training", "Anytime Fitness", "Barry's", "Blink Fitness", "CycleBar", "Pure Barre", "Club Pilates"],
+      "aliases": ["gym", "fitness", "wellness", "health club", "studio", "workout", "fitness center"],
+      "matchHints": ["gym", "fitness", "wellness", "health club", "studio", "workout", "fitness center", "boutique fitness", "training"],
+      "defaultTitle": "Leading fitness brands choose Bluewater."
+    },
+    "hospitality": {
+      "nodeId": "63807:1418",
+      "frameName": "logo-garden-hospitality",
+      "logoCount": 6,
+      "logos": ["W Hotels", "Four Seasons", "Fairmont", "Marriott", "Accor", "Hyatt"],
+      "aliases": ["hotel", "hospitality", "resort", "accommodation", "lodging"],
+      "matchHints": ["hotel", "hospitality", "resort", "accommodation", "lodging", "luxury hotel", "property", "guest experience"],
+      "defaultTitle": "World-class hospitality brands trust Bluewater."
+    },
+    "golf-sport": {
+      "nodeId": "63807:1433",
+      "frameName": "logo-garden-golf-sport",
+      "logoCount": 9,
+      "logos": ["PGA Tour", "The Open", "AIG Women's Open", "The Senior Open", "Pebble Beach", "St Andrews", "NIO 333 Racing", "Stanford", "UCLA Bruins"],
+      "aliases": ["golf", "sport", "sports", "athletics", "tournament", "PGA", "championship"],
+      "matchHints": ["golf", "sport", "sports", "athletics", "tournament", "PGA", "championship", "club", "course", "university", "collegiate"],
+      "defaultTitle": "World-class sports organizations choose Bluewater."
+    },
+    "tech": {
+      "nodeId": "63807:1454",
+      "frameName": "logo-garden-tech",
+      "logoCount": 6,
+      "logos": ["Apple", "Volvo", "Airbnb", "GoPro", "Coachella", "COP28"],
+      "aliases": ["tech", "technology", "innovation", "event", "festival", "lifestyle"],
+      "matchHints": ["technology", "tech", "innovation", "startup", "event", "festival", "lifestyle brand", "forward-thinking"],
+      "defaultTitle": "Innovative brands choose Bluewater."
+    },
+    "media": {
+      "nodeId": "63807:1469",
+      "frameName": "logo-garden-mentioned",
+      "logoCount": 3,
+      "logos": ["Financial Times", "Forbes", "Independent"],
+      "aliases": ["press", "media", "as seen in", "featured in", "mentioned in"],
+      "matchHints": ["press", "media", "as seen in", "featured in", "mentioned in", "news", "editorial", "coverage", "publication"],
+      "defaultTitle": "As seen in."
+    }
+  }
+}

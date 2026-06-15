@@ -37,6 +37,10 @@ This contains:
 
 You will use this registry throughout the process.
 
+### `industries/registry.json` (industry logo gardens)
+
+Also read `industries/registry.json`. This holds **industry-specific logo garden slides** — finished, cloneable Figma frames for hospitality, gym/fitness, golf/sport, tech, media, and a general mix. Keyed by industry slug with `aliases`, `matchHints`, `nodeId`, and `defaultTitle`.
+
 ### `products/registry.json` (product packs)
 
 Also read `products/registry.json`. This is the **product-aware** layer: finished,
@@ -74,6 +78,10 @@ of **matched product slugs** (zero, one, or several). For each matched product, 
 (slides + content + images) — you will prefer it during matching (Step 4) and filling (Step 5).
 
 If **no** product matches, skip the product-first path entirely and proceed exactly as today.
+
+### Detect industries (additive)
+
+Also scan the deck's full text against every `industries.<slug>.aliases` list in `industries/registry.json`. Record the **matched industry slug** (at most one — pick the strongest match by alias overlap; ties go to `general`). You will use it in Step 4 to route logo garden slides to the right industry frame instead of the generic `template-logo-garden-3x3`.
 
 ## Step 3: Presentation Preferences
 
@@ -163,7 +171,9 @@ All templates live on the **"Template references"** page (`56881:463`, status `p
 15. **Quote with attribution** → `template-quote1-middle` or `template-quote2-middle` (KEEP)
 16. **Numbered process/steps** → `numbered-list` (Template references)
 17. **Tabular data** → `template-table-2columns`, `-3columns`, `-4columns` (KEEP, by column count)
-18. **Logos** → `template-logo-garden-3x3` (KEEP)
+18. **Logos / social proof** → check `industries/registry.json` first:
+    - If a slide's intent matches `matchHints` in any industry entry AND a matching industry was detected in Step 2, **clone that industry's logo garden frame** (same clone-move pattern as product slides; rewrite only the `title` slot using the `defaultTitle` or the PDF's slide title adapted to Bluewater voice; `meta-left` = deck label; no `meta-right` needed — the cloned frame omits it). Audit with `kind: "skip"`.
+    - No industry match → fall back to `template-logo-garden-3x3` (KEEP).
 19. **Side-by-side comparison** → `template-comparison-50-50` (OVERLAP)
 20. **Timeline / roadmap** → `template-timeline-bento`, `-timeline-cards`, or `-timeline-horizontal` (OVERLAP)
 21. **Generic 2–6 bento (no clear hero, no imagery available)** → `template-bento2`/`-bento3`/`-bento4`/`-bento5`/`-bento6`, or asymmetric `template-bento-25-75` / `-33-66` / `-66-33` / `-75-25` (OVERLAP)
@@ -377,6 +387,16 @@ await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 
 return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ```
+
+### 5b-colors. Color swatch rows (additive, post-fill)
+
+After filling all text slots on a card, check the card's body copy for color mentions:
+
+- **Trigger phrases:** "comes in N colors", "available in", "colorways", or an explicit color list in the body text.
+- **Action:** read `design-system.md → "Color Swatch Row Pattern"` and add a `color-swatches` row to that card following the spec exactly (24 px dots, 10 px gap, x=48 set AFTER appendChild, y = text section bottom + 16 px).
+- **Color list:** use the color names mentioned in the PDF / product content. Apply the White/Clear stroke rules from the design system; map all other names to their product hex values (see the spec table for Bluewater standard colors).
+- **Idempotent:** hide any existing `color-swatches` child on the card before appending the new row.
+- This is additive — it does not change the slide template, text slots, or audit outcome.
 
 ### 5b-product. Cloning a product slide (product-first path)
 
