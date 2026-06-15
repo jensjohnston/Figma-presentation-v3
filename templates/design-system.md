@@ -249,6 +249,7 @@ Usable width: 1920 - 96 = 1824px
 
 ### Vertical rhythm
 
+**Without eyebrow:**
 ```
 y=0    ─────────────── slide top
 y=48   ─── top meta (14 Regular, height ~19 → bottom ~67)
@@ -263,11 +264,27 @@ y=1032 ─── last content element ends (content height always 745px)
 y=1080 ─────────────── slide bottom
 ```
 
-- **Meta → title gap: 48px** (between meta bottom edge and title top)
+**With eyebrow:**
+```
+y=0    ─────────────── slide top
+y=48   ─── top meta (14 Regular, height ~19 → bottom ~67)
+       ↕ 48px gap
+y=115  ─── eyebrow (32 Medium 110%, height ~35 → bottom ~150)
+       ↕ 12px gap
+y=162  ─── slide title (64 Semi Bold 110%, 70px per line)
+       ↕ variable gap — absorbs title height
+y=287  ─── content starts (FIXED)
+       ...
+y=1032 ─── last content element ends (content height always 745px)
+y=1080 ─────────────── slide bottom
+```
+
+- **Meta → title gap: 48px** (between meta bottom edge and title top — or eyebrow top when present)
+- **Eyebrow → title gap: 12px** (eyebrow at y=115, title at y=162)
 - **Content is pinned at y=287** regardless of title length — card height is always **745px**
 - **Title → content gap varies** to absorb the title's line count:
-  - 1-row title (70 tall) → ~102px gap to content
-  - 2-row title (141 tall) → ~32px gap to content
+  - 1-row title (no eyebrow, 70 tall) → ~102px gap to content
+  - 2-row title (no eyebrow, 141 tall) → ~32px gap to content
 - This gives card-height consistency across the deck without forcing title authors to keep titles on one line
 - **No bottom meta.** The 48px bottom margin is the only space below the last content element.
 
@@ -299,8 +316,9 @@ Cards expand to fill the 1824 usable width. Standard tier widths:
 - Top margin: **48px** (top meta at y=48)
 - Bottom margin: **48px** (last content element's bottom edge at y=1032)
 - Horizontal margin: **48px** each side (content between x=48 and x=1872)
-- Meta → title: **48px** gap (title top edge at y=115)
-- Title → body/subtitle: **15px** gap (body at y=200 when present); body is **32 Medium 134% Gray/500**, full width
+- Meta → title: **48px** gap (title top edge at y=115, or eyebrow top at y=115 when an eyebrow is present)
+- Eyebrow → title: **12px** gap (eyebrow at y=115, title at y=162 when eyebrow is present)
+- Title → body/subtitle: **15px** gap (body at y=200 when present, no eyebrow); body is **32 Medium 134% Gray/500**, full width
 - Content top: **y=287 (FIXED)** — does not shift based on title length
 - Card height: **745px** (= 1032 − 287)
 - Title → content gap: **variable** — computed as `287 − (title_y + title_height)`. Typically ~102 for 1-row titles, ~32 for 2-row titles.
