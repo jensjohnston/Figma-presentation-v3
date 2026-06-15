@@ -388,6 +388,16 @@ await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ```
 
+### 5b-colors. Color swatch rows (additive, post-fill)
+
+After filling all text slots on a card, check the card's body copy for color mentions:
+
+- **Trigger phrases:** "comes in N colors", "available in", "colorways", or an explicit color list in the body text.
+- **Action:** read `design-system.md → "Color Swatch Row Pattern"` and add a `color-swatches` row to that card following the spec exactly (24 px dots, 10 px gap, x=48 set AFTER appendChild, y = text section bottom + 16 px).
+- **Color list:** use the color names mentioned in the PDF / product content. Apply the White/Clear stroke rules from the design system; map all other names to their product hex values (see the spec table for Bluewater standard colors).
+- **Idempotent:** hide any existing `color-swatches` child on the card before appending the new row.
+- This is additive — it does not change the slide template, text slots, or audit outcome.
+
 ### 5b-product. Cloning a product slide (product-first path)
 
 When Step 4 chose a **product slide** instead of a generic template, the build is the same

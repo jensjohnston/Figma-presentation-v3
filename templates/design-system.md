@@ -423,6 +423,86 @@ Title and closing slides (openers, section reveals, closings) invert the system:
 
 Use dark slides only for chrome moments: opening title, section-break reveals, closing. Body content slides stay light.
 
+## Color Swatch Row Pattern
+
+When a product card mentions that it is **available in multiple colors**, add a horizontal row of colored circles below the card's body text — between the text section and the image.
+
+### When to use
+
+Trigger this pattern whenever card body text contains phrases like "comes in N colors", "available in", or lists specific color names. Works on any bento card that has a visible gap between the text section bottom and the image section top (typically 40–80px).
+
+### Spec
+
+| Property | Value |
+|---|---|
+| Dot size | 24 × 24 px ellipse |
+| Gap between dots | 10 px |
+| Row x | **48 px** — set AFTER `appendChild` (see critical note below) |
+| Row y | 16 px below the text section's bottom edge |
+| Row frame fill | none (transparent) |
+| Row layout | `HORIZONTAL`, `primaryAxisSizingMode: 'AUTO'`, `counterAxisSizingMode: 'AUTO'` |
+| Frame name | `color-swatches` |
+| Ellipse name | the color name (e.g. `White`, `Blue`, `Clear`) |
+
+### Special color treatment
+
+| Color | Fill | Stroke |
+|---|---|---|
+| White | `#FFFFFF` solid | 1.5 px Gray/400 `#A1A1AA`, `strokeAlign: 'INSIDE'` |
+| Clear | none (empty fills array) | 1.5 px Gray/300 `#D4D4D8`, `strokeAlign: 'INSIDE'` |
+| Any other | solid color fill | none |
+
+All other named colors use their product hex value as a solid fill with no stroke. For standard Bluewater palette colors: Black `#18181B`, Blue `#2563EB`, Cobalt `#0047AB`, Coral `#F56559`, Citrine `#E4B01F`, Orange `#F97316`, Purple `#7C3AED`, Spruce `#2E5D4C`.
+
+### Build snippet
+
+```js
+// Idempotent: hide any existing swatch row before adding a new one
+for (const child of card.children) {
+  if (child.name === 'color-swatches') child.visible = false;
+}
+
+const row = figma.createFrame();
+row.name = 'color-swatches';
+row.layoutMode = 'HORIZONTAL';
+row.itemSpacing = 10;
+row.primaryAxisSizingMode = 'AUTO';
+row.counterAxisSizingMode = 'AUTO';
+row.fills = [];
+
+for (const c of colors) {
+  const dot = figma.createEllipse();
+  dot.name = c.name;
+  dot.resize(24, 24);
+  dot.fills = c.fill ? [{ type: 'SOLID', color: c.fill }] : [];
+  if (c.stroke) {
+    dot.strokes = [{ type: 'SOLID', color: c.stroke }];
+    dot.strokeWeight = 1.5;
+    dot.strokeAlign = 'INSIDE';
+  }
+  row.appendChild(dot);
+}
+
+card.appendChild(row);
+
+// ⚠️ CRITICAL: set x/y AFTER appendChild.
+// Figma recalculates absolute position on reparent — coordinates set BEFORE appendChild
+// are treated as absolute canvas offsets and land the row at x=0 within the card.
+row.x = 48;
+row.y = textSectionBottomY + 16; // e.g. 48 (text top) + 137 (text height) + 16 = 201
+```
+
+### Positioning geometry (reference values from built slides)
+
+| Card width | Text section | Text ends | Image starts | Swatch y |
+|---|---|---|---|---|
+| 587 px (3-col) | h=168 | y=216 | y=263 | 228 |
+| 888 px (2-col) | h=137 | y=185 | y=263 | 201 |
+
+When building from scratch, compute: `textSectionY + textSectionHeight + 16`.
+
+---
+
 ## FIG placeholder pattern
 
 When a slide reserves space for a render or image that will drop in later (e.g. slide 5 tank truck, slide 11 trailer), use a **FIG placeholder card**:
