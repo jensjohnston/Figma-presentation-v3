@@ -135,6 +135,16 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **Titles end with a period.** Every slide title/headline ends in a full stop (brand rule, shared with the newsletter renderer) — e.g. "Reverse osmosis in plain English." — **unless** it already ends in terminal punctuation (a question "…Safe?" or "!"). Applies to the `title` node and hero headings; not to eyebrows, subtitles, body, labels, or meta. When cloning a template, add the period if the source title lacks one.
 
+**Trademark superscript (™ / ®) — slide title only.** When a slide title contains a trademarked product or technology name (per `brand/trademarks.json`), a ™ or ® is appended as a **separate text node** named `title-trademark`, placed immediately to the right of the title node:
+
+- **Font:** Suisse Int'l Regular (the title is Semi Bold; the mark is Regular)
+- **Size:** 25% of the title's `fontSize` — e.g. 64px title → 16px ™, 152px cover title → 38px ™. At this size the mark sits naturally in the cap-height zone and reads as a superscript without needing Figma's built-in superscript offset.
+- **Position:** `x = title bounding-box right + 4px gap`, `y = title bounding-box top` — top of the ™ node aligns with the top of the title bounding box
+- **Color:** inherits the title's fills
+- **Named** `title-trademark` so it can be found and removed/replaced idempotently
+
+Use `placeTrademarkSuperscript(slide, titleNode, trademarks)` (defined in `generate-presentation.md`) after setting the `title` slot text. Body, label, and meta slots carry ™/® from the product registry verbatim — no separate node on those.
+
 **Long-title cap:** Slide titles may wrap to **maximum 2 rows** at 64 Semi Bold 110%. If the content won't fit in 2 rows, shorten the title or split it into a shorter title plus a `subtitle`. 3+ row titles are not allowed.
 
 **No widows (multi-line titles & display text):** a wrapped title (or any large display string) must never leave a **single word alone on the last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to titles, hero headings, and any 2-line display copy.

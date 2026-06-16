@@ -1,0 +1,24 @@
+{
+  "_doc": "Brand trademark dictionary. When a slide title contains a known product or technology term, a ™ or ® node is appended as a separate superscript text node to the right of the title. Rendering spec: Suisse Int'l Regular, 25% of the title's font size, top-aligned (tm.y = title bounding-box top). Terms are matched by substring (e.g. 'Kitchen Station' covers 'Kitchen Station 1', 'Kitchen Station 2', etc.). Extend terms[] when a new trademarked product ships.",
+  "titleSuperscriptSpec": {
+    "fontFamily": "Suisse Int'l",
+    "fontStyle": "Regular",
+    "sizeRatio": 0.25,
+    "gapPx": 0,
+    "_note": "tm.x = titleBB.right + gapPx; tm.y = titleBB.top (slide-relative). At 25% of title size the ™ sits naturally in the cap-height zone, reading as a superscript without Figma's built-in superscript offset."
+  },
+  "terms": [
+    { "term": "Kitchen Station",    "symbol": "™" },
+    { "term": "Café Station",       "symbol": "™" },
+    { "term": "House Station",      "symbol": "™" },
+    { "term": "Restaurant Station", "symbol": "™" },
+    { "term": "Emergency Station",  "symbol": "™" },
+    { "term": "Flow Station",       "symbol": "™" },
+    { "term": "Steel Bottle",       "symbol": "™" },
+    { "term": "Glass Bottle",       "symbol": "™" },
+    { "term": "Restaurant Bottle",  "symbol": "™" },
+    { "term": "Retail Bottle",      "symbol": "™" },
+    { "term": "SuperiorOsmosis",    "symbol": "™" },
+    { "term": "Liquid Rock",        "symbol": "®" }
+  ]
+}
