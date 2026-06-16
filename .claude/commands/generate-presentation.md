@@ -59,7 +59,7 @@ detected or none fits, the pipeline behaves exactly as before (from-scratch with
 
 Also read `brand/trademarks.json`. This holds:
 - `terms[]` — brand/product names that trigger a ™ or ® node (e.g. `Café Station` → `™`, `Liquid Rock` → `®`)
-- `titleSuperscriptSpec` — rendering spec: `fontFamily` (Suisse Int'l), `fontStyle` (Regular), `sizeRatio` (0.5 = half the title size), `gapPx` (4px gap between title right edge and ™)
+- `titleSuperscriptSpec` — rendering spec: `fontFamily` (Suisse Int'l), `fontStyle` (Regular), `sizeRatio` (0.25 = 25% of title size), `gapPx` (0px — flush after the glyph edge)
 
 You will use it in Step 5b after setting the `title` slot — call `placeTrademarkSuperscript(slide, titleNode, trademarks)` (defined in §5b). It is a no-op when no term in the dictionary matches the title text.
 
@@ -411,7 +411,19 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   tm.fontSize = Math.round(titleNode.fontSize * spec.sizeRatio);
   tm.lineHeight = { unit: 'PERCENT', value: 110 };
   tm.characters = match.symbol;
-  tm.fills = JSON.parse(JSON.stringify(titleNode.fills));
+  // For gradient fills use the last stop (highest position) as a solid color —
+  // the ™ sits at the end of the title text, which maps to the gradient's end color.
+  // Applying a gradient directly to the ™'s tiny bounding box compresses it oddly.
+  function solidFillsFromTitle(fills) {
+    return fills.map(fill => {
+      if (!fill.type.startsWith('GRADIENT')) return JSON.parse(JSON.stringify(fill));
+      const endStop = [...fill.gradientStops].sort((a, b) => b.position - a.position)[0];
+      return { type: 'SOLID',
+               color: { r: endStop.color.r, g: endStop.color.g, b: endStop.color.b },
+               opacity: endStop.color.a ?? 1 };
+    });
+  }
+  tm.fills = solidFillsFromTitle(titleNode.fills);
   tm.textAutoResize = 'WIDTH_AND_HEIGHT';
 
   // Position using absolute bounding boxes so nesting depth doesn't matter
