@@ -386,8 +386,9 @@ async function setTextByIndex(parent, name, index, value) {
 // trademarks = contents of brand/trademarks.json (loaded in Step 1)
 
 // Places a ™ or ® as a SEPARATE text node to the right of the slide's title node.
+// FOR SLIDE TITLES ONLY — do not call for body, eyebrow, bullet, or any other slot.
 // Triggered when the title text contains a term from brand/trademarks.json.
-// The mark is Suisse Int'l Regular at exactly half the title's font size.
+// The mark is Suisse Int'l Regular at 25% of the title's font size.
 // Top of the ™ node is top-aligned with the title bounding box (tm.y = titleBB.top).
 // Named 'title-trademark' — idempotent (replaces any existing one).
 // MUST be called AFTER setting the title text (title.width must reflect final characters).
