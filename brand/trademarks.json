@@ -1,11 +1,18 @@
 {
-  "_doc": "Brand trademark dictionary. When a slide title contains a known product or technology term, a ™ or ® node is appended as a separate superscript text node to the right of the title. Rendering spec: Suisse Int'l Regular, 25% of the title's font size, top-aligned (tm.y = title bounding-box top). Terms are matched by substring (e.g. 'Kitchen Station' covers 'Kitchen Station 1', 'Kitchen Station 2', etc.). Extend terms[] when a new trademarked product ships.",
+  "_doc": "Brand trademark dictionary. A ™ or ® superscript node is appended after any known product or technology term found in a slide's title, eyebrow, cell-heading-N, or label slots. Terms are matched by substring (e.g. 'Kitchen Station' covers 'Kitchen Station 1', 'Kitchen Station 2', etc.). Extend terms[] when a new trademarked product ships.",
   "titleSuperscriptSpec": {
     "fontFamily": "Suisse Int'l",
     "fontStyle": "Regular",
     "sizeRatio": 0.25,
     "gapPx": 0,
-    "_note": "tm.x = titleBB.right + gapPx; tm.y = titleBB.top (slide-relative). At 25% of title size the ™ sits naturally in the cap-height zone, reading as a superscript without Figma's built-in superscript offset."
+    "_note": "Used for the 'title' slot only. At 25% of a large title (64px+) the ™ sits in the cap-height zone without Figma's built-in superscript offset."
+  },
+  "inlineSuperscriptSpec": {
+    "fontFamily": "Suisse Int'l",
+    "fontStyle": "Regular",
+    "sizeRatio": 0.5,
+    "gapPx": 0,
+    "_note": "Used for eyebrow, cell-heading-N, and label slots. At 50% the mark stays readable at smaller base sizes (20–32px)."
   },
   "terms": [
     { "term": "Kitchen Station",    "symbol": "™" },
