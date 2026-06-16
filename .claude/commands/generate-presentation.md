@@ -438,19 +438,24 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   tm.lineHeight = { unit: 'PERCENT', value: 110 };
   tm.characters = match.symbol;
 
-  // For gradient fills use the last stop (highest position) as a solid color —
-  // the ™ sits at the end of the title text, which maps to the gradient's end color.
-  // Applying a gradient directly to the ™'s tiny bounding box compresses it oddly.
-  function solidFillsFromTitle(fills) {
-    return fills.map(fill => {
-      if (!fill.type.startsWith('GRADIENT')) return JSON.parse(JSON.stringify(fill));
-      const endStop = [...fill.gradientStops].sort((a, b) => b.position - a.position)[0];
-      return { type: 'SOLID',
-               color: { r: endStop.color.r, g: endStop.color.g, b: endStop.color.b },
-               opacity: endStop.color.a ?? 1 };
-    });
+  // Derive a single solid fill from the title's visually dominant color.
+  // Titles often carry two fills: a solid fallback at index 0 (bottom) and a gradient
+  // at index 1 (top). Figma renders fills last-on-top, so fills[-1] is what's visible.
+  // For a gradient top fill: use the last stop (highest position) — the ™ sits at the
+  // end of the title text, which maps to the gradient's end color. Never copy the
+  // gradient itself: applied to the ™'s tiny box it compresses oddly.
+  function solidFillFromTitle(fills) {
+    const top = fills[fills.length - 1];
+    if (!top) return [];
+    if (top.type.startsWith('GRADIENT')) {
+      const endStop = [...top.gradientStops].sort((a, b) => b.position - a.position)[0];
+      return [{ type: 'SOLID',
+                color: { r: endStop.color.r, g: endStop.color.g, b: endStop.color.b },
+                opacity: endStop.color.a ?? 1 }];
+    }
+    return [JSON.parse(JSON.stringify(top))];
   }
-  tm.fills = solidFillsFromTitle(titleNode.fills);
+  tm.fills = solidFillFromTitle(titleNode.fills);
   tm.textAutoResize = 'WIDTH_AND_HEIGHT';
 
   // Position using absolute bounding boxes so nesting depth doesn't matter.
