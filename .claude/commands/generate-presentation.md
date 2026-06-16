@@ -438,20 +438,20 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   tm.lineHeight = { unit: 'PERCENT', value: 110 };
   tm.characters = match.symbol;
 
-  // Derive a single solid fill from the title's visually dominant color.
+  // Derive a single solid fill for the ™ from the title's visually dominant color.
   // Titles often carry two fills: a solid fallback at index 0 (bottom) and a gradient
   // at index 1 (top). Figma renders fills last-on-top, so fills[-1] is what's visible.
-  // For a gradient top fill: use the last stop (highest position) — the ™ sits at the
-  // end of the title text, which maps to the gradient's end color. Never copy the
-  // gradient itself: applied to the ™'s tiny box it compresses oddly.
+  // For a gradient top fill: use the FIRST stop (lowest position) — the ™ is top-aligned
+  // with the title, so the color at the start of the gradient (the top) is the correct
+  // match. Never copy the gradient itself: applied to the ™'s tiny box it compresses oddly.
   function solidFillFromTitle(fills) {
     const top = fills[fills.length - 1];
     if (!top) return [];
     if (top.type.startsWith('GRADIENT')) {
-      const endStop = [...top.gradientStops].sort((a, b) => b.position - a.position)[0];
+      const startStop = [...top.gradientStops].sort((a, b) => a.position - b.position)[0];
       return [{ type: 'SOLID',
-                color: { r: endStop.color.r, g: endStop.color.g, b: endStop.color.b },
-                opacity: endStop.color.a ?? 1 }];
+                color: { r: startStop.color.r, g: startStop.color.g, b: startStop.color.b },
+                opacity: startStop.color.a ?? 1 }];
     }
     return [JSON.parse(JSON.stringify(top))];
   }
