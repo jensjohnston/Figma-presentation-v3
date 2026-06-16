@@ -404,6 +404,32 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   const tmFont = { family: spec.fontFamily, style: spec.fontStyle };
   await figma.loadFontAsync(tmFont);
 
+  // Which line does the term appear on? (e.g. "Bluewater\nCafé Station 1" → line 1)
+  const lines = titleNode.characters.split('\n');
+  const termLine = Math.max(0, lines.findIndex(l => l.includes(match.term)));
+
+  // Line height in px — used to offset tm.y to the correct line for multi-line titles
+  const lh = titleNode.lineHeight;
+  const lineHeightPx = lh.unit === 'PIXELS'  ? lh.value
+                     : lh.unit === 'PERCENT' ? titleNode.fontSize * lh.value / 100
+                     :                         titleNode.fontSize * 1.2;  // AUTO ≈ 120%
+
+  // Measure the actual glyph width of the trademark line via a temp auto-sizing node.
+  // Title containers are often fixed-width (full content area), so absoluteBoundingBox.width
+  // ≠ actual text width — using it directly puts ™ in the far right margin.
+  const titleFont = titleNode.fontName === figma.mixed
+    ? titleNode.getRangeFontName(0, 1)
+    : titleNode.fontName;
+  await figma.loadFontAsync(titleFont);
+  const measureNode = figma.createText();
+  slide.appendChild(measureNode);
+  measureNode.fontName = titleFont;
+  measureNode.fontSize = titleNode.fontSize;
+  measureNode.textAutoResize = 'WIDTH_AND_HEIGHT';
+  measureNode.characters = lines[termLine] || titleNode.characters;
+  const glyphWidth = measureNode.width;
+  measureNode.remove();
+
   const tm = figma.createText();
   slide.appendChild(tm);
   tm.name = 'title-trademark';
@@ -411,6 +437,7 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   tm.fontSize = Math.round(titleNode.fontSize * spec.sizeRatio);
   tm.lineHeight = { unit: 'PERCENT', value: 110 };
   tm.characters = match.symbol;
+
   // For gradient fills use the last stop (highest position) as a solid color —
   // the ™ sits at the end of the title text, which maps to the gradient's end color.
   // Applying a gradient directly to the ™'s tiny bounding box compresses it oddly.
@@ -426,11 +453,18 @@ async function placeTrademarkSuperscript(slide, titleNode, trademarks) {
   tm.fills = solidFillsFromTitle(titleNode.fills);
   tm.textAutoResize = 'WIDTH_AND_HEIGHT';
 
-  // Position using absolute bounding boxes so nesting depth doesn't matter
+  // Position using absolute bounding boxes so nesting depth doesn't matter.
+  // x: after the GLYPH right edge (not container right edge — containers are often full-width).
+  // y: offset by line index so ™ top-aligns with the line carrying the trademark term.
   const slideBB = slide.absoluteBoundingBox;
-  const titleBB = titleNode.absoluteBoundingBox;
-  tm.x = (titleBB.x - slideBB.x) + titleBB.width + (spec.gapPx ?? 4);
-  tm.y = (titleBB.y - slideBB.y);   // top of ™ = top of title bounding box
+  const titleBB  = titleNode.absoluteBoundingBox;
+  const containerX = titleBB.x - slideBB.x;
+  const align = titleNode.textAlignHorizontal;  // 'LEFT', 'CENTER', 'RIGHT'
+  const glyphLeft = align === 'CENTER' ? containerX + (titleBB.width - glyphWidth) / 2
+                  : align === 'RIGHT'  ? containerX + (titleBB.width - glyphWidth)
+                  :                      containerX;  // LEFT or MIXED
+  tm.x = glyphLeft + glyphWidth + (spec.gapPx ?? 0);
+  tm.y = (titleBB.y - slideBB.y) + termLine * lineHeightPx;
 
   return { nodeId: tm.id, symbol: match.symbol, size: tm.fontSize,
            x: Math.round(tm.x), y: Math.round(tm.y) };
