@@ -20,12 +20,15 @@
     { "term": "House Station",      "symbol": "™" },
     { "term": "Restaurant Station", "symbol": "™" },
     { "term": "Emergency Station",  "symbol": "™" },
+    { "term": "Beverage Station",   "symbol": "™" },
     { "term": "Flow Station",       "symbol": "™" },
     { "term": "Steel Bottle",       "symbol": "™" },
     { "term": "Glass Bottle",       "symbol": "™" },
     { "term": "Restaurant Bottle",  "symbol": "™" },
     { "term": "Retail Bottle",      "symbol": "™" },
     { "term": "SuperiorOsmosis",    "symbol": "™" },
+    { "term": "Duragrade",          "symbol": "™" },
+    { "term": "Purifier 16",        "symbol": "™" },
     { "term": "Liquid Rock",        "symbol": "®" }
   ]
 }
