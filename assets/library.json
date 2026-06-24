@@ -5491,7 +5491,7 @@
       }
     },
     "kitchen-station-scene-cleone": {
-      "nodeId": "63406:2",
+      "nodeId": "64987:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -5502,8 +5502,8 @@
       "description": "Kitchen Station scene — Cleone with tank in open wood cabinet under sink, front view",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Front_Cleone.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Front_Cleone.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
@@ -5683,7 +5683,7 @@
       }
     },
     "kitchen-station-scene-spirit-glassdoor": {
-      "nodeId": "63413:2",
+      "nodeId": "64989:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -5694,8 +5694,8 @@
       "description": "Kitchen Station scene — Spirit behind glass cabinet door, front view",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Front_Spirit_Glassdoor.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Front_Spirit_Glassdoor.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
@@ -5711,7 +5711,7 @@
       }
     },
     "kitchen-station-scene-spirit-vola-faucet": {
-      "nodeId": "63414:2",
+      "nodeId": "64991:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -5722,8 +5722,8 @@
       "description": "Kitchen Station scene — Spirit with Vola faucet, wood cabinet front view",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Front_Spirit_Vola.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Front_Spirit_Vola.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
@@ -5821,7 +5821,7 @@
       }
     },
     "kitchen-station-persp-glassdoor": {
-      "nodeId": "63418:2",
+      "nodeId": "64992:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -5832,8 +5832,8 @@
       "description": "Kitchen Station perspective — glass-door cabinet with sink and faucet",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Persp1_Glassdoor.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Persp1_Glassdoor.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
@@ -5876,7 +5876,7 @@
       }
     },
     "kitchen-station-scene-cleone-vola-alt": {
-      "nodeId": "63420:2",
+      "nodeId": "64988:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -5887,8 +5887,8 @@
       "description": "Kitchen Station scene — Cleone Vola configuration, alternate front framing",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Front_Cleone_Vola.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Front_Cleone_Vola.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
@@ -6195,7 +6195,7 @@
       }
     },
     "kitchen-station-persp-vola": {
-      "nodeId": "63443:2",
+      "nodeId": "64993:2",
       "tags": [
         "product",
         "kitchen-station",
@@ -6206,8 +6206,8 @@
       "description": "Kitchen Station perspective — counter with Vola faucet and dosing puck, open cabinet below",
       "source": {
         "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Kitchen Station/Kitchen Station 1/Content/Renders/KitchenStation_Scene_Persp1_Vola.png",
-        "importedAt": "2026-06-11"
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/KitchenStation_Scene_Persp1_Vola.png",
+        "importedAt": "2026-06-24"
       },
       "visual": {
         "aspect": 1.78,
