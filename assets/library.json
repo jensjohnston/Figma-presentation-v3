@@ -6691,6 +6691,132 @@
         ],
         "quality": "high"
       }
+    },
+    "brew-mode-app-01": {
+      "nodeId": "64922:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 1)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app01.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-02": {
+      "nodeId": "64920:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 2)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app02.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-03": {
+      "nodeId": "64921:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 3)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app03.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-04": {
+      "nodeId": "64918:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 4)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app04.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-05": {
+      "nodeId": "64919:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 5)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app05.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-06": {
+      "nodeId": "64923:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 6)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app06.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app-07": {
+      "nodeId": "64924:2",
+      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 7)",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Café Station 1/Stills/Bluewater App Coffee/JPG/Brew_mode_app07.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": ["card", "detail"],
+        "quality": "high"
+      }
     }
   }
 }
