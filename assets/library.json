@@ -6694,7 +6694,14 @@
     },
     "brew-mode-app-01": {
       "nodeId": "64922:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 1)",
       "source": {
         "type": "onedrive-sync",
@@ -6706,13 +6713,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-02": {
       "nodeId": "64920:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 2)",
       "source": {
         "type": "onedrive-sync",
@@ -6724,13 +6741,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-03": {
       "nodeId": "64921:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 3)",
       "source": {
         "type": "onedrive-sync",
@@ -6742,13 +6769,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-04": {
       "nodeId": "64918:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 4)",
       "source": {
         "type": "onedrive-sync",
@@ -6760,13 +6797,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-05": {
       "nodeId": "64919:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 5)",
       "source": {
         "type": "onedrive-sync",
@@ -6778,13 +6825,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-06": {
       "nodeId": "64923:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 6)",
       "source": {
         "type": "onedrive-sync",
@@ -6796,13 +6853,23 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
         "quality": "high"
       }
     },
     "brew-mode-app-07": {
       "nodeId": "64924:2",
-      "tags": ["cafe-station", "app", "brew-mode", "coffee", "smartphone", "lifestyle"],
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "coffee",
+        "smartphone",
+        "lifestyle"
+      ],
       "description": "Hand holding smartphone showing Bluewater App brew mode interface — Café Station coffee controls, kitchen background (variation 7)",
       "source": {
         "type": "onedrive-sync",
@@ -6814,7 +6881,1478 @@
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
-        "suitability": ["card", "detail"],
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-home-persp1": {
+      "nodeId": "64926:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "product"
+      ],
+      "description": "Kitchen Station 1 3D render — counter perspective view 1, station and faucet in light kitchen scene",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/HOME_persp1.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-bottle-pouring-home1": {
+      "nodeId": "64927:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "bottle",
+        "pouring"
+      ],
+      "description": "Kitchen Station 1 3D render — bottle filling/pouring, home kitchen scene 1, white background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/Bottle_Pouring HOME1.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-home-persp2": {
+      "nodeId": "64928:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "product"
+      ],
+      "description": "Kitchen Station 1 3D render — counter perspective view 2, station and faucet in light kitchen scene",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/HOME_persp2.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-bottle-pouring-home2": {
+      "nodeId": "64929:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "bottle",
+        "pouring"
+      ],
+      "description": "Kitchen Station 1 3D render — bottle filling/pouring, home kitchen scene 2, white background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/Bottle_Pouring HOME2.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-home-zoom1": {
+      "nodeId": "64930:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "closeup"
+      ],
+      "description": "Kitchen Station 1 3D render — zoomed kitchen counter view 1, station close-up in situ",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/HOME_Zoom1.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-render-scene-home-zoom2": {
+      "nodeId": "64931:2",
+      "tags": [
+        "kitchen-station",
+        "render",
+        "scene",
+        "kitchen",
+        "closeup"
+      ],
+      "description": "Kitchen Station 1 3D render — zoomed kitchen counter view 2, station close-up in situ",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Renders/Scenes/HOME_Zoom2.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-pro-view2": {
+      "nodeId": "64932:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "pro",
+        "purifier",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink PRO purifier — installation view 2, dark under-counter environment",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/PRO_view 2.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-cleone-tank": {
+      "nodeId": "64933:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "cleone",
+        "purifier",
+        "tank",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink — Cleone (NEW) purifier + pressure tank installed, dark environment",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/Cleone (NEW)+tank.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-cleone-side": {
+      "nodeId": "64934:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "cleone",
+        "purifier",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink Cleone purifier — side view, dark under-counter installation",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/Cleone_side.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-cleone-front": {
+      "nodeId": "64935:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "cleone",
+        "purifier",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink Cleone purifier — front view, dark under-counter installation",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/Cleone_front.png",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-spirit-view2": {
+      "nodeId": "64936:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "spirit",
+        "purifier",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink Spirit purifier — view 2, dark under-counter installation",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/Spritit_View 2.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-under-sink-spirit-view1": {
+      "nodeId": "64937:2",
+      "tags": [
+        "kitchen-station",
+        "under-sink",
+        "spirit",
+        "purifier",
+        "installation"
+      ],
+      "description": "Kitchen Station 1 under-sink Spirit purifier — view 1, dark under-counter installation",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Under The Sink/JPG/Spritit_View 1.jpeg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-11-1": {
+      "nodeId": "64938:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.11.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.11.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-2-1": {
+      "nodeId": "64939:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.2.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.2.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-3-1": {
+      "nodeId": "64940:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.3.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.3.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-4-1": {
+      "nodeId": "64941:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.4.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.4.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-5-1": {
+      "nodeId": "64942:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.5.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.5.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-7-1": {
+      "nodeId": "64943:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.7.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.7.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-1-9-1": {
+      "nodeId": "64944:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 1.9.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_1.9.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-14-1": {
+      "nodeId": "64945:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.14.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.14.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-18-1": {
+      "nodeId": "64946:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.18.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.18.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-2-1": {
+      "nodeId": "64947:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.2.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.2.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-3-1": {
+      "nodeId": "64948:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.3.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.3.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-4-1": {
+      "nodeId": "64949:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.4.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.4.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-6-1": {
+      "nodeId": "64950:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.6.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.6.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-8-1": {
+      "nodeId": "64951:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.8.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.8.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-9-1": {
+      "nodeId": "64952:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.9.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.9.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-2-9-2": {
+      "nodeId": "64953:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.9.2 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_2.9.2.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-palma-stills-3-1-1": {
+      "nodeId": "64954:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "palma",
+        "mallorca",
+        "interior",
+        "warm"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 3.1.1 — warm Mediterranean interior with station",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Palma/KS1_Palma_Stills_3.1.1.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_closeup-filling_06": {
+      "nodeId": "64955:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle closeup filling 06, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_closeup-filling_06.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_hand-filling_05": {
+      "nodeId": "64956:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle hand filling 05, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_hand-filling_05.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_hand-filling-closeup_27": {
+      "nodeId": "64957:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle hand filling closeup 27, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_hand-filling-closeup_27.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_hand-filling-dark_26": {
+      "nodeId": "64959:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle hand filling dark 26, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_hand-filling-dark_26.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_hand-filling-tilted_09": {
+      "nodeId": "64960:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle hand filling tilted 09, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_hand-filling-tilted_09.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_hand-reaching_20": {
+      "nodeId": "64961:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle hand reaching 20, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_hand-reaching_20.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_single-cutting-board_25": {
+      "nodeId": "64962:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle single cutting board 25, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_single-cutting-board_25.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_three-bottles-water-running_15": {
+      "nodeId": "64963:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle three bottles water running 15, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_three-bottles-water-running_15.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_three-on-counter_14": {
+      "nodeId": "64964:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle three on counter 14, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_three-on-counter_14.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_two-backlit-sunset_17": {
+      "nodeId": "64965:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle two backlit sunset 17, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_two-backlit-sunset_17.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_two-bottles-glowing-puck_08": {
+      "nodeId": "64966:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle two bottles glowing puck 08, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_two-bottles-glowing-puck_08.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_two-bottles-lemon_16": {
+      "nodeId": "64967:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle two bottles lemon 16, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_two-bottles-lemon_16.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_two-bottles-water-running_19": {
+      "nodeId": "64968:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle two bottles water running 19, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_two-bottles-water-running_19.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_water-running-dim-kitchen_11": {
+      "nodeId": "64969:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle water running dim kitchen 11, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_water-running-dim-kitchen_11.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_water-running-into-sink_07": {
+      "nodeId": "64970:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle water running into sink 07, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_water-running-into-sink_07.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_water-running-with-plates_12": {
+      "nodeId": "64971:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle water running with plates 12, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_bottle_water-running-with-plates_12.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-closeup-glowing-bases_28": {
+      "nodeId": "64972:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — closeup glowing bases 28, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_closeup-glowing-bases_28.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-closeup-puck_18": {
+      "nodeId": "64973:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — closeup puck 18, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_closeup-puck_18.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-closeup-puck-topdown_21": {
+      "nodeId": "64974:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — closeup puck topdown 21, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_closeup-puck-topdown_21.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-puck-at-sink_24": {
+      "nodeId": "64975:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — puck at sink 24, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_BluewaterO_puck-at-sink_24.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_pouring-into-glass_22": {
+      "nodeId": "64976:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle pouring into glass 22, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_bottle_pouring-into-glass_22.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_single-on-counter_13": {
+      "nodeId": "64977:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle single on counter 13, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_bottle_single-on-counter_13.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-bottle_studio-three-sizes_23": {
+      "nodeId": "64978:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — bottle studio three sizes 23, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_bottle_studio-three-sizes_23.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-steel-bottle_two-on-counter_10": {
+      "nodeId": "64979:2",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "studio",
+        "bottle",
+        "bluewater-o"
+      ],
+      "description": "Kitchen Station 1 studio still — steel bottle two on counter 10, Bluewater O glowing puck, kitchen counter",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Kitchen Station 1/Stills/Product Lifestyle/Studio/KitchenStation_steel-bottle_two-on-counter_10.jpg",
+        "importedAt": "2026-06-24"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
         "quality": "high"
       }
     }
