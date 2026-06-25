@@ -8355,6 +8355,2816 @@
         ],
         "quality": "high"
       }
+    },
+    "hs1-pro-render-side-alt": {
+      "nodeId": "65206:2",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "side"
+      ],
+      "description": "House Station Pro full system, angled side view showing blue prefilter column, pump and piping on metal rack frame, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Pro outside/House_Station_Pro - OtherSide.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-pro-render-front": {
+      "nodeId": "65206:4",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "front"
+      ],
+      "description": "House Station Pro full system, straight front view, slim blue filter column with electronics box at base, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Pro outside/House_Station_Pro - Front.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-pro-render-zoom": {
+      "nodeId": "65206:6",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "zoom",
+        "perspective"
+      ],
+      "description": "House Station Pro, close perspective view from front-below, dark metal frame prominent, large format on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Pro outside/House_Station_Pro - Zoom.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-pro-render-side": {
+      "nodeId": "65206:8",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "side"
+      ],
+      "description": "House Station Pro, side view of full rack unit with blue filter column and control box, compact framing on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Pro outside/House_Station_Pro - Side.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-render-detail": {
+      "nodeId": "65206:10",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "detail",
+        "prefilter",
+        "pipes",
+        "close-up"
+      ],
+      "description": "Close-up render of blue prefilter housing and pipe connections, fills frame on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Prefilters/HouseStation - detail1.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-render-perspective": {
+      "nodeId": "65206:12",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "perspective",
+        "angled"
+      ],
+      "description": "House Station full system, angled three-quarter perspective, pump module at bottom with blue filter column above, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/WholeHouse - perspective1.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-render-front-alt": {
+      "nodeId": "65206:14",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "product",
+        "system",
+        "full-unit",
+        "front"
+      ],
+      "description": "House Station with twin blue filter columns and control unit at base, front view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/WholeHouse - Front.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-prefilter-perspective": {
+      "nodeId": "65206:16",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "prefilter",
+        "blue",
+        "filter-housing",
+        "component"
+      ],
+      "description": "Three blue prefilter housings, angled perspective view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Prefilters/Prefilters - Persp.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-prefilter-zoom-2": {
+      "nodeId": "65206:18",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "prefilter",
+        "blue",
+        "filter-housing",
+        "component",
+        "close-up",
+        "valve"
+      ],
+      "description": "Three blue prefilter housings, close angled view with red valve caps and pipe fittings visible, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Prefilters/Prefilters - Zoom2.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-prefilter-front": {
+      "nodeId": "65206:20",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "prefilter",
+        "blue",
+        "filter-housing",
+        "component",
+        "front"
+      ],
+      "description": "Three blue prefilter housings, straight frontal view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Prefilters/Prefilters - Front.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-prefilter-zoom-1": {
+      "nodeId": "65206:22",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "prefilter",
+        "blue",
+        "filter-housing",
+        "component",
+        "angled"
+      ],
+      "description": "Three blue prefilter housings, angled perspective with clear valve and fitting detail, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Prefilters/Prefilters - Zoom1.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-tank-zoom": {
+      "nodeId": "65206:24",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "tank",
+        "water-tank",
+        "component",
+        "top-view"
+      ],
+      "description": "White brine or water tank, top-down angled view showing lid port, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Tanks/Tank - Zoom1.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-tank-angle-1": {
+      "nodeId": "65206:26",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "tank",
+        "water-tank",
+        "component",
+        "front"
+      ],
+      "description": "Slim white/silver storage tank on black feet, front portrait render on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Tanks/Tank - X1.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-tank-front": {
+      "nodeId": "65206:28",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "tank",
+        "water-tank",
+        "component",
+        "front"
+      ],
+      "description": "Tall white/silver storage tank on black feet, front render on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Tanks/Tank - Front.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-tank-wide": {
+      "nodeId": "65206:30",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "tank",
+        "water-tank",
+        "component",
+        "front"
+      ],
+      "description": "Wider white/silver storage tank on black feet, front render with darker grey tone on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Tanks/Tank - 01 Tank.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-tank-angle-2": {
+      "nodeId": "65206:32",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "render",
+        "tank",
+        "water-tank",
+        "component",
+        "duo",
+        "pair"
+      ],
+      "description": "Two white/silver storage tanks side by side on black feet, front render on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Renders/Tanks/Tank - X2.png",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-hands-faucet": {
+      "nodeId": "65206:34",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "faucet",
+        "water",
+        "glass",
+        "close-up",
+        "hands"
+      ],
+      "description": "Close-up of man's hands at elegant kitchen faucet filling a glass of water, marble countertop, warm light",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8816.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-glass-smiling": {
+      "nodeId": "65206:36",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "glass",
+        "water",
+        "smiling",
+        "indoor"
+      ],
+      "description": "Man in blue sweater smiling at kitchen sink holding glass of water, bright interior with roof window",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8820.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-dock-glass-archipelago": {
+      "nodeId": "65206:38",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "jetty",
+        "archipelago",
+        "water",
+        "glass",
+        "man"
+      ],
+      "description": "Man standing on wooden jetty holding glass, looking out over Swedish archipelago with overcast sky",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8984.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-window-drinking-view": {
+      "nodeId": "65206:40",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "indoor",
+        "window",
+        "drinking",
+        "glass",
+        "water",
+        "view",
+        "coastal"
+      ],
+      "description": "Man drinking from glass while looking out window, Swedish coastal property with red cottage visible outside",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8899.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-holding-glass": {
+      "nodeId": "65206:42",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "glass",
+        "water",
+        "indoor",
+        "blue-sweater"
+      ],
+      "description": "Man in blue sweater standing in bright white kitchen holding glass of water, looking to the side",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8836.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-dock-sitting-water": {
+      "nodeId": "65206:44",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "jetty",
+        "water",
+        "man",
+        "sitting",
+        "archipelago"
+      ],
+      "description": "Man in puffer jacket sitting alone on weathered wooden dock, calm water and wooded island behind him",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9170.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-windowsill-glass-portrait": {
+      "nodeId": "65206:46",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "indoor",
+        "window",
+        "glass",
+        "water",
+        "man",
+        "seated"
+      ],
+      "description": "Man in blue sweater seated on window sill holding glass of water, looking directly at viewer",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8895.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-filling-wide": {
+      "nodeId": "65206:48",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "faucet",
+        "filling",
+        "glass",
+        "man",
+        "indoor"
+      ],
+      "description": "Man in blue sweater at kitchen sink filling a glass from the faucet, wide kitchen view with window behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8830.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-outdoor-portrait-water": {
+      "nodeId": "65206:50",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "portrait",
+        "man",
+        "water",
+        "archipelago",
+        "puffer-jacket"
+      ],
+      "description": "Man in puffer jacket portrait outdoors, Swedish coastal water and forest in background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8964.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-sunglasses-glass": {
+      "nodeId": "65206:52",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "glass",
+        "water",
+        "sunglasses",
+        "indoor"
+      ],
+      "description": "Man in blue sweater with sunglasses in white kitchen holding glass of water, relaxed pose",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8845.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-outbuilding-pointing": {
+      "nodeId": "65206:54",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "outbuilding",
+        "red-house",
+        "man",
+        "pointing",
+        "installation"
+      ],
+      "description": "Man in puffer jacket standing at entrance of red painted outbuilding, pointing inside — showing installation location",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9341.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-railing-red-buildings": {
+      "nodeId": "65206:56",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "red-house",
+        "man",
+        "relaxed",
+        "swedish",
+        "countryside"
+      ],
+      "description": "Man in puffer jacket sitting on wooden railing by classic red Swedish farm buildings, relaxed outdoor portrait",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9236.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-dock-walking-away": {
+      "nodeId": "65206:58",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "jetty",
+        "walking",
+        "archipelago",
+        "man",
+        "rear-view"
+      ],
+      "description": "Man in puffer jacket walking away along dock toward open water and wooded islands, wide view",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9176.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-property-exterior-no-person": {
+      "nodeId": "65206:60",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "property",
+        "red-cottage",
+        "dock",
+        "water",
+        "exterior",
+        "no-person"
+      ],
+      "description": "Swedish coastal property exterior — red cottage, green lawn, dock and water in background, no person, atmospheric",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8925.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-windowsill-drinking-wide": {
+      "nodeId": "65206:62",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "indoor",
+        "window",
+        "drinking",
+        "glass",
+        "water",
+        "seated",
+        "view"
+      ],
+      "description": "Man in blue sweater sitting at large window drinking from glass, waterfront landscape visible outside",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8869.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-windowsill-glass-looking-up": {
+      "nodeId": "65206:64",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "indoor",
+        "window",
+        "glass",
+        "water",
+        "man",
+        "seated",
+        "upward-gaze"
+      ],
+      "description": "Man in blue sweater seated at window sill holding water glass, looking upward in thought",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8892.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-outbuilding-pressure-wash": {
+      "nodeId": "65206:66",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "outbuilding",
+        "red-house",
+        "man",
+        "cleaning",
+        "maintenance"
+      ],
+      "description": "Man in puffer jacket pressure-washing at the entrance of a red outbuilding, practical homeowner scene",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9103.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-drinking-closeup": {
+      "nodeId": "65206:68",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "drinking",
+        "glass",
+        "close-up",
+        "indoor"
+      ],
+      "description": "Man in blue sweater drinking from glass, close-up face and torso, kitchen open shelving behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8856.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-outbuilding-door-opening": {
+      "nodeId": "65206:70",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "outbuilding",
+        "red-house",
+        "man",
+        "door",
+        "installation"
+      ],
+      "description": "Man in puffer jacket standing at outbuilding opening a roller door, showing equipment storage location",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9328.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-red-house-doorway": {
+      "nodeId": "65206:72",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "red-house",
+        "man",
+        "doorway",
+        "swedish",
+        "property"
+      ],
+      "description": "Man in puffer jacket stepping out of the door of a classic red Swedish cottage, garden chairs visible",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9294.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-shoreline-standing": {
+      "nodeId": "65206:74",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "shore",
+        "waterfront",
+        "man",
+        "standing",
+        "archipelago"
+      ],
+      "description": "Man in puffer jacket standing by rocky shoreline looking out over Swedish archipelago water",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9223.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-glass-distracted": {
+      "nodeId": "65206:76",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "glass",
+        "water",
+        "indoor",
+        "looking-away"
+      ],
+      "description": "Man in blue sweater in white kitchen holding glass of water, looking away from camera, shelving behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8848.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-red-buildings-bench": {
+      "nodeId": "65206:78",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "red-house",
+        "man",
+        "bench",
+        "relaxed",
+        "portrait"
+      ],
+      "description": "Man in puffer jacket sitting relaxed on a bench beside red Swedish farm buildings, overcast daylight",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9247.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-window-drinking-landscape": {
+      "nodeId": "65206:80",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "indoor",
+        "window",
+        "drinking",
+        "glass",
+        "water",
+        "waterfront",
+        "view"
+      ],
+      "description": "Man in blue sweater at large window drinking from glass, winter waterfront landscape with red cottage visible outside",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8872.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-dock-standing-portrait": {
+      "nodeId": "65206:82",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "jetty",
+        "man",
+        "standing",
+        "archipelago",
+        "portrait"
+      ],
+      "description": "Man in puffer jacket standing on wooden dock posts, archipelago and red cottage in background, portrait pose",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8978.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-farmhouse-exterior": {
+      "nodeId": "65206:84",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "property",
+        "red-house",
+        "exterior",
+        "garden",
+        "no-person",
+        "swedish"
+      ],
+      "description": "Classic red Swedish farmhouse exterior, bare tree in foreground, green lawn and rocks, no person",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_9357.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-waterfront-standing-calm": {
+      "nodeId": "65206:86",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "outdoor",
+        "waterfront",
+        "man",
+        "standing",
+        "archipelago",
+        "calm"
+      ],
+      "description": "Man in puffer jacket standing by open water, calm Swedish archipelago landscape, overcast sky",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8973.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-sunglasses-distracted": {
+      "nodeId": "65206:88",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "man",
+        "glass",
+        "water",
+        "sunglasses",
+        "indoor",
+        "portrait"
+      ],
+      "description": "Man in blue sweater with sunglasses in white kitchen holding glass, looking to the side",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8799.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "hs1-lifestyle-kitchen-filling-portrait": {
+      "nodeId": "65206:90",
+      "tags": [
+        "house-station",
+        "house-station-1",
+        "lifestyle",
+        "kitchen",
+        "faucet",
+        "filling",
+        "glass",
+        "man",
+        "indoor",
+        "portrait"
+      ],
+      "description": "Man in blue sweater at kitchen sink filling a glass from the faucet, bright window light from behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/House Station 1/Stills/_MG_8811.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-duo-front": {
+      "nodeId": "65006:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "duo",
+        "pair",
+        "front"
+      ],
+      "description": "Two black EWS cases side by side, labeled 1 and 2, closed front view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/01 Closed Duo1.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-single-front": {
+      "nodeId": "65007:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "single",
+        "front",
+        "portrait"
+      ],
+      "description": "Single black EWS case, straight front portrait view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/02 Closed Duo2.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-duo-perspective": {
+      "nodeId": "65008:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "duo",
+        "perspective",
+        "angled"
+      ],
+      "description": "Two black EWS cases, one upright in foreground and one angled behind, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/03 Closed Duo3.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-stacked": {
+      "nodeId": "65009:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "stacked",
+        "perspective"
+      ],
+      "description": "Two black EWS cases stacked one on top of the other, angled perspective view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/04 Front Duo Stencil.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-duo-angled": {
+      "nodeId": "65010:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "duo",
+        "angled"
+      ],
+      "description": "Two black EWS cases — one upright and one on its side — angled composition on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/05 Front.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-side": {
+      "nodeId": "65015:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "side",
+        "wheels"
+      ],
+      "description": "Large EWS case, side/rear view showing wheels and latches, closed on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/06 Side.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-top": {
+      "nodeId": "65013:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "top-view",
+        "angled"
+      ],
+      "description": "Large EWS case, top-angled three-quarter view from above, closed on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/07 Topish HQ.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-zoom-top": {
+      "nodeId": "65012:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "zoom",
+        "macro",
+        "detail"
+      ],
+      "description": "Extreme close-up macro of EWS case top-right corner showing lid clasp detail, dark atmospheric",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/08 Zoom1.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-closed-zoom-handle": {
+      "nodeId": "65014:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "closed",
+        "zoom",
+        "macro",
+        "handle"
+      ],
+      "description": "Extreme close-up macro of EWS case handle and top lid area, dark atmospheric",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/09 Zoom2.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-duo-outline": {
+      "nodeId": "65016:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "duo",
+        "interior",
+        "outline",
+        "white-render"
+      ],
+      "description": "Two EWS cases open in flat white outline render style, showing filter and purifier interior layouts",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/10 Open Duo Outlines.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-duo-dark": {
+      "nodeId": "65021:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "duo",
+        "interior",
+        "dark",
+        "components"
+      ],
+      "description": "Two EWS cases open, angled view, dark render showing blue filter column on left and purifier module on right",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/11 Open Duo2.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-top": {
+      "nodeId": "65017:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "top-view",
+        "interior",
+        "hose"
+      ],
+      "description": "Large EWS case open, top-down view showing hose and pump arrangement on black foam padding, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/12 Open Topish.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-zoom-fittings": {
+      "nodeId": "65019:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "zoom",
+        "macro",
+        "fittings",
+        "brass"
+      ],
+      "description": "Close-up detail render of pipe fittings and brass connectors on blue filter unit with foam padding, macro",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/13 Open Zoom1.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-foam-texture": {
+      "nodeId": "65020:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "foam",
+        "texture",
+        "macro",
+        "abstract"
+      ],
+      "description": "Extreme close-up of black egg-crate foam interior lining, dark abstract texture",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/14 Open Zoom2 HQ.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-prefilter-front": {
+      "nodeId": "65018:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "prefilter",
+        "blue",
+        "filter",
+        "front"
+      ],
+      "description": "Single EWS prefilter case open from front, showing blue filter column with hose coiled inside, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/15 Open1 Front.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-purifier-front": {
+      "nodeId": "65024:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "purifier",
+        "pump",
+        "gauges",
+        "front"
+      ],
+      "description": "Single EWS purifier case open showing yellow tank, pressure gauges and blue pipe connections, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/16 Open2 Front.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-prefilter-columns": {
+      "nodeId": "65025:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "prefilter",
+        "blue",
+        "filter",
+        "triple"
+      ],
+      "description": "EWS case open revealing three blue prefilter housings arranged vertically inside, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/17 Prefilter_Open.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-render-open-purifier-full": {
+      "nodeId": "65023:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "render",
+        "product",
+        "open",
+        "purifier",
+        "tank",
+        "pump",
+        "electronics"
+      ],
+      "description": "EWS purifier case open showing grey tank, pump, pressure gauges and electronics control panel, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Renders/18 Purifier_Open.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-label-closeup-gravel": {
+      "nodeId": "65026:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "close-up",
+        "label",
+        "dark",
+        "macro",
+        "detail"
+      ],
+      "description": "Close-up of EWS case panel label showing '1 Prefilter' lying on gravel, dark atmospheric macro",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_01.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-case-stone-wall": {
+      "nodeId": "65027:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "closed",
+        "outdoor",
+        "stone-wall",
+        "dark"
+      ],
+      "description": "Single black EWS prefilter case upright against rough stone wall, atmospheric dark outdoor portrait",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_02.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-duo-dock-city": {
+      "nodeId": "65028:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "closed",
+        "dock",
+        "waterfront",
+        "city",
+        "duo"
+      ],
+      "description": "Two black EWS cases on wooden dock, city skyline and overcast sky over water behind them",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_03.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-duo-dock-wide": {
+      "nodeId": "65029:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "closed",
+        "dock",
+        "waterfront",
+        "wide",
+        "duo"
+      ],
+      "description": "Two black EWS cases on dock, wide landscape view of urban waterfront with overcast sky",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_04.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-water-bridge-abstract": {
+      "nodeId": "65030:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "water",
+        "bridge",
+        "rocks",
+        "atmospheric",
+        "no-product"
+      ],
+      "description": "Atmospheric shot of water surface and bridge pier with rocks in foreground, no product visible, dark moody",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_05.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "full-bleed",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-shoreline-bridge": {
+      "nodeId": "65031:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "shoreline",
+        "water",
+        "rocks",
+        "bridge",
+        "atmospheric"
+      ],
+      "description": "Rocky shoreline with bridge structure in background over water, moody overcast atmosphere, no product",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_06.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "full-bleed",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-dock-distant-figure": {
+      "nodeId": "65032:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "dock",
+        "water",
+        "atmospheric",
+        "wide",
+        "overcast"
+      ],
+      "description": "Wide view of dock and water, small figure in distance, overcast moody atmosphere",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_07.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-shoreline-dock-figure": {
+      "nodeId": "65033:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "shoreline",
+        "rocks",
+        "dock",
+        "atmospheric"
+      ],
+      "description": "Rocky shoreline with dock and distant figure by water, dark overcast mood",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_08.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-deployed-filling-bottle": {
+      "nodeId": "65034:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "deployed",
+        "operating",
+        "bottle",
+        "water",
+        "filling",
+        "hands"
+      ],
+      "description": "EWS prefilter unit operating on wet dock — blue filter columns visible, person connecting hose to fill a water bottle",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_09.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-bottle-filling-closeup": {
+      "nodeId": "65035:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "bottle",
+        "filling",
+        "water",
+        "close-up",
+        "dark"
+      ],
+      "description": "Close-up of clean water flowing into clear bottle from EWS hose on wet wooden dock, dark atmospheric",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_10.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-deployed-operating-wide": {
+      "nodeId": "65036:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "deployed",
+        "operating",
+        "bottle",
+        "water",
+        "technician"
+      ],
+      "description": "EWS prefilter unit deployed on dock, person operating unit while bottle fills, wider view with dock in background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_11.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-prefilter-open-dock": {
+      "nodeId": "65037:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "open",
+        "prefilter",
+        "deployed",
+        "dock",
+        "waterfront",
+        "city"
+      ],
+      "description": "EWS prefilter case open and operational on dock, city waterfront and overcast sky in background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_12.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-all-units-open-dock": {
+      "nodeId": "65038:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "open",
+        "deployed",
+        "all-units",
+        "dock",
+        "wide"
+      ],
+      "description": "Multiple EWS cases all open and deployed on dock, angled wide view showing the full system in field use",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_13.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-three-units-front": {
+      "nodeId": "65039:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "open",
+        "deployed",
+        "three-units",
+        "dock",
+        "front"
+      ],
+      "description": "Three EWS cases open on dock in front view showing different unit configurations side by side",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_14.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-bottle-filling-dark": {
+      "nodeId": "65040:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "bottle",
+        "filling",
+        "water",
+        "dark",
+        "moody"
+      ],
+      "description": "Water filling a glass bottle from EWS hose on dock, very dark moody close-up",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_15.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-label-prefilter-rain": {
+      "nodeId": "65041:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "label",
+        "prefilter",
+        "rain",
+        "macro",
+        "dark",
+        "detail"
+      ],
+      "description": "Extreme close-up of EWS '1 Prefilter' label with raindrops on wet black case surface, dark macro",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_16.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-label-prefilter-wide": {
+      "nodeId": "65042:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "label",
+        "prefilter",
+        "rain",
+        "dark",
+        "detail"
+      ],
+      "description": "Close-up of EWS '1 Prefilter' label with raindrops, slightly wider than adjacent shot, dark atmospheric",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_17.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-duo-dock-elevated": {
+      "nodeId": "65043:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "closed",
+        "duo",
+        "dock",
+        "elevated",
+        "waterfront"
+      ],
+      "description": "Two black EWS cases on dock in front view from slightly elevated angle, water behind them",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_18.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-lisa-label-purifier-rain": {
+      "nodeId": "65044:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "lisa",
+        "label",
+        "purifier",
+        "rain",
+        "macro",
+        "dark",
+        "detail"
+      ],
+      "description": "Close-up of EWS '2 Purifier' label with raindrops on wet black case surface, dark purple-tinted macro",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Lisa/Lisa_19.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-duo-open-sunset": {
+      "nodeId": "65045:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "open",
+        "deployed",
+        "sunset",
+        "golden-hour",
+        "stockholm",
+        "cobblestone"
+      ],
+      "description": "Two EWS cases fully open on cobblestone Stockholm waterfront at golden-hour sunset, warm light on water behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_1_2.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-man-portrait-waterfront": {
+      "nodeId": "65047:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "man",
+        "portrait",
+        "waterfront",
+        "stockholm",
+        "golden-hour"
+      ],
+      "description": "Man with glasses and beard in conversation at golden-hour Stockholm waterfront, warm autumn light",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_1.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-duo-open-sunset-alt": {
+      "nodeId": "65048:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "open",
+        "deployed",
+        "sunset",
+        "golden-hour",
+        "stockholm",
+        "cobblestone"
+      ],
+      "description": "Two EWS cases open on cobblestone waterfront at golden-hour sunset, slightly different angle to adjacent shot",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_2.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-technician-crouching": {
+      "nodeId": "65050:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "technician",
+        "crouching",
+        "uniform",
+        "bluewater",
+        "golden-hour",
+        "rear-view"
+      ],
+      "description": "Bluewater technician in uniform crouching to work on EWS units at golden-hour waterfront, rear view",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_3.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-technician-standing": {
+      "nodeId": "65049:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "technician",
+        "standing",
+        "uniform",
+        "bluewater",
+        "golden-hour",
+        "rear-view"
+      ],
+      "description": "Bluewater technician standing at golden-hour waterfront with EWS cases, rear view with warm backlight",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_4.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-technician-close": {
+      "nodeId": "65051:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "technician",
+        "crouching",
+        "uniform",
+        "bluewater",
+        "close-up",
+        "rear-view"
+      ],
+      "description": "Bluewater technician crouching at EWS cases, close rear-view shot with dark mixed tone",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_5.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-duo-open-winter": {
+      "nodeId": "65052:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "open",
+        "deployed",
+        "winter",
+        "snow",
+        "forest",
+        "outdoor"
+      ],
+      "description": "Two EWS cases open outdoors in winter setting with snowy forest background, no person",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_6.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-diver-cobblestone": {
+      "nodeId": "65053:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "diver",
+        "wetsuit",
+        "deployed",
+        "cobblestone",
+        "stockholm"
+      ],
+      "description": "Bluewater diver in wetsuit crouching at two open EWS cases on Stockholm cobblestone waterfront",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron_7.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ews-skeppsbron-duo-open-sunset-wide": {
+      "nodeId": "65054:2",
+      "tags": [
+        "emergency-water-station",
+        "ews",
+        "lifestyle",
+        "skeppsbron",
+        "open",
+        "deployed",
+        "sunset",
+        "golden-hour",
+        "stockholm",
+        "cobblestone",
+        "wide"
+      ],
+      "description": "Two EWS cases fully open on cobblestone Stockholm waterfront at golden-hour, wide establishing shot",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Emergency Water Station/Stills/Skeppsbron/Skeppsbron.jpg",
+        "importedAt": "2026-06-25"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
