@@ -6446,7 +6446,7 @@
       }
     },
     "restaurant-station-2-perspective-closeup": {
-      "nodeId": "63459:2",
+      "nodeId": "65267:2",
       "tags": [
         "product",
         "restaurant-station",
@@ -6472,7 +6472,7 @@
       }
     },
     "restaurant-station-2-zoom-closeup": {
-      "nodeId": "63460:2",
+      "nodeId": "65267:3",
       "tags": [
         "product",
         "restaurant-station",
@@ -6499,7 +6499,7 @@
       }
     },
     "restaurant-station-2-zoom-closeup-2": {
-      "nodeId": "63461:2",
+      "nodeId": "65267:4",
       "tags": [
         "product",
         "restaurant-station",
@@ -6525,7 +6525,7 @@
       }
     },
     "restaurant-station-2-studio-1": {
-      "nodeId": "63462:2",
+      "nodeId": "65267:5",
       "tags": [
         "product",
         "restaurant-station",
@@ -6552,7 +6552,7 @@
       }
     },
     "restaurant-station-2-studio-2": {
-      "nodeId": "63463:2",
+      "nodeId": "65267:6",
       "tags": [
         "product",
         "restaurant-station",
@@ -6580,7 +6580,7 @@
       }
     },
     "restaurant-station-2-studio-3": {
-      "nodeId": "63464:2",
+      "nodeId": "65267:7",
       "tags": [
         "product",
         "restaurant-station",
@@ -6608,7 +6608,7 @@
       }
     },
     "restaurant-station-2-studio-4": {
-      "nodeId": "63465:2",
+      "nodeId": "65267:8",
       "tags": [
         "product",
         "restaurant-station",
@@ -6636,7 +6636,7 @@
       }
     },
     "restaurant-station-2-studio-5": {
-      "nodeId": "63466:2",
+      "nodeId": "65267:9",
       "tags": [
         "product",
         "restaurant-station",
@@ -6664,7 +6664,7 @@
       }
     },
     "restaurant-station-2-studio-6": {
-      "nodeId": "63467:2",
+      "nodeId": "65267:10",
       "tags": [
         "product",
         "restaurant-station",
@@ -6688,6 +6688,6768 @@
           "hero",
           "card",
           "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "bengt-rittri-portrait": {
+      "nodeId": "64518:2",
+      "tags": [
+        "bengt-rittri",
+        "ceo",
+        "founder",
+        "portrait",
+        "brand"
+      ],
+      "description": "Headshot portrait of Bengt Rittri, Bluewater founder and CEO, smiling in business attire against a dark warm backdrop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.98,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-hand-hero": {
+      "nodeId": "64516:2",
+      "tags": [
+        "bottle",
+        "hand",
+        "hero",
+        "brand",
+        "bluewater-o",
+        "lifestyle",
+        "condensation"
+      ],
+      "description": "Hand holding a wet Bluewater 0.5L reusable bottle with blue cap — condensation, light background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.68,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-bedroom-man-drinking-wardrobe": {
+      "nodeId": "64515:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man standing by wardrobe drinking from a Bluewater bottle in a softly lit bedroom",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-bedroom-hand-grabbing-cabinet": {
+      "nodeId": "64517:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "hand reaching into a cabinet packed with single-use water bottles in a bedroom",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-bedroom-man-opening-wardrobe": {
+      "nodeId": "64519:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man opening wardrobe revealing stacked water bottles in a dimly lit bedroom",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-bedroom-man-spilled-bottles": {
+      "nodeId": "64520:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man looking down at spilled water bottles on the bedroom floor",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-bedroom-man-drinking-cabinet": {
+      "nodeId": "64521:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man drinking from a plastic water bottle while leaning against a bedroom cabinet",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-hallway-empty-elevator": {
+      "nodeId": "64524:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "empty elevator doorway in a residential hallway, bottles visible",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-hallway-woman-carrying-to-elevator": {
+      "nodeId": "64523:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman carrying heavy bags of water bottles toward the elevator in a hallway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-hallway-woman-fumbling-elevator": {
+      "nodeId": "64526:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman fumbling with too many water bottles outside the elevator",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-hallway-woman-carrying-into-elevator": {
+      "nodeId": "64525:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman loading armfuls of plastic water bottles into an elevator",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-hand-reaching-fridge": {
+      "nodeId": "64529:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "hand reaching into a fridge packed with water bottles on a kitchen counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-loading-looking-up": {
+      "nodeId": "64530:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man loading water bottle cases into a car trunk in a parking garage, looking up",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-pushing-cart": {
+      "nodeId": "64531:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man pushing a cart piled with water bottle packs through a parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-loading-red-car": {
+      "nodeId": "64532:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man loading plastic water bottle cases into the trunk of a red car in parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-living-room-man-pouring-sofa": {
+      "nodeId": "64533:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man pouring water from a large plastic bottle while sitting on the sofa",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-closing-trunk": {
+      "nodeId": "64535:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man closing a car trunk packed full of water bottles in a parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-bottle-bags-counter": {
+      "nodeId": "64534:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "multiple bags of water bottles stacked on a kitchen counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-hallway-woman-peephole": {
+      "nodeId": "64536:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman peering through a peephole in a hallway door, bottles visible nearby",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-walking-looking-up": {
+      "nodeId": "64537:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man walking through a parking garage looking upward with bottles in hand",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-living-room-man-pouring-glass-sofa": {
+      "nodeId": "64538:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man carefully pouring water from a plastic bottle into a glass on a sofa",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-woman-grocery-bags": {
+      "nodeId": "64539:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman carrying grocery bags full of water bottles into the kitchen",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-groceries-unpacked": {
+      "nodeId": "64540:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "groceries unpacked on a counter including many plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-grocery-bags-counter": {
+      "nodeId": "64541:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "grocery bags full of water bottles placed on the kitchen counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-woman-by-cabinets": {
+      "nodeId": "64543:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman standing by kitchen cabinets surrounded by plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-staring-bottles-trunk": {
+      "nodeId": "64542:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man staring at a trunk overflowing with water bottles in a parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-carrying-bags-down": {
+      "nodeId": "64544:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman carrying heavy bags of water bottles down a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-closing-full-trunk": {
+      "nodeId": "64545:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man closing a car trunk crammed full of plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-unloading-trunk": {
+      "nodeId": "64546:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man unloading water bottles from a car trunk into bags in a parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-chasing-bottles": {
+      "nodeId": "64547:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman chasing rolling water bottles down a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-grabbing-from-trunk": {
+      "nodeId": "64548:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man grabbing plastic water bottles from an open car trunk",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-loading-into-trunk": {
+      "nodeId": "64549:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man loading plastic water bottles into a car trunk in a parking garage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-hand-grabbing-fridge": {
+      "nodeId": "64550:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "hand grabbing a plastic water bottle from a refrigerator",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-walking-bags-down": {
+      "nodeId": "64551:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman walking down stairs carrying bags of water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-feet-walking-bottles": {
+      "nodeId": "64552:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "feet walking down stairs past rolling plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-tossing-trunk": {
+      "nodeId": "64553:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man tossing plastic water bottles into an open car trunk",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-street-man-carrying-jugs-steps": {
+      "nodeId": "64554:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man carrying large water jugs down outdoor steps on the street",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-carrying-bags-04": {
+      "nodeId": "64555:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman carrying multiple bags of water bottles down a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-street-man-carrying-outdoor-stairs": {
+      "nodeId": "64556:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man carrying water bottles down outdoor stairs on a city street",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-street-man-tossing-recycling": {
+      "nodeId": "64557:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man tossing empty plastic water bottles into a recycling bin on the street",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-balcony": {
+      "nodeId": "64558:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman walking across a balcony landing with water bottle bags",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-kitchen-woman-looking-fridge": {
+      "nodeId": "64559:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman opening and looking into a refrigerator full of water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-spilling": {
+      "nodeId": "64560:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman spilling water bottles down a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-picking-up-bottle": {
+      "nodeId": "64561:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman picking up a fallen plastic water bottle on the staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-woman-dropping-bottles": {
+      "nodeId": "64562:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "woman losing grip and dropping water bottles on a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-gesturing-trunk": {
+      "nodeId": "64563:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man gesturing at a trunk completely full of plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-bottle-woman-behind": {
+      "nodeId": "64565:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "a plastic bottle on a stair with a woman in the background descending",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-living-room-man-phone-sofa": {
+      "nodeId": "64528:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man talking on phone while holding a plastic water bottle on the sofa",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-garage-man-reaching-trunk": {
+      "nodeId": "64564:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man reaching into a car trunk packed with plastic water bottles",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-street-man-jugs-sunset": {
+      "nodeId": "64566:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "man carrying large water jugs on the street at sunset",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "drinkdifferently-staircase-bottle-rolling": {
+      "nodeId": "64567:2",
+      "tags": [
+        "drinkdifferently",
+        "campaign",
+        "lifestyle",
+        "plastic-bottles",
+        "before-bluewater"
+      ],
+      "description": "plastic water bottle rolling down a staircase",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-front": {
+      "nodeId": "64612:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser unit front view on a neutral background — the compact countertop Bluewater O device",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-persp": {
+      "nodeId": "64589:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser perspective/angled view showing the glowing blue base puck",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-rotate-off": {
+      "nodeId": "64593:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser rotate view — unit powered off, no blue glow",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-rotate-on": {
+      "nodeId": "64597:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser rotate view — unit powered on with blue illumination",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-rotate-orange": {
+      "nodeId": "64628:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser rotate view with orange indicator light on base",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-side": {
+      "nodeId": "64583:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser side profile view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-top": {
+      "nodeId": "64599:2",
+      "tags": [
+        "bluewater-o",
+        "dispenser",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater O dispenser top-down view showing the dispensing nozzle and puck",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-ks1-palma-2-18": {
+      "nodeId": "64633:2",
+      "tags": [
+        "bluewater-o",
+        "kitchen-station",
+        "ks1",
+        "palma",
+        "lifestyle"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 2.18 — features Bluewater O component in home setting",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewatero-ks1-palma-3-1": {
+      "nodeId": "64632:2",
+      "tags": [
+        "bluewater-o",
+        "kitchen-station",
+        "ks1",
+        "palma",
+        "lifestyle"
+      ],
+      "description": "Kitchen Station 1 Palma lifestyle still 3.1 — features Bluewater O component in home setting",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "control-box-front": {
+      "nodeId": "64616:2",
+      "tags": [
+        "control-box",
+        "component",
+        "product",
+        "render",
+        "station"
+      ],
+      "description": "Bluewater station control box front view — the compact electronic control unit",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "control-box-persp": {
+      "nodeId": "64623:2",
+      "tags": [
+        "control-box",
+        "component",
+        "product",
+        "render",
+        "station"
+      ],
+      "description": "Bluewater station control box perspective/angled view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "control-box-top": {
+      "nodeId": "64590:2",
+      "tags": [
+        "control-box",
+        "component",
+        "product",
+        "render",
+        "station"
+      ],
+      "description": "Bluewater station control box top-down view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-on-extract-bottle": {
+      "nodeId": "64582:2",
+      "tags": [
+        "dosing-pump",
+        "extract-bottle",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater dosing pump mounted on top of a 1L extract bottle — studio render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-front": {
+      "nodeId": "64598:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater dosing pump front view — the blue-capped pump unit alone on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-persp-off": {
+      "nodeId": "64610:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater dosing pump angled perspective view — powered off",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-persp-on": {
+      "nodeId": "64592:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater dosing pump angled perspective view — powered on",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-persp2-on": {
+      "nodeId": "64638:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater dosing pump second perspective angle — powered on",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-zoom-hires": {
+      "nodeId": "64625:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Bluewater dosing pump close-up zoom — high resolution detail of the pump mechanism",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-zoom-ultrahires": {
+      "nodeId": "64606:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Bluewater dosing pump ultra close-up zoom — highest resolution detail shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "dosing-pump-screenshot": {
+      "nodeId": "64646:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "screenshot"
+      ],
+      "description": "Screenshot reference image of dosing pump interface/context — May 2025",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.95,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "dosing-pump-still": {
+      "nodeId": "64645:2",
+      "tags": [
+        "dosing-pump",
+        "component",
+        "product",
+        "still"
+      ],
+      "description": "Dosing pump product still / promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.39,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-1-5l-front": {
+      "nodeId": "64594:2",
+      "tags": [
+        "extract-bottle",
+        "1.5l",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1.5L opaque dark-blue extract bottle front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-1-5l-logo": {
+      "nodeId": "64585:2",
+      "tags": [
+        "extract-bottle",
+        "1.5l",
+        "component",
+        "product",
+        "render",
+        "logo"
+      ],
+      "description": "Bluewater 1.5L extract bottle with Bluewater logo visible — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-1-5l-with-dosing-pump": {
+      "nodeId": "64581:2",
+      "tags": [
+        "extract-bottle",
+        "1.5l",
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1.5L extract bottle with dosing pump mounted on top — studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-1l-front": {
+      "nodeId": "64580:2",
+      "tags": [
+        "extract-bottle",
+        "1l",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1L extract bottle front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-1l-with-dosing-pump": {
+      "nodeId": "64591:2",
+      "tags": [
+        "extract-bottle",
+        "1l",
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1L extract bottle with dosing pump attached — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-5l-empty": {
+      "nodeId": "64586:2",
+      "tags": [
+        "extract-bottle",
+        "5l",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 5L extract bottle empty — large format render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-5l-full": {
+      "nodeId": "64588:2",
+      "tags": [
+        "extract-bottle",
+        "5l",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 5L extract bottle full — large format render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-5l-with-dosing-pump": {
+      "nodeId": "64595:2",
+      "tags": [
+        "extract-bottle",
+        "5l",
+        "dosing-pump",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 5L extract bottle with dosing pump mounted — large format render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "faucet-arc-side": {
+      "nodeId": "64587:2",
+      "tags": [
+        "faucet",
+        "arc",
+        "component",
+        "product"
+      ],
+      "description": "Bluewater arc-style faucet side view — chrome/brushed steel kitchen faucet",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "faucet-exposed-3way-nobg": {
+      "nodeId": "64640:2",
+      "tags": [
+        "faucet",
+        "3-way",
+        "exposed",
+        "component",
+        "product",
+        "no-background"
+      ],
+      "description": "Bluewater exposed 3-way faucet on transparent/white background — stainless partners edition",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.7,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "faucet-exposed-1-nobg": {
+      "nodeId": "64637:2",
+      "tags": [
+        "faucet",
+        "exposed",
+        "component",
+        "product",
+        "no-background"
+      ],
+      "description": "Bluewater exposed faucet style 1 on transparent background — stainless steel",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.73,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "faucet-exposed-3-nobg": {
+      "nodeId": "64643:2",
+      "tags": [
+        "faucet",
+        "exposed",
+        "component",
+        "product",
+        "no-background"
+      ],
+      "description": "Bluewater exposed faucet style 3 on transparent background — stainless steel",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.7,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "faucet-led-exposed-2-nobg": {
+      "nodeId": "64602:2",
+      "tags": [
+        "faucet",
+        "led",
+        "exposed",
+        "component",
+        "product",
+        "no-background"
+      ],
+      "description": "Bluewater LED illuminated exposed faucet style 2 on transparent background — tall format",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.51,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "membrane-osmosis-top": {
+      "nodeId": "64626:2",
+      "tags": [
+        "membrane",
+        "osmosis",
+        "ro",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater SuperiorOsmosis membrane — top view render of the cylindrical membrane unit",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "membrane-osmosis-top-2": {
+      "nodeId": "64630:2",
+      "tags": [
+        "membrane",
+        "osmosis",
+        "ro",
+        "component",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater SuperiorOsmosis membrane — alternate top view render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "membrane-osmosis-zoom": {
+      "nodeId": "64648:2",
+      "tags": [
+        "membrane",
+        "osmosis",
+        "ro",
+        "component",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Bluewater SuperiorOsmosis membrane close-up zoom — surface texture detail",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "membrane-osmosis-zoom-2": {
+      "nodeId": "64631:2",
+      "tags": [
+        "membrane",
+        "osmosis",
+        "ro",
+        "component",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Bluewater SuperiorOsmosis membrane second zoom angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "membrane-osmosis-zoom-3": {
+      "nodeId": "64620:2",
+      "tags": [
+        "membrane",
+        "osmosis",
+        "ro",
+        "component",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Bluewater SuperiorOsmosis membrane third zoom detail angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pressure-tank-12l-front": {
+      "nodeId": "64584:2",
+      "tags": [
+        "pressure-tank",
+        "12l",
+        "component",
+        "product",
+        "ro",
+        "storage"
+      ],
+      "description": "Bluewater 12L pressurized RO storage tank — front view render with logo",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pressure-tank-12l-no-logo": {
+      "nodeId": "64579:2",
+      "tags": [
+        "pressure-tank",
+        "12l",
+        "component",
+        "product",
+        "ro",
+        "storage"
+      ],
+      "description": "Bluewater 12L pressurized RO storage tank — front view render without logo",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "unpressurized-tank-front": {
+      "nodeId": "64601:2",
+      "tags": [
+        "unpressurized-tank",
+        "component",
+        "product",
+        "storage"
+      ],
+      "description": "Bluewater unpressurized storage tank — front view render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-activated-carbon": {
+      "nodeId": "64619:2",
+      "tags": [
+        "filtration",
+        "activated-carbon",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — activated carbon filter with water flow graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-alkaline": {
+      "nodeId": "64621:2",
+      "tags": [
+        "filtration",
+        "alkaline",
+        "purification",
+        "diagram",
+        "graphic",
+        "mineral"
+      ],
+      "description": "Filtration concept illustration — alkaline/mineral enhancement stage graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-coconut-carbon": {
+      "nodeId": "64654:2",
+      "tags": [
+        "filtration",
+        "coconut-carbon",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — coconut carbon filter stage graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-electrolytes": {
+      "nodeId": "64653:2",
+      "tags": [
+        "filtration",
+        "electrolytes",
+        "purification",
+        "diagram",
+        "graphic",
+        "mineral"
+      ],
+      "description": "Filtration concept illustration — electrolytes and mineral addition stage graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-osmosis-1": {
+      "nodeId": "64657:2",
+      "tags": [
+        "filtration",
+        "osmosis",
+        "ro",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — reverse osmosis membrane stage graphic (variant 1)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-osmosis-2": {
+      "nodeId": "64652:2",
+      "tags": [
+        "filtration",
+        "osmosis",
+        "ro",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — reverse osmosis membrane stage graphic (variant 2)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-oxygen": {
+      "nodeId": "64651:2",
+      "tags": [
+        "filtration",
+        "oxygen",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — oxygen enrichment stage graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "filtration-sediments": {
+      "nodeId": "64647:2",
+      "tags": [
+        "filtration",
+        "sediment",
+        "purification",
+        "diagram",
+        "graphic"
+      ],
+      "description": "Filtration concept illustration — sediment pre-filter stage graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "superiorosmosis-top-b2": {
+      "nodeId": "64649:2",
+      "tags": [
+        "superiorosmosis",
+        "ro",
+        "membrane",
+        "purification",
+        "render"
+      ],
+      "description": "SuperiorOsmosis unit — top view render showing the membrane housing",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "superiorosmosis-top-2-b2": {
+      "nodeId": "64655:2",
+      "tags": [
+        "superiorosmosis",
+        "ro",
+        "membrane",
+        "purification",
+        "render"
+      ],
+      "description": "SuperiorOsmosis unit — alternate top view render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "superiorosmosis-zoom-b2": {
+      "nodeId": "64644:2",
+      "tags": [
+        "superiorosmosis",
+        "ro",
+        "membrane",
+        "purification",
+        "render",
+        "zoom"
+      ],
+      "description": "SuperiorOsmosis unit — close-up zoom render of membrane detail",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "superiorosmosis-zoom-2-b2": {
+      "nodeId": "64642:2",
+      "tags": [
+        "superiorosmosis",
+        "ro",
+        "membrane",
+        "purification",
+        "render",
+        "zoom"
+      ],
+      "description": "SuperiorOsmosis unit — second zoom angle render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "superiorosmosis-overview-b2": {
+      "nodeId": "64609:2",
+      "tags": [
+        "superiorosmosis",
+        "ro",
+        "membrane",
+        "purification",
+        "render",
+        "overview"
+      ],
+      "description": "SuperiorOsmosis unit — overview render showing complete assembly",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "water-particles-sediment-filter": {
+      "nodeId": "64596:2",
+      "tags": [
+        "water",
+        "particles",
+        "sediment",
+        "filter",
+        "purification",
+        "graphic"
+      ],
+      "description": "Water particles animation still — sediment filter stage, particles before filtering",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "water-particles-carbon-filter": {
+      "nodeId": "64629:2",
+      "tags": [
+        "water",
+        "particles",
+        "carbon",
+        "filter",
+        "purification",
+        "graphic"
+      ],
+      "description": "Water particles animation still — carbon filter stage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "water-particles-ro-filter": {
+      "nodeId": "64611:2",
+      "tags": [
+        "water",
+        "particles",
+        "ro",
+        "osmosis",
+        "filter",
+        "purification",
+        "graphic"
+      ],
+      "description": "Water particles animation still — reverse osmosis filter stage",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "waterdrop-pure": {
+      "nodeId": "64603:2",
+      "tags": [
+        "waterdrop",
+        "pure",
+        "purification",
+        "graphic",
+        "icon"
+      ],
+      "description": "Single pure water droplet graphic — post-filtration clean water symbol",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-330-soli": {
+      "nodeId": "64663:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "330ml",
+        "soli",
+        "retail",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 330ml Soli retail glass bottle — clear glass with silver cap, white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-soli": {
+      "nodeId": "64686:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "soli",
+        "retail",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml Soli retail glass bottle — clear glass, white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-soli-sealcap": {
+      "nodeId": "64684:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "soli",
+        "retail",
+        "product",
+        "render",
+        "sealcap"
+      ],
+      "description": "Bluewater 500ml Soli retail glass bottle with seal cap — white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-soli-sealcap-water": {
+      "nodeId": "64675:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "soli",
+        "retail",
+        "product",
+        "render",
+        "sealcap",
+        "water"
+      ],
+      "description": "Bluewater 500ml Soli retail glass bottle with seal cap — with water visible inside",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-black-front": {
+      "nodeId": "64667:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "black",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml glass bottle — black tinted glass, front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-black-front-nobg": {
+      "nodeId": "64718:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "black",
+        "product",
+        "render",
+        "no-background"
+      ],
+      "description": "Bluewater 500ml glass bottle — black tinted glass, front render on transparent background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-blue-front": {
+      "nodeId": "64670:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "blue",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml glass bottle — blue tinted glass, front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-natural-front": {
+      "nodeId": "64721:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "natural",
+        "clear",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml glass bottle — natural/clear glass, front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-white-front": {
+      "nodeId": "64674:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "white",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml glass bottle — white frosted glass, front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-lineup": {
+      "nodeId": "64713:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "lineup",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml glass bottles lineup — multiple color variants side by side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1000-bosi-front": {
+      "nodeId": "64673:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1000ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1000ml Bosi restaurant glass bottle — front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1000-bosi-new": {
+      "nodeId": "64669:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1000ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1000ml Bosi restaurant glass bottle — new design render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1200-bosi": {
+      "nodeId": "64676:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1200ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1200ml Bosi restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1200-bosi-steellid": {
+      "nodeId": "64680:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1200ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render",
+        "steel-lid"
+      ],
+      "description": "Bluewater 1200ml Bosi restaurant glass bottle — with steel lid/cap",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1500-bosi": {
+      "nodeId": "64665:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1500ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1500ml Bosi restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-1500-bosi-bluecap": {
+      "nodeId": "64677:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "1500ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render",
+        "blue-cap"
+      ],
+      "description": "Bluewater 1500ml Bosi restaurant glass bottle — with blue cap",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-330-bosi": {
+      "nodeId": "64661:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "330ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 330ml Bosi restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-bosi": {
+      "nodeId": "64685:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml Bosi restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-bosi-bluecap": {
+      "nodeId": "64734:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "bosi",
+        "restaurant",
+        "product",
+        "render",
+        "blue-cap"
+      ],
+      "description": "Bluewater 500ml Bosi restaurant glass bottle — with blue cap",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-condencey": {
+      "nodeId": "64711:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "condencey",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml Condencey restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "glass-bottle-500-spashy": {
+      "nodeId": "64698:2",
+      "tags": [
+        "glass",
+        "bottle",
+        "500ml",
+        "spashy",
+        "restaurant",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 500ml Spashy restaurant glass bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-1": {
+      "nodeId": "64672:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — close-up of cap and top, light background campaign still",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-2": {
+      "nodeId": "64744:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 2",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-3": {
+      "nodeId": "64730:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 3",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-4": {
+      "nodeId": "64705:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 4",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-5": {
+      "nodeId": "64666:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 5",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-6": {
+      "nodeId": "64723:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 6",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-stc-still-7": {
+      "nodeId": "64742:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "black",
+        "campaign",
+        "still",
+        "product",
+        "stc"
+      ],
+      "description": "Black stainless steel Bluewater bottle — campaign still angle 7",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-1000s-front": {
+      "nodeId": "64662:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "1000ml",
+        "s-series",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1000ml S-series stainless steel bottle — front render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-1000s-render": {
+      "nodeId": "64745:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "1000ml",
+        "s-series",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 1000ml S-series stainless steel bottle — alternate render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-300s-front": {
+      "nodeId": "64664:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "300ml",
+        "s-series",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 300ml S-series stainless steel bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-300s-loop": {
+      "nodeId": "64727:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "300ml",
+        "s-series",
+        "product",
+        "render",
+        "loop"
+      ],
+      "description": "Bluewater 300ml S-series stainless steel bottle with loop cap — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-800s-front": {
+      "nodeId": "64681:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "800ml",
+        "s-series",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater 800ml S-series stainless steel bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-black-colab-front": {
+      "nodeId": "64692:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "black",
+        "co-lab"
+      ],
+      "description": "Bluewater 400ml steel bottle black co-lab edition — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-black-back": {
+      "nodeId": "64728:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "black"
+      ],
+      "description": "Bluewater 400ml steel bottle black — back render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-black-front": {
+      "nodeId": "64701:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "black"
+      ],
+      "description": "Bluewater 400ml steel bottle black — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-blue-colab-back": {
+      "nodeId": "64695:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "blue",
+        "co-lab"
+      ],
+      "description": "Bluewater 400ml steel bottle blue co-lab edition — back render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-blue-back": {
+      "nodeId": "64693:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "blue"
+      ],
+      "description": "Bluewater 400ml steel bottle blue — back render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-blue-front": {
+      "nodeId": "64689:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "blue"
+      ],
+      "description": "Bluewater 400ml steel bottle blue — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-steel-colab-front": {
+      "nodeId": "64696:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel",
+        "co-lab"
+      ],
+      "description": "Bluewater 400ml steel bottle steel co-lab edition — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-steel-back": {
+      "nodeId": "64716:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 400ml steel bottle steel — back render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-steel-back-nobg": {
+      "nodeId": "64687:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 400ml steel bottle steel — back render on transparent background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-steel-front": {
+      "nodeId": "64683:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 400ml steel bottle steel — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-white-colab-front": {
+      "nodeId": "64743:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "white",
+        "co-lab"
+      ],
+      "description": "Bluewater 400ml steel bottle white co-lab edition — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-white-back": {
+      "nodeId": "64694:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "white"
+      ],
+      "description": "Bluewater 400ml steel bottle white — back render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-white-front": {
+      "nodeId": "64690:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "white"
+      ],
+      "description": "Bluewater 400ml steel bottle white — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-lineup-x3": {
+      "nodeId": "64714:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "mixed",
+        "lineup"
+      ],
+      "description": "Bluewater 400ml steel bottles — three-bottle lineup render showing black, blue, steel colors",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-lineup-x4": {
+      "nodeId": "64706:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "mixed",
+        "lineup"
+      ],
+      "description": "Bluewater 400ml steel bottles — four-bottle lineup render showing all color variants",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-800d-front": {
+      "nodeId": "64739:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 800ml D-series stainless steel bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-cap-bottom": {
+      "nodeId": "64726:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable bottle cap — bottom view showing the seal and threading",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-cap-top": {
+      "nodeId": "64709:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable bottle cap — top view showing the lid design",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-lifetime": {
+      "nodeId": "64724:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable bottle — lifetime graphic showing durability/sustainability claim",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-lineup-1": {
+      "nodeId": "64720:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "mixed",
+        "lineup"
+      ],
+      "description": "Bluewater steel reusable bottle lineup 1 — multiple variants arranged",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-lineup-2": {
+      "nodeId": "64741:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "mixed",
+        "lineup"
+      ],
+      "description": "Bluewater steel reusable bottle lineup 2 — multiple variants arranged",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-loop-cap": {
+      "nodeId": "64715:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable steel bottle with loop lid/cap — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-sideview": {
+      "nodeId": "64691:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable steel bottle — side profile view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-steel-finish": {
+      "nodeId": "64731:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable steel bottle — brushed steel finish detail",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-bottle-topview": {
+      "nodeId": "64740:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater reusable steel bottle — top-down view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-1000d-front": {
+      "nodeId": "64738:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 1000ml D-series stainless steel bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400d-front": {
+      "nodeId": "64697:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 400ml D-series stainless steel bottle — front render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-800d-render": {
+      "nodeId": "64699:2",
+      "tags": [
+        "steel",
+        "bottle",
+        "400ml",
+        "product",
+        "render",
+        "steel"
+      ],
+      "description": "Bluewater 800ml D-series stainless steel bottle — alternate render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-b2-render-front": {
+      "nodeId": "64759:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "product",
+        "render",
+        "front"
+      ],
+      "description": "Cleone water purifier — front view render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-b2-render-persp": {
+      "nodeId": "64795:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "product",
+        "render",
+        "perspective"
+      ],
+      "description": "Cleone water purifier — perspective/angled view render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-b2-render-side": {
+      "nodeId": "64748:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "product",
+        "render",
+        "side"
+      ],
+      "description": "Cleone water purifier — side profile render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-b2-render-zoom": {
+      "nodeId": "64762:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Cleone water purifier — close-up zoom render showing detail",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-b2-render-zoom-2": {
+      "nodeId": "64796:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "product",
+        "render",
+        "zoom"
+      ],
+      "description": "Cleone water purifier — second zoom render angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-7-balance": {
+      "nodeId": "64766:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "balance"
+      ],
+      "description": "Cleone 1.7 purifier internal view — Balance filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-7-classic": {
+      "nodeId": "64769:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "classic"
+      ],
+      "description": "Cleone 1.7 purifier internal view — Classic filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-7-purityplus": {
+      "nodeId": "64765:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "purityplus"
+      ],
+      "description": "Cleone 1.7 purifier internal view — PurityPlus filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-8-balance": {
+      "nodeId": "64785:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "balance"
+      ],
+      "description": "Cleone 1.8 purifier internal view — Balance filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-8-classic": {
+      "nodeId": "64782:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "classic"
+      ],
+      "description": "Cleone 1.8 purifier internal view — Classic filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-8-purityplus": {
+      "nodeId": "64794:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "purityplus"
+      ],
+      "description": "Cleone 1.8 purifier internal view — PurityPlus filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-1-8-ultra": {
+      "nodeId": "64789:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "inside",
+        "cutaway",
+        "internal",
+        "ultra"
+      ],
+      "description": "Cleone 1.8 purifier internal view — Ultra filter configuration cutaway",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-filter-cl20-b2": {
+      "nodeId": "64764:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "cl20",
+        "product",
+        "render"
+      ],
+      "description": "Cleone CL-20 filter cartridge — render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-filter-cl5-b2": {
+      "nodeId": "64774:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "cl5",
+        "product",
+        "render"
+      ],
+      "description": "Cleone CL-5 filter cartridge — render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-filter-clc-b2": {
+      "nodeId": "64756:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "clc",
+        "product",
+        "render"
+      ],
+      "description": "Cleone CL-C filter cartridge — render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-filter-inline-c-b2": {
+      "nodeId": "64770:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "inline-c",
+        "product",
+        "render"
+      ],
+      "description": "Cleone CL-Inline-C inline filter cartridge — render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-filter-mineral-postfilter-b2": {
+      "nodeId": "64749:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "mineral",
+        "postfilter",
+        "product",
+        "render"
+      ],
+      "description": "Cleone CL-Mineral postfilter cartridge — render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-carbon-post-b2": {
+      "nodeId": "64790:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "carbon",
+        "post-filter",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside — activated carbon post-filter component",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-carbon-pre-b2": {
+      "nodeId": "64752:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "carbon",
+        "pre-filter",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside — activated carbon pre-filter component",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-sediment-20um-b2": {
+      "nodeId": "64750:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "sediment",
+        "20um",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside — sediment pre-filter 20 micron component",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-sediment-5um-b2": {
+      "nodeId": "64754:2",
+      "tags": [
+        "cleone",
+        "filter",
+        "sediment",
+        "5um",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside — sediment pre-filter 5 micron component",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-cutaway-b2-1": {
+      "nodeId": "64753:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "cutaway",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside cutaway — full internal assembly view (1)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-inside-cutaway-b2-2": {
+      "nodeId": "64763:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "cutaway",
+        "inside",
+        "product"
+      ],
+      "description": "Cleone purifier inside cutaway — full internal assembly view (2)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-postfilter-b2": {
+      "nodeId": "64768:2",
+      "tags": [
+        "cleone",
+        "postfilter",
+        "product",
+        "render"
+      ],
+      "description": "Cleone postfilter unit — render showing the standalone post-filter module",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-prefilters-b2": {
+      "nodeId": "64775:2",
+      "tags": [
+        "cleone",
+        "prefilter",
+        "product",
+        "render"
+      ],
+      "description": "Cleone prefilters — render showing the pre-filter modules",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-b2-render-front": {
+      "nodeId": "64755:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro water purifier — front view render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-b2-render-persp": {
+      "nodeId": "64798:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro water purifier — perspective/angled render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-b2-render-side": {
+      "nodeId": "64757:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro water purifier — side profile render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-b2-render-zoom": {
+      "nodeId": "64777:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro water purifier — close-up zoom detail render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-b2-render-zoom-2": {
+      "nodeId": "64778:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro water purifier — second zoom angle render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-filter-carbon-b2": {
+      "nodeId": "64767:2",
+      "tags": [
+        "pro",
+        "filter",
+        "carbon",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro carbon filter cartridge — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-filter-sediment-b2": {
+      "nodeId": "64773:2",
+      "tags": [
+        "pro",
+        "filter",
+        "sediment",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Pro sediment filter cartridge — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-inside-b2": {
+      "nodeId": "64779:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "inside",
+        "cutaway",
+        "product"
+      ],
+      "description": "Bluewater Pro purifier inside cutaway — full internal assembly view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-inside-carbon-filter-b2": {
+      "nodeId": "64761:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "filter",
+        "carbon",
+        "inside",
+        "product"
+      ],
+      "description": "Bluewater Pro purifier inside — carbon filter component highlighted",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-inside-sediment-filter-b2": {
+      "nodeId": "64786:2",
+      "tags": [
+        "pro",
+        "purifier",
+        "filter",
+        "sediment",
+        "inside",
+        "product"
+      ],
+      "description": "Bluewater Pro purifier inside — sediment filter component highlighted",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier16-b2-front": {
+      "nodeId": "64760:2",
+      "tags": [
+        "purifier16",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Purifier 16 — front view render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier16-b2-left": {
+      "nodeId": "64751:2",
+      "tags": [
+        "purifier16",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Purifier 16 — left side render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier16-b2-right": {
+      "nodeId": "64771:2",
+      "tags": [
+        "purifier16",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Purifier 16 — right side render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier16-b2-zoom-1": {
+      "nodeId": "64772:2",
+      "tags": [
+        "purifier16",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Purifier 16 — close-up zoom render (angle 1)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier16-b2-zoom-2": {
+      "nodeId": "64783:2",
+      "tags": [
+        "purifier16",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Purifier 16 — close-up zoom render (angle 2)",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-b2-render-front": {
+      "nodeId": "64792:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit water purifier — front view render on white background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-b2-render-persp": {
+      "nodeId": "64758:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit water purifier — perspective/angled render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-b2-render-side": {
+      "nodeId": "64793:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit water purifier — side profile render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-b2-render-zoom": {
+      "nodeId": "64787:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit water purifier — close-up zoom detail render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-b2-render-zoom-2": {
+      "nodeId": "64791:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit water purifier — second zoom angle render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-filter-carbon-b2": {
+      "nodeId": "64788:2",
+      "tags": [
+        "spirit",
+        "filter",
+        "carbon",
+        "product",
+        "render"
+      ],
+      "description": "Bluewater Spirit carbon filter cartridge — render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-inside-b2": {
+      "nodeId": "64781:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "inside",
+        "cutaway",
+        "product"
+      ],
+      "description": "Bluewater Spirit purifier inside cutaway — full internal assembly view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-inside-carbon-granulated-b2": {
+      "nodeId": "64780:2",
+      "tags": [
+        "spirit",
+        "purifier",
+        "filter",
+        "carbon",
+        "granulated",
+        "inside",
+        "product"
+      ],
+      "description": "Bluewater Spirit purifier inside — granulated carbon filter component",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bluevi-sweetener": {
+      "nodeId": "64854:3",
+      "tags": [
+        "extract",
+        "bluevi",
+        "sweetener",
+        "product",
+        "nature",
+        "leaf"
+      ],
+      "description": "Bluewater Bluevi Sweetener product image — macro close-up of a tropical leaf with water droplets, dark green tones",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-coffee-rock": {
+      "nodeId": "64854:5",
+      "tags": [
+        "extract",
+        "coffee-rock",
+        "product",
+        "mineral",
+        "coffee"
+      ],
+      "description": "Bluewater Coffee Rock extract product — promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-flavour": {
+      "nodeId": "64854:7",
+      "tags": [
+        "extract",
+        "flavour",
+        "flavor",
+        "product"
+      ],
+      "description": "Bluewater Flavour extract product image — lifestyle/product promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-energy": {
+      "nodeId": "64854:9",
+      "tags": [
+        "extract",
+        "functional",
+        "energy",
+        "product",
+        "bottle"
+      ],
+      "description": "Bluewater Energy functional extract — product bottle render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-energy-bottle": {
+      "nodeId": "64854:10",
+      "tags": [
+        "extract",
+        "functional",
+        "energy",
+        "product",
+        "bottle",
+        "lifestyle"
+      ],
+      "description": "Bluewater Energy functional extract — with bottle lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-focus": {
+      "nodeId": "64854:11",
+      "tags": [
+        "extract",
+        "functional",
+        "focus",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater Focus functional extract — product graphic/illustration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-focusdrop": {
+      "nodeId": "64854:12",
+      "tags": [
+        "extract",
+        "functional",
+        "focus",
+        "drop",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater FocusDrop functional extract — drop graphic/illustration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-focusdrop-hiit": {
+      "nodeId": "64854:13",
+      "tags": [
+        "extract",
+        "functional",
+        "focus",
+        "drop",
+        "hiit",
+        "sport",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater FocusDrop HIIT variant — sports/performance drop graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-hydrate": {
+      "nodeId": "64854:14",
+      "tags": [
+        "extract",
+        "functional",
+        "hydrate",
+        "product",
+        "bottle"
+      ],
+      "description": "Bluewater Hydrate functional extract — tall product bottle render/image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.54,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-hydrate-bottle": {
+      "nodeId": "64854:15",
+      "tags": [
+        "extract",
+        "functional",
+        "hydrate",
+        "product",
+        "bottle"
+      ],
+      "description": "Bluewater Hydrate functional extract — with bottle promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-immune": {
+      "nodeId": "64854:16",
+      "tags": [
+        "extract",
+        "functional",
+        "immune",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater Immune functional extract — product graphic/illustration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-immunedrop": {
+      "nodeId": "64854:17",
+      "tags": [
+        "extract",
+        "functional",
+        "immune",
+        "drop",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater ImmuneDrop functional extract — drop graphic/illustration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-immunedrop-lowint": {
+      "nodeId": "64854:18",
+      "tags": [
+        "extract",
+        "functional",
+        "immune",
+        "drop",
+        "low-intensity",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater ImmuneDrop low-intensity variant — drop graphic",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-immune-bottle": {
+      "nodeId": "64854:19",
+      "tags": [
+        "extract",
+        "functional",
+        "immune",
+        "product",
+        "bottle"
+      ],
+      "description": "Bluewater Immune functional extract — with bottle promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-zen": {
+      "nodeId": "64854:20",
+      "tags": [
+        "extract",
+        "functional",
+        "zen",
+        "product",
+        "bottle",
+        "tall"
+      ],
+      "description": "Bluewater Zen functional extract — tall product image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.5,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-zen-2": {
+      "nodeId": "64854:21",
+      "tags": [
+        "extract",
+        "functional",
+        "zen",
+        "product"
+      ],
+      "description": "Bluewater Zen functional extract — horizontal/wide format variant",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 2.0,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-zen-bottle": {
+      "nodeId": "64854:22",
+      "tags": [
+        "extract",
+        "functional",
+        "zen",
+        "product",
+        "bottle"
+      ],
+      "description": "Bluewater Zen functional extract — with bottle promotional image",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-liquid-rock-drop": {
+      "nodeId": "64854:24",
+      "tags": [
+        "extract",
+        "liquid-rock",
+        "mineral",
+        "drop",
+        "product",
+        "graphic"
+      ],
+      "description": "Bluewater Liquid Rock mineral extract — drop/macro product graphic illustration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "beverage-station-1-scene": {
+      "nodeId": "64870:2",
+      "tags": [
+        "beverage-station",
+        "station",
+        "product",
+        "scene",
+        "bluewater-o",
+        "ipad"
+      ],
+      "description": "Bluewater Beverage Station 1 — product scene render with Bluewater O dispenser and iPad display on countertop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-cs1-render-b2": {
+      "nodeId": "64877:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "product",
+        "render",
+        "station"
+      ],
+      "description": "Café Station 1 (CS1) product render — front view of the under-counter brewing unit",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-cs1-install-brew-b2": {
+      "nodeId": "64876:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "product",
+        "installation",
+        "brew-mode"
+      ],
+      "description": "Café Station 1 — installation/setup view in brew mode configuration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-cs1-install-espresso-b2": {
+      "nodeId": "64880:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "product",
+        "installation",
+        "espresso-mode"
+      ],
+      "description": "Café Station 1 — installation/setup view in espresso mode configuration",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-01": {
+      "nodeId": "64878:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 01 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-02": {
+      "nodeId": "64879:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 02 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-03": {
+      "nodeId": "64882:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 03 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-04": {
+      "nodeId": "64881:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 04 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-05": {
+      "nodeId": "64883:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 05 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-06": {
+      "nodeId": "64885:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 06 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-07": {
+      "nodeId": "64884:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 07 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-08": {
+      "nodeId": "64886:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 08 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-09": {
+      "nodeId": "64887:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 09 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-10": {
+      "nodeId": "64889:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 10 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-11": {
+      "nodeId": "64888:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 11 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-12": {
+      "nodeId": "64890:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 12 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-13": {
+      "nodeId": "64892:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 13 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-14": {
+      "nodeId": "64894:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 14 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-15": {
+      "nodeId": "64895:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 15 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-16": {
+      "nodeId": "64893:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 16 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-17": {
+      "nodeId": "64896:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 17 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-standout-film-18": {
+      "nodeId": "64899:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "standout",
+        "film",
+        "dark",
+        "coffee"
+      ],
+      "description": "Café Station 1 Standout marketing film still 18 — dark moody coffee workshop environment",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-01": {
+      "nodeId": "64897:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 01, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-02": {
+      "nodeId": "64898:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 02, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-03": {
+      "nodeId": "64900:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 03, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-04": {
+      "nodeId": "64901:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 04, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-05": {
+      "nodeId": "64903:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 05, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-06": {
+      "nodeId": "64904:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 06, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-07": {
+      "nodeId": "64902:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 07, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-08": {
+      "nodeId": "64905:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 08, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-09": {
+      "nodeId": "64906:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 09, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-oskar-10": {
+      "nodeId": "64907:2",
+      "tags": [
+        "cafe-station",
+        "cs1",
+        "lifestyle",
+        "oskar",
+        "coffee",
+        "barista",
+        "dark"
+      ],
+      "description": "Café Station 1 — Oskar lifestyle still 10, person demonstrating or discussing CS1 in dark artisan coffee workshop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
         ],
         "quality": "high"
       }
