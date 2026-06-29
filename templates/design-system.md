@@ -333,6 +333,122 @@ Content area is always 745px tall (y=287 → y=1032). When a slide has multiple 
 
 Single-row slides use the full 745px.
 
+### Headline-clear vertical fill (raise cards to y=115)
+
+Cards/columns are **pinned at y=287 only because the title block lives above them**.
+When a card sits in a column that is **horizontally clear of the headline** (the
+eyebrow + title ink), it does not need that clearance — it may **raise its top from
+y=287 up to y=115** (top-aligned with the eyebrow/title band) and grow to the full
+**917px** height (y=115 → y=1032). Bottom stays pinned at y=1032; only the top moves up.
+
+```
+content top, default      : y=287  → card height 745   (column UNDER the headline)
+content top, headline-clear: y=115  → card height 917   (column BESIDE the headline)
+both bottom-anchor to       y=1032
+```
+
+**When it applies — the test is horizontal, not vertical.** A card may raise to y=115
+when its **left edge starts to the right of the headline's rendered ink** (title +
+eyebrow) by at least one 32px gutter. Judge by the headline's **visible glyph extent**,
+not the title text-frame's nominal width (titles are often full-bleed frames holding a
+short word — e.g. "Highlights." in a 1824-wide frame spans only ~330px of ink, so the
+two right-hand columns are clear and rise, while the left column under the word stays at
+y=287). One safe heuristic: the column directly beneath the headline keeps y=287; every
+column to its right that the headline does not overhang rises to y=115.
+
+**Never let a raised card overlap or crowd the headline.** If in doubt about clearance,
+keep y=287 — interfering with the title is worse than a little empty space.
+
+Worked examples (both verified in-file):
+- *Stat list + image* (left text column `y=287, h=745` under the headline; right image
+  card `x=976, y=115, h=917` — raised because it clears the title).
+- *3-column bento* (col 1 under the headline `y=287, h=745`; cols 2 & 3 `y=115, h=917`).
+
+This is the default for image/bento/feature-card layouts where a side column is free —
+it fills the canvas the way the source frames do, instead of leaving a dead band between
+the meta row and y=287.
+
+### Headline wrap & dynamic gap (multi-line titles)
+
+So long headlines never look cramped or leave widows:
+
+**1. Balanced wrap.** A title that wraps to 2+ lines must not leave a stub last line
+(e.g. "…will you offer?"). Set the title box to the **narrowest width that still yields the
+same line count** — this fills the last line and evens the rows. `balanceTitle(t)`: at full
+width (1824) read line count `lc`; binary-search width in `[ceil(1824/lc), 1824]` for the
+smallest width that still measures `lc` lines; set the box to it (title stays left-aligned at
+x=48). Skip 1-line titles. Line count = `round(height / (fontSize × 1.10))`.
+
+**2. Dynamic title→content gap.** Don't hard-pin content at y=287 when the title is tall. Use
+`contentTop = max(287, titleBottom + 52)` (`titleBottom = titleY + titleHeight`). 1-line title
+→ 287 (unchanged); 2-line title → content drops so the gap stays ~52px, the content region
+shortens (`height = 1032 − contentTop`), and bottom-anchored elements re-justify to the new
+bottom. Any headline length then sits correctly without crowding.
+
+**3. Eyebrow optional.** The eyebrow pushes the title to y=162 (vs 115); drop it to reclaim
+~47px when the kicker isn't needed. Combine 1–3 for the airiest result.
+
+Worked example — Pitch 24 pricing (long 2-line prompt, eyebrow kept): balanced 1824→1093px
+(two even lines, no widow); cards dropped 287→320 (gap 52, height 712, features re-anchored).
+
+### Body copy measure (line length)
+
+Body / paragraph copy reads best at ~66 characters per line; keep every paragraph in the
+**45–75 cpl** band (66 ideal). Do NOT hardcode a body width that ignores this — a fixed width
+is too tight in narrow slots (and runs "weird" when stretched full-bleed).
+
+**Calibrated constant:** Suisse Int'l Medium averages **0.472em per character** (measured in
+this file). So `charAdvance(px) = 0.472 × fontSize`, and a column showing C chars/line is
+`width = C × 0.472 × fontSize`. Measure band per body size (px):
+
+| size | 45 cpl (min) | 66 cpl (ideal) | 75 cpl (max) |
+|---|---|---|---|
+| 16 | 340 | 498 | 566 |
+| 18 | 382 | 561 | 637 |
+| 20 | 425 | 623 | 708 |
+| 24 | 509 | 747 | 849 |
+| 28 (slide body) | 594 | 872 | 991 |
+
+**Fitting a body block — `fitBody(slotWidth, size)`** — two levers: WIDTH when the slot is
+free, SIZE when the slot is fixed:
+1. `idealW = 66cpl`, `minW = 45cpl`, `maxW = 75cpl` (table/formula above).
+2. `slotWidth ≥ idealW` → set body width = **idealW** (snap to grid). Never run a paragraph
+   wider than `maxW` even if the slot allows — cap it.
+3. `minW ≤ slotWidth < idealW` → body width = **slotWidth** (already in band).
+4. `slotWidth < minW` → slot **too tight** for this size; resolve in order: (a) step the body
+   DOWN to the largest size whose `minW ≤ slotWidth` (cpl ≥ 45); (b) if even 16px won't fit,
+   the LAYOUT is wrong → use fewer/wider columns; (c) only then shorten to caption length (the
+   band applies to paragraphs, not 1–3-word captions).
+
+**Footnote / source-note exemption — NOT body copy, never `fitBody`.** A slide-level
+**footnote / source note / chart caption** (slots `footnote`, `source`, and `caption` when it
+is a slide-level note rather than an in-card label) is meta text, not reading prose. Do **NOT**
+apply the 45–75 ch measure or `fitBody` to it — that is exactly what plops a long note into a
+narrow ~498px column floating inside the chart. Render it as a single small strip:
+Suisse Int'l **Regular 14**, **Gray/500** (#71717a), **full content width** (x=48, width 1824),
+`textAlignHorizontal` CENTER (or LEFT), `textAutoResize=HEIGHT`, **bottom-anchored**
+(`y = 1032 − height`, ≈ y 994). It may exceed 75 ch on one line — that is fine; a long note
+wraps within the full width, it is never compressed into a column. Canonical reference: the
+`footnote` on `financial-report-06`. (In-card captions — chart min/max labels, "Fig 05.A",
+dimension callouts, the 1–3-word labels of §line 77 — stay small beside their element and are
+also exempt from the measure; the band applies to paragraphs only.)
+
+**Weirdness checks:** every paragraph 45 ≤ cpl ≤ 75; left-aligned; width snapped to grid;
+never wider than its container nor wider than `maxW`. Footnotes/source notes are exempt (see
+above) — they are full-width bottom strips, not measured paragraphs.
+
+**Worked example — Marketing-29 "Benchmarks" 4-up cards:** card slot = 432px; body was 24px →
+432 / (0.472×24) = **38 cpl** (below the 45 floor → too tight). 432px can't grow (4-up grid),
+so apply lever (a): step the card body to **16px** → 432 / (0.472×16) = **57 cpl** (in band).
+
+**Compact vs full-width variants (keep both — variety is intentional).** A narrow multi-up
+card layout that sits in only part of the width (cards crammed to one side with empty canvas)
+can exist as TWO registered variants: a **compact** version (narrow cards — fine when the body
+is caption/short or you want a denser dynamic) and a **full-width** version (cards spread across
+the whole 1824 so the body lands at ~66 cpl — use when phases/cards carry real paragraph copy).
+Don't force every slide to one or the other; pick per content. Reference pair:
+`pitch-39-roadmap-3phase` (compact) ↔ `pitch-39b-roadmap-fullwidth` (full-width).
+
 ### Bottom-anchor rule (re-justify after hiding content)
 
 Template content regions are designed so the **last visible element's bottom edge sits at y=1032** (48px from the slide bottom), or **48px above a card/column's bottom edge** for content inside a card. This is the "justified-between" look: chrome/heading pinned to the top, primary copy or stat pinned to the bottom.

@@ -127,7 +127,7 @@ Carry the user's choices forward into Steps 4 and 5. When presenting the slide p
 
 ## Step 4: Match Each Slide to a Template
 
-For each extracted slide, select the best template from the registry using these rules (in priority order):
+For each extracted slide, select the best template by **scoring the whole registry equally** (see "Match by scoring the whole library" below). Product packs and industry logo gardens are checked first (they have their own matchHints routing); everything else competes on fit score, with the common-shape priors used only as a tiebreaker.
 
 ### Product-first (check BEFORE template matching)
 
@@ -147,9 +147,25 @@ a generic template:
 Product slides are finished shells — see Step 5b "Cloning a product slide" for the build pattern.
 This path is skipped entirely when no product was detected.
 
-### Matching Priority
+### Match by scoring the whole library (equal weight)
 
-All templates live on the **"Template references"** page (`56881:463`, status `primary`). The **"Templates 4"** page (`50285:14832`) is `retired` / `routable: false` — never clone from it. Every `registry.json → templates` entry has `page: "Template references"` and `status: KEEP`; walk the priority list below to pick the best shape.
+**Every registered template competes equally.** Do NOT walk a fixed list and take the first fit, and do NOT privilege any family. For each incoming slide, score EVERY entry in `registry.json → templates` — the generic base templates AND the reskinned families (`financial-report-*`, `pitch-*`, `marketing-*`, `strategy-*`) AND `marketing-toolkit` — then pick the highest scorer (and, when scores are close, offer the top 3 as alternatives in Step 4.5). A template is **never** excluded just because it isn't named in the priors list below.
+
+Score each template **0–10** against the incoming slide:
+
+1. **Structural fit (0–6, primary).** Does the template's shape physically hold this content?
+   - **Item count:** compare the slide's number of items/points/columns to the template's cell/column/row count (read its `slots` + `flexible.minItems`/`maxItems`). Exact = best; ±1 is fine via optional-slot hide; a large mismatch scores low.
+   - **Category match:** map the content type to `category` — quote→`quote`; one dramatic number→`fact`; N metrics→`metrics`/`stat-grid`; 2–6 distinct items→`bento*`/`pillar-grid*`; comparison→`comparison`; numbered steps→`numbered-list`; chart→`data-viz`; a named diagram (funnel/onion/venn/pyramid/golden-circle/cycle/spectrum/…)→the matching `strategy-*`/`data-viz` diagram; team→`pitch-team-*`; do/don't guidance→`marketing-39-do-dont`/`social-do-dont`; content calendar→`content-calendar`; logos→logo-garden (or industries).
+2. **Semantic / topic fit (0–3, secondary).** Compare the slide's title/topic/keywords to the template's `matchHints` + `description`. Reward use-case overlap (a persona→`marketing-20-persona-profile`; a roadmap→a timeline/roadmap template; pricing tiers→`pillar-grid-3up-pricing`; a positioning map→`marketing-11-positioning-map`).
+3. **Imagery fit (0–1).** Honor the Step 3 image choice. In **text-first** mode, templates whose design REQUIRES photos (their image areas would otherwise show FIG placeholders) score lower than text-only templates of equal structural fit.
+
+**Sum = fit score (0–10).** The top scorer is variant **A**. Use the **preference tie-breaker** and the **common-shape priors** (both below) ONLY to settle near-ties. Then go to Step 4.5 for the variant count.
+
+> All templates live on the **"Template references"** page (`56881:463`). The **"Templates 4"** page (`50285:14832`) is retired / `routable:false` — never clone from it. Every routable entry has `page: "Template references"` and `status: KEEP`.
+
+### Common-shape priors (tiebreaker, not a gate)
+
+The list below maps frequent content shapes to a sensible default template. It is a **fast prior and tiebreaker only** — when two templates tie on the fit score, prefer the one this list names for that shape. It does **not** restrict matching: any template can win on score, including reskinned-family slides not named here.
 
 1. **First slide** → opening title:
    - With imagery → `cover-with-product` (Template references)
@@ -183,7 +199,7 @@ All templates live on the **"Template references"** page (`56881:463`, status `p
 25. **Checklist** → `template-checklist-bento` (OVERLAP)
 26. **Anything that fits no template above** → **CREATIVE ESCAPE HATCH** (build from scratch — see Creative Decision Rules)
 
-**Bullet templates (`template-bullets-4/6/8`, `template-technical-bullets`)** were harmonized and restored to the references page on 2026-05-29 (status `KEEP`): clean text-bullet grids with heading + body per item (4-up/6-up = 36px headings, 8-up = 28px, technical = 20px spec rows + a left image area). Prefer image-rich `pillar-grid-*` / `bento*` when the content suits imagery; reach for the bullet grids when you want a clean text-only list of headed points.
+**Text-only list of headed points?** The standalone bullet-grid templates (`template-bullets-*`, `template-technical-bullets`) were retired on 2026-06-27. Use the text-only bento grids `template-bento4`/`-bento5`/`-bento6` for 4–6 headed points, or `template-info-2/3/4bullets` (title + body on the left, bullets on the right) for a body-plus-bullets shape. Prefer image-rich `pillar-grid-*` whenever the content suits imagery.
 
 **Preference tie-breaker:** before finalizing each slide's template, check `assets/preferences.json → templatePicks` for records with a similar `contentShape`. A template repeatedly chosen (≥2) for similar content wins ties and close calls; one repeatedly rejected is demoted below its rivals. Preferences never override the structural rules above (item counts, content types) — they only settle close calls. In Curated mode this also reorders which 3 candidates become the A/B/C alternatives (most-preferred = A).
 
@@ -236,7 +252,7 @@ Before generating anything in Figma, present the full slide plan to the user:
 Slide Plan:
 1. [template-title-subtitle-center] "Company Overview" — Title slide with subtitle
 2. [template-chapter-left] "Our Mission" — Chapter divider
-3. [template-bullets-4] "Key Products" — 4 product highlights
+3. [template-bento4] "Key Products" — 4 product highlights
 ...
 ```
 
@@ -248,7 +264,7 @@ In **Curated mode**, the plan confirmation is lightweight (the real review happe
 
 The curator judges finished, rendered slides — never template names.
 
-1. **Variant count per slide (adaptive):** while matching in Step 4, score the top template candidates 1–10 for fit. A slide is **ambiguous** when the top two scores are within 2 points → build the top **3** candidates as alternatives. One clear answer → 1 variant. Always 1 variant for: covers, chapter dividers, closing slides, and product-pack clones (already-approved layouts). To generate candidates, walk the Step 4 priority list past the first match and take the next 2 templates that could also hold the content (same item count or compatible layout category) — those are B and C. Rubric: 10 = exact structural match; 7–9 = strong fit, minor compromises; 4–6 = workable but less ideal; 1–3 = stretch. Score all candidates before deciding ambiguity.
+1. **Variant count per slide (adaptive):** use the Step 4 whole-library fit scores. A slide is **ambiguous** when ≥2 templates score within 2 points of the top → build the top **3** scorers as alternatives. One clear winner → 1 variant. Always 1 variant for: covers, chapter dividers, closing slides, and product/industry clones (already-approved layouts). **Candidates = the top 3 templates by fit score across the WHOLE registry (all families compete equally)** — the highest is A (recommended), the next two are B and C. Do NOT restrict candidates to the common-shape priors list; a reskinned-family slide (e.g. `marketing-20-persona-profile`, `strategy-08-golden-circle`, `pitch-36-team-4up`) is a valid A/B/C when it scores in the top 3. Rubric: 10 = exact structural match; 7–9 = strong fit, minor compromises; 4–6 = workable but less ideal; 1–3 = stretch. Score all candidates before deciding ambiguity.
 2. **Build the review grid:** build every variant as a complete slide (full §5 build — text, images per §5d, chrome, audit). Position: slide i at x = i·2120; variant A (the recommendation) at y = 0, B at y = 1280, C at y = 2560. Frame names: `S04-A — pillar-grid-4up-image (recommended)`, `S04-B — template-bento4`, … For review-grid variant builds, treat `auditSlide` issues as warnings (append them to the variant's frame name, e.g. `S04-B — template-bento4 ⚠ title-size`) — the §5g STOP rule applies only to the assembled final deck. Report surviving variant audit issues after picks are confirmed.
 3. **Collect picks:** `get_screenshot` each ambiguous slide's column (or the grid in chunks) and show the curator. Ask per ambiguous slide via AskUserQuestion ("Slide 4: A, B, or C?") or accept compact chat answers ("4→B, 9→C, rest A"). Unmentioned slides default to A.
 4. **Assemble the final deck row:** move each chosen variant to y = 0 at its slide x; rename sequentially (`Slide 04 — <title>`); refresh page numbers via `applyDeckChrome` (total = final slide count); write the Step 5.6 records for the layout picks FIRST, then DELETE all losing variants.
@@ -718,7 +734,7 @@ Slides created: N/N
 Slide summary:
 1. ✓ [template-title-subtitle-center] "Company Overview"
 2. ✓ [template-chapter-left] "Our Mission"
-3. ✓ [template-bullets-4] "Key Products"
+3. ✓ [template-bento4] "Key Products"
 ...
 
 Any slides that need manual attention:
