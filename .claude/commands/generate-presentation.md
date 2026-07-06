@@ -237,7 +237,7 @@ Before finalizing template selection, apply these judgment calls:
 - Content has a unique constraint (e.g., a custom diagram, a one-off pricing comparison).
 
 When using the escape hatch, follow the **Creative escape hatch** section in `templates/design-system.md`:
-- Always call `applyChrome(slide, { metaLeftText, metaRightText, titleText, isDark })` first.
+- Always call `applyChrome(slide, { metaLeftText, metaRightText, titleText, isDark })` first — same chrome contract as every clone path: `metaLeftText: DECK_LABEL`, `metaRightText: \`${SLIDE_INDEX + 1}/${DECK_TOTAL}\`` (omit `metaRightText` only on a cover, per the "no top-meta" rule). A from-scratch build is not exempt from the format contract just because it isn't a clone.
 - Always run `auditChrome(slide)` before returning. Issues array must be empty.
 - Use only typescale Layer 1 sizes; only Gray/Blue/Rose/Green tokens; only 32px gap and corner radius; only 48px outer margins.
 - Draw layout inspiration from frames on the Template references page (id `56881:463`) — pick the closest pattern and adapt.
