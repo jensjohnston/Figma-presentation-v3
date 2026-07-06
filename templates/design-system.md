@@ -839,6 +839,45 @@ For these, omit `titleText` from `applyChrome()`. `auditChrome()` skips the titl
 
 **Covers carry NO top-meta (hard rule).** Cover / title / opening slides have **no `meta-left` and no `meta-right`** — the brand lockup IS the content, so the top-meta row stays empty. Never put "Bluewater × …", a section label, or a page counter on a cover. When building a cover, skip `applyChrome` (or call it with no meta args) and do not add meta nodes; if you clone a template onto a cover, delete its `meta-left` / `meta-right`. The sequential page counter still treats the cover as slide 1 of N — it's simply not rendered on the cover, so content slides begin at `02 / N`. (Codified 2026-06-08 after the Culligan deck shipped a cover with `Bluewater × Culligan` · `01 / 08` meta.)
 
+## applyDeckChrome — the only sanctioned way to refresh chrome on a CLONED slide
+
+`applyChrome` (above) is for from-scratch builds, where the text nodes don't exist yet. Every other build path — standard template clone, table clone, product-shell clone — starts from a template frame that already **carries whatever placeholder `meta-left`/`meta-right` text was baked into it** (e.g. "Bluewater", "Official hydration partner of Volvo", a stale "3/14" from whichever deck the frame was authored for). Left alone, that placeholder text ships unchanged into the generated deck, and since every template frame was authored independently, the placeholders don't agree with each other — the same generated deck ends up with a different-looking label and page count on every other slide.
+
+**Fixed 2026-07-06** after this was reported: the generator has ONE deck-wide label (`DECK_LABEL`, derived once — see `generate-presentation.md` → "Determine the deck label") and ONE running page counter (`N/DECK_TOTAL`). `applyDeckChrome` is the single function that stamps both onto a cloned slide, update-or-create so it works whether or not the source frame already had the nodes:
+
+```js
+// Update-or-create per-deck chrome on a cloned slide. Call this on EVERY cloned
+// content slide (standard template, table, product shell) — REQUIRED, not optional.
+// Do NOT call it on covers or logo-garden clones (see exemptions below).
+async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, isDark = false }) {
+  const gray = isDark ? {r:0xA1/255,g:0xA1/255,b:0xAA/255} : {r:0x71/255,g:0x71/255,b:0x7A/255};
+  const find = (name) => slide.findOne(n => n.type === "TEXT" && n.name === name);
+  // Cover convention: a single meta-top-right label, no page number — just refresh its text.
+  const coverMeta = find("meta-top-right") || find("meta-top-left");
+  if (coverMeta && !find("meta-left")) { await setText(coverMeta, coverMeta.name, metaLeftText); return { cover: coverMeta.id }; }
+  // Content slide: deck label (left) + page number (right), created if the source had none.
+  let ml = find("meta-left");
+  if (ml) await setText(ml, "meta-left", metaLeftText);
+  else ml = mkText(slide, metaLeftText, { size:14, style:"Regular", color:gray, x:48, y:48, name:"meta-left" });
+  let mr = find("meta-right");
+  const page = `${slideNumber}/${totalSlides}`;
+  if (mr) await setText(mr, "meta-right", page);
+  else { mr = mkText(slide, page, { size:14, style:"Regular", color:gray, name:"meta-right" }); mr.y = 48; }
+  mr.textAlignHorizontal = "RIGHT"; mr.x = 1872 - mr.width;   // always re-pin right edge to x=1872
+  return { metaLeft: ml.id, metaRight: mr.id };
+}
+```
+
+**The format contract (non-negotiable, applies to every generated deck):**
+- `meta-left` = `DECK_LABEL` verbatim, unchanged across every content slide — the presentation's name or theme (e.g. "Bluewater Purifiers", "Kitchen Station", "Marketing Strategy 2026"). Never a per-slide value, never a section label.
+- `meta-right` = **exactly** `` `${slideNumber}/${totalSlides}` `` — e.g. `7/35`, `1/8`. Always one row (the function re-pins `textAutoResize` + right edge every time). Never `Page 7 of 35`, never zero-padded (`07/35`), never a different separator (`7 / 35` with spaces, `7 of 35`) — one format, everywhere.
+
+**Exemptions — do not call `applyDeckChrome`, handle directly:**
+- **Covers** — no meta at all (see hard rule above), OR the product-shell "single top label, no page number" convention already built into the function (the `meta-top-right`/`meta-top-left` branch).
+- **Logo-garden clones** (industry or generic) — `meta-left = DECK_LABEL` only, set with a plain `setText`; these frames intentionally omit `meta-right` (no page number on a logo wall). Calling `applyDeckChrome` here would wrongly manufacture a `meta-right` node the design omits — don't.
+
+**Required on every other clone path.** This closes the gap that caused the inconsistency: previously only the product-shell path called this; the standard template-clone path and the table-clone path did not, so most slides in a generated deck kept whatever placeholder chrome shipped with the source frame. See `generate-presentation.md` §5b / §5c for the call site on each path.
+
 ## The geometry contract — `auditFrame` (source guard) + `auditSlide` (output gate)
 
 **Root cause of the 2026-05-29 JPD off-spec slides (now fixed at the root):** the generator clones template frames and only replaces text, so output is only as correct as the frame. There used to be two divergent sources of truth — the harmonized **Template references** page and the un-harmonized **Templates 4** page (`50285:14832`), whose frames shipped pre-harmonization geometry (title 80–120px, 64px margins, body 20–30px, cards ~80px off the bottom). Cloning a stale frame produced a silently off-spec slide.
