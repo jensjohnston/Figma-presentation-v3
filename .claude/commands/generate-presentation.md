@@ -198,14 +198,12 @@ The list below maps frequent content shapes to a sensible default template. It i
 16. **Numbered process/steps** → `numbered-list` (Template references)
 17. **Tabular data** → `template-table-2columns`, `-3columns`, `-4columns` (KEEP, by column count)
 18. **Logos / social proof** → check `industries/registry.json` first:
-    - If a slide's intent matches `matchHints` in any industry entry AND a matching industry was detected in Step 2, **clone that industry's logo garden frame** (same clone-move pattern as product slides; rewrite only the `title` slot using the `defaultTitle` or the PDF's slide title adapted to Bluewater voice). Set `meta-left` to `DECK_LABEL` directly — do NOT call `applyDeckChrome` here, it would wrongly manufacture a `meta-right` node these frames intentionally omit:
+    - If a slide's intent matches `matchHints` in any industry entry AND a matching industry was detected in Step 2, **clone that industry's logo garden frame** (same clone-move pattern as product slides; rewrite only the `title` slot using the `defaultTitle` or the PDF's slide title adapted to Bluewater voice). Apply deck chrome exactly like every other clone (all 7 industry frames carry a `meta-right` node as of 2026-07-06):
       ```js
-      const ml = clone.findOne(n => n.type === "TEXT" && n.name === "meta-left");
-      await figma.loadFontAsync(ml.fontName);
-      ml.characters = DECK_LABEL;
+      await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });
       ```
       Audit with `kind: "skip"`.
-    - No industry match → fall back to `template-logo-garden-3x3` (KEEP). Same chrome treatment as above: `meta-left = DECK_LABEL` via plain `setText`, no `meta-right`.
+    - No industry match → fall back to `template-logo-garden-3x3` (KEEP). Same `applyDeckChrome` call as above.
 19. **Side-by-side comparison** → `template-comparison-50-50` (OVERLAP)
 20. **Timeline / roadmap** → `template-timeline-bento`, `-timeline-cards`, or `-timeline-horizontal` (OVERLAP)
 21. **Generic 2–6 bento (no clear hero, no imagery available)** → `template-bento2`/`-bento3`/`-bento4`/`-bento5`/`-bento6`, or asymmetric `template-bento-25-75` / `-33-66` / `-66-33` / `-75-25` (OVERLAP)
@@ -727,7 +725,7 @@ Then run `python3 tools/validate_assets.py` — must end `OK`. These records fee
 
 After all slides are generated:
 
-1. **Chrome consistency gate (REQUIRED):** in one read-only `use_figma` call, walk every slide on the output page and check: every non-cover slide's `meta-left` equals `DECK_LABEL` exactly, and every non-cover, non-logo-garden slide's `meta-right` equals `` `${slideNumber}/${DECK_TOTAL}` `` exactly (single row, right edge at x=1872). This is what catches a clone path that skipped `applyDeckChrome` — fix any mismatch now, don't ship it.
+1. **Chrome consistency gate (REQUIRED):** in one read-only `use_figma` call, walk every slide on the output page and check: every non-cover slide's `meta-left` equals `DECK_LABEL` exactly, and every non-cover slide's `meta-right` equals `` `${slideNumber}/${DECK_TOTAL}` `` exactly (single row, right edge at x=1872) — this now includes logo-garden slides, which carry a page number like everything else. This is what catches a clone path that skipped `applyDeckChrome` — fix any mismatch now, don't ship it.
    ```js
    const issues = [];
    for (const slide of outputPage.children) {

@@ -848,7 +848,7 @@ For these, omit `titleText` from `applyChrome()`. `auditChrome()` skips the titl
 ```js
 // Update-or-create per-deck chrome on a cloned slide. Call this on EVERY cloned
 // content slide (standard template, table, product shell) — REQUIRED, not optional.
-// Do NOT call it on covers or logo-garden clones (see exemptions below).
+// Do NOT call it on covers (see exemption below) — call it on everything else, including logo-garden clones.
 async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, isDark = false }) {
   const gray = isDark ? {r:0xA1/255,g:0xA1/255,b:0xAA/255} : {r:0x71/255,g:0x71/255,b:0x7A/255};
   const find = (name) => slide.findOne(n => n.type === "TEXT" && n.name === name);
@@ -872,11 +872,9 @@ async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, 
 - `meta-left` = `DECK_LABEL` verbatim, unchanged across every content slide — the presentation's name or theme (e.g. "Bluewater Purifiers", "Kitchen Station", "Marketing Strategy 2026"). Never a per-slide value, never a section label.
 - `meta-right` = **exactly** `` `${slideNumber}/${totalSlides}` `` — e.g. `7/35`, `1/8`. Always one row (the function re-pins `textAutoResize` + right edge every time). Never `Page 7 of 35`, never zero-padded (`07/35`), never a different separator (`7 / 35` with spaces, `7 of 35`) — one format, everywhere.
 
-**Exemptions — do not call `applyDeckChrome`, handle directly:**
-- **Covers** — no meta at all (see hard rule above), OR the product-shell "single top label, no page number" convention already built into the function (the `meta-top-right`/`meta-top-left` branch).
-- **Logo-garden clones** (industry or generic) — `meta-left = DECK_LABEL` only, set with a plain `setText`; these frames intentionally omit `meta-right` (no page number on a logo wall). Calling `applyDeckChrome` here would wrongly manufacture a `meta-right` node the design omits — don't.
+**Only exemption — covers.** No meta at all (see hard rule above), OR the product-shell "single top label, no page number" convention already built into the function (the `meta-top-right`/`meta-top-left` branch). Every other clone — standard template, table, product shell, **and logo-garden (industry or generic)** — calls `applyDeckChrome` and gets a page number like every other slide. (Codified 2026-07-06: all 7 industry logo-garden frames + the generic `template-logo-garden-3x3` now carry a `meta-right` node, so there's nothing to special-case.)
 
-**Required on every other clone path.** This closes the gap that caused the inconsistency: previously only the product-shell path called this; the standard template-clone path and the table-clone path did not, so most slides in a generated deck kept whatever placeholder chrome shipped with the source frame. See `generate-presentation.md` §5b / §5c for the call site on each path.
+**Required on every clone path except covers.** This closes the gap that caused the inconsistency: previously only the product-shell path called this; the standard template-clone path, the table-clone path, and the logo-garden path did not, so most slides in a generated deck kept whatever placeholder chrome shipped with the source frame. See `generate-presentation.md` §5b / §5c / §Step 4 item 18 for the call site on each path.
 
 ## The geometry contract — `auditFrame` (source guard) + `auditSlide` (output gate)
 
