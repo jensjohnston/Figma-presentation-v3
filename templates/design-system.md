@@ -137,6 +137,8 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **Long-title cap:** Slide titles may wrap to **maximum 2 rows** at 64 Semi Bold 110%. If the content won't fit in 2 rows, shorten the title or split it into a shorter title plus a `subtitle`. 3+ row titles are not allowed.
 
+**Title row-length cap:** no title row may exceed **40 characters**. Using the calibrated constant from the body-copy measure below (`charAdvance = 0.472em × fontSize`), 40 chars at 64 Semi Bold = 40 × 0.472 × 64 ≈ **1208px** — cap the title box width at **1208px** (rather than running it out toward the full 1824px slide width) so no row grows past 40 characters. This is the starting max width `balanceTitle` binary-searches down from (see "Headline wrap & dynamic gap" below), not a value it can exceed. If capping the width would push a title past 2 rows, shorten the copy per the Long-title cap rule above — never add a 3rd row to preserve the full-width look.
+
 **No widows (titles, display text & body copy):** any wrapped text block must never leave a **single word alone on its last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to **every** wrapped text node: titles, hero headings, `body`/`subtitle`/`slide-paragraph`, and every `bullet-body-N`/`cell-body-N` — not just display copy. Since exact wrap points depend on rendered width (unknown at generation time), bind the last 2–3 words of every multi-line-capable text slot as a matter of course, not only after spotting a widow.
 
 **Prose max-width (body paragraphs):** body/paragraph copy must read as prose, not a narrow ribbon. Two canonical widths: a `body`/`subtitle` **under** the title uses content width (full or to the card edge); a paragraph **beside** the title (top-right header column) uses the fixed **587px** column flush to x=1872 (starts x=1285), 28 Medium 134%. Never leave a header paragraph at an arbitrary narrow width (e.g. 410px) — it wraps into an awkward column. If a one-off needs a custom width, cap it around a 50–75 character measure.
@@ -374,10 +376,12 @@ So long headlines never look cramped or leave widows:
 
 **1. Balanced wrap.** A title that wraps to 2+ lines must not leave a stub last line
 (e.g. "…will you offer?"). Set the title box to the **narrowest width that still yields the
-same line count** — this fills the last line and evens the rows. `balanceTitle(t)`: at full
-width (1824) read line count `lc`; binary-search width in `[ceil(1824/lc), 1824]` for the
-smallest width that still measures `lc` lines; set the box to it (title stays left-aligned at
-x=48). Skip 1-line titles. Line count = `round(height / (fontSize × 1.10))`.
+same line count** — this fills the last line and evens the rows. `balanceTitle(t)`: start
+from the **row-length cap** (1208px — see "Title row-length cap" above), not the full 1824px
+slide width; at that capped width read line count `lc`; binary-search width in
+`[ceil(1208/lc), 1208]` for the smallest width that still measures `lc` lines; set the box to
+it (title stays left-aligned at x=48). Skip 1-line titles. Line count =
+`round(height / (fontSize × 1.10))`.
 
 **2. Dynamic title→content gap.** Don't hard-pin content at y=287 when the title is tall. Use
 `contentTop = max(287, titleBottom + 52)` (`titleBottom = titleY + titleHeight`). 1-line title
@@ -388,8 +392,9 @@ bottom. Any headline length then sits correctly without crowding.
 **3. Eyebrow optional.** The eyebrow pushes the title to y=162 (vs 115); drop it to reclaim
 ~47px when the kicker isn't needed. Combine 1–3 for the airiest result.
 
-Worked example — Pitch 24 pricing (long 2-line prompt, eyebrow kept): balanced 1824→1093px
-(two even lines, no widow); cards dropped 287→320 (gap 52, height 712, features re-anchored).
+Worked example — Pitch 24 pricing (long 2-line prompt, eyebrow kept): balanced 1208→1093px
+(two even lines, no widow, under the 40cpl row cap); cards dropped 287→320 (gap 52, height
+712, features re-anchored).
 
 ### Body copy measure (line length)
 

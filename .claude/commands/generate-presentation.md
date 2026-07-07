@@ -246,6 +246,7 @@ When using the escape hatch, follow the **Creative escape hatch** section in `te
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
 - **Titles end with a period** (brand rule): every slide `title`/headline ends in a full stop — unless it already ends in terminal punctuation (`?`/`!`). Add the dot when filling or cloning. Does not apply to eyebrows, subtitles, body, labels, or meta. See `design-system.md` → "Titles end with a period."
+- **Title row-length cap (40 characters)**: no title row may exceed 40 characters — cap the title box at 1208px (not the full 1824px slide width) and run `balanceTitle` from that capped width, per `design-system.md` → "Title row-length cap" and "Headline wrap & dynamic gap." If a title still won't fit in 2 rows under the cap, shorten it rather than widening past 1208px.
 - **Content length**: If "Keep original", use verbatim text. If "Condense", rewrite shorter. If "Expand", add detail.
 - **Voice**: If "Keep original", preserve the source tone. If "Bluewater brand voice", rewrite in brand voice (or use `brand/voice-guide.md` if available).
 - If text is too long for a slot regardless of length choice, rewrite it more concisely while preserving meaning
