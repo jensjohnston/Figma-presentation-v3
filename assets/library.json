@@ -13567,6 +13567,543 @@
         ],
         "quality": "high"
       }
+    },
+    "flow-station-st-tropez-coach-interview": {
+      "nodeId": "69756:5789",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — tennis coach mid-interview on the clay court, net and trees behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_01.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-net-closeup": {
+      "nodeId": "69756:5792",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "net",
+        "texture"
+      ],
+      "description": "St Tropez Padel & Tennis Club — diagonal closeup of the tennis net cord on the clay court",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_02.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-court-motion-blur": {
+      "nodeId": "69756:5795",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "court",
+        "motion-blur",
+        "abstract"
+      ],
+      "description": "St Tropez Padel & Tennis Club — motion-blurred clay court line, warm abstract texture",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_06.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "full-bleed",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-ball-action": {
+      "nodeId": "69756:5801",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "ball",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — tennis racket edge and ball mid-air over the clay court",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_07.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-swing-closeup": {
+      "nodeId": "69756:5799",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "swing",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — blurred racket swing closeup with player's shoe, dynamic motion",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_08.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-dispenser-fill": {
+      "nodeId": "69756:5806",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "dispenser",
+        "bottle-fill"
+      ],
+      "description": "St Tropez Padel & Tennis Club — hand pressing the wall-mounted Bluewater dispenser labeled \"pure delicious planet friendly\"",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_11.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-unwrap": {
+      "nodeId": "69756:5791",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "lifestyle"
+      ],
+      "description": "St Tropez Padel & Tennis Club — player holding and twisting a Bluewater branded bottle outdoors",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_12.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-dispenser-racket-scene": {
+      "nodeId": "69756:5793",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "dispenser",
+        "racket"
+      ],
+      "description": "St Tropez Padel & Tennis Club — wall dispenser interface with a player holding a tennis racket beside it",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_14.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-swing-sky": {
+      "nodeId": "69756:5797",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "sky",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — dramatic low-angle racket swing against a cloudy sky, motion blur",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_17.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-branded-bottle-net": {
+      "nodeId": "69756:5794",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded Bluewater bottle on the clay court by the net, ball visible",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_19.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-2": {
+      "nodeId": "69762:5789",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, alternate angle, gesturing while speaking",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_03.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-3": {
+      "nodeId": "69762:5791",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, alternate angle, gesturing with hands",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_04.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-4": {
+      "nodeId": "69762:5795",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, hands raised mid-gesture",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_05.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-harbor": {
+      "nodeId": "69762:2",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "harbor",
+        "coastline"
+      ],
+      "description": "St Tropez — aerial drone view of the harbor and coastline with boats",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_09.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-club": {
+      "nodeId": "69762:5794",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "club",
+        "courts"
+      ],
+      "description": "St Tropez Padel & Tennis Club — aerial view of the club grounds, clay and hard courts, clubhouse and parking",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_10.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-net-closeup-wide": {
+      "nodeId": "69762:5790",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "net",
+        "texture"
+      ],
+      "description": "St Tropez Padel & Tennis Club — wider closeup of the tennis net mesh on the clay court, soft focus",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_13.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-court-shot-1": {
+      "nodeId": "69762:5793",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded bottle standing on the clay court near the net posts",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_15.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-court-shot-2": {
+      "nodeId": "69762:5792",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded bottle on the clay court, alternate angle",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_16.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-club-2": {
+      "nodeId": "69762:5796",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "club",
+        "courts"
+      ],
+      "description": "St Tropez Padel & Tennis Club — aerial view of the club grounds, alternate framing and altitude",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_18.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
