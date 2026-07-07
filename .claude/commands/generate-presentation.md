@@ -675,7 +675,7 @@ async function repinMetaRight(clone) {
 
 `meta-left` is LEFT-anchored at x=48 and grows rightward, so it never drifts. See design-system.md → applyChrome note.
 
-**Titles & display copy:** never leave a single-word widow on a wrapped title — bind the final 2–3 words with non-breaking spaces (` `) so the last line carries ≥2 words; do not hard-break with `\n`. Header paragraphs beside the title use the 587px prose column (x=1285, right edge 1872), not an arbitrary narrow width. See design-system.md → "No widows" and "Prose max-width".
+**No widows — titles AND body copy:** never leave a single-word widow on any wrapped text — bind the final 2–3 words with non-breaking spaces (` `) so the last line carries ≥2 words; do not hard-break with `\n`. This applies to `title`/hero headings **and** every `body`/`subtitle`/`slide-paragraph`/`bullet-body-N`/`cell-body-N` slot — bind the last 2–3 words whenever you fill any of these in Step 5b/5c, not just the title. Header paragraphs beside the title use the 587px prose column (x=1285, right edge 1872), not an arbitrary narrow width. See design-system.md → "No widows" and "Prose max-width".
 
 ### 5f. Batch Size
 
