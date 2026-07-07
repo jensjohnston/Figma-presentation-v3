@@ -13808,6 +13808,1342 @@
         ],
         "quality": "high"
       }
+    },
+    "bloomtown-event-crowd-brewing": {
+      "nodeId": "69798:2",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "crowd",
+        "lifestyle"
+      ],
+      "description": "A crowd of attendees gathered indoors around a brewing station at the Bloomtown coffee event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1817.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tabletop": {
+      "nodeId": "69798:5789",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "Close-up of a Bluewater Coffee Water pouch resting on a wood tabletop.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1819.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-baristas-brewing": {
+      "nodeId": "69798:5790",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "brewing"
+      ],
+      "description": "Two men at a brewing counter at the Bloomtown event, one wearing a coffee-brand t-shirt.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1820.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-event-attendees-crowd": {
+      "nodeId": "69798:5791",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "crowd"
+      ],
+      "description": "Two attendees talking amid a crowd at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1821.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-event-poster-branding": {
+      "nodeId": "69798:5792",
+      "tags": [
+        "event",
+        "bloomtown",
+        "branding",
+        "poster"
+      ],
+      "description": "Bloomtown event poster with a bold green background and illustrated poppy flower.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1823.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-event-poster-branding-alt": {
+      "nodeId": "69798:5793",
+      "tags": [
+        "event",
+        "bloomtown",
+        "branding",
+        "poster"
+      ],
+      "description": "Alternate crop of the Bloomtown event poster with the illustrated poppy flower.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1824.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-pour-over-brewing": {
+      "nodeId": "69798:5794",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "brewing",
+        "pour-over"
+      ],
+      "description": "A pour-over coffee brew in progress on a counter at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1826.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-recipe-card": {
+      "nodeId": "69798:5795",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "marketing"
+      ],
+      "description": "A Bluewater Coffee Water product box with an \"Unlock the recipe\" QR code card.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1831.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-coffee-water-pouch-hand": {
+      "nodeId": "69798:5796",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "hand"
+      ],
+      "description": "A hand holding a Bluewater Coffee Water pouch by its handle.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1832.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouches-storage": {
+      "nodeId": "69798:5797",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "storage"
+      ],
+      "description": "Bluewater Coffee Water pouches stored in a dim corner at the event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1833.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-supplies-shelf": {
+      "nodeId": "69798:5798",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "storage"
+      ],
+      "description": "A cluttered shelf of Bluewater Coffee Water pouches and event supplies.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1834.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-pouch-bag": {
+      "nodeId": "69798:5799",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A Bluewater Coffee Water pouch set against a leopard-print bag.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1835.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tote": {
+      "nodeId": "69798:5800",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "tote"
+      ],
+      "description": "A Bluewater Coffee Water pouch tucked in a tote bag in low light.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1836.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-attendee-holding-pouch": {
+      "nodeId": "69798:5801",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee at the Bloomtown event holding a Bluewater Coffee Water pouch.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1837.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-counter": {
+      "nodeId": "69798:5802",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee holding a Bluewater Coffee Water pouch at the brewing counter.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1840.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-event-gear-jumble": {
+      "nodeId": "69798:5803",
+      "tags": [
+        "bloomtown",
+        "event",
+        "gear"
+      ],
+      "description": "A cluttered jumble of event gear and equipment in dim light.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1841.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-pour-cup": {
+      "nodeId": "69798:5804",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pour",
+        "detail"
+      ],
+      "description": "Coffee pouring from a carafe into a paper cup, warm close-up detail shot.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1843.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-coffee-water-pouch-cooler": {
+      "nodeId": "69798:5805",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A Bluewater Coffee Water pouch set on a sticker-covered cooler.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1844.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouring-cup": {
+      "nodeId": "69798:5806",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "action"
+      ],
+      "description": "A hand pouring from a Bluewater Coffee Water pouch into a cup.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1845.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-attendee-drinking-crowd": {
+      "nodeId": "69798:5807",
+      "tags": [
+        "event",
+        "bloomtown",
+        "people",
+        "crowd",
+        "lifestyle"
+      ],
+      "description": "An attendee drinking from a cup amid the crowd at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1846.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tattoo-arm": {
+      "nodeId": "69798:5808",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "lifestyle"
+      ],
+      "description": "A tattooed arm holding a Bluewater Coffee Water pouch, edgy lifestyle framing.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1847.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-attendee-holding-pouch-2": {
+      "nodeId": "69798:5809",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee casually holding a Bluewater Coffee Water pouch at their side.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1848.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-pouches-handoff": {
+      "nodeId": "69798:5810",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "people"
+      ],
+      "description": "Hands passing several Bluewater Coffee Water pouches across a table.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1849.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-product-shot": {
+      "nodeId": "69798:5811",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A clean product shot of a Bluewater Coffee Water pouch on a table with clear branding.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1850.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-attendee-drinking-closeup": {
+      "nodeId": "69798:5812",
+      "tags": [
+        "event",
+        "bloomtown",
+        "people",
+        "lifestyle"
+      ],
+      "description": "Close crop of an attendee drinking, with a Bluewater Coffee Water pouch visible.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1851.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-branded-tote-detail": {
+      "nodeId": "69798:5813",
+      "tags": [
+        "bloomtown",
+        "branding",
+        "tote",
+        "texture"
+      ],
+      "description": "Detail shot of a Bluewater-branded tote bag fabric with the flame logo print.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1853.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-event-crowd-brewing": {
+      "nodeId": "69798:2",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "crowd",
+        "lifestyle"
+      ],
+      "description": "A crowd of attendees gathered indoors around a brewing station at the Bloomtown coffee event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1817.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tabletop": {
+      "nodeId": "69798:5789",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "Close-up of a Bluewater Coffee Water pouch resting on a wood tabletop.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1819.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-baristas-brewing": {
+      "nodeId": "69798:5790",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "brewing"
+      ],
+      "description": "Two men at a brewing counter at the Bloomtown event, one wearing a coffee-brand t-shirt.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1820.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-event-attendees-crowd": {
+      "nodeId": "69798:5791",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "crowd"
+      ],
+      "description": "Two attendees talking amid a crowd at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1821.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-event-poster-branding": {
+      "nodeId": "69798:5792",
+      "tags": [
+        "event",
+        "bloomtown",
+        "branding",
+        "poster"
+      ],
+      "description": "Bloomtown event poster with a bold green background and illustrated poppy flower.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1823.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-event-poster-branding-alt": {
+      "nodeId": "69798:5793",
+      "tags": [
+        "event",
+        "bloomtown",
+        "branding",
+        "poster"
+      ],
+      "description": "Alternate crop of the Bloomtown event poster with the illustrated poppy flower.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1824.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-pour-over-brewing": {
+      "nodeId": "69798:5794",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "brewing",
+        "pour-over"
+      ],
+      "description": "A pour-over coffee brew in progress on a counter at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1826.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-recipe-card": {
+      "nodeId": "69798:5795",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "marketing"
+      ],
+      "description": "A Bluewater Coffee Water product box with an \"Unlock the recipe\" QR code card.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1831.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-coffee-water-pouch-hand": {
+      "nodeId": "69798:5796",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "hand"
+      ],
+      "description": "A hand holding a Bluewater Coffee Water pouch by its handle.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1832.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouches-storage": {
+      "nodeId": "69798:5797",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "storage"
+      ],
+      "description": "Bluewater Coffee Water pouches stored in a dim corner at the event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1833.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-supplies-shelf": {
+      "nodeId": "69798:5798",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "storage"
+      ],
+      "description": "A cluttered shelf of Bluewater Coffee Water pouches and event supplies.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1834.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-pouch-bag": {
+      "nodeId": "69798:5799",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A Bluewater Coffee Water pouch set against a leopard-print bag.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1835.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tote": {
+      "nodeId": "69798:5800",
+      "tags": [
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "tote"
+      ],
+      "description": "A Bluewater Coffee Water pouch tucked in a tote bag in low light.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1836.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-attendee-holding-pouch": {
+      "nodeId": "69798:5801",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee at the Bloomtown event holding a Bluewater Coffee Water pouch.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1837.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-counter": {
+      "nodeId": "69798:5802",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee holding a Bluewater Coffee Water pouch at the brewing counter.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1840.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-event-gear-jumble": {
+      "nodeId": "69798:5803",
+      "tags": [
+        "bloomtown",
+        "event",
+        "gear"
+      ],
+      "description": "A cluttered jumble of event gear and equipment in dim light.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1841.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-pour-cup": {
+      "nodeId": "69798:5804",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pour",
+        "detail"
+      ],
+      "description": "Coffee pouring from a carafe into a paper cup, warm close-up detail shot.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1843.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-coffee-water-pouch-cooler": {
+      "nodeId": "69798:5805",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A Bluewater Coffee Water pouch set on a sticker-covered cooler.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1844.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouring-cup": {
+      "nodeId": "69798:5806",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "action"
+      ],
+      "description": "A hand pouring from a Bluewater Coffee Water pouch into a cup.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1845.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-attendee-drinking-crowd": {
+      "nodeId": "69798:5807",
+      "tags": [
+        "event",
+        "bloomtown",
+        "people",
+        "crowd",
+        "lifestyle"
+      ],
+      "description": "An attendee drinking from a cup amid the crowd at the Bloomtown event.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1846.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-tattoo-arm": {
+      "nodeId": "69798:5808",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "lifestyle"
+      ],
+      "description": "A tattooed arm holding a Bluewater Coffee Water pouch, edgy lifestyle framing.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1847.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-attendee-holding-pouch-2": {
+      "nodeId": "69798:5809",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "people",
+        "pouch"
+      ],
+      "description": "An attendee casually holding a Bluewater Coffee Water pouch at their side.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1848.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-coffee-water-pouches-handoff": {
+      "nodeId": "69798:5810",
+      "tags": [
+        "event",
+        "bloomtown",
+        "coffee-water",
+        "pouch",
+        "people"
+      ],
+      "description": "Hands passing several Bluewater Coffee Water pouches across a table.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1849.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "bloomtown-coffee-water-pouch-product-shot": {
+      "nodeId": "69798:5811",
+      "tags": [
+        "product",
+        "bloomtown",
+        "coffee-water",
+        "pouch"
+      ],
+      "description": "A clean product shot of a Bluewater Coffee Water pouch on a table with clear branding.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1850.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bloomtown-attendee-drinking-closeup": {
+      "nodeId": "69798:5812",
+      "tags": [
+        "event",
+        "bloomtown",
+        "people",
+        "lifestyle"
+      ],
+      "description": "Close crop of an attendee drinking, with a Bluewater Coffee Water pouch visible.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1851.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "low"
+      }
+    },
+    "bloomtown-branded-tote-detail": {
+      "nodeId": "69798:5813",
+      "tags": [
+        "bloomtown",
+        "branding",
+        "tote",
+        "texture"
+      ],
+      "description": "Detail shot of a Bluewater-branded tote bag fabric with the flame logo print.",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Events/2026/Bloomtown/Pictures/DSCF1853.JPG",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
