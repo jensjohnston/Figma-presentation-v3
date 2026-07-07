@@ -3857,406 +3857,6 @@
         "quality": "high"
       }
     },
-    "flowstation-1-front": {
-      "nodeId": "63295:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render"
-      ],
-      "description": "Flow Station 1 EU — navy tower with violet-lit bottle bay, front view on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Front.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-side": {
-      "nodeId": "63296:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render"
-      ],
-      "description": "Flow Station 1 EU — three-quarter view with lit bay, on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Side.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-left": {
-      "nodeId": "63297:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render"
-      ],
-      "description": "Flow Station 1 EU — slim left profile, on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Left.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-right": {
-      "nodeId": "63298:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render"
-      ],
-      "description": "Flow Station 1 EU — slim right profile, on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Right.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-bottle-closeup-1": {
-      "nodeId": "63299:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail"
-      ],
-      "description": "Flow Station 1 bay close-up — bottle filling under violet light, Bluewater header",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup1_Bottle.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail",
-          "hero"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-bottle-closeup-2": {
-      "nodeId": "63300:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail"
-      ],
-      "description": "Flow Station 1 bay close-up — two bottles in the violet-lit bay",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup2_Bottle.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail",
-          "hero"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-bottle-closeup-3": {
-      "nodeId": "63301:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail"
-      ],
-      "description": "Flow Station 1 — small full-tower view with lit bay, on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup3_Bottle.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card",
-          "detail"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-side-bottle": {
-      "nodeId": "63302:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "branding"
-      ],
-      "description": "Flow Station 1 header close-up — 'Bluewater 7X Advanced Purification' panel above the lit bay",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Side_Bottle.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail",
-          "hero"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-purification": {
-      "nodeId": "63303:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "branding",
-        "detail"
-      ],
-      "description": "Flow Station 1 angled header — Bluewater ring mark on navy panel",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Purification.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail",
-          "hero"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-top-panel": {
-      "nodeId": "63304:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail"
-      ],
-      "description": "Flow Station 1 control panel close-up — violet-lit bay with contactless icons",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Top Panel.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-button-auto": {
-      "nodeId": "63305:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail",
-        "ui"
-      ],
-      "description": "Flow Station 1 panel — auto-dispense control state, violet-lit",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Button Auto.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-button-hot": {
-      "nodeId": "63306:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "render",
-        "detail",
-        "ui"
-      ],
-      "description": "Flow Station 1 panel — hot-water control state, violet-lit",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Button Hot.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.0,
-        "orientation": "square",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "detail"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-campaign-still-1": {
-      "nodeId": "63307:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "lifestyle",
-        "gym",
-        "photo"
-      ],
-      "description": "Flow Station 1 in a white-brick gym — wide scene with kettlebell rack and fridge",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0017.jpeg",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 0.67,
-        "orientation": "portrait",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "hero",
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-campaign-still-2": {
-      "nodeId": "63308:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "lifestyle",
-        "gym",
-        "photo"
-      ],
-      "description": "Flow Station 1 close in the gym — bottle dispensing, white brick behind",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0080.jpeg",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 0.67,
-        "orientation": "portrait",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "hero",
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
-    "flowstation-1-campaign-still-3": {
-      "nodeId": "63309:2",
-      "tags": [
-        "product",
-        "station",
-        "flowstation",
-        "lifestyle",
-        "gym",
-        "photo"
-      ],
-      "description": "Flow Station 1 in the gym beside dumbbell rack and exercise ball",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0105.jpeg",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 0.67,
-        "orientation": "portrait",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "hero",
-          "card"
-        ],
-        "quality": "high"
-      }
-    },
     "flowstation-2-front": {
       "nodeId": "63313:2",
       "tags": [
@@ -4680,7 +4280,7 @@
       }
     },
     "flowstation-2-campaign-still-1": {
-      "nodeId": "63329:2",
+      "nodeId": "69769:2",
       "tags": [
         "product",
         "station",
@@ -4709,7 +4309,7 @@
       }
     },
     "flowstation-2-campaign-still-2": {
-      "nodeId": "63330:2",
+      "nodeId": "69769:5789",
       "tags": [
         "product",
         "station",
@@ -13450,6 +13050,1199 @@
         "suitability": [
           "hero",
           "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-bottle-fill-closeup": {
+      "nodeId": "69748:2",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "bottle-fill"
+      ],
+      "description": "Bluewater Flow closeup — glass bottle filling under the dispenser spout, control buttons visible",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Close-up3B.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-display-dial-detail": {
+      "nodeId": "69748:5790",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "display",
+        "dial",
+        "ui"
+      ],
+      "description": "Bluewater Flow closeup — dial and small screen reading \"Bottles Saved\", \"HOLD TO FILL\" label",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup Display2.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-purification-glow-detail": {
+      "nodeId": "69748:5791",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "purification",
+        "screen",
+        "glow"
+      ],
+      "description": "Bluewater Flow closeup — glowing blue ring UI on the \"Advanced Purification\" display panel with icon row",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup Purification2.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-water-jet-macro": {
+      "nodeId": "69748:5792",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "macro",
+        "water-jet",
+        "atmospheric"
+      ],
+      "description": "Bluewater Flow macro — water jetting from the chrome spout with glowing blue ring, dark moody background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup WaterJet_Edit.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview": {
+      "nodeId": "69756:5789",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — tennis coach mid-interview on the clay court, net and trees behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_01.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-net-closeup": {
+      "nodeId": "69756:5792",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "net",
+        "texture"
+      ],
+      "description": "St Tropez Padel & Tennis Club — diagonal closeup of the tennis net cord on the clay court",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_02.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-court-motion-blur": {
+      "nodeId": "69756:5795",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "court",
+        "motion-blur",
+        "abstract"
+      ],
+      "description": "St Tropez Padel & Tennis Club — motion-blurred clay court line, warm abstract texture",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_06.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "full-bleed",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-ball-action": {
+      "nodeId": "69756:5801",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "ball",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — tennis racket edge and ball mid-air over the clay court",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_07.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-swing-closeup": {
+      "nodeId": "69756:5799",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "swing",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — blurred racket swing closeup with player's shoe, dynamic motion",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_08.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-dispenser-fill": {
+      "nodeId": "69756:5806",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "dispenser",
+        "bottle-fill"
+      ],
+      "description": "St Tropez Padel & Tennis Club — hand pressing the wall-mounted Bluewater dispenser labeled \"pure delicious planet friendly\"",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_11.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-unwrap": {
+      "nodeId": "69756:5791",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "lifestyle"
+      ],
+      "description": "St Tropez Padel & Tennis Club — player holding and twisting a Bluewater branded bottle outdoors",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_12.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-dispenser-racket-scene": {
+      "nodeId": "69756:5793",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "dispenser",
+        "racket"
+      ],
+      "description": "St Tropez Padel & Tennis Club — wall dispenser interface with a player holding a tennis racket beside it",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_14.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-racket-swing-sky": {
+      "nodeId": "69756:5797",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "racket",
+        "sky",
+        "action"
+      ],
+      "description": "St Tropez Padel & Tennis Club — dramatic low-angle racket swing against a cloudy sky, motion blur",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_17.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-branded-bottle-net": {
+      "nodeId": "69756:5794",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded Bluewater bottle on the clay court by the net, ball visible",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_19.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-2": {
+      "nodeId": "69762:5789",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, alternate angle, gesturing while speaking",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_03.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-3": {
+      "nodeId": "69762:5791",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, alternate angle, gesturing with hands",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_04.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-coach-interview-4": {
+      "nodeId": "69762:5795",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "interview",
+        "coach"
+      ],
+      "description": "St Tropez Padel & Tennis Club — coach interview, hands raised mid-gesture",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_05.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-harbor": {
+      "nodeId": "69762:2",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "harbor",
+        "coastline"
+      ],
+      "description": "St Tropez — aerial drone view of the harbor and coastline with boats",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_09.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-club": {
+      "nodeId": "69762:5794",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "club",
+        "courts"
+      ],
+      "description": "St Tropez Padel & Tennis Club — aerial view of the club grounds, clay and hard courts, clubhouse and parking",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_10.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-net-closeup-wide": {
+      "nodeId": "69762:5790",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "tennis",
+        "net",
+        "texture"
+      ],
+      "description": "St Tropez Padel & Tennis Club — wider closeup of the tennis net mesh on the clay court, soft focus",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_13.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-court-shot-1": {
+      "nodeId": "69762:5793",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded bottle standing on the clay court near the net posts",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_15.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-bottle-court-shot-2": {
+      "nodeId": "69762:5792",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "bottle",
+        "branded",
+        "net"
+      ],
+      "description": "St Tropez Padel & Tennis Club — Saint-Tropez branded bottle on the clay court, alternate angle",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_16.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-tropez-aerial-club-2": {
+      "nodeId": "69762:5796",
+      "tags": [
+        "lifestyle",
+        "flow-station-3",
+        "st-tropez",
+        "aerial",
+        "club",
+        "courts"
+      ],
+      "description": "St Tropez Padel & Tennis Club — aerial view of the club grounds, alternate framing and altitude",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Distributor Folder/Content (Images, Videos and Renders)/Content/Products/Bluewater Stations/Flow Stations/Flow Station 3/Stills/St Tropez Padel & Tennis Club/JPG/FlowStation3_StTropez_stills from film_18.jpeg",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-mineral-crystals-tube-macro": {
+      "nodeId": "61728:6373",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "coffee-rock",
+        "macro",
+        "minerals"
+      ],
+      "description": "Macro shot of Coffee Rock mineral crystals inside a clear glass dosing tube",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.58,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-mineral-crystals-bowl-macro": {
+      "nodeId": "62234:14275",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "coffee-rock",
+        "macro",
+        "minerals"
+      ],
+      "description": "Extreme closeup of Coffee Rock mineral crystals viewed through a curved glass bowl",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 0.8,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-hardware-lineup-studio": {
+      "nodeId": "69351:48",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "hardware",
+        "lineup",
+        "studio"
+      ],
+      "description": "Café Station 1 hardware lineup — iPad app, kettle, faucet dispenser, and espresso machine on white studio background",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-hardware-lineup-espresso-mode": {
+      "nodeId": "65969:1057",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "hardware",
+        "lineup",
+        "espresso-mode"
+      ],
+      "description": "Café Station 1 hardware lineup variant for Espresso mode cover — iPad, kettle, faucet, espresso machine",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-hardware-lineup-brew-mode": {
+      "nodeId": "69315:3677",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "hardware",
+        "lineup",
+        "brew-mode"
+      ],
+      "description": "Café Station 1 hardware lineup variant for Brew mode cover — two iPads flanking Bluewater O and the espresso machine",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-clean-metal-tube-macro": {
+      "nodeId": "61728:6366",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "no-corrosion",
+        "macro",
+        "metal"
+      ],
+      "description": "Macro shot of a clean brushed-aluminum tube cross-section, illustrating no corrosion or scale buildup",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.58,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-app-espresso-mode-screenshot": {
+      "nodeId": "65969:1059",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "app",
+        "screenshot",
+        "espresso-mode"
+      ],
+      "description": "Bluewater app screenshot showing the Espresso mode interface",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-1-app-brew-mode-screenshot": {
+      "nodeId": "69315:3692",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "app",
+        "screenshot",
+        "brew-mode"
+      ],
+      "description": "Bluewater app screenshot showing the Brew mode interface",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-1-testimonial-dario-scilipoti": {
+      "nodeId": "62691:749",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "testimonial",
+        "headshot"
+      ],
+      "description": "Headshot avatar of Dario Scilipoti, Head roaster at Bluebird Coffee, used in customer testimonial",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "low"
+      }
+    },
+    "cafe-station-1-comparison-inconsistent-minerals": {
+      "nodeId": "61728:6388",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "comparison",
+        "minerals"
+      ],
+      "description": "Visual representing inconsistent mineral scaling from standard mineral filters, used in the Bluewater comparison slide",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.79,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-coffee-lifestyle-wide": {
+      "nodeId": "61728:6333",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "lifestyle",
+        "coffee"
+      ],
+      "description": "Wide AI-generated coffee lifestyle image used behind the \"Goodbye bypassing\" claim",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 2.37,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "full-bleed",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-pump-component": {
+      "nodeId": "61766:7126",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "component",
+        "pump"
+      ],
+      "description": "Product shot of the Café Station 1 pump component",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.18,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-system-diagram": {
+      "nodeId": "62670:710",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "system",
+        "diagram"
+      ],
+      "description": "Aluminum manifold/tree render illustrating the Café Station 1 system walkthrough",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.79,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-coffee-rock-5l-jug": {
+      "nodeId": "64258:1114",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "coffee-rock",
+        "jug"
+      ],
+      "description": "Coffee Rock 5L mineral refill jug, front studio view",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-coffee-rock-5l-jug-alt": {
+      "nodeId": "64258:1112",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "coffee-rock",
+        "jug"
+      ],
+      "description": "Coffee Rock 5L mineral refill jug, alternate front studio view",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-bottle-pump-diagram": {
+      "nodeId": "61766:7157",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "bottle",
+        "pump",
+        "diagram"
+      ],
+      "description": "Bottle with dosing pump illustration used in the Brew mode how-it-works slide",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-ipad-app-mockup": {
+      "nodeId": "62691:888",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "app",
+        "ipad",
+        "mockup"
+      ],
+      "description": "iPad mockup showing the Bluewater app with both Espresso and Brew modes",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.77,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-coffee-water-vessels": {
+      "nodeId": "62707:40",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "coffee-water",
+        "vessels",
+        "bottles"
+      ],
+      "description": "Coffee Water retail vessels — glass bottle, reusable bottle, and refill bag",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 0.64,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-side-cafe-station-component": {
+      "nodeId": "61766:7038",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "component",
+        "cleone",
+        "purifier"
+      ],
+      "description": "Cleone purifier side render, used as a component icon in the Café Station 1 system diagram",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-front-cafe-station-component": {
+      "nodeId": "61766:7039",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "component",
+        "spirit",
+        "purifier"
+      ],
+      "description": "Spirit purifier front render, used as a component icon in the Café Station 1 system diagram",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "pro-front-cafe-station-component": {
+      "nodeId": "61766:7040",
+      "tags": [
+        "product",
+        "cafe-station-1",
+        "component",
+        "pro",
+        "purifier"
+      ],
+      "description": "Pro purifier front render, used as a component icon in the Café Station 1 system diagram",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.1,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
         ],
         "quality": "high"
       }
