@@ -13705,7 +13705,7 @@
         "quality": "high"
       }
     },
-    "cafe-station-1-mineral-crystals-bowl-macro": {
+    "cafe-station-1-coffee-rock": {
       "nodeId": "62234:14275",
       "tags": [
         "product",
@@ -13732,7 +13732,7 @@
         "quality": "high"
       }
     },
-    "cafe-station-1-clean-metal-tube-macro": {
+    "cafe-station-1-clean-metal-tube-no-corrosion": {
       "nodeId": "61728:6366",
       "tags": [
         "product",
@@ -13759,7 +13759,7 @@
         "quality": "high"
       }
     },
-    "cafe-station-1-coffee-lifestyle-wide": {
+    "cafe-station-1-bypass": {
       "nodeId": "61728:6333",
       "tags": [
         "product",
@@ -13784,7 +13784,7 @@
         "quality": "high"
       }
     },
-    "cafe-station-1-system-diagram": {
+    "cafe-station-1-system-under-the-sink": {
       "nodeId": "62670:710",
       "tags": [
         "product",

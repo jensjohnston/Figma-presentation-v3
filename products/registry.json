@@ -787,16 +787,16 @@
       },
       "images": [
         {
-          "assetKey": "cafe-station-1-mineral-crystals-bowl-macro"
+          "assetKey": "cafe-station-1-coffee-rock"
         },
         {
-          "assetKey": "cafe-station-1-clean-metal-tube-macro"
+          "assetKey": "cafe-station-1-clean-metal-tube-no-corrosion"
         },
         {
-          "assetKey": "cafe-station-1-coffee-lifestyle-wide"
+          "assetKey": "cafe-station-1-bypass"
         },
         {
-          "assetKey": "cafe-station-1-system-diagram"
+          "assetKey": "cafe-station-1-system-under-the-sink"
         }
       ]
     }
