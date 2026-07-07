@@ -13453,6 +13453,120 @@
         ],
         "quality": "high"
       }
+    },
+    "flow-station-bottle-fill-closeup": {
+      "nodeId": "69748:2",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "bottle-fill"
+      ],
+      "description": "Bluewater Flow closeup — glass bottle filling under the dispenser spout, control buttons visible",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Close-up3B.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-display-dial-detail": {
+      "nodeId": "69748:5790",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "display",
+        "dial",
+        "ui"
+      ],
+      "description": "Bluewater Flow closeup — dial and small screen reading \"Bottles Saved\", \"HOLD TO FILL\" label",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup Display2.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-purification-glow-detail": {
+      "nodeId": "69748:5791",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "closeup",
+        "purification",
+        "screen",
+        "glow"
+      ],
+      "description": "Bluewater Flow closeup — glowing blue ring UI on the \"Advanced Purification\" display panel with icon row",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup Purification2.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-water-jet-macro": {
+      "nodeId": "69748:5792",
+      "tags": [
+        "product",
+        "bluewater-flow",
+        "render",
+        "macro",
+        "water-jet",
+        "atmospheric"
+      ],
+      "description": "Bluewater Flow macro — water jetting from the chrome spout with glowing blue ring, dark moody background",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Bluewater Flow/Content/Renders/Flow _Closeup WaterJet_Edit.png",
+        "importedAt": "2026-07-07"
+      },
+      "visual": {
+        "aspect": 1.6,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "detail"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
