@@ -787,67 +787,16 @@
       },
       "images": [
         {
-          "assetKey": "cafe-station-1-hardware-lineup-studio"
+          "assetKey": "cafe-station-1-coffee-rock"
         },
         {
-          "assetKey": "cafe-station-1-hardware-lineup-espresso-mode"
+          "assetKey": "cafe-station-1-clean-metal-tube-no-corrosion"
         },
         {
-          "assetKey": "cafe-station-1-hardware-lineup-brew-mode"
+          "assetKey": "cafe-station-1-bypass"
         },
         {
-          "assetKey": "cafe-station-1-mineral-crystals-tube-macro"
-        },
-        {
-          "assetKey": "cafe-station-1-mineral-crystals-bowl-macro"
-        },
-        {
-          "assetKey": "cafe-station-1-clean-metal-tube-macro"
-        },
-        {
-          "assetKey": "cafe-station-1-app-espresso-mode-screenshot"
-        },
-        {
-          "assetKey": "cafe-station-1-app-brew-mode-screenshot"
-        },
-        {
-          "assetKey": "cafe-station-1-testimonial-dario-scilipoti"
-        },
-        {
-          "assetKey": "cafe-station-1-comparison-inconsistent-minerals"
-        },
-        {
-          "assetKey": "cafe-station-1-coffee-lifestyle-wide"
-        },
-        {
-          "assetKey": "cafe-station-1-pump-component"
-        },
-        {
-          "assetKey": "cafe-station-1-system-diagram"
-        },
-        {
-          "assetKey": "cafe-station-1-coffee-rock-5l-jug"
-        },
-        {
-          "assetKey": "cafe-station-1-coffee-rock-5l-jug-alt"
-        },
-        {
-          "assetKey": "cafe-station-1-bottle-pump-diagram"
-        },
-        {
-          "assetKey": "cafe-station-1-ipad-app-mockup"
-        },
-        {
-          "assetKey": "cafe-station-1-coffee-water-vessels"
-        },
-        {
-          "assetKey": "cleone-side-cafe-station-component"
-        },
-        {
-          "assetKey": "spirit-front-cafe-station-component"
-        },
-        {
-          "assetKey": "pro-front-cafe-station-component"
+          "assetKey": "cafe-station-1-system-under-the-sink"
         }
       ]
     }
