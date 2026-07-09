@@ -2306,302 +2306,291 @@
       }
     },
     "emergency-station-closed-front": {
-      "nodeId": "63223:2",
+      "nodeId": "65007:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
-      "description": "Emergency Station closed — black rugged case upright with handle and Bluewater ring mark, on white",
+      "description": "Emergency Station closed — single black case upright, front view on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Front.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "hero"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-side": {
-      "nodeId": "63224:2",
+      "nodeId": "65015:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
       "description": "Emergency Station closed — wide case lying flat, side view on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Side.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "detail"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-top": {
-      "nodeId": "63225:2",
+      "nodeId": "65013:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "hq"
       ],
-      "description": "Emergency Station closed — top-angled view of the latched case on white",
+      "description": "Emergency Station closed — top-angled view of the latched case on white, higher-resolution export",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Topish.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.92,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "detail"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-zoom-1": {
-      "nodeId": "63226:2",
+      "nodeId": "65012:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
         "render",
-        "detail"
+        "detail",
+        "duplicate-export"
       ],
       "description": "Emergency Station corner close-up — textured black shell with ring mark, fills frame",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Zoom1.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
+        "subject": "center",
         "suitability": [
           "detail",
           "texture"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-zoom-2": {
-      "nodeId": "63227:2",
+      "nodeId": "65014:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
         "render",
-        "detail"
+        "detail",
+        "duplicate-export"
       ],
       "description": "Emergency Station handle close-up — black case top, fills frame",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Zoom2.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
+        "subject": "center",
         "suitability": [
           "detail",
           "texture"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-duo-1": {
-      "nodeId": "63228:2",
+      "nodeId": "65008:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
-      "description": "Two Emergency Station cases — upright + flat combination on white",
+      "description": "Two Emergency Station cases — one upright, one flat leaning against it, on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Duo1.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "hero"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-duo-2": {
-      "nodeId": "63229:2",
+      "nodeId": "65009:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
       "description": "Two Emergency Station cases stacked, on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Duo2.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.6,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-closed-duo-3": {
-      "nodeId": "63230:2",
+      "nodeId": "65010:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
-      "description": "Two Emergency Station cases — one leaning open against the other, on white",
+      "description": "Two Emergency Station cases leaning together at an angle, on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Duo3.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-duo-stencil": {
-      "nodeId": "63231:2",
+      "nodeId": "65006:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
-        "render"
+        "render",
+        "duplicate-export"
       ],
       "description": "Two Emergency Station cases stencil-sprayed '1' and '2', front view on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Closed - Front Duo Stencil Sprayed.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.6,
-        "orientation": "landscape",
-        "tone": "light",
-        "suitability": [
-          "card",
-          "hero"
-        ],
-        "quality": "high",
-        "subject": "center"
-      }
-    },
-    "emergency-station-open-front-1": {
-      "nodeId": "63232:2",
-      "tags": [
-        "product",
-        "station",
-        "emergency-station",
-        "case",
-        "render",
-        "open"
-      ],
-      "description": "Emergency Station open — foam interior with blue pump kit and hoses, front view on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Open1 - Front.png",
-        "importedAt": "2026-06-11"
-      },
-      "visual": {
-        "aspect": 1.92,
-        "orientation": "landscape",
-        "tone": "light",
-        "suitability": [
-          "card",
-          "hero"
-        ],
-        "quality": "high",
-        "subject": "center"
-      }
-    },
-    "emergency-station-open-front-2": {
-      "nodeId": "63233:2",
-      "tags": [
-        "product",
-        "station",
-        "emergency-station",
-        "case",
-        "render",
-        "open"
-      ],
-      "description": "Emergency Station open — packed foam interior with components, front view on white",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Open2 - Front.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "hero"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
+      }
+    },
+    "emergency-station-open-front-1": {
+      "nodeId": "65018:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "render",
+        "open",
+        "duplicate-export"
+      ],
+      "description": "Emergency Station open — foam interior with blue pump kit and hoses, front view on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-open-front-2": {
+      "nodeId": "65024:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "render",
+        "open",
+        "duplicate-export"
+      ],
+      "description": "Emergency Station open — packed foam interior with cylinder and gauge components, front view on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
       }
     },
     "emergency-station-open-top": {
@@ -2633,7 +2622,7 @@
       }
     },
     "emergency-station-open-zoom-1": {
-      "nodeId": "63235:2",
+      "nodeId": "65019:2",
       "tags": [
         "product",
         "station",
@@ -2641,28 +2630,27 @@
         "case",
         "render",
         "open",
-        "detail"
+        "detail",
+        "duplicate-export"
       ],
       "description": "Emergency Station open foam tray close-up with brass fittings and components",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Open - Zoom1.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.92,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
+        "subject": "center",
         "suitability": [
           "detail",
           "texture"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-open-zoom-2": {
-      "nodeId": "63236:2",
+      "nodeId": "65020:2",
       "tags": [
         "product",
         "station",
@@ -2670,52 +2658,50 @@
         "case",
         "render",
         "open",
-        "detail"
+        "detail",
+        "hq"
       ],
-      "description": "Emergency Station open lid close-up — dimpled foam, dark",
+      "description": "Emergency Station open lid close-up — dimpled foam texture, dark, higher-resolution export",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Open - Zoom2.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.92,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
+        "subject": "center",
         "suitability": [
           "detail",
           "texture"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-station-open-duo": {
-      "nodeId": "63237:2",
+      "nodeId": "65021:2",
       "tags": [
         "product",
         "station",
         "emergency-station",
         "case",
         "render",
-        "open"
+        "open",
+        "duplicate-export"
       ],
       "description": "Two Emergency Station cases open — foam interiors with blue pump kits, on white",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Emergency Station/Content/Renders/EMW - Open - Duo2.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.92,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
+        "subject": "center",
         "suitability": [
           "card",
           "hero"
         ],
-        "quality": "high",
-        "subject": "center"
+        "quality": "high"
       }
     },
     "emergency-polar-frosty-1": {
@@ -5878,7 +5864,7 @@
       }
     },
     "restaurant-station-scene-cleone": {
-      "nodeId": "63453:2",
+      "nodeId": "65201:256",
       "tags": [
         "product",
         "restaurant-station",
@@ -5886,11 +5872,9 @@
         "installation",
         "render"
       ],
-      "description": "Restaurant Station scene — Cleone in open wood cabinet with counter faucet, front view",
+      "description": "Restaurant Station scene — Cleone in open wood cabinet with counter gooseneck faucet, front view",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Front_Cleone.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -5906,7 +5890,7 @@
       }
     },
     "restaurant-station-scene-pro": {
-      "nodeId": "63454:2",
+      "nodeId": "65201:257",
       "tags": [
         "product",
         "restaurant-station",
@@ -5914,11 +5898,9 @@
         "installation",
         "render"
       ],
-      "description": "Restaurant Station scene — Pro in open wood cabinet with counter faucet, front view",
+      "description": "Restaurant Station scene — Pro in open wood cabinet with counter gooseneck faucet, front view",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Front_Pro.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -5934,7 +5916,7 @@
       }
     },
     "restaurant-station-scene-spirit": {
-      "nodeId": "63455:2",
+      "nodeId": "65201:259",
       "tags": [
         "product",
         "restaurant-station",
@@ -5942,11 +5924,9 @@
         "installation",
         "render"
       ],
-      "description": "Restaurant Station scene — Spirit in open wood cabinet with counter faucet, front view",
+      "description": "Restaurant Station scene — Spirit in open wood cabinet with counter gooseneck faucet, front view",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Front_Spirit.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -5962,7 +5942,7 @@
       }
     },
     "restaurant-station-scene-spirit-glassdoor": {
-      "nodeId": "63456:2",
+      "nodeId": "65201:258",
       "tags": [
         "product",
         "restaurant-station",
@@ -5972,9 +5952,7 @@
       ],
       "description": "Restaurant Station scene — Spirit behind glass cabinet door, front view",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Front_Spirit_Glassdoor.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -5990,7 +5968,7 @@
       }
     },
     "restaurant-station-perspective": {
-      "nodeId": "63457:2",
+      "nodeId": "65201:261",
       "tags": [
         "product",
         "restaurant-station",
@@ -6000,9 +5978,7 @@
       ],
       "description": "Restaurant Station counter perspective — gooseneck faucet with blue puck, cabinet below",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Persp1.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -6018,7 +5994,7 @@
       }
     },
     "restaurant-station-perspective-glassdoor": {
-      "nodeId": "63458:2",
+      "nodeId": "65201:260",
       "tags": [
         "product",
         "restaurant-station",
@@ -6026,11 +6002,9 @@
         "installation",
         "render"
       ],
-      "description": "Restaurant Station perspective — glass-door cabinet with faucet and puck",
+      "description": "Restaurant Station perspective — glass-door cabinet with faucet and blue puck",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Product Categories/Bluewater Stations/Restaurant Station/Restaurant Station 1/Content/Renders/RestaurantStation_Scene_Persp1_Glassdoor.png",
-        "importedAt": "2026-06-11"
+        "type": "figma"
       },
       "visual": {
         "aspect": 1.78,
@@ -14477,48 +14451,455 @@
         "quality": "high"
       }
     },
-    "bloomtown-event-crowd-brewing": {
-      "nodeId": "69798:2",
+    "house-station-1-lifestyle-29": {
+      "nodeId": "65206:90",
       "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "crowd",
-        "lifestyle"
+        "lifestyle",
+        "house-station",
+        "photography"
       ],
-      "description": "A crowd of attendees gathered indoors around a brewing station at the Bloomtown coffee event.",
+      "description": "Man filling a glass at a kitchen sink, looking down at the running faucet",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1817.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-button-hot": {
+      "nodeId": "63306:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "detail",
+        "ui"
+      ],
+      "description": "Flow Station 1 panel — hot-water control state, violet-lit",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Button Hot.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron-golden-hour-1": {
+      "nodeId": "65045:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "skeppsbron",
+        "golden-hour"
+      ],
+      "description": "Emergency Station open setup on Skeppsbron harbor cobblestones at golden hour, backlit sun glow over the water, Stockholm skyline silhouette",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "mixed",
         "subject": "center",
         "suitability": [
-          "card"
+          "hero"
         ],
         "quality": "medium"
       }
     },
-    "bloomtown-coffee-water-pouch-tabletop": {
-      "nodeId": "69798:5789",
+    "emergency-station-skeppsbron-skyline": {
+      "nodeId": "65054:2",
       "tags": [
         "product",
-        "bloomtown",
-        "coffee-water",
-        "pouch"
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "skeppsbron",
+        "landmark"
       ],
-      "description": "Close-up of a Bluewater Coffee Water pouch resting on a wood tabletop.",
+      "description": "Person crouching working on the open Emergency Station with a clear Stockholm skyline landmark (church dome, castle towers) in daylight, autumn trees, blue sky",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1819.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-water-dim-kitchen": {
+      "nodeId": "64969:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "dark"
+      ],
+      "description": "Two bottles beside a running faucet, blue puck glowing, dim moody concrete backdrop, place setting with plate and cutlery to the side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-black-back": {
+      "nodeId": "64712:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "back-view",
+        "product-render"
+      ],
+      "description": "Matte black stainless steel water bottle, 400ml variant, back view with cap and carry strap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-01": {
+      "nodeId": "65206:34",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Close crop of hands filling a glass at a kitchen faucet, water running",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-22": {
+      "nodeId": "65206:76",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man in a kitchen holding a glass of water, open shelving with dishware, similar pose to other kitchen shots",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-two-bottles-backlit": {
+      "nodeId": "64965:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "light"
+      ],
+      "description": "Two glass bottles in golden backlit sunset light, blue puck glowing at the base, lemon and napkin to the side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-filling-bottle-station": {
+      "nodeId": "65036:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "dock"
+      ],
+      "description": "Person filling a bottle at an open Emergency Station on a dock, Bluewater logo visible on case — near-duplicate of emergency-station-filling-bottle-dock-wide, slightly different crop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-palma-lifestyle-exterior-patio": {
+      "nodeId": "64946:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "exterior",
+        "light"
+      ],
+      "description": "Exterior villa patio with stone outbuilding, balustrade, and greenery in daylight — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-woman-table": {
+      "nodeId": "64941:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "light"
+      ],
+      "description": "Woman sitting at a wooden table in a sunlit villa interior, holding a mug, wristwatch visible — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-dining-view": {
+      "nodeId": "64944:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "interior",
+        "light"
+      ],
+      "description": "View through a doorway into a sunlit dining room with an arched shuttered window — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-right": {
+      "nodeId": "63298:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render"
+      ],
+      "description": "Flow Station 1 EU — slim right profile, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Right.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-puck-at-sink": {
+      "nodeId": "64975:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "puck",
+        "dark"
+      ],
+      "description": "Dramatic diagonal composition of the faucet running with the blue puck glowing at its base, two bottles to the side, dark steel counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-5": {
+      "nodeId": "64919:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-3-5"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 3.5, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-side": {
+      "nodeId": "63296:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render"
+      ],
+      "description": "Flow Station 1 EU — three-quarter view with lit bay, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Side.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-home-zoom-1": {
+      "nodeId": "64930:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "under-sink",
+        "render",
+        "light"
+      ],
+      "description": "Zoomed-in render of open cabinet showing the dark blue under-sink unit, tank, and blue puck on the counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
         "subject": "center",
@@ -14529,25 +14910,116 @@
         "quality": "high"
       }
     },
-    "bloomtown-baristas-brewing": {
-      "nodeId": "69798:5790",
+    "house-station-1-lifestyle-03": {
+      "nodeId": "65206:38",
       "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "people",
-        "brewing"
+        "lifestyle",
+        "house-station",
+        "photography"
       ],
-      "description": "Two men at a brewing counter at the Bloomtown event, one wearing a coffee-brand t-shirt.",
+      "description": "Man standing on a wooden dock gesturing toward the water, overcast sky, wide lake view",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1820.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-pro-side": {
+      "nodeId": "65206:8",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render"
+      ],
+      "description": "House Station 1 — isometric side render of full skid unit with dual blue housings and pump base",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-tank-zoom": {
+      "nodeId": "65206:24",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "tank"
+      ],
+      "description": "House Station 1 — single white and black pressure/brine tank product render, straight-on",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-6": {
+      "nodeId": "64923:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-4-0"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 4.0, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-17": {
+      "nodeId": "65206:66",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man sweeping inside an open red barn doorway, foreground framed by blurred branch",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
         "subject": "center",
         "suitability": [
           "card"
@@ -14555,124 +15027,71 @@
         "quality": "medium"
       }
     },
-    "bloomtown-event-attendees-crowd": {
-      "nodeId": "69798:5791",
+    "kitchen-station-studio-water-into-sink": {
+      "nodeId": "64970:2",
       "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "people",
-        "crowd"
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "dark"
       ],
-      "description": "Two attendees talking amid a crowd at the Bloomtown event.",
+      "description": "Two bottles on a counter against a dark steel mirror-like backdrop, faucet running into the sink, blue puck glowing bright",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1821.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
         "subject": "center",
         "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-event-poster-branding": {
-      "nodeId": "69798:5792",
-      "tags": [
-        "event",
-        "bloomtown",
-        "branding",
-        "poster"
-      ],
-      "description": "Bloomtown event poster with a bold green background and illustrated poppy flower.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1823.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
+          "hero",
+          "full-bleed",
           "card"
         ],
         "quality": "high"
       }
     },
-    "bloomtown-event-poster-branding-alt": {
-      "nodeId": "69798:5793",
+    "house-station-1-lifestyle-18": {
+      "nodeId": "65206:68",
       "tags": [
-        "event",
-        "bloomtown",
-        "branding",
-        "poster"
+        "lifestyle",
+        "house-station",
+        "photography"
       ],
-      "description": "Alternate crop of the Bloomtown event poster with the illustrated poppy flower.",
+      "description": "Man drinking a glass of water in a kitchen, open shelving with dishware behind him",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1824.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
         "subject": "center",
         "suitability": [
-          "card"
+          "card",
+          "hero"
         ],
         "quality": "high"
       }
     },
-    "bloomtown-pour-over-brewing": {
-      "nodeId": "69798:5794",
+    "steel-400-steel-steel-front": {
+      "nodeId": "64737:2",
       "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "brewing",
-        "pour-over"
+        "steel-bottle",
+        "400ml",
+        "silver",
+        "front-view",
+        "wordmark",
+        "product-render"
       ],
-      "description": "A pour-over coffee brew in progress on a counter at the Bloomtown event.",
+      "description": "Brushed silver stainless steel water bottle, 400ml variant, front view with cap, strap, and Bluewater wordmark on white background.",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1826.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-recipe-card": {
-      "nodeId": "69798:5795",
-      "tags": [
-        "product",
-        "bloomtown",
-        "coffee-water",
-        "marketing"
-      ],
-      "description": "A Bluewater Coffee Water product box with an \"Unlock the recipe\" QR code card.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1831.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
+        "aspect": 1.33,
         "orientation": "landscape",
         "tone": "light",
         "subject": "center",
@@ -14680,230 +15099,54 @@
           "card",
           "detail"
         ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-three-bottles-counter": {
+      "nodeId": "64964:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "mixed"
+      ],
+      "description": "Three glass bottles static on a wooden counter in a warm misty atmosphere, blue puck glowing, lemon to the side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
         "quality": "high"
       }
     },
-    "bloomtown-coffee-water-pouch-hand": {
-      "nodeId": "69798:5796",
+    "flowstation-1-bottle-closeup-3": {
+      "nodeId": "63301:2",
       "tags": [
         "product",
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "hand"
-      ],
-      "description": "A hand holding a Bluewater Coffee Water pouch by its handle.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1832.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-pouches-storage": {
-      "nodeId": "69798:5797",
-      "tags": [
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "storage"
-      ],
-      "description": "Bluewater Coffee Water pouches stored in a dim corner at the event.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1833.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-coffee-water-supplies-shelf": {
-      "nodeId": "69798:5798",
-      "tags": [
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "storage"
-      ],
-      "description": "A cluttered shelf of Bluewater Coffee Water pouches and event supplies.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1834.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-coffee-water-pouch-bag": {
-      "nodeId": "69798:5799",
-      "tags": [
-        "product",
-        "bloomtown",
-        "coffee-water",
-        "pouch"
-      ],
-      "description": "A Bluewater Coffee Water pouch set against a leopard-print bag.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1835.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-pouch-tote": {
-      "nodeId": "69798:5800",
-      "tags": [
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "tote"
-      ],
-      "description": "A Bluewater Coffee Water pouch tucked in a tote bag in low light.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1836.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-attendee-holding-pouch": {
-      "nodeId": "69798:5801",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "people",
-        "pouch"
-      ],
-      "description": "An attendee at the Bloomtown event holding a Bluewater Coffee Water pouch.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1837.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-pouch-counter": {
-      "nodeId": "69798:5802",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "people",
-        "pouch"
-      ],
-      "description": "An attendee holding a Bluewater Coffee Water pouch at the brewing counter.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1840.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-event-gear-jumble": {
-      "nodeId": "69798:5803",
-      "tags": [
-        "bloomtown",
-        "event",
-        "gear"
-      ],
-      "description": "A cluttered jumble of event gear and equipment in dim light.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1841.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-coffee-pour-cup": {
-      "nodeId": "69798:5804",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "pour",
+        "station",
+        "flowstation",
+        "render",
         "detail"
       ],
-      "description": "Coffee pouring from a carafe into a paper cup, warm close-up detail shot.",
+      "description": "Flow Station 1 — small full-tower view with lit bay, on white",
       "source": {
         "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1843.JPG",
-        "importedAt": "2026-07-07"
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup3_Bottle.png",
+        "importedAt": "2026-06-11"
       },
       "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
         "subject": "center",
         "suitability": [
           "card",
@@ -14912,177 +15155,327 @@
         "quality": "high"
       }
     },
-    "bloomtown-coffee-water-pouch-cooler": {
-      "nodeId": "69798:5805",
+    "flowstation-1-side-bottle": {
+      "nodeId": "63302:2",
       "tags": [
         "product",
-        "bloomtown",
-        "coffee-water",
-        "pouch"
+        "station",
+        "flowstation",
+        "render",
+        "branding"
       ],
-      "description": "A Bluewater Coffee Water pouch set on a sticker-covered cooler.",
+      "description": "Flow Station 1 header close-up — 'Bluewater 7X Advanced Purification' panel above the lit bay",
       "source": {
         "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1844.JPG",
-        "importedAt": "2026-07-07"
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Side_Bottle.png",
+        "importedAt": "2026-06-11"
       },
       "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
+        "aspect": 1.0,
+        "orientation": "square",
         "tone": "mixed",
         "subject": "center",
         "suitability": [
-          "card"
+          "detail",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-1000-d-steel-front": {
+      "nodeId": "64668:2",
+      "tags": [
+        "steel-bottle",
+        "1000ml",
+        "double-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, tall 1000ml double-wall variant, front view with cap and carry strap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
         ],
         "quality": "medium"
       }
     },
-    "bloomtown-coffee-water-pouring-cup": {
-      "nodeId": "69798:5806",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "action"
-      ],
-      "description": "A hand pouring from a Bluewater Coffee Water pouch into a cup.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1845.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-attendee-drinking-crowd": {
-      "nodeId": "69798:5807",
-      "tags": [
-        "event",
-        "bloomtown",
-        "people",
-        "crowd",
-        "lifestyle"
-      ],
-      "description": "An attendee drinking from a cup amid the crowd at the Bloomtown event.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1846.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-pouch-tattoo-arm": {
-      "nodeId": "69798:5808",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "lifestyle"
-      ],
-      "description": "A tattooed arm holding a Bluewater Coffee Water pouch, edgy lifestyle framing.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1847.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-attendee-holding-pouch-2": {
-      "nodeId": "69798:5809",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "people",
-        "pouch"
-      ],
-      "description": "An attendee casually holding a Bluewater Coffee Water pouch at their side.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1848.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "dark",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-coffee-water-pouches-handoff": {
-      "nodeId": "69798:5810",
-      "tags": [
-        "event",
-        "bloomtown",
-        "coffee-water",
-        "pouch",
-        "people"
-      ],
-      "description": "Hands passing several Bluewater Coffee Water pouches across a table.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1849.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "mixed",
-        "subject": "center",
-        "suitability": [
-          "card"
-        ],
-        "quality": "medium"
-      }
-    },
-    "bloomtown-coffee-water-pouch-product-shot": {
-      "nodeId": "69798:5811",
+    "emergency-station-filling-bottle-dock-wide": {
+      "nodeId": "65034:2",
       "tags": [
         "product",
-        "bloomtown",
-        "coffee-water",
-        "pouch"
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "dock"
       ],
-      "description": "A clean product shot of a Bluewater Coffee Water pouch on a table with clear branding.",
+      "description": "Person filling a water bottle from an open Emergency Station on a dock — blue filter cartridges and purifier case visible, lake behind",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1850.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-campaign-still-3": {
+      "nodeId": "63309:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "lifestyle",
+        "gym",
+        "photo"
+      ],
+      "description": "Flow Station 1 in the gym beside dumbbell rack and exercise ball",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0105.jpeg",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-23": {
+      "nodeId": "65206:78",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man sitting on a wooden table outside a red building with a mossy roof",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-13": {
+      "nodeId": "65206:58",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man walking away toward the water on a wooden dock, back view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-pulling-cases-dock": {
+      "nodeId": "65043:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "dock"
+      ],
+      "description": "Low-angle shot of a person pulling two Emergency Station cases along a dock over water, dramatic cloudy sky",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "top",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-2": {
+      "nodeId": "64920:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-2-0"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 2.0, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-tank-wide": {
+      "nodeId": "65206:30",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "tank"
+      ],
+      "description": "House Station 1 — two tanks side by side, wide product shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-woman-filling": {
+      "nodeId": "64955:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "editorial",
+        "light"
+      ],
+      "description": "Woman seen from behind at a kitchen counter filling a bottle, white outfit, coffee equipment on open shelf behind her",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-two-bottles-glowing": {
+      "nodeId": "64966:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "dark"
+      ],
+      "description": "Two bottles on a dark steel counter with faucet running, blue puck glowing brightly, moody dark backdrop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bengt-rittri-portrait-1": {
+      "nodeId": "64027:163",
+      "tags": [
+        "bengt-rittri",
+        "founder",
+        "portrait",
+        "brand",
+        "headshot"
+      ],
+      "description": "Outdoor portrait of a smiling man in a navy sweater over a white collared shirt, with autumn foliage and buildings softly blurred behind him.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.88,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-front-cleone": {
+      "nodeId": "64987:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "cleone",
+        "render",
+        "light"
+      ],
+      "description": "Front view of a light wood kitchen cabinet with sink and chrome faucet, blue puck on counter, Cleone tank and filter visible under the sink — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "light",
         "subject": "center",
@@ -15093,56 +15486,3398 @@
         "quality": "high"
       }
     },
-    "bloomtown-attendee-drinking-closeup": {
-      "nodeId": "69798:5812",
+    "emergency-station-prefilter-plate-front": {
+      "nodeId": "65042:2",
       "tags": [
-        "event",
-        "bloomtown",
-        "people",
-        "lifestyle"
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "detail",
+        "texture",
+        "prefilter"
       ],
-      "description": "Close crop of an attendee drinking, with a Bluewater Coffee Water pouch visible.",
+      "description": "Rain-speckled close-up of the '1 Prefilter' label plate, frontal view — near-duplicate of emergency-station-prefilter-plate-angle from the same shoot",
       "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1851.JPG",
-        "importedAt": "2026-07-07"
+        "type": "figma"
       },
       "visual": {
-        "aspect": 1.5,
+        "aspect": 1.78,
         "orientation": "landscape",
         "tone": "dark",
         "subject": "center",
         "suitability": [
-          "card"
-        ],
-        "quality": "low"
-      }
-    },
-    "bloomtown-branded-tote-detail": {
-      "nodeId": "69798:5813",
-      "tags": [
-        "bloomtown",
-        "branding",
-        "tote",
-        "texture"
-      ],
-      "description": "Detail shot of a Bluewater-branded tote bag fabric with the flame logo print.",
-      "source": {
-        "type": "onedrive-sync",
-        "path": "Events/2026/Bloomtown/Pictures/DSCF1853.JPG",
-        "importedAt": "2026-07-07"
-      },
-      "visual": {
-        "aspect": 1.5,
-        "orientation": "landscape",
-        "tone": "light",
-        "subject": "center",
-        "suitability": [
-          "card",
           "detail",
           "texture"
         ],
         "quality": "high"
+      }
+    },
+    "kitchen-station-under-sink-cleone-tank": {
+      "nodeId": "64932:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "cleone",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Moody amber-lit under-cabinet shot behind a ribbed glass door, steel Cleone unit and tank visible",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-woman-seated": {
+      "nodeId": "64939:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "light"
+      ],
+      "description": "Woman sitting on a wooden chair in a sunlit villa doorway — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-pour-bottle-dock": {
+      "nodeId": "65040:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "detail",
+        "outdoor"
+      ],
+      "description": "Close-up of a bottle filling with water on a wet dock — near-duplicate of emergency-station-bottle-fill-closeup, same setting and framing",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-hand-filling-amber": {
+      "nodeId": "64957:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "hand",
+        "mixed"
+      ],
+      "description": "Hand filling a glass jar at a faucet with warm amber/copper reflections, blue puck small in the background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-purification": {
+      "nodeId": "63303:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "branding",
+        "detail"
+      ],
+      "description": "Flow Station 1 angled header — Bluewater ring mark on navy panel",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Purification.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-prefilter-open": {
+      "nodeId": "65025:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "render",
+        "open",
+        "prefilter"
+      ],
+      "description": "Emergency Station prefilter case open — three blue filter cartridges in a row with a coiled hose above, on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-19": {
+      "nodeId": "65206:70",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing in the doorway of a grey and red building beside a garage door",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "restaurant-station-scene-tablet-natural": {
+      "nodeId": "65201:262",
+      "tags": [
+        "product",
+        "restaurant-station",
+        "scene",
+        "installation",
+        "render",
+        "tablet",
+        "marketing"
+      ],
+      "description": "Restaurant Station counter close-up with gooseneck faucet and blue puck beside a tablet displaying 'Bluewater Hydrate - Natural' branding",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-bypass-sediment-spray": {
+      "nodeId": "69791:5799",
+      "tags": [
+        "cafe-station-1",
+        "bypass",
+        "sediment",
+        "contamination",
+        "macro",
+        "water"
+      ],
+      "description": "Wide macro shot of dark sediment particles spraying from a metal fitting into a clear glass basin of water, illustrating unfiltered water contamination.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 2.36,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-hand-filling": {
+      "nodeId": "64942:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "hand",
+        "light"
+      ],
+      "description": "Closeup of a hand filling a glass bottle with the Bluewater logo at a faucet on a sunlit stone counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-bottle-closeup-1": {
+      "nodeId": "63299:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "detail"
+      ],
+      "description": "Flow Station 1 bay close-up — bottle filling under violet light, Bluewater header",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup1_Bottle.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-800-d-steel-front": {
+      "nodeId": "64700:2",
+      "tags": [
+        "steel-bottle",
+        "800ml",
+        "double-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, largest 800ml double-wall variant, front view with cap and carry strap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-08": {
+      "nodeId": "65206:48",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man filling a glass at kitchen sink, open shelving with glassware and a green bottle nearby",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-puck-glow-1": {
+      "nodeId": "64953:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "puck",
+        "dark"
+      ],
+      "description": "Closeup of the blue-lit Bluewater puck glowing on a dark wood counter, side angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-06": {
+      "nodeId": "65206:44",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man crouching on a dock handling rope and gear, distant wide landscape with treeline",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "bottom",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-under-sink-spirit-1": {
+      "nodeId": "64936:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "spirit",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Steel Spirit unit with angled top head inside a warmly lit cabinet, dark bottle beside it, ribbed glass door",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-blue-back": {
+      "nodeId": "64725:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy-blue",
+        "back-view",
+        "product-render"
+      ],
+      "description": "Matte navy blue stainless steel water bottle, 400ml variant, back view with cap, strap, and small circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-pro-zoom": {
+      "nodeId": "65206:6",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render",
+        "detail"
+      ],
+      "description": "House Station 1 close-up — zoomed view on top mechanical valves and gauge with single blue housing partially in frame",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "top",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-cases-cityscape-dock": {
+      "nodeId": "65028:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "cityscape"
+      ],
+      "description": "Two Emergency Station cases on a wooden dock, wide lake view with city skyline on the far shore, overcast sky",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-skeppsbron-4": {
+      "nodeId": "65049:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "skeppsbron",
+        "golden-hour"
+      ],
+      "description": "Person crouching working on the open Emergency Station at golden hour, Skeppsbron harbor — near-duplicate of emergency-station-skeppsbron-3",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-7": {
+      "nodeId": "64924:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-2-0",
+        "closeup"
+      ],
+      "description": "Closer-cropped lifestyle photo of a single hand holding a phone showing the Bluewater app Brew mode screen set to ratio 2.0, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-400-steel-black-front": {
+      "nodeId": "64708:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "front-view",
+        "wordmark",
+        "product-render"
+      ],
+      "description": "Matte black stainless steel water bottle, 400ml variant, front view with cap, carry strap, and Bluewater wordmark on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-hand-filling-jar": {
+      "nodeId": "64956:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "hand",
+        "mixed"
+      ],
+      "description": "Hand holding a glass jar catching water pouring from a faucet, blue puck blurred in the background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-pro-front": {
+      "nodeId": "65206:4",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render"
+      ],
+      "description": "House Station 1 — straight front-on render with dual blue filter housings beneath the top control box",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-purifier-plate-closeup": {
+      "nodeId": "65044:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "detail",
+        "texture",
+        "purifier"
+      ],
+      "description": "Rain-speckled close-up of the metal '2 Purifier' label plate on the case, companion shot to the Prefilter plate close-ups",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-14": {
+      "nodeId": "65206:60",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Red Swedish cottage exterior with a bare tree in the yard and lake visible behind, no person",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-bottle-fill-closeup": {
+      "nodeId": "65035:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "detail",
+        "outdoor"
+      ],
+      "description": "Close-up of a clear bottle filling with water on a wet dock, tube feeding in from above, boots visible in background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-top-panel": {
+      "nodeId": "63304:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "detail"
+      ],
+      "description": "Flow Station 1 control panel close-up — violet-lit bay with contactless icons",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Top Panel.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-tank-front": {
+      "nodeId": "65206:28",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "tank"
+      ],
+      "description": "House Station 1 — single tank render, front-facing view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-3": {
+      "nodeId": "64921:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-2-5"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 2.5, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-palma-lifestyle-pine-view": {
+      "nodeId": "64952:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "exterior",
+        "light"
+      ],
+      "description": "Outdoor view through pine trees toward the villa rooftop and distant hills in daylight",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-cases-dock-overcast": {
+      "nodeId": "65029:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "cityscape"
+      ],
+      "description": "Two Emergency Station cases on a wooden dock facing the water, cityscape/skyline on the horizon, overcast light — similar composition to emergency-station-cases-cityscape-dock",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-prefilter-front": {
+      "nodeId": "65206:20",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "prefilter"
+      ],
+      "description": "House Station 1 — front-angled render of three blue prefilter housings with shallow foreground blur",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-palma-lifestyle-puck-closeup": {
+      "nodeId": "64945:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "puck",
+        "editorial",
+        "light"
+      ],
+      "description": "Closeup of the blue-lit Bluewater puck beside a bottle on a sunlit stone counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-steel-co-lab-front": {
+      "nodeId": "64717:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "silver",
+        "co-lab",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Brushed silver stainless steel water bottle, 400ml co-lab variant, front view with cap, strap, and circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-05": {
+      "nodeId": "65206:42",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing in a kitchen holding a glass of water, open shelving with dishware behind him",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-woman-filling-glass": {
+      "nodeId": "64947:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "light"
+      ],
+      "description": "Closeup of a woman's torso filling a glass with water at a sunlit kitchen sink, blue puck on the counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-hand-filling-tilted": {
+      "nodeId": "64960:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "hand",
+        "dark"
+      ],
+      "description": "Hand filling a glass bottle at a steel faucet with a vivid blue puck glow, tilted dynamic framing",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-28": {
+      "nodeId": "65206:88",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man in a kitchen holding a glass of water, side profile, bright window light behind him",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-chair-detail": {
+      "nodeId": "64940:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "furniture",
+        "light"
+      ],
+      "description": "Closeup of a wooden Wishbone-style chair and round table in raking sunlight and shadow, no people",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "texture",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-prefilter-zoom-1": {
+      "nodeId": "65206:22",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "prefilter",
+        "detail"
+      ],
+      "description": "House Station 1 — extreme close-up of prefilter housing tops and valve manifold, first angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-25": {
+      "nodeId": "65206:82",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing on wooden dock posts looking out over the lake",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-front-alt": {
+      "nodeId": "65206:14",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render"
+      ],
+      "description": "House Station 1 — alternate front view render with two shorter blue filter housings side by side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-prefilter-perspective": {
+      "nodeId": "65206:16",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "prefilter"
+      ],
+      "description": "House Station 1 — three blue prefilter housings clustered together, elevated perspective view with red valve handles on top",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron-golden-hour-2": {
+      "nodeId": "65048:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "skeppsbron",
+        "golden-hour"
+      ],
+      "description": "Emergency Station open setup on Skeppsbron cobblestones at golden hour — near-duplicate of emergency-station-skeppsbron-golden-hour-1, same composition",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-purifier-open": {
+      "nodeId": "65023:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "render",
+        "open",
+        "purifier"
+      ],
+      "description": "Emergency Station purifier case open — dark cylindrical tank, pressure gauges, control panel and motor, on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-prefilter-zoom-2": {
+      "nodeId": "65206:18",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "prefilter",
+        "detail"
+      ],
+      "description": "House Station 1 — close zoomed view of three blue prefilter housings and manifold top, second angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-puck-bokeh": {
+      "nodeId": "64973:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "puck",
+        "light"
+      ],
+      "description": "Extreme closeup of the blue puck glowing with heavy bokeh, bottles and faucet softly blurred on either side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-left": {
+      "nodeId": "63297:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render"
+      ],
+      "description": "Flow Station 1 EU — slim left profile, on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Left.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-woman-walking": {
+      "nodeId": "64938:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "light"
+      ],
+      "description": "Woman in white walking away through a sunlit villa doorway — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-open-hose-reel": {
+      "nodeId": "65017:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "render",
+        "open"
+      ],
+      "description": "Emergency Station open, front-angled view — coiled white hose reel and fittings packed in the foam-lined case, on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-puck-glow-2": {
+      "nodeId": "64954:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "puck",
+        "dark"
+      ],
+      "description": "Closeup of the blue-lit Bluewater puck glowing on a dark wood counter — near-identical framing to kitchen-station-palma-lifestyle-puck-glow-1",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-front": {
+      "nodeId": "63295:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render"
+      ],
+      "description": "Flow Station 1 EU — navy tower with violet-lit bottle bay, front view on white",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Front.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-front-spirit-glassdoor": {
+      "nodeId": "64989:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "spirit",
+        "render",
+        "light"
+      ],
+      "description": "Front view of a light wood kitchen cabinet with a ribbed glass door under the sink obscuring the unit, chrome faucet and blue puck on counter — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-dog": {
+      "nodeId": "64943:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "dog",
+        "light"
+      ],
+      "description": "Brown poodle standing under a wooden chair on a rug in a sunlit villa interior — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-dock-rocky-shore-silhouette": {
+      "nodeId": "65033:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "silhouette"
+      ],
+      "description": "Wide atmospheric shot of a rocky lake shore and dock, case silhouetted at the far end — near-identical composition to emergency-station-dock-lake-silhouette",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-detail": {
+      "nodeId": "65206:10",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render",
+        "detail"
+      ],
+      "description": "House Station 1 close-up — shallow-depth-of-field detail of pipe fitting and elbow joint with blue housings blurred behind",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-prefilter-plate-angle": {
+      "nodeId": "65041:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "detail",
+        "texture",
+        "prefilter"
+      ],
+      "description": "Rain-speckled close-up of the metal '1 Prefilter' label plate on the case, angled view, moody dark tone",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-lineup-x3": {
+      "nodeId": "64732:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "lineup",
+        "group-shot",
+        "navy",
+        "black",
+        "silver",
+        "product-render"
+      ],
+      "description": "Group product shot of three 400ml stainless steel water bottles in a staggered lineup — navy, black, and silver — on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-palma-lifestyle-rooftop-view": {
+      "nodeId": "64948:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "exterior",
+        "light"
+      ],
+      "description": "Outdoor rooftop and cityscape view in daylight with a blurred stone balustrade in the foreground — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "bottom",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-under-sink-cleone-front": {
+      "nodeId": "64933:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "cleone",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Front-facing steel Cleone unit with carry handle inside a warmly lit cabinet, glass bottle with dark cap beside it, ribbed glass door",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-steel-back": {
+      "nodeId": "64703:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "silver",
+        "back-view",
+        "product-render"
+      ],
+      "description": "Brushed silver stainless steel water bottle, 400ml variant, back view with cap, strap, and small circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-home-open-cabinet-1": {
+      "nodeId": "64926:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "under-sink",
+        "render",
+        "light"
+      ],
+      "description": "Open wood cabinet under a kitchen sink revealing the tank and filter unit, chrome faucet closed, blue Bluewater puck on the counter — clean white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-300-s-steel-front": {
+      "nodeId": "64678:2",
+      "tags": [
+        "steel-bottle",
+        "300ml",
+        "single-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Small silver stainless steel water bottle, 300ml single-wall variant, front view with exposed threaded neck on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-button-auto": {
+      "nodeId": "63305:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "detail",
+        "ui"
+      ],
+      "description": "Flow Station 1 panel — auto-dispense control state, violet-lit",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Button Auto.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron-5": {
+      "nodeId": "65051:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "skeppsbron",
+        "golden-hour"
+      ],
+      "description": "Standing back view of a person in a Bluewater jacket beside the Emergency Station setup, strong backlit sun flare over the water",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-campaign-still-1": {
+      "nodeId": "63307:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "lifestyle",
+        "gym",
+        "photo"
+      ],
+      "description": "Flow Station 1 in a white-brick gym — wide scene with kettlebell rack and fridge",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0017.jpeg",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron-6": {
+      "nodeId": "65052:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "skeppsbron"
+      ],
+      "description": "Person crouching working on the open Emergency Station, purifier gauges visible, softer evening light — part of the same crouching-figure series as emergency-station-skeppsbron-3/4",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-hand-filling-dark": {
+      "nodeId": "64959:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "hand",
+        "dark"
+      ],
+      "description": "Hand filling a glass bottle at a steel faucet against a dark moody counter, vivid blue puck glow",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-300-s-steel-ring-front": {
+      "nodeId": "64682:2",
+      "tags": [
+        "steel-bottle",
+        "300ml",
+        "single-wall",
+        "silver",
+        "cap-ring",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Small silver stainless steel water bottle, 300ml single-wall variant, front view showing the threaded cap ring detail on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-04": {
+      "nodeId": "65206:40",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man drinking from a glass of water beside a window overlooking a lake",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-02": {
+      "nodeId": "65206:36",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man in blue sweater filling a glass at a kitchen sink with modern faucet",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-white-front": {
+      "nodeId": "64710:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "front-view",
+        "wordmark",
+        "product-render"
+      ],
+      "description": "Matte white/light grey stainless steel water bottle, 400ml variant, front view with cap, strap, and Bluewater wordmark on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-4": {
+      "nodeId": "64918:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-3-0"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 3.0, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-winter-setup": {
+      "nodeId": "65053:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "winter"
+      ],
+      "description": "Emergency Station open setup in a bare-tree winter/frost landscape, overcast pale light — inconsistent with the rest of the golden-hour Skeppsbron harbor series it was numbered alongside",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-under-sink-cleone-side": {
+      "nodeId": "64934:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "cleone",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Side-angle view of the steel Cleone unit between two ribbed glass cabinet doors, warm ambient lighting",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-tank-angle-1": {
+      "nodeId": "65206:26",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "tank"
+      ],
+      "description": "House Station 1 — single tank render at an angled perspective, first angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-mode-screen-1": {
+      "nodeId": "64922:2",
+      "tags": [
+        "cafe-station",
+        "app",
+        "brew-mode",
+        "lifestyle",
+        "phone-in-hand",
+        "ratio-1-5"
+      ],
+      "description": "Lifestyle photo of a hand holding a phone showing the Bluewater app Brew mode screen set to ratio 1.5, blurred espresso machine in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-20": {
+      "nodeId": "65206:72",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man walking out of a red cottage doorway onto a patio with white folding chairs",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-open-setup-lake": {
+      "nodeId": "65037:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock"
+      ],
+      "description": "Full Emergency Station setup on a dock — two open cases with filters and purifier pump connected by hose, open lake behind",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-open-setup-cityscape": {
+      "nodeId": "65038:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "cityscape"
+      ],
+      "description": "Full Emergency Station setup on a dock with cityscape skyline visible across the water, similar to emergency-station-open-setup-lake but with an urban backdrop",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-15": {
+      "nodeId": "65206:62",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man sitting by a window drinking from a mug, lake view outside",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-blue-co-lab-front": {
+      "nodeId": "64704:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy-blue",
+        "co-lab",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Matte navy blue stainless steel water bottle, 400ml co-lab variant, front view with cap, strap, and circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-10": {
+      "nodeId": "65206:52",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing in a kitchen holding a glass of water, shelving with dishware behind him, alternate pose",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-two-bottles-running": {
+      "nodeId": "64968:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "light"
+      ],
+      "description": "Two bottles beside a faucet running water with a visible splash, blue puck glowing, warm stone backdrop, bowl of apples to the side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-pro-side-alt": {
+      "nodeId": "65206:2",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render"
+      ],
+      "description": "House Station 1 — angled front-right render of open-frame skid with single blue prefilter housing and top control box",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-black-co-lab-front": {
+      "nodeId": "64688:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "co-lab",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Matte black stainless steel water bottle, 400ml co-lab variant, front view with cap and carry strap, circular co-branded logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "flowstation-1-campaign-still-2": {
+      "nodeId": "63308:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "lifestyle",
+        "gym",
+        "photo"
+      ],
+      "description": "Flow Station 1 close in the gym — bottle dispensing, white brick behind",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Pictures/25.06.11_BW_FS_Campaign_Stills_Flowstation_0080.jpeg",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-perspective": {
+      "nodeId": "65206:12",
+      "tags": [
+        "product",
+        "station",
+        "house-station",
+        "render"
+      ],
+      "description": "House Station 1 — perspective render of full frame with single tall blue filter housing centered",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-1-corrosion-clean-metal-tube": {
+      "nodeId": "69791:8",
+      "tags": [
+        "cafe-station-1",
+        "corrosion",
+        "clean-pipe",
+        "brushed-steel",
+        "macro",
+        "before-after"
+      ],
+      "description": "Close-up macro of a brushed stainless steel tube's open end, showing a clean, corrosion-free interior bore against a light grey background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.58,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-1000-s-steel-front": {
+      "nodeId": "64679:2",
+      "tags": [
+        "steel-bottle",
+        "1000ml",
+        "single-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, 1000ml single-wall variant, front view with exposed threaded neck and no cap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "emergency-station-open-duo-outlines": {
+      "nodeId": "65016:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "case",
+        "open",
+        "wireframe",
+        "technical"
+      ],
+      "description": "Technical outline/wireframe rendering of two open Emergency Station cases side by side, showing internal filter cartridges and purifier components as white line art on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-puck-topdown": {
+      "nodeId": "64974:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "puck",
+        "mixed"
+      ],
+      "description": "Top-down closeup of the glowing blue puck on a wood counter, sink and faucet visible in the corner",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-open-setup-side-tubing": {
+      "nodeId": "65039:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "detail"
+      ],
+      "description": "Side-angle view of the full Emergency Station setup on a dock, coiled hose prominent in the foreground",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-persp-glassdoor-2": {
+      "nodeId": "64992:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "render",
+        "light"
+      ],
+      "description": "Angled perspective of a light wood kitchen cabinet, sink and faucet, blue puck on counter, ribbed glass door ajar revealing a blue-lit unit inside — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-under-sink-spirit-2": {
+      "nodeId": "64937:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "spirit",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Wider view of a stacked two-tier steel Spirit unit between ribbed glass cabinet doors, warm ambient light",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-home-open-cabinet-2": {
+      "nodeId": "64928:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "under-sink",
+        "render",
+        "light"
+      ],
+      "description": "Open wood cabinet under sink from a slight angle, faucet closed, blue puck on counter, under-sink tank and filter visible — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-chair-table-blur": {
+      "nodeId": "64951:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "furniture",
+        "light"
+      ],
+      "description": "Closeup of a wooden chair and table edge with a woman in white walking blurred in the background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-21": {
+      "nodeId": "65206:74",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing on grass near a lake shore with a small dock visible",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-27": {
+      "nodeId": "65206:86",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing by the lake in a dark jacket, wide landscape view of water and shoreline",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-11": {
+      "nodeId": "65206:54",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man standing in the doorway of a red barn/shed gesturing toward a garage door",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-tank-angle-2": {
+      "nodeId": "65206:32",
+      "tags": [
+        "product",
+        "house-station",
+        "render",
+        "tank"
+      ],
+      "description": "House Station 1 — two tanks side by side, angled perspective view, second angle",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-blue-front": {
+      "nodeId": "64733:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy-blue",
+        "front-view",
+        "wordmark",
+        "product-render"
+      ],
+      "description": "Matte navy blue stainless steel water bottle, 400ml variant, front view with cap, strap, and Bluewater wordmark on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-front-spirit-vola": {
+      "nodeId": "64991:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "spirit",
+        "vola",
+        "render",
+        "light"
+      ],
+      "description": "Front view of a light wood kitchen cabinet with Vola faucet, blue puck on counter, glass bottle and dark Spirit unit visible under the sink — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-kitchen-window": {
+      "nodeId": "64949:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "light"
+      ],
+      "description": "Kitchen counter scene with a woman standing at a window, glass bottle on the counter, coffee equipment and open shelf — editorial Palma lifestyle shot",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-600-s-steel-front": {
+      "nodeId": "64735:2",
+      "tags": [
+        "steel-bottle",
+        "600ml",
+        "single-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, larger 600ml single-wall variant, front view with exposed threaded neck and no cap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-400-steel-white-co-lab-front": {
+      "nodeId": "64707:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "co-lab",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Matte white/light grey stainless steel water bottle, 400ml co-lab variant, front view with cap, strap, and circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-24": {
+      "nodeId": "65206:80",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man drinking from a glass beside a window with garden and lake view outside",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-bottle-pouring-home-2": {
+      "nodeId": "64929:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "faucet",
+        "pouring",
+        "render",
+        "light"
+      ],
+      "description": "Closeup render of water pouring into a glass bottle in the sink with faucet and blue puck softly blurred behind it",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-dock-lake-silhouette": {
+      "nodeId": "65032:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor",
+        "dock",
+        "silhouette"
+      ],
+      "description": "Wide atmospheric shot of a dock over a rocky lake shore, big cloudy sky, an Emergency Station case silhouetted at the far end of the dock",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-12": {
+      "nodeId": "65206:56",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man sitting on a wooden bench outside a red cottage with a mossy roof visible behind",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron-3": {
+      "nodeId": "65050:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "use-case",
+        "outdoor",
+        "skeppsbron",
+        "golden-hour"
+      ],
+      "description": "Person in a Bluewater-branded jacket crouching, working on the open Emergency Station setup at golden hour, Skeppsbron harbor view",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "house-station-1-lifestyle-16": {
+      "nodeId": "65206:64",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man sitting on a windowsill holding a glass of water, pensive expression",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-scene-persp-vola-2": {
+      "nodeId": "64993:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "vola",
+        "render",
+        "light"
+      ],
+      "description": "Angled perspective of a light wood kitchen cabinet, sink and Vola faucet, blue puck on counter, dark unit and blue bottle visible under the open sink — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-case-closeup-gravel": {
+      "nodeId": "65026:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "detail",
+        "outdoor"
+      ],
+      "description": "Emergency Station case corner close-up on gravel — Bluewater wordmark and purple '1' station tag, stone wall behind",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "left",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-studio-three-bottles-running": {
+      "nodeId": "64963:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "mixed"
+      ],
+      "description": "Three glass bottles of different sizes beside a faucet running water, blue puck glowing, warm concrete backdrop, lemon in foreground",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-palma-lifestyle-dining-dog": {
+      "nodeId": "64950:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "palma",
+        "editorial",
+        "dog",
+        "mixed"
+      ],
+      "description": "Dining room with wooden Wishbone chairs and table, abstract art on the wall, dog walking through an archway in the background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-07": {
+      "nodeId": "65206:46",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man seated by a bright window drinking from a glass",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-09": {
+      "nodeId": "65206:50",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Man in a dark jacket standing by a lake shore, profile view against the water",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-600-d-steel-front": {
+      "nodeId": "64702:2",
+      "tags": [
+        "steel-bottle",
+        "600ml",
+        "double-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, larger 600ml double-wall variant, front view with cap and carry strap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-bottle-pouring-home-1": {
+      "nodeId": "64927:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "faucet",
+        "pouring",
+        "render",
+        "light"
+      ],
+      "description": "Top-down closeup render of chrome faucet pouring water into a glass bottle in the sink, blue Bluewater puck beside it",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-case-front-stonewall": {
+      "nodeId": "65027:2",
+      "tags": [
+        "product",
+        "station",
+        "emergency-station",
+        "lifestyle",
+        "outdoor"
+      ],
+      "description": "Emergency Station case front, centered against a dark stone wall — Bluewater logo and wordmark visible with station number tag",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-home-zoom-2": {
+      "nodeId": "64931:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "faucet",
+        "render",
+        "light"
+      ],
+      "description": "Softly blurred zoom render of the faucet and blue puck on the counter, background out of focus",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-800-s-steel-front": {
+      "nodeId": "64736:2",
+      "tags": [
+        "steel-bottle",
+        "800ml",
+        "single-wall",
+        "silver",
+        "front-view",
+        "product-render"
+      ],
+      "description": "Silver stainless steel water bottle, largest 800ml single-wall variant, front view with exposed threaded neck and no cap on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-400-steel-lineup-x4": {
+      "nodeId": "64729:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "lineup",
+        "group-shot",
+        "navy",
+        "white",
+        "black",
+        "silver",
+        "product-render"
+      ],
+      "description": "Group product shot of four 400ml stainless steel water bottles in a staggered lineup — navy, white, black, and silver — on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "medium"
+      }
+    },
+    "kitchen-station-scene-front-cleone-vola": {
+      "nodeId": "64988:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "cleone",
+        "vola",
+        "render",
+        "light"
+      ],
+      "description": "Front view of a light wood kitchen cabinet with a Vola-style faucet, blue puck on counter, Cleone unit visible under the sink — white studio render",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-water-place-setting": {
+      "nodeId": "64971:2",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "bottles",
+        "mixed"
+      ],
+      "description": "Two bottles beside a running faucet, blue puck glowing, warm concrete backdrop, plates and cutlery place setting to the side",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-under-sink-pro": {
+      "nodeId": "64935:2",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "pro",
+        "under-sink",
+        "dark"
+      ],
+      "description": "Steel Pro unit with carry handle in a warmly lit cabinet, glass bottle with dark cap beside it, ribbed glass door",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "house-station-1-lifestyle-26": {
+      "nodeId": "65206:84",
+      "tags": [
+        "lifestyle",
+        "house-station",
+        "photography"
+      ],
+      "description": "Red Swedish cottage exterior with a bare tree and wooden bench, no person",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-1-bottle-closeup-2": {
+      "nodeId": "63300:2",
+      "tags": [
+        "product",
+        "station",
+        "flowstation",
+        "render",
+        "detail"
+      ],
+      "description": "Flow Station 1 bay close-up — two bottles in the violet-lit bay",
+      "source": {
+        "type": "onedrive-sync",
+        "path": "Product Categories/Bluewater Stations/Flow Stations/Flow Station 1/Content/Renders/Flowstation 1 EU_Closeup2_Bottle.png",
+        "importedAt": "2026-06-11"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-steel-white-back": {
+      "nodeId": "64722:2",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "back-view",
+        "product-render"
+      ],
+      "description": "Matte white/light grey stainless steel water bottle, 400ml variant, back view with cap, strap, and small circular logo on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-1-coffee-rock-prism-dish": {
+      "nodeId": "69800:5606",
+      "tags": [
+        "cafe-station-1",
+        "extracts",
+        "coffee-rock",
+        "mineral-crystals",
+        "macro",
+        "prism"
+      ],
+      "description": "Macro shot of clear crystalline mineral 'rocks' filling a round glass dish, with a rainbow prism reflection catching light at the bottom edge.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.8,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-1-system-fluted-glass": {
+      "nodeId": "69800:5604",
+      "tags": [
+        "cafe-station-1",
+        "under-sink",
+        "abstract",
+        "reeded-glass",
+        "moody"
+      ],
+      "description": "Abstract, dark moody shot of an under-sink filtration system viewed and distorted through vertical reeded/fluted glass, with warm and blue light accents.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.79,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture",
+          "card"
+        ],
+        "quality": "medium"
       }
     }
   }
