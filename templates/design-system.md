@@ -137,7 +137,9 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **Long-title cap:** Slide titles may wrap to **maximum 2 rows** at 64 Semi Bold 110%. If the content won't fit in 2 rows, shorten the title or split it into a shorter title plus a `subtitle`. 3+ row titles are not allowed.
 
-**No widows (multi-line titles & display text):** a wrapped title (or any large display string) must never leave a **single word alone on the last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to titles, hero headings, and any 2-line display copy.
+**Title row-length cap:** no title row may exceed **40 characters**. Using the calibrated constant from the body-copy measure below (`charAdvance = 0.472em × fontSize`), 40 chars at 64 Semi Bold = 40 × 0.472 × 64 ≈ **1208px** — cap the title box width at **1208px** (rather than running it out toward the full 1824px slide width) so no row grows past 40 characters. This is the starting max width `balanceTitle` binary-searches down from (see "Headline wrap & dynamic gap" below), not a value it can exceed. If capping the width would push a title past 2 rows, shorten the copy per the Long-title cap rule above — never add a 3rd row to preserve the full-width look.
+
+**No widows (titles, display text & body copy):** any wrapped text block must never leave a **single word alone on its last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to **every** wrapped text node: titles, hero headings, `body`/`subtitle`/`slide-paragraph`, and every `bullet-body-N`/`cell-body-N` — not just display copy. Since exact wrap points depend on rendered width (unknown at generation time), bind the last 2–3 words of every multi-line-capable text slot as a matter of course, not only after spotting a widow.
 
 **Prose max-width (body paragraphs):** body/paragraph copy must read as prose, not a narrow ribbon. Two canonical widths: a `body`/`subtitle` **under** the title uses content width (full or to the card edge); a paragraph **beside** the title (top-right header column) uses the fixed **587px** column flush to x=1872 (starts x=1285), 28 Medium 134%. Never leave a header paragraph at an arbitrary narrow width (e.g. 410px) — it wraps into an awkward column. If a one-off needs a custom width, cap it around a 50–75 character measure.
 
@@ -374,10 +376,12 @@ So long headlines never look cramped or leave widows:
 
 **1. Balanced wrap.** A title that wraps to 2+ lines must not leave a stub last line
 (e.g. "…will you offer?"). Set the title box to the **narrowest width that still yields the
-same line count** — this fills the last line and evens the rows. `balanceTitle(t)`: at full
-width (1824) read line count `lc`; binary-search width in `[ceil(1824/lc), 1824]` for the
-smallest width that still measures `lc` lines; set the box to it (title stays left-aligned at
-x=48). Skip 1-line titles. Line count = `round(height / (fontSize × 1.10))`.
+same line count** — this fills the last line and evens the rows. `balanceTitle(t)`: start
+from the **row-length cap** (1208px — see "Title row-length cap" above), not the full 1824px
+slide width; at that capped width read line count `lc`; binary-search width in
+`[ceil(1208/lc), 1208]` for the smallest width that still measures `lc` lines; set the box to
+it (title stays left-aligned at x=48). Skip 1-line titles. Line count =
+`round(height / (fontSize × 1.10))`.
 
 **2. Dynamic title→content gap.** Don't hard-pin content at y=287 when the title is tall. Use
 `contentTop = max(287, titleBottom + 52)` (`titleBottom = titleY + titleHeight`). 1-line title
@@ -388,8 +392,9 @@ bottom. Any headline length then sits correctly without crowding.
 **3. Eyebrow optional.** The eyebrow pushes the title to y=162 (vs 115); drop it to reclaim
 ~47px when the kicker isn't needed. Combine 1–3 for the airiest result.
 
-Worked example — Pitch 24 pricing (long 2-line prompt, eyebrow kept): balanced 1824→1093px
-(two even lines, no widow); cards dropped 287→320 (gap 52, height 712, features re-anchored).
+Worked example — Pitch 24 pricing (long 2-line prompt, eyebrow kept): balanced 1208→1093px
+(two even lines, no widow, under the 40cpl row cap); cards dropped 287→320 (gap 52, height
+712, features re-anchored).
 
 ### Body copy measure (line length)
 
@@ -838,6 +843,48 @@ function auditChrome(slide) {
 For these, omit `titleText` from `applyChrome()`. `auditChrome()` skips the title check when no `title` node exists at the slide root.
 
 **Covers carry NO top-meta (hard rule).** Cover / title / opening slides have **no `meta-left` and no `meta-right`** — the brand lockup IS the content, so the top-meta row stays empty. Never put "Bluewater × …", a section label, or a page counter on a cover. When building a cover, skip `applyChrome` (or call it with no meta args) and do not add meta nodes; if you clone a template onto a cover, delete its `meta-left` / `meta-right`. The sequential page counter still treats the cover as slide 1 of N — it's simply not rendered on the cover, so content slides begin at `02 / N`. (Codified 2026-06-08 after the Culligan deck shipped a cover with `Bluewater × Culligan` · `01 / 08` meta.)
+
+## applyDeckChrome — the only sanctioned way to refresh chrome on a CLONED slide
+
+`applyChrome` (above) is for from-scratch builds, where the text nodes don't exist yet. Every other build path — standard template clone, table clone, product-shell clone — starts from a template frame that already **carries whatever placeholder `meta-left`/`meta-right` text was baked into it** (e.g. "Bluewater", "Official hydration partner of Volvo", a stale "3/14" from whichever deck the frame was authored for). Left alone, that placeholder text ships unchanged into the generated deck, and since every template frame was authored independently, the placeholders don't agree with each other — the same generated deck ends up with a different-looking label and page count on every other slide.
+
+**Fixed 2026-07-06** after this was reported: the generator has ONE deck-wide label (`DECK_LABEL`, derived once — see `generate-presentation.md` → "Determine the deck label") and ONE running page counter (`N/DECK_TOTAL`). `applyDeckChrome` is the single function that stamps both onto a cloned slide, update-or-create so it works whether or not the source frame already had the nodes:
+
+```js
+// Update-or-create per-deck chrome on a cloned slide. Call this on EVERY cloned
+// content slide (standard template, table, product shell) — REQUIRED, not optional.
+// Do NOT call it on covers (see exemption below) — call it on everything else, including logo-garden clones.
+async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, isDark = false }) {
+  const gray = isDark ? {r:0xA1/255,g:0xA1/255,b:0xAA/255} : {r:0x71/255,g:0x71/255,b:0x7A/255};
+  const find = (name) => slide.findOne(n => n.type === "TEXT" && n.name === name);
+  // Cover convention: a single meta-top-right label, no page number — just refresh its text.
+  const coverMeta = find("meta-top-right") || find("meta-top-left");
+  if (coverMeta && !find("meta-left")) { await setText(coverMeta, coverMeta.name, metaLeftText); return { cover: coverMeta.id }; }
+  // Content slide: deck label (left) + page number (right), created if the source had none.
+  let ml = find("meta-left");
+  if (ml) await setText(ml, "meta-left", metaLeftText);
+  else ml = mkText(slide, metaLeftText, { size:14, style:"Regular", color:gray, x:48, y:48, name:"meta-left" });
+  let mr = find("meta-right");
+  const page = `${slideNumber}/${totalSlides}`;
+  if (mr) await setText(mr, "meta-right", page);
+  else { mr = mkText(slide, page, { size:14, style:"Regular", color:gray, name:"meta-right" }); mr.y = 48; }
+  mr.textAlignHorizontal = "RIGHT"; mr.x = 1872 - mr.width;   // always re-pin right edge to x=1872
+  return { metaLeft: ml.id, metaRight: mr.id };
+}
+```
+
+**The format contract (non-negotiable, applies to every generated deck):**
+- `meta-left` = `DECK_LABEL` verbatim, unchanged across every content slide — the presentation's name or theme (e.g. "Bluewater Purifiers", "Kitchen Station", "Marketing Strategy 2026"). Never a per-slide value, never a section label.
+- `meta-right` = **exactly** `` `${slideNumber}/${totalSlides}` `` — e.g. `7/35`, `1/8`. Always one row (the function re-pins `textAutoResize` + right edge every time). Never `Page 7 of 35`, never zero-padded (`07/35`), never a different separator (`7 / 35` with spaces, `7 of 35`) — one format, everywhere.
+
+**Only exemption — covers.** No meta at all (see hard rule above), OR the product-shell "single top label, no page number" convention already built into the function (the `meta-top-right`/`meta-top-left` branch). Every other clone — standard template, table, product shell, **and logo-garden (industry or generic)** — calls `applyDeckChrome` and gets a page number like every other slide. (Codified 2026-07-06: all 7 industry logo-garden frames + the generic `template-logo-garden-3x3` now carry a `meta-right` node, so there's nothing to special-case.)
+
+**Required on every clone path except covers.** This closes the gap that caused the inconsistency: previously only the product-shell path called this; the standard template-clone path, the table-clone path, and the logo-garden path did not, so most slides in a generated deck kept whatever placeholder chrome shipped with the source frame. See `generate-presentation.md` §5b / §5c / §Step 4 item 18 for the call site on each path.
+
+**Template-library coverage (2026-07-06):** every content-slide frame on Template references that carries a `meta-left` now also carries a `meta-right`, placeholder text `5/75` — 205 of 230 frames (the reskinned `financial-report-*`/`pitch-*`/`marketing-*`/`strategy-*` families were missing `meta-right` entirely before this pass, some also re-pinned from a drifted left-aligned position). The remaining 25 are genuine no-meta frames:
+- **True covers/closing** (no meta at all, hard rule): `financial-report-01-cover`, `pitch-01-cover`, `marketing-01-cover`, `pitch-45-closing`.
+- **Opening title / cover-shell templates** (`meta-left` only, no page number — same hard rule): `template-title-center`, `template-title-left`, `template-title-subtitle-center`, `template-title-subtitle-left`, `closing-pure-title`, `cover-with-product`, `cover-hero-large`. These 7 had a stray `meta-right` node baked into the source frame *before* this project started (an old drift the hard rule was written to prevent) — the first coverage pass only refreshed its placeholder text without checking slide type, then it was caught and the node was removed.
+- **A cluster of early Marketing-deck slides** that ship with no chrome at all: `marketing-02` through `marketing-09`, `marketing-10`, and the `section-divider` frames at `marketing-04/08/18/28/40/53/64`. This is inconsistent with how Pitch/Strategy treat the same slide types (their table-of-contents and section dividers DO carry `meta-left` + `meta-right`) — worth a follow-up pass to decide whether they should get full chrome or whether the omission is intentional for that deck's opening arc.
 
 ## The geometry contract — `auditFrame` (source guard) + `auditSlide` (output gate)
 

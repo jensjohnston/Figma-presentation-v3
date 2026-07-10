@@ -29,12 +29,38 @@
       }
     },
     "kitchen-station-palma-lifestyle": {
-      "nodeId": "61219:17726",
+      "nodeId": "61219:17727",
       "tags": [
         "product",
         "kitchen-station",
         "hero",
         "lifestyle",
+        "dark"
+      ],
+      "description": "Kitchen Station 1 installed in a reeded-glass kitchen cabinet, dispenser and bottle in shot — in-context lifestyle install hero",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-glow-puck-hero": {
+      "nodeId": "61219:17726",
+      "tags": [
+        "product",
+        "kitchen-station",
+        "hero",
+        "detail",
         "dark"
       ],
       "description": "Kitchen Station 1 (Palma) dispenser glowing blue on a dark countertop — moody low-light product hero",

@@ -13,7 +13,7 @@ MCP-first tool that converts PDF presentations into on-brand Figma decks using p
 - **No build step, no runtime, no dependencies.** Claude is the engine.
 - `templates/registry.json` — Maps the Bluewater slide templates to Figma node IDs and content slots
 - `products/registry.json` — **Product packs**: finished, on-brand product slides (Kitchen Station, purifiers) the generator can clone-and-rewrite (see Product Content Library below)
-- `industries/registry.json` — **Industry logo gardens**: finished, cloneable logo garden slides keyed by industry (general, hospitality, gym-fitness, golf-sport, tech, media) — matched before `template-logo-garden-3x3` when an industry is detected
+- `industries/registry.json` — **Industry logo gardens**: finished, cloneable logo garden slides keyed by industry (general, hospitality, gym-fitness, golf-sport, tech, media, coffee) — matched before `template-logo-garden-3x3` when an industry is detected
 - `assets/library.json` — Brand + product image index, v2: every asset carries vision metadata (`visual`: aspect/orientation/tone/subject/suitability/quality) + `source` provenance
 - `assets/preferences.json` — Curation memory: every layout/image pick from Curated mode, read back as a ranking tie-breaker by the matchers
 - `.claude/commands/import-assets.md` — Slash command: synced-SharePoint search → Figma "Import inbox" visual curation → vision-indexed library entries

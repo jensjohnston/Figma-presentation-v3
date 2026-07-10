@@ -83,6 +83,16 @@ If **no** product matches, skip the product-first path entirely and proceed exac
 
 Also scan the deck's full text against every `industries.<slug>.aliases` list in `industries/registry.json`. Record the **matched industry slug** (at most one — pick the strongest match by alias overlap; ties go to `general`). You will use it in Step 4 to route logo garden slides to the right industry frame instead of the generic `template-logo-garden-3x3`.
 
+### Determine the deck label (`DECK_LABEL`)
+
+Every content slide's `meta-left` carries the same presentation name/theme — decide it ONCE here and reuse it verbatim for every slide in Step 5. Never re-derive it per slide; that's what causes the label to drift across a deck.
+
+- **Product(s) detected** → use `products.<slug>.displayName` from `products/registry.json` (e.g. "Kitchen Station", "All purifiers"). Multiple products matched → join their `displayName`s with " + " (e.g. "Kitchen Station + All purifiers").
+- **No product detected** → derive a short theme label from the PDF itself: prefer the cover/title slide's heading (e.g. "Marketing Strategy 2026"). If the cover is only a company name, pair it with the deck's evident theme (e.g. "Acme — Series B Pitch"). Fall back to a title-cased version of the source filename only if nothing better is available.
+- Show `DECK_LABEL` alongside the Slide Plan (see "Present the Slide Plan" below) so the user can correct it before anything is generated — it isn't worth a separate blocking question.
+
+Also track `DECK_TOTAL` — the final slide count used in every `meta-right` ("N/total"). In Direct mode this is fixed right after Step 4. In Curated mode it is only final after Step 4.5 assembly (variant picks can add/remove slides) — the existing "refresh page numbers via `applyDeckChrome`" step there is what locks it in.
+
 ## Step 3: Presentation Preferences
 
 Before matching templates, ask the user two questions using AskUserQuestion. These choices shape how you handle content in all subsequent steps.
@@ -188,8 +198,12 @@ The list below maps frequent content shapes to a sensible default template. It i
 16. **Numbered process/steps** → `numbered-list` (Template references)
 17. **Tabular data** → `template-table-2columns`, `-3columns`, `-4columns` (KEEP, by column count)
 18. **Logos / social proof** → check `industries/registry.json` first:
-    - If a slide's intent matches `matchHints` in any industry entry AND a matching industry was detected in Step 2, **clone that industry's logo garden frame** (same clone-move pattern as product slides; rewrite only the `title` slot using the `defaultTitle` or the PDF's slide title adapted to Bluewater voice; `meta-left` = deck label; no `meta-right` needed — the cloned frame omits it). Audit with `kind: "skip"`.
-    - No industry match → fall back to `template-logo-garden-3x3` (KEEP).
+    - If a slide's intent matches `matchHints` in any industry entry AND a matching industry was detected in Step 2, **clone that industry's logo garden frame** (same clone-move pattern as product slides; rewrite only the `title` slot using the `defaultTitle` or the PDF's slide title adapted to Bluewater voice). Apply deck chrome exactly like every other clone (all 7 industry frames carry a `meta-right` node as of 2026-07-06):
+      ```js
+      await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });
+      ```
+      Audit with `kind: "skip"`.
+    - No industry match → fall back to `template-logo-garden-3x3` (KEEP). Same `applyDeckChrome` call as above.
 19. **Side-by-side comparison** → `template-comparison-50-50` (OVERLAP)
 20. **Timeline / roadmap** → `template-timeline-bento`, `-timeline-cards`, or `-timeline-horizontal` (OVERLAP)
 21. **Generic 2–6 bento (no clear hero, no imagery available)** → `template-bento2`/`-bento3`/`-bento4`/`-bento5`/`-bento6`, or asymmetric `template-bento-25-75` / `-33-66` / `-66-33` / `-75-25` (OVERLAP)
@@ -223,7 +237,7 @@ Before finalizing template selection, apply these judgment calls:
 - Content has a unique constraint (e.g., a custom diagram, a one-off pricing comparison).
 
 When using the escape hatch, follow the **Creative escape hatch** section in `templates/design-system.md`:
-- Always call `applyChrome(slide, { metaLeftText, metaRightText, titleText, isDark })` first.
+- Always call `applyChrome(slide, { metaLeftText, metaRightText, titleText, isDark })` first — same chrome contract as every clone path: `metaLeftText: DECK_LABEL`, `metaRightText: \`${SLIDE_INDEX + 1}/${DECK_TOTAL}\`` (omit `metaRightText` only on a cover, per the "no top-meta" rule). A from-scratch build is not exempt from the format contract just because it isn't a clone.
 - Always run `auditChrome(slide)` before returning. Issues array must be empty.
 - Use only typescale Layer 1 sizes; only Gray/Blue/Rose/Green tokens; only 32px gap and corner radius; only 48px outer margins.
 - Draw layout inspiration from frames on the Template references page (id `56881:463`) — pick the closest pattern and adapt.
@@ -232,6 +246,7 @@ When using the escape hatch, follow the **Creative escape hatch** section in `te
 ### Content Adaptation Rules
 Apply the user's choices from Step 3 when filling content:
 - **Titles end with a period** (brand rule): every slide `title`/headline ends in a full stop — unless it already ends in terminal punctuation (`?`/`!`). Add the dot when filling or cloning. Does not apply to eyebrows, subtitles, body, labels, or meta. See `design-system.md` → "Titles end with a period."
+- **Title row-length cap (40 characters)**: no title row may exceed 40 characters — cap the title box at 1208px (not the full 1824px slide width) and run `balanceTitle` from that capped width, per `design-system.md` → "Title row-length cap" and "Headline wrap & dynamic gap." If a title still won't fit in 2 rows under the cap, shorten it rather than widening past 1208px.
 - **Content length**: If "Keep original", use verbatim text. If "Condense", rewrite shorter. If "Expand", add detail.
 - **Voice**: If "Keep original", preserve the source tone. If "Bluewater brand voice", rewrite in brand voice (or use `brand/voice-guide.md` if available).
 - If text is too long for a slot regardless of length choice, rewrite it more concisely while preserving meaning
@@ -401,8 +416,16 @@ await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 // Check the registry entry's "note" field for which occurrence to target
 // Example: await setTextByIndex(clone, "section-point-1", 1, "Second section's first point");
 
+// Step 6: Apply deck chrome (REQUIRED — see design-system.md "applyDeckChrome").
+// The source template frame carries its own baked-in placeholder meta text; without this
+// call it ships unchanged, which is what made meta-left/meta-right look inconsistent
+// across a generated deck. Skip only for covers (no meta at all).
+await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });
+
 return { slideIndex: SLIDE_INDEX, nodeId: clone.id, template: "TEMPLATE_NAME" };
 ```
+
+`applyDeckChrome` is defined once in `design-system.md` — reuse that exact function (it's also used by the product-clone and table paths below), don't redefine a divergent copy per slide.
 
 ### 5b-colors. Color swatch rows (additive, post-fill)
 
@@ -465,26 +488,9 @@ return { slideIndex: SLIDE_INDEX, nodeId: clone.id, product: "PRODUCT_SLUG", fra
          overflow: flags.filter(f => f && f.overflow).map(f => f.slot) };
 ```
 
-```javascript
-// Update-or-create per-deck chrome on a cloned slide. (mkText: see design-system.md applyChrome.)
-async function applyDeckChrome(slide, { metaLeftText, slideNumber, totalSlides, isDark = false }) {
-  const gray = isDark ? {r:0xA1/255,g:0xA1/255,b:0xAA/255} : {r:0x71/255,g:0x71/255,b:0x7A/255};
-  const find = (name) => slide.findOne(n => n.type === "TEXT" && n.name === name);
-  // Cover convention: a single meta-top-right label, no page number — just refresh its text.
-  const coverMeta = find("meta-top-right") || find("meta-top-left");
-  if (coverMeta && !find("meta-left")) { await setText(coverMeta, coverMeta.name, metaLeftText); return { cover: coverMeta.id }; }
-  // Content slide: deck label (left) + page number (right), created if the source had none.
-  let ml = find("meta-left");
-  if (ml) await setText(ml, "meta-left", metaLeftText);
-  else ml = mkText(slide, metaLeftText, { size:14, style:"Regular", color:gray, x:48, y:48, name:"meta-left" });
-  let mr = find("meta-right");
-  const page = `${slideNumber}/${totalSlides}`;
-  if (mr) await setText(mr, "meta-right", page);
-  else { mr = mkText(slide, page, { size:14, style:"Regular", color:gray, name:"meta-right" }); mr.y = 48; }
-  mr.textAlignHorizontal = "RIGHT"; mr.x = 1872 - mr.width;   // always re-pin right edge to x=1872
-  return { metaLeft: ml.id, metaRight: mr.id };
-}
+`applyDeckChrome` is defined once, canonically, in `design-system.md` → "applyDeckChrome — the only sanctioned way to refresh chrome on a CLONED slide" — include that exact function body in the script rather than redefining a divergent copy per slide (it's the same function used by the standard clone path in §5b and the table path in §5c).
 
+```javascript
 // Fill a shell slot without overflowing it: condense (your job, in the value) → shrink → flag.
 async function fitShellText(slide, slotName, value, { maxGrowth = 1.15 } = {}) {
   const t = slide.findOne(n => n.type === "TEXT" && n.name === slotName);
@@ -554,6 +560,9 @@ for (let rowIdx = 0; rowIdx < rows.length; rowIdx++) {
     }
   }
 }
+
+// Apply deck chrome (REQUIRED — same as every other clone path, see design-system.md).
+await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });
 ```
 
 ### 5d. Image Placement (vision-indexed)
@@ -667,7 +676,7 @@ async function repinMetaRight(clone) {
 
 `meta-left` is LEFT-anchored at x=48 and grows rightward, so it never drifts. See design-system.md → applyChrome note.
 
-**Titles & display copy:** never leave a single-word widow on a wrapped title — bind the final 2–3 words with non-breaking spaces (` `) so the last line carries ≥2 words; do not hard-break with `\n`. Header paragraphs beside the title use the 587px prose column (x=1285, right edge 1872), not an arbitrary narrow width. See design-system.md → "No widows" and "Prose max-width".
+**No widows — titles AND body copy:** never leave a single-word widow on any wrapped text — bind the final 2–3 words with non-breaking spaces (` `) so the last line carries ≥2 words; do not hard-break with `\n`. This applies to `title`/hero headings **and** every `body`/`subtitle`/`slide-paragraph`/`bullet-body-N`/`cell-body-N` slot — bind the last 2–3 words whenever you fill any of these in Step 5b/5c, not just the title. Header paragraphs beside the title use the 587px prose column (x=1285, right edge 1872), not an arbitrary narrow width. See design-system.md → "No widows" and "Prose max-width".
 
 ### 5f. Batch Size
 
@@ -717,13 +726,24 @@ Then run `python3 tools/validate_assets.py` — must end `OK`. These records fee
 
 After all slides are generated:
 
-1. **Imagery QA gate (REQUIRED):** `get_screenshot` EVERY slide that carries an image (placed asset or overlay). Check each against:
+1. **Chrome consistency gate (REQUIRED):** in one read-only `use_figma` call, walk every slide on the output page and check: every non-cover slide's `meta-left` equals `DECK_LABEL` exactly, and every non-cover slide's `meta-right` equals `` `${slideNumber}/${DECK_TOTAL}` `` exactly (single row, right edge at x=1872) — this now includes logo-garden slides, which carry a page number like everything else. This is what catches a clone path that skipped `applyDeckChrome` — fix any mismatch now, don't ship it.
+   ```js
+   const issues = [];
+   for (const slide of outputPage.children) {
+     const ml = slide.findOne(n => n.type === "TEXT" && n.name === "meta-left");
+     const mr = slide.findOne(n => n.type === "TEXT" && n.name === "meta-right");
+     if (ml && ml.characters !== DECK_LABEL) issues.push({ slide: slide.name, node: "meta-left", got: ml.characters });
+     if (mr && !/^\d+\/\d+$/.test(mr.characters)) issues.push({ slide: slide.name, node: "meta-right", got: mr.characters });
+   }
+   return issues;
+   ```
+2. **Imagery QA gate (REQUIRED):** `get_screenshot` EVERY slide that carries an image (placed asset or overlay). Check each against:
    - Real image present — no FIG placeholder survived (if one did, the 5d.3 gate was skipped: re-route the slide now).
    - Text legible over the image (overlay templates): title/meta readable against the actual pixels behind them. If not, flip the text variant per `visual.tone`, or swap to the next-ranked candidate and re-check.
    - No awkward crop: the subject isn't cut off by FILL cropping. If it is, swap to the next-ranked candidate (prefer `subject: center`) and re-check.
    Fix what is fixable; anything still failing goes in the summary as "needs manual attention" with the reason.
-2. `get_screenshot` a few text-only slides as a spot check.
-3. Present a summary to the user:
+3. `get_screenshot` a few text-only slides as a spot check.
+4. Present a summary to the user:
 
 ```
 Presentation generated successfully!
@@ -745,7 +765,7 @@ Re-routed slides:
 - Slide 9: pillar-grid-4up-image → template-bento4 (no passing image candidates)
 ```
 
-4. Ask if they want to iterate on any specific slides
+5. Ask if they want to iterate on any specific slides
 
 ## Error Handling
 

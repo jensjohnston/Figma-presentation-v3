@@ -54,6 +54,15 @@
       "aliases": ["press", "media", "as seen in", "featured in", "mentioned in"],
       "matchHints": ["press", "media", "as seen in", "featured in", "mentioned in", "news", "editorial", "coverage", "publication"],
       "defaultTitle": "As seen in."
+    },
+    "coffee": {
+      "nodeId": "64089:1110",
+      "frameName": "logo-garden-coffee",
+      "logoCount": 6,
+      "logos": ["Day Trip", "Bluebird Coffee Roastery", "Marks Marks", "Batch Baby", "Sweven Coffee", "WatchHouse"],
+      "aliases": ["coffee", "cafe", "roastery", "coffee shop", "specialty coffee"],
+      "matchHints": ["coffee", "cafe", "roastery", "coffee shop", "specialty coffee", "barista", "espresso"],
+      "defaultTitle": "Coffee brands choosing Bluewater."
     }
   }
 }
