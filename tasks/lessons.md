@@ -73,3 +73,9 @@ references page + registered families in registry.json (→ 221 templates).
 **Fix:** extended design-system.md → "No widows & balanced rag (ALL wrapped text)": balance every wrapped node to its narrowest same-line-count width, floor the width at longest-word width + 4px (measured with a probe text node, never estimated), NBSP-bind the last two words, then screenshot-grade every slide (single-word last line, mid-word break, or <40%-width stub = FAIL).
 
 **Rule for myself:** a typography rule applies to the whole slide, not to the subset of nodes that have tooling. When the user asks "is this not built into the system?" the honest answer may be "the rule was scoped too narrowly" — fix the deck AND widen the rule at the source in the same session.
+
+## 2026-07-24 — Clone-and-fill inherits off-token text colors from the source template
+
+**What happened:** In the BluePackage deck, body copy read Gray/500 on some slides but Gray/800 on others. Root cause: some templates ship off-token fills (`template-bento-66-33` section-points and the bento/cover titles use Gray/800 #27272A instead of the spec's Gray/500 body / Gray/900 headings), and clone-and-fill copies fills verbatim — nothing audits color after a fill.
+
+**Rule:** After assembling a deck, run a color audit over every visible TEXT node: headings must be Gray/900 #18181B, body/supporting copy Gray/500 #71717A, eyebrows Gray/700, meta Gray/500 (per the "Presentation color roles" table in design-system.md). Normalize any deviation in the clones. Longer-term fix: correct the fills in the source templates on "Template references" so every clone starts on-token (needs a deliberate pass — touches the shared library).
