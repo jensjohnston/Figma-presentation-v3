@@ -1,64 +1,172 @@
 {
- "imagePicks": [
-  {
-   "context": {
-    "role": "background-image",
-    "topic": "purifier support training cover",
-    "slot": "cover-with-product/background-image"
-   },
-   "chosen": "bluewater-purifiers-cover-hero",
-   "rejected": [
-    "kitchen-station-palma-lifestyle",
-    "cleone-under-counter-scene",
-    "cafe-coffee-lifestyle-purifier"
-   ],
-   "date": "2026-06-11"
-  }
- ],
- "templatePicks": [
-  {
-   "context": {
-    "contentShape": "4 concept cards with body intro",
-    "deck": "beam-support-training"
-   },
-   "chosen": "template-bento4",
-   "rejected": [
-    "template-info-4bullets"
-   ],
-   "date": "2026-06-11"
-  },
-  {
-   "context": {
-    "contentShape": "5 sequential questions / checklist",
-    "deck": "beam-support-training"
-   },
-   "chosen": "numbered-list",
-   "rejected": [
-    "template-info-left-middle"
-   ],
-   "date": "2026-06-11"
-  },
-  {
-   "context": {
-    "contentShape": "definition list + narrow callout, asymmetric",
-    "deck": "beam-support-training"
-   },
-   "chosen": "template-bento-66-33",
-   "rejected": [
-    "template-comparison-50-50"
-   ],
-   "date": "2026-06-11"
-  },
-  {
-   "context": {
-    "contentShape": "3 metrics with formula intro",
-    "deck": "beam-support-training"
-   },
-   "chosen": "template-metrics-4",
-   "rejected": [
-    "template-bento3"
-   ],
-   "date": "2026-06-11"
-  }
- ]
+  "imagePicks": [
+    {
+      "context": {
+        "role": "background-image",
+        "topic": "purifier support training cover",
+        "slot": "cover-with-product/background-image"
+      },
+      "chosen": "bluewater-purifiers-cover-hero",
+      "rejected": [
+        "kitchen-station-palma-lifestyle",
+        "cleone-under-counter-scene",
+        "cafe-coffee-lifestyle-purifier"
+      ],
+      "date": "2026-06-11"
+    }
+  ],
+  "templatePicks": [
+    {
+      "context": {
+        "contentShape": "4 concept cards with body intro",
+        "deck": "beam-support-training"
+      },
+      "chosen": "template-bento4",
+      "rejected": [
+        "template-info-4bullets"
+      ],
+      "date": "2026-06-11"
+    },
+    {
+      "context": {
+        "contentShape": "5 sequential questions / checklist",
+        "deck": "beam-support-training"
+      },
+      "chosen": "numbered-list",
+      "rejected": [
+        "template-info-left-middle"
+      ],
+      "date": "2026-06-11"
+    },
+    {
+      "context": {
+        "contentShape": "definition list + narrow callout, asymmetric",
+        "deck": "beam-support-training"
+      },
+      "chosen": "template-bento-66-33",
+      "rejected": [
+        "template-comparison-50-50"
+      ],
+      "date": "2026-06-11"
+    },
+    {
+      "context": {
+        "contentShape": "3 metrics with formula intro",
+        "deck": "beam-support-training"
+      },
+      "chosen": "template-metrics-4",
+      "rejected": [
+        "template-bento3"
+      ],
+      "date": "2026-06-11"
+    },
+    {
+      "context": {
+        "contentShape": "intro statement + 4 equal concept cards, text-only",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "template-bento4",
+      "rejected": [
+        "marketing-42-bento-1plus4",
+        "template-info-4bullets"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "3 topics each needing a paragraph of copy",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "marketing-45-stacked-wide-cards",
+      "rejected": [
+        "template-bento3",
+        "template-info-3bullets"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "4 policy points, one numeric, text-only",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "template-bento4",
+      "rejected": [
+        "marketing-09-text-grid-2x2",
+        "template-info-4bullets"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "hero fact intro + 4 policy cards",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "marketing-42-bento-1plus4",
+      "rejected": [
+        "template-bento5",
+        "template-bento4"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "3 sequential components with explanatory paragraphs",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "numbered-list",
+      "rejected": [
+        "template-bento3",
+        "pitch-21-nested-circles"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "asymmetric two-section split, 4+2 points",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "template-bento-66-33",
+      "rejected": [
+        "template-comparison-50-50",
+        "template-bento2"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "3 insurance topics each needing a paragraph",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "marketing-45-stacked-wide-cards",
+      "rejected": [
+        "template-bento3",
+        "template-info-3bullets"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "3 stat statements, text-only",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "pitch-07-stat-3up",
+      "rejected": [
+        "template-metrics-4",
+        "template-bento3"
+      ],
+      "date": "2026-07-24"
+    },
+    {
+      "context": {
+        "contentShape": "2 short benefit statements",
+        "deck": "bluepackage-2025"
+      },
+      "chosen": "pitch-06-stat-2up",
+      "rejected": [
+        "template-bento2",
+        "template-info-2bullets"
+      ],
+      "date": "2026-07-24"
+    }
+  ]
 }

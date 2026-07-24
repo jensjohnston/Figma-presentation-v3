@@ -139,6 +139,15 @@ Use a single `itemSpacing` per card so auto-layout remains consistent. If label�
 
 **No widows (multi-line titles & display text):** a wrapped title (or any large display string) must never leave a **single word alone on the last line** — e.g. "Reverse osmosis in plain / English" is wrong. Bind the final 2–3 words with **non-breaking spaces** (` `) so the last line carries at least two words ("Reverse osmosis / in plain English"). Do not force the wrap with manual line breaks (`\n`) — that breaks at fixed widths and re-breaks badly if the text or container changes. Bind words, let it reflow. Applies to titles, hero headings, and any 2-line display copy.
 
+**No widows & balanced rag (ALL wrapped text — extended 2026-07-24):** the no-widow rule is not just for titles. It applies to **every wrapped text node the generator touches** — card headings, card bodies, bullet rows, stat captions, section points. After filling any slot whose text wraps to 2+ lines:
+
+1. **Balance the rag.** Resize the text box to the narrowest width that keeps the same line count (binary search, same as `balanceTitle`). This evens the rag and eliminates stub last lines. Left-aligned card text keeps its x; the card boundary doesn't move.
+2. **Floor at the longest word.** Never narrow below the longest word's rendered width + 4px, or Figma silently breaks mid-word ("Occupatio / nal pension"). Measure the floor with a temporary probe text node in the same font/size — do NOT estimate from character counts.
+3. **Bind the last two words** with a non-breaking space (` `) so the last line always carries ≥2 words.
+4. **Gate by screenshot.** Before handoff, screenshot every slide and grade: any single-word last line (in a 3+ word text), any mid-word break, or a stub last line shorter than ~40% of its box width is a FAIL — fix and re-shoot.
+
+Exception: a 2-word heading in a narrow column (e.g. "Occupational pension") may legitimately break 1+1; don't force it onto one line if the column can't fit it.
+
 **Prose max-width (body paragraphs):** body/paragraph copy must read as prose, not a narrow ribbon. Two canonical widths: a `body`/`subtitle` **under** the title uses content width (full or to the card edge); a paragraph **beside** the title (top-right header column) uses the fixed **587px** column flush to x=1872 (starts x=1285), 28 Medium 134%. Never leave a header paragraph at an arbitrary narrow width (e.g. 410px) — it wraps into an awkward column. If a one-off needs a custom width, cap it around a 50–75 character measure.
 
 Chrome positioning and title spacing rules are defined in the Grid System section below (Vertical rhythm).
