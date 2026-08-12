@@ -110,8 +110,14 @@ def add_text(slide, x_px, y_px, w_px, h_px, paragraphs, align=PP_ALIGN.LEFT, anc
         p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
         p.alignment = align
         line_spacing = runs[0][4] if runs else None
-        if line_spacing:
-            p.line_spacing = line_spacing
+        size_px = runs[0][2] if runs else None
+        if line_spacing and size_px:
+            # Figma's line-height is an exact multiple of font size (e.g. 1.34 * 32px).
+            # A bare float here sets PowerPoint's *percentage* spacing mode, which is a
+            # multiple of its own "single line spacing" (font-metrics based, taller than
+            # 1.0x the font size) -- not the font size itself, so it renders too tall.
+            # Pt() switches to exact-spacing mode, matching Figma's definition precisely.
+            p.line_spacing = Pt((size_px * line_spacing) / 2)
         if space_after:
             p.space_after = pt(space_after)
         else:
