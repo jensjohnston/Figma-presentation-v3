@@ -82,6 +82,7 @@ def add_rounded_rect(slide, x_px, y_px, w_px, h_px, fill_hex, radius_px):
     shape.fill.solid()
     shape.fill.fore_color.rgb = rgb(fill_hex)
     shape.line.fill.background()
+    shape.shadow.inherit = False
     set_corner_radius(shape, radius_px, w_px, h_px)
     return shape
 
