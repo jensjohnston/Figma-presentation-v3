@@ -1,6 +1,6 @@
 """Slide 09 -- Filtration Spectrum. Figma node 64346:5608."""
 
-from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rect, FONT_MEDIUM, FONT_SEMIBOLD
+from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rect, add_label_with_mark, FONT_MEDIUM, FONT_SEMIBOLD
 
 _GRAY_800 = "#27272a"
 _GRAY_500 = "#71717a"
@@ -49,7 +49,7 @@ def build(prs, assets_dir):
         slide, 1463, 119, 414, 72,
         [[
             ("Bluewater SuperiorOsmosis", FONT_MEDIUM, 30, _GRAY_500, 1.2),
-            ("™", FONT_MEDIUM, 19, _GRAY_500, 1.2),
+            ("™", FONT_MEDIUM, 30, _GRAY_500, 1.2),
             (" technology removes them all.", FONT_MEDIUM, 30, _GRAY_500, 1.2),
         ]],
     )
@@ -66,12 +66,9 @@ def build(prs, assets_dir):
 
     # SuperiorOsmosis(TM) column -- heading in brand blue, spec in the darker gray800
     # (unlike the other five columns' gray500 spec).
-    add_text(
-        slide, 1642, 399, 280, 40,
-        [[
-            ("SuperiorOsmosis", FONT_SEMIBOLD, 24, _BLUE_600, 1.34),
-            ("™", FONT_MEDIUM, 15, _BLUE_600, 1.34),
-        ]],
+    add_label_with_mark(
+        slide, 1642, 399, "SuperiorOsmosis", FONT_SEMIBOLD, 24, _BLUE_600,
+        "™", FONT_MEDIUM, 15, w=280, h=40, line_spacing=1.34,
     )
     add_text(
         slide, 1642, 438, 280, 30,

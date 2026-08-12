@@ -9,7 +9,7 @@ meta-right is hardcoded "19/33" regardless of the Figma layer name / its interna
 """
 
 from tools.pptx_core import (
-    new_slide, add_meta, add_text, add_picture, add_rounded_rect,
+    new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark,
     FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD,
 )
 from pptx.enum.text import PP_ALIGN
@@ -71,14 +71,9 @@ def build(prs, assets_dir):
     # --- Right: SuperiorOsmosis card ---
     add_rounded_rect(slide, 1290, 350, 582, 682, "#f4f4f5", 32)
     add_picture(slide, f"{a}/osmosis_badge.png", 1290, 476, 582, 556)
-    add_text(
-        slide, 1338, 398, 486, 40,
-        [
-            [
-                ("SuperiorOsmosis", FONT_SEMIBOLD, 36, "#18181b", 1.1),
-                ("™", FONT_REGULAR, 23.22, "#18181b", 1.1),
-            ]
-        ],
+    add_label_with_mark(
+        slide, 1338, 398, "SuperiorOsmosis", FONT_SEMIBOLD, 36, "#18181b",
+        "™", FONT_REGULAR, 23.22, w=486, h=40, line_spacing=1.1,
     )
     add_text(
         slide, 1338, 454, 486, 128,

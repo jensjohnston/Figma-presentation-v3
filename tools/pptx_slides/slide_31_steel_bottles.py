@@ -1,7 +1,7 @@
 """Slide 31 -- Steel Bottles. Figma node 63222:198."""
 
 from tools.pptx_core import (
-    new_slide, add_meta, add_text, add_picture, add_rounded_rect, FONT_MEDIUM, FONT_SEMIBOLD,
+    new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark, FONT_MEDIUM, FONT_SEMIBOLD,
 )
 
 CARD_W = 888
@@ -11,10 +11,7 @@ CARD_H = 745
 
 def _cell_heading(slide, x, label, heading, body):
     y = CARD_TOP + 48
-    add_text(
-        slide, x, y, 792, 32,
-        [[(label, FONT_MEDIUM, 24, "#52525b", 1.34), ("™", FONT_MEDIUM, 15.48, "#52525b", 1.34)]],
-    )
+    add_label_with_mark(slide, x, y, label, FONT_MEDIUM, 24, "#52525b", "™", FONT_MEDIUM, 15.48, w=792, h=32, line_spacing=1.34)
     add_text(
         slide, x, y + 48, 792, 41,
         [[(heading, FONT_SEMIBOLD, 36, "#27272a", 1.15)]],

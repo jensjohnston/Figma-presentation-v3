@@ -1,6 +1,6 @@
 """Slide 21 -- Kitchen Station. Figma node 63150:169."""
 
-from tools.pptx_core import new_slide, add_meta, add_text, add_picture, FONT_MEDIUM, FONT_SEMIBOLD
+from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_label_with_mark, FONT_MEDIUM, FONT_SEMIBOLD
 
 
 def build(prs, assets_dir):
@@ -11,14 +11,9 @@ def build(prs, assets_dir):
 
     add_picture(slide, f"{a}/background.png", 0, 0, 1920, 1080)
 
-    add_text(
-        slide, 48, 115, 500, 40,
-        [
-            [
-                ("Kitchen Station 1", FONT_MEDIUM, 32, "#ffffff", 1.1),
-                ("™", FONT_MEDIUM, 16, "#ffffff", 1.1),
-            ]
-        ],
+    add_label_with_mark(
+        slide, 48, 115, "Kitchen Station 1", FONT_MEDIUM, 32, "#ffffff",
+        "™", FONT_MEDIUM, 16, w=500, h=40, line_spacing=1.1,
     )
 
     add_text(
@@ -31,7 +26,7 @@ def build(prs, assets_dir):
         [
             [
                 ("Kitchen Station 1", FONT_MEDIUM, 28, "#ffffff", 1.34),
-                ("™", FONT_MEDIUM, 18.06, "#ffffff", 1.34),
+                ("™", FONT_MEDIUM, 28, "#ffffff", 1.34),
                 (" is the complete home water system. Pure water, mineralized with Liquid Rock. Controlled by you.", FONT_MEDIUM, 28, "#ffffff", 1.34),
             ]
         ],

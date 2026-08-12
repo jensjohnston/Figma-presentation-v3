@@ -3,7 +3,7 @@
 from pptx.enum.text import PP_ALIGN
 
 from tools.pptx_core import (
-    new_slide, add_meta, add_text, add_picture, add_rect, add_rounded_rect,
+    new_slide, add_meta, add_text, add_picture, add_rect, add_rounded_rect, add_label_with_mark,
     FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD,
 )
 
@@ -61,12 +61,9 @@ def build(prs, assets_dir):
         slide, 96, 160, 490, 30,
         [[("Purification technology", FONT_SEMIBOLD, 24, "#ffffff", 0.9167)]],
     )
-    add_text(
-        slide, 96, 280, 490, 65,
-        [[
-            ("SuperiorOsmosis", FONT_SEMIBOLD, 48, "#2563eb", 1.1),
-            ("™", FONT_REGULAR, 16, "#2563eb", 1.1),
-        ]],
+    add_label_with_mark(
+        slide, 96, 280, "SuperiorOsmosis", FONT_SEMIBOLD, 48, "#2563eb",
+        "™", FONT_REGULAR, 16, w=490, h=65, line_spacing=1.1,
     )
     add_text(
         slide, 96, 349, 490, 165,

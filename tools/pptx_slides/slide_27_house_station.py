@@ -1,7 +1,7 @@
 """Slide 27 -- House Station. Figma node 63132:456."""
 
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD
+from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark, FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD
 
 
 def _mini_stat_card(slide, x, y, heading, caption, caption_w):
@@ -24,9 +24,9 @@ def build(prs, assets_dir):
 
     # Column 1 top -- title card
     add_rounded_rect(slide, 48, 112, 586, 444, "#f4f4f5", 32)
-    add_text(
-        slide, 96, 160, 400, 30,
-        [[("House Station 1", FONT_MEDIUM, 24, "#2563eb", 1.1), ("™", FONT_REGULAR, 12, "#2563eb", 1.1)]],
+    add_label_with_mark(
+        slide, 96, 160, "House Station 1", FONT_MEDIUM, 24, "#2563eb",
+        "™", FONT_REGULAR, 12, w=400, h=30, line_spacing=1.1,
     )
     add_text(
         slide, 96, 281, 490, 230,
@@ -54,8 +54,8 @@ def build(prs, assets_dir):
         slide, 1334, 224, 490, 135,
         [
             [
-                ("Powered by Pro purifier and Bluewater SuperiorOmsosis", FONT_MEDIUM, 24, "#52525b", 1.34),
-                ("™", FONT_REGULAR, 16, "#52525b", 1.34),
+                ("Powered by Pro purifier and Bluewater SuperiorOsmosis", FONT_MEDIUM, 24, "#52525b", 1.34),
+                ("™", FONT_MEDIUM, 24, "#52525b", 1.34),
                 (", House Station 1 removes up to 99.7% of contaminants for water that's pure, safe, and trusted.", FONT_MEDIUM, 24, "#52525b", 1.34),
             ]
         ],

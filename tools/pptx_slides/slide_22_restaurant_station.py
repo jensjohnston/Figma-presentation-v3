@@ -1,19 +1,14 @@
 """Slide 22 -- Restaurant Station. Figma node 63150:175."""
 
-from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, FONT_MEDIUM, FONT_SEMIBOLD
+from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark, FONT_MEDIUM, FONT_SEMIBOLD
 
 
 def _bento_cell(slide, x, y, eyebrow, heading, body, photo_path):
     add_rounded_rect(slide, x, y, 896, 745, "#f4f4f5", 32)
     add_picture(slide, photo_path, x, 440, 896, 592, radius_px=32)
-    add_text(
-        slide, x + 48, y + 48, 800, 24,
-        [
-            [
-                (eyebrow, FONT_MEDIUM, 24, "#2563eb", 1.34),
-                ("™", FONT_MEDIUM, 12, "#2563eb", 1.34),
-            ]
-        ],
+    add_label_with_mark(
+        slide, x + 48, y + 48, eyebrow, FONT_MEDIUM, 24, "#2563eb",
+        "™", FONT_MEDIUM, 12, w=800, h=24, line_spacing=1.34,
     )
     add_text(slide, x + 48, y + 96, 800, 41, [[(heading, FONT_SEMIBOLD, 36, "#27272a", 1.15)]])
     add_text(slide, x + 48, y + 153, 800, 42, [[(body, FONT_MEDIUM, 24, "#52525b", 1.34)]])

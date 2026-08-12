@@ -133,12 +133,40 @@ def add_text(slide, x_px, y_px, w_px, h_px, paragraphs, align=PP_ALIGN.LEFT, anc
             r.font.name = font_name
             r.font.size = pt(size_px)
             r.font.color.rgb = rgb(color_hex)
+        _prevent_orphan_word(p)
     return box
+
+
+def _prevent_orphan_word(paragraph):
+    """Join the last two words of a paragraph with a non-breaking space so word-wrap
+    never leaves a single short word alone on the last line. A no-op if the text
+    fits on one line anyway (NBSP renders identically to a regular space)."""
+    for r in reversed(paragraph.runs):
+        idx = r.text.rfind(" ")
+        if idx != -1:
+            r.text = r.text[:idx] + " " + r.text[idx + 1:]
+            return
 
 
 def new_slide(prs):
     blank_layout = prs.slide_layouts[6]
     return prs.slides.add_slide(blank_layout)
+
+
+def _approx_text_width_px(text, size_px):
+    """Rough average-glyph-width estimate for Suisse Int'l, good enough for placing
+    a trailing mark right after a short heading/label (not for precise line-wrapping)."""
+    return len(text) * size_px * 0.56
+
+
+def add_label_with_mark(slide, x, y, base_text, base_font, base_size_px, color_hex,
+                         mark, mark_font, mark_size_px, w=900, h=70, line_spacing=1.1):
+    """A heading/label followed by a trademark/registered mark, in its own separate
+    text box top-aligned to the label -- rather than an inline run at a smaller size,
+    which renders vertically centered mid-word instead of raised like a superscript."""
+    add_text(slide, x, y, w, h, [[(base_text, base_font, base_size_px, color_hex, line_spacing)]])
+    mark_x = x + _approx_text_width_px(base_text, base_size_px)
+    add_text(slide, mark_x, y, 60, h, [[(mark, mark_font, mark_size_px, color_hex, line_spacing)]])
 
 
 def add_meta(slide, left_text, right_text):

@@ -3,7 +3,7 @@
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 from tools.pptx_core import (
-    new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_rect,
+    new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_rect, add_label_with_mark,
     FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD,
 )
 
@@ -33,14 +33,9 @@ def build(prs, assets_dir):
 
     # Left card: label + heading + subhead (real editable text over a black rounded card).
     add_rounded_rect(slide, 48, 112, 586, 444, "#000000", 32)
-    add_text(
-        slide, 96, 160, 490, 22,
-        [
-            [
-                ("Emergency Station 1", FONT_MEDIUM, 24, "#ffffff", 1.1),
-                ("™", FONT_REGULAR, 12, "#ffffff", 1.1),
-            ]
-        ],
+    add_label_with_mark(
+        slide, 96, 160, "Emergency Station 1", FONT_MEDIUM, 24, "#ffffff",
+        "™", FONT_REGULAR, 12, w=490, h=22, line_spacing=1.1,
     )
     add_text(
         slide, 96, 280, 490, 106,

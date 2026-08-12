@@ -1,6 +1,6 @@
 """Slide 25 -- Free-standing Indoor Stations. Figma node 63150:194."""
 
-from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD
+from tools.pptx_core import new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark, FONT_REGULAR, FONT_MEDIUM, FONT_SEMIBOLD
 
 
 def _bento_cell_text(slide, x, y, label, heading, body):
@@ -35,14 +35,9 @@ def build(prs, assets_dir):
     # Right card -- Flow Station 2
     add_rounded_rect(slide, 976, 287, 896, 745, "#f4f4f5", 32)
     add_picture(slide, f"{assets_dir}/slide_25/card2_photo.png", 976, 547, 896, 485, radius_px=32)
-    add_text(
-        slide, 1024, 335, 800, 45,
-        [
-            [
-                ("Flow Station 2 ", FONT_MEDIUM, 24, "#2563eb", 1.34),
-                ("™", FONT_REGULAR, 12, "#2563eb", 1.34),
-            ]
-        ],
+    add_label_with_mark(
+        slide, 1024, 335, "Flow Station 2", FONT_MEDIUM, 24, "#2563eb",
+        "™", FONT_REGULAR, 12, w=800, h=45, line_spacing=1.34,
     )
     add_text(
         slide, 1024, 379, 800, 145,

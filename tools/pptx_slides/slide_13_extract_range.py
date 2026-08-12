@@ -1,7 +1,7 @@
 """Slide 13 -- The Bluewater Extract Range. Figma node 63239:136."""
 
 from tools.pptx_core import (
-    new_slide, add_meta, add_text, add_picture, add_rounded_rect,
+    new_slide, add_meta, add_text, add_picture, add_rounded_rect, add_label_with_mark,
     FONT_MEDIUM, FONT_SEMIBOLD,
 )
 
@@ -38,9 +38,12 @@ def build(prs, assets_dir):
     x = CARD_XS[0]
     add_rounded_rect(slide, x, CARD_Y, CARD_W, CARD_H, "#f4f4f5", 32)
     add_picture(slide, f"{assets_dir}/slide_13/liquid_rock.png", x, CARD_Y + 189, CARD_W, 556, radius_px=32)
-    _card_text(
-        slide, x,
-        [("Liquid Rock", FONT_SEMIBOLD, 36, "#27272a", 1.15), (" ®", FONT_SEMIBOLD, 18, "#27272a", 1.15)],
+    add_label_with_mark(
+        slide, x + 48, CARD_Y + 48, "Liquid Rock", FONT_SEMIBOLD, 36, "#27272a",
+        "®", FONT_SEMIBOLD, 18, w=CARD_W - 96, h=41, line_spacing=1.15,
+    )
+    add_text(
+        slide, x + 48, CARD_Y + 48 + 41 + 16, CARD_W - 96, 250,
         [{"runs": [("Swedish electrolytes in a 2:1 calcium-to magnesium ratio, restoring essential minerals.", FONT_MEDIUM, 24, "#3f3f46", 1.34)]}],
     )
 
