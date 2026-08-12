@@ -18879,6 +18879,5118 @@
         ],
         "quality": "medium"
       }
+    },
+    "golf-water-station-pair-course": {
+      "nodeId": "70296:5861",
+      "tags": [
+        "golf-course",
+        "water-station",
+        "dual-unit",
+        "outdoor",
+        "park-setting"
+      ],
+      "description": "Two dark green Bluewater refill stations stand side by side on a grassy course as a person with a backpack walks past, with colorful signage and palm trees in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.75,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-water-station-volvo-china-open": {
+      "nodeId": "70296:5859",
+      "tags": [
+        "golf",
+        "volvo-china-open",
+        "caddie",
+        "water-station",
+        "sponsorship"
+      ],
+      "description": "A caddie wearing a Volvo China Open bib refills a bottle at a dark Bluewater station beside a lakeside green, with Volvo China Open branding and a Bluewater flag in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-caddie-refilling-station": {
+      "nodeId": "70296:5858",
+      "tags": [
+        "golf",
+        "caddie",
+        "china-open",
+        "water-station",
+        "refill"
+      ],
+      "description": "A caddie carrying golf clubs fills a water bottle at a black 'Enjoy Bluewater' station beside a China Open course banner, with a Bluewater logo overlay in the corner.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-players-drinking-bottles": {
+      "nodeId": "70296:5857",
+      "tags": [
+        "golf",
+        "players",
+        "drinking",
+        "bottle",
+        "on-course"
+      ],
+      "description": "Two golfers in white polos drink from Bluewater bottles on the course while a marshal holds up a 'QUIET' sign, with tree-lined fairway in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-player-drinking-bottle": {
+      "nodeId": "70296:2",
+      "tags": [
+        "golf",
+        "player",
+        "drinking",
+        "bottle",
+        "portrait-moment"
+      ],
+      "description": "A golfer in a white cap tips his head back to drink from a Bluewater bottle against a backdrop of trees and a hazy fairway.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-players-tee-station-trees": {
+      "nodeId": "70296:5860",
+      "tags": [
+        "golf",
+        "tee-shot",
+        "water-station",
+        "tropical",
+        "players"
+      ],
+      "description": "A golfer follows through on a tee shot while playing partners and a caddie look on, with a navy 'Enjoy Bluewater' station standing among tropical trees behind the tee box.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-dining-marquee": {
+      "nodeId": "70296:5863",
+      "tags": [
+        "golf",
+        "hospitality",
+        "marquee",
+        "water-station",
+        "dining"
+      ],
+      "description": "A close-up of a blue 'Enjoy Bluewater' station in the foreground with a blurred hospitality dining marquee full of seated guests behind it.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-recycling-point": {
+      "nodeId": "70296:5866",
+      "tags": [
+        "golf",
+        "recycling",
+        "sustainability",
+        "water-station",
+        "event-signage"
+      ],
+      "description": "A recycling station, a green-wall volunteer stats sign, and two blue 'Enjoy Bluewater' units are arranged together inside an event tent.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-volunteer-stats-signage": {
+      "nodeId": "70296:5865",
+      "tags": [
+        "golf",
+        "volunteer-stats",
+        "signage",
+        "event-branding",
+        "infographic"
+      ],
+      "description": "A close-up of a circular green-wall sign displaying tournament volunteer statistics (1350 volunteers, committees, average age) with two blue Bluewater stations visible at the edge of frame.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-2024-balloons": {
+      "nodeId": "70296:5868",
+      "tags": [
+        "golf",
+        "event-decor",
+        "balloons",
+        "2024",
+        "water-station"
+      ],
+      "description": "An event tent corner decorated with light-up '2024' balloon numerals in blue, green, and white, next to a recycling bin and two blue Bluewater stations.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-pair-hospitality": {
+      "nodeId": "70296:5870",
+      "tags": [
+        "golf",
+        "pebble-beach",
+        "hospitality",
+        "water-station",
+        "dual-unit"
+      ],
+      "description": "Two blue 'Enjoy Bluewater' stations stand side by side inside a hospitality area, decorated with green balloons and Pebble Beach Pro-Am branding.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-aig-womens-open": {
+      "nodeId": "70296:5871",
+      "tags": [
+        "golf",
+        "aig-womens-open",
+        "water-station",
+        "clubhouse",
+        "sponsorship"
+      ],
+      "description": "A navy 'AIG Women's Open Water Station' unit stands in a clubhouse corridor with wood-slat paneling and a plant, promoting reusable bottle refills.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.75,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-st-andrews-links": {
+      "nodeId": "70296:5873",
+      "tags": [
+        "golf",
+        "st-andrews",
+        "water-station",
+        "digital-screen",
+        "links"
+      ],
+      "description": "A black 'Enjoy Bluewater' station with a digital Bluewater screen sits under a shelter at St Andrews, next to a row of parked golf scooters and the historic clubhouse in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-premium-bottle-gift-box": {
+      "nodeId": "70296:5876",
+      "tags": [
+        "the-open",
+        "gift-box",
+        "bottle",
+        "premium-packaging",
+        "product-shot"
+      ],
+      "description": "A navy insulated Bluewater bottle for 'The Open' sits in an open gift box lined with kraft paper, alongside its cap and a card reading 'Everyone plays a part.'",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-smartbottle-app-scan": {
+      "nodeId": "70296:5875",
+      "tags": [
+        "smartbottle",
+        "app-scan",
+        "augmented-reality",
+        "lifestyle",
+        "event"
+      ],
+      "description": "A woman in a cap scans a Bluewater smart bottle with her phone camera in front of a large orange-toned art installation, with the phone screen showing an AR overlay.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-smartbottle-product-shot": {
+      "nodeId": "70296:5877",
+      "tags": [
+        "smartbottle",
+        "product-shot",
+        "mastercard",
+        "nfc",
+        "packaging"
+      ],
+      "description": "A close-up product shot of a white Bluewater smart bottle and its retail box, both marked with Mastercard-branded NFC tap icons, against a blurred red-orange background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-volvo-china-open-tee": {
+      "nodeId": "70296:5878",
+      "tags": [
+        "golf",
+        "volvo-china-open",
+        "tee-box",
+        "water-station",
+        "players"
+      ],
+      "description": "Golfers and caddies gather at the 1st tee marquee at the Volvo China Open, with a black 'Enjoy Bluewater' station positioned beside the tee-time signage and a Rolex-branded scoreboard nearby.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-player-refilling-station": {
+      "nodeId": "70296:5879",
+      "tags": [
+        "golf",
+        "volvo-china-open",
+        "refill",
+        "water-station",
+        "player"
+      ],
+      "description": "A golfer in a bright green polo refills a black water bottle at a navy 'Enjoy Bluewater' station bearing Chinese-language signage and Volvo China Open branding.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-pebble-beach": {
+      "nodeId": "70296:5880",
+      "tags": [
+        "pebble-beach",
+        "water-station",
+        "retail",
+        "golf-shop",
+        "teal"
+      ],
+      "description": "A teal Bluewater station stands outside 'The Lone Cypress Shop' golf apparel and gift store at Pebble Beach, under a wood-beamed walkway.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.56,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-151st-open-gym": {
+      "nodeId": "70296:5881",
+      "tags": [
+        "golf",
+        "gym",
+        "fitness-trailer",
+        "the-open",
+        "water-station"
+      ],
+      "description": "A players' fitness area featuring squat racks, resistance bands, Theragun massage devices, and a navy Bluewater hydration station branded for the 151st Open.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.43,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-station-old-course-view": {
+      "nodeId": "70296:5882",
+      "tags": [
+        "st-andrews",
+        "old-course",
+        "water-station",
+        "clubhouse",
+        "landscape"
+      ],
+      "description": "A wide view of the Old Course at St Andrews clubhouse and putting green with a row of parked scooters, a covered Bluewater digital station visible under the shelter roof, and a bright blue sky.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-multimedia-dispenser-terrace": {
+      "nodeId": "70296:5885",
+      "tags": [
+        "golf",
+        "mastercard-club",
+        "terrace",
+        "digital-dispenser",
+        "hospitality"
+      ],
+      "description": "A digital Bluewater dispenser screen stands on a sunny hospitality terrace lined with umbrellas and seated guests outside the Mastercard Club.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-water-station-cj-cup-crowd": {
+      "nodeId": "70296:5886",
+      "tags": [
+        "cj-cup",
+        "water-station",
+        "family",
+        "crowd",
+        "sponsorship"
+      ],
+      "description": "A white 'Water Station' kiosk branded for The CJ Cup and Methodist Health System stands on the grass as a family with a young child walks past, with grandstands and a marquee in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-water-station-cj-cup-walkway": {
+      "nodeId": "70296:5889",
+      "tags": [
+        "cj-cup",
+        "water-station",
+        "walkway",
+        "spectators",
+        "event"
+      ],
+      "description": "A white CJ Cup-branded 'Water Station' kiosk sits beside a walkway under a green-roofed tent as spectators pass by in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-water-station-cj-cup-family": {
+      "nodeId": "70296:5887",
+      "tags": [
+        "cj-cup",
+        "water-station",
+        "family",
+        "kids",
+        "outdoor"
+      ],
+      "description": "A family with a young child pauses at a white CJ Cup-branded 'Water Station' kiosk on the grass, with tournament grandstands visible behind them.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-water-station-methodist-refill": {
+      "nodeId": "70296:5888",
+      "tags": [
+        "cj-cup",
+        "methodist",
+        "refill",
+        "water-station",
+        "player"
+      ],
+      "description": "A man in a blue shirt refills his bottle at an 'Enjoy Bluewater' dispenser panel on a white CJ Cup water station branded with the Methodist Health System logo.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-spectators-refilling-station": {
+      "nodeId": "70296:5890",
+      "tags": [
+        "spectators",
+        "refill",
+        "water-station",
+        "methodist",
+        "outdoor"
+      ],
+      "description": "Two spectators, one refilling a bottle, stand at an 'Enjoy Bluewater' station panel branded with the Methodist Health System logo at an outdoor tournament.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-spectator-drinking-station": {
+      "nodeId": "70296:5893",
+      "tags": [
+        "spectator",
+        "drinking",
+        "water-station",
+        "outdoor",
+        "close-up"
+      ],
+      "description": "A bearded spectator in a cap drinks directly from the spout of a white 'Water Station' unit branded 'Enjoy Bluewater' outdoors.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-dispenser-detail-blue-ring": {
+      "nodeId": "70296:5896",
+      "tags": [
+        "dispenser",
+        "detail",
+        "blue-ring",
+        "sustainability-messaging",
+        "close-up"
+      ],
+      "description": "A close-up detail shot of a hand holding a white Bluewater bottle under an illuminated blue ring dispenser nozzle, with 'Purer Healthier Planet Friendly' messaging above.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-spectator-drinking-cj-cup": {
+      "nodeId": "70296:5898",
+      "tags": [
+        "cj-cup",
+        "spectator",
+        "drinking",
+        "water-station",
+        "outdoor"
+      ],
+      "description": "A bearded spectator in a cap drinks directly from the spout of a white CJ Cup-branded 'Water Station' unit outdoors.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "golf-wall-of-water-16-metre": {
+      "nodeId": "70296:5897",
+      "tags": [
+        "the-open",
+        "150th-anniversary",
+        "wall-of-water",
+        "water-station",
+        "installation"
+      ],
+      "description": "A long 16-metre 'Water Refill Station' wall installation for The Open's 150th anniversary, with numbered dispenser modules, flags, and a white picket fence in a hospitality village.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.46,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-serve-flavor-lineup": {
+      "nodeId": "70314:385",
+      "tags": [
+        "bluewater-serve",
+        "app-ui",
+        "phone-mockup",
+        "flavor-selector",
+        "product-ui"
+      ],
+      "description": "Three iPhone mockups display the Bluewater Serve app's water flavor selection screens — Light, Original, and Gold — each showing a blue gradient ring icon on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-serve-light-screen": {
+      "nodeId": "70314:402",
+      "tags": [
+        "bluewater-serve",
+        "app-ui",
+        "phone-mockup",
+        "light-flavor",
+        "product-ui"
+      ],
+      "description": "An iPhone mockup shows the Bluewater Serve app's 'Bluewater Light · Natural' screen with mineral content details and a light blue gradient ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-serve-original-screen": {
+      "nodeId": "70314:401",
+      "tags": [
+        "bluewater-serve",
+        "app-ui",
+        "phone-mockup",
+        "original-flavor",
+        "product-ui"
+      ],
+      "description": "An iPhone mockup shows the Bluewater Serve app's 'Bluewater Original' screen with tasting notes and mineral levels beneath a blue gradient ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-serve-medium-screen": {
+      "nodeId": "70314:400",
+      "tags": [
+        "bluewater-serve",
+        "app-ui",
+        "phone-mockup",
+        "medium-flavor",
+        "product-ui"
+      ],
+      "description": "An iPhone mockup shows the Bluewater Serve app's 'Bluewater Medium' screen describing a fuller-bodied mineral profile beneath a blue gradient ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-serve-bold-screen": {
+      "nodeId": "70314:399",
+      "tags": [
+        "bluewater-serve",
+        "app-ui",
+        "phone-mockup",
+        "bold-flavor",
+        "product-ui"
+      ],
+      "description": "An iPhone mockup shows the Bluewater Serve app's 'Bluewater Bold' screen describing its boldest mineral profile beneath a dark blue gradient ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "hotel-room-bottle-old-logo-1": {
+      "nodeId": "70316:1509",
+      "tags": [
+        "hotel-lifestyle",
+        "glass-bottle",
+        "legacy-logo",
+        "bedroom",
+        "ambient-lighting"
+      ],
+      "description": "Two glass Bluewater bottles with metal caps, bearing an earlier logo version, sit on a dark wood table in front of a softly lit hotel bedroom with a lamp and framed art.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.06,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "hotel-room-bottle-old-logo-2": {
+      "nodeId": "70316:1508",
+      "tags": [
+        "hotel-lifestyle",
+        "glass-bottle",
+        "legacy-logo",
+        "bedside",
+        "breakfast"
+      ],
+      "description": "Two glass Bluewater bottles with an earlier logo version stand on a bedside table in a sunlit hotel room, with an unmade bed and a breakfast tray of croissant and coffee softly blurred behind them.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier-pro-old-front": {
+      "nodeId": "70350:6",
+      "tags": [
+        "purifier",
+        "pro",
+        "product-shot",
+        "studio",
+        "front-view"
+      ],
+      "description": "A light gray Bluewater Pro purifier unit is shown in a straight-on studio product shot against a white background, with a logo, indicator dots, and control buttons on its face.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "purifier-pro-old-perspective": {
+      "nodeId": "70350:8",
+      "tags": [
+        "purifier",
+        "pro",
+        "product-shot",
+        "studio",
+        "perspective-view"
+      ],
+      "description": "A light gray Bluewater Pro purifier unit is shown at a three-quarter angle in a studio product shot against a white background, revealing its side and control panel.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-extracts-healthy": {
+      "nodeId": "70316:2120",
+      "tags": [
+        "extracts",
+        "healthy",
+        "abstract",
+        "heart-shape",
+        "gradient"
+      ],
+      "description": "An abstract, softly blurred pink and red heart-shaped gradient graphic with no distinct subject, evoking a 'healthy' wellness theme.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "gastronord-pour-over-station-pastries": {
+      "nodeId": "70288:5861",
+      "tags": [
+        "pour-over-coffee",
+        "croissants",
+        "event-table",
+        "gastronord-expo",
+        "coffee-station"
+      ],
+      "description": "A pour-over coffee station with three glass carafes on a service rack next to a plate of croissants and folded napkins.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-brewed-coffee-carafes": {
+      "nodeId": "70288:2",
+      "tags": [
+        "brewed-coffee",
+        "glass-carafes",
+        "coffee-service",
+        "gastronord-expo",
+        "bokeh"
+      ],
+      "description": "Close-up of glass coffee carafes filled with freshly brewed coffee on a service rack, with soft bokeh flowers in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-pour-over-dripper-closeup": {
+      "nodeId": "70288:5857",
+      "tags": [
+        "pour-over",
+        "ceramic-dripper",
+        "coffee-brewing",
+        "closeup",
+        "gastronord-expo"
+      ],
+      "description": "Close-up of coffee brewing in a white ceramic pour-over dripper with a gooseneck kettle spout visible beside it.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-barista-espresso-machine": {
+      "nodeId": "70288:5859",
+      "tags": [
+        "barista",
+        "espresso-machine",
+        "event-staff",
+        "gastronord-expo",
+        "exhibit-hall"
+      ],
+      "description": "A barista stands behind stacked cups and an espresso machine, looking off to the side inside a busy exhibition hall.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "gastronord-pouring-water-into-cup": {
+      "nodeId": "70288:5860",
+      "tags": [
+        "pouring-coffee",
+        "hands",
+        "event-crowd",
+        "gastronord-expo",
+        "candid"
+      ],
+      "description": "Close-up candid shot of hands pouring dark brewed coffee from a carafe into a cup amid a crowd of attendees.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "gastronord-visitors-conversation-booth": {
+      "nodeId": "70288:5858",
+      "tags": [
+        "booth-visitors",
+        "conversation",
+        "networking",
+        "gastronord-expo",
+        "coffee-table"
+      ],
+      "description": "Three men converse at the Bluewater booth, with an older attendee reading a folder beside a table of croissants and bottles.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-pour-mug": {
+      "nodeId": "70288:5863",
+      "tags": [
+        "espresso-pour",
+        "group-head",
+        "ceramic-mug",
+        "coffee-machine",
+        "gastronord-expo"
+      ],
+      "description": "Espresso streams from a machine group head into a white ceramic mug resting on a metal drip tray.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-grouphead-mug": {
+      "nodeId": "70288:5864",
+      "tags": [
+        "espresso-pour",
+        "group-head",
+        "ceramic-mug",
+        "coffee-machine",
+        "gastronord-expo"
+      ],
+      "description": "Wide crop of espresso pouring from a machine group head into a white ceramic mug, with warm bokeh in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-latte-art-handoff": {
+      "nodeId": "70288:5865",
+      "tags": [
+        "latte-art",
+        "coffee-cup",
+        "closeup-hands",
+        "coffee-service",
+        "gastronord-expo"
+      ],
+      "description": "Close-up of hands holding a cup of coffee with a rosette latte-art pattern, mid-handoff at the coffee station.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-sparkling-water-tap-fill": {
+      "nodeId": "70288:5869",
+      "tags": [
+        "sparkling-water",
+        "tap-fill",
+        "glass-bottle",
+        "hydration-station",
+        "gastronord-expo"
+      ],
+      "description": "A hand reaches for a glass bottle being filled with fizzing sparkling water from a dispenser tap.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-water-tap-bottle-fill": {
+      "nodeId": "70288:5871",
+      "tags": [
+        "water-dispenser",
+        "bottle-fill",
+        "hydration-station",
+        "gastronord-expo",
+        "glass-bottles"
+      ],
+      "description": "Two chrome water taps fill glass bottles at a hydration station surrounded by empty bottles.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-sparkling-bottle-closeup": {
+      "nodeId": "70288:5872",
+      "tags": [
+        "sparkling-water",
+        "bottle-fill",
+        "bubbles",
+        "closeup",
+        "gastronord-expo"
+      ],
+      "description": "Close-up of a glass bottle filling with bubbling sparkling water beneath a dispenser tap, other bottles blurred behind.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-bluewater-banner-portrait": {
+      "nodeId": "70288:5876",
+      "tags": [
+        "bluewater-banner",
+        "brand-signage",
+        "staff-portrait",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "A smiling man in a dark jacket holds a Bluewater bottle, standing beneath a large Bluewater banner sign.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-bluewater-banner-portrait-alt": {
+      "nodeId": "70288:5877",
+      "tags": [
+        "bluewater-banner",
+        "brand-signage",
+        "staff-portrait",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "Alternate framing of a man smiling beneath the Bluewater banner sign, holding a bottle with a display screen visible behind him.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-bluewater-banner-bottle": {
+      "nodeId": "70288:5879",
+      "tags": [
+        "bluewater-banner",
+        "brand-signage",
+        "staff-portrait",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "A man leans slightly toward camera holding a Bluewater bottle beneath the branded banner sign.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-portrait-beans": {
+      "nodeId": "70288:5882",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "coffee-beans-screen",
+        "stacked-cups",
+        "gastronord-expo"
+      ],
+      "description": "A smiling man stands beside an espresso machine and grinder with a large screen showing coffee beans imagery behind him.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-portrait": {
+      "nodeId": "70288:5884",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "coffee-station",
+        "stacked-cups",
+        "gastronord-expo"
+      ],
+      "description": "Wide shot of a man standing next to an espresso machine and grinder at the coffee bar, with stacked cups and a display screen behind.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-portrait-health": {
+      "nodeId": "70288:5880",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "health-messaging",
+        "coffee-station",
+        "gastronord-expo"
+      ],
+      "description": "A man stands at the espresso bar with a screen behind him displaying the word 'Health' in pink text.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-portrait-screen": {
+      "nodeId": "70288:5881",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "brand-messaging",
+        "coffee-station",
+        "gastronord-expo"
+      ],
+      "description": "A man stands at the espresso bar with a screen behind him showing partial brand messaging text.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-bottle-portrait": {
+      "nodeId": "70288:5883",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "water-bottle",
+        "coffee-station",
+        "gastronord-expo"
+      ],
+      "description": "Tight portrait of a man holding a Bluewater bottle beside the espresso machine at the coffee bar.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-liquid-rock": {
+      "nodeId": "70288:5886",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "liquid-rock-branding",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "A man stands at the espresso bar holding a bottle, with a screen behind him showing partial 'Liquid Rock' branding text.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-liquid-rock-bottle": {
+      "nodeId": "70288:5885",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "liquid-rock-branding",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "Similar portrait at the espresso bar with the bottle held prominently in frame and the Liquid Rock branding screen behind.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-espresso-bar-liquid-rock-smiling": {
+      "nodeId": "70288:5887",
+      "tags": [
+        "espresso-bar",
+        "staff-portrait",
+        "liquid-rock-branding",
+        "water-bottle",
+        "gastronord-expo"
+      ],
+      "description": "A broadly smiling man holds a bottle at the espresso bar with the Liquid Rock branding screen behind him.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "gastronord-expo-hall-attendees": {
+      "nodeId": "70292:5861",
+      "tags": [
+        "expo-hall",
+        "attendees",
+        "networking",
+        "event-crowd",
+        "gastronord-expo"
+      ],
+      "description": "Wide shot of the exhibition hall with several attendees in conversation among booths under overhead lighting rigs.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "clean-metal-tube-no-corrosion": {
+      "nodeId": "70324:2449",
+      "tags": [
+        "stainless-steel-tube",
+        "no-corrosion",
+        "clean-pipe",
+        "machine-health",
+        "product-shot"
+      ],
+      "description": "A pristine, polished stainless-steel tube end shown in close-up with no signs of corrosion or scaling.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.58,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "machine-health-bypass": {
+      "nodeId": "70324:2450",
+      "tags": [
+        "bypass-valve",
+        "water-droplets",
+        "filtration",
+        "macro-shot",
+        "machine-health"
+      ],
+      "description": "Abstract macro shot of water droplets and dark scale particles spraying through a bypass valve fitting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 2.36,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "scaling-in-metal-tube-03": {
+      "nodeId": "70324:2451",
+      "tags": [
+        "mineral-scaling",
+        "pipe-corrosion",
+        "water-quality",
+        "metal-tube",
+        "machine-health"
+      ],
+      "description": "Close-up of a metal tube's interior heavily crusted with white and tan mineral scale buildup against a dark background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.91,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "scaling-in-metal-tube-04": {
+      "nodeId": "70324:2475",
+      "tags": [
+        "mineral-scaling",
+        "pipe-corrosion",
+        "water-quality",
+        "metal-tube",
+        "aquacert-label"
+      ],
+      "description": "A scaled metal tube interior with a visible AQUACERT label on the pipe casing, showing heavy mineral buildup.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "scaling-in-metal-tube-05": {
+      "nodeId": "70324:2477",
+      "tags": [
+        "mineral-scaling",
+        "pipe-corrosion",
+        "water-quality",
+        "metal-tube",
+        "machine-health"
+      ],
+      "description": "Another close-up of mineral scale buildup inside a metal tube, brightly lit against a dark background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "corrosion-in-metal-tube-06": {
+      "nodeId": "70324:2478",
+      "tags": [
+        "rust-corrosion",
+        "metal-tube",
+        "pipe-degradation",
+        "machine-health",
+        "water-damage"
+      ],
+      "description": "Close-up of a metal tube interior heavily corroded with reddish-brown rust against a black background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "corrosion-in-metal-tube-07": {
+      "nodeId": "70324:2479",
+      "tags": [
+        "rust-corrosion",
+        "metal-tube",
+        "pipe-degradation",
+        "machine-health",
+        "water-damage"
+      ],
+      "description": "Another angle of a rust-corroded metal tube interior, showing extensive reddish-brown oxidation.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-water-bottle-hero": {
+      "nodeId": "70316:1514",
+      "tags": [
+        "water-bottle",
+        "product-hero",
+        "condensation",
+        "hand-hold",
+        "bluewater"
+      ],
+      "description": "A hand holds a clear Bluewater bottle with a blue cap, beaded with condensation, against a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.68,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sport-drinking-bluewater": {
+      "nodeId": "70316:1520",
+      "tags": [
+        "sport-lifestyle",
+        "drinking-water",
+        "athlete",
+        "hydration",
+        "bluewater"
+      ],
+      "description": "A man in a blue athletic shirt drinks from a Bluewater bottle against a blue gradient background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 2.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "sport-drinking-bluewater-banner": {
+      "nodeId": "70316:1522",
+      "tags": [
+        "sport-lifestyle",
+        "drinking-water",
+        "athlete",
+        "hydration",
+        "bluewater"
+      ],
+      "description": "A woman in a light green athletic top drinks from a Bluewater bottle against a soft yellow gradient background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 2.63,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "sport-drinking-bluewater-silhouette": {
+      "nodeId": "70316:1523",
+      "tags": [
+        "sport-lifestyle",
+        "silhouette",
+        "drinking-water",
+        "athlete",
+        "dramatic-lighting"
+      ],
+      "description": "A backlit silhouette of a woman in athletic wear drinking from a bottle against a glowing pale-blue background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.71,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "espresso-mode-app": {
+      "nodeId": "69979:407",
+      "tags": [
+        "bluewater-app",
+        "espresso-mode",
+        "ui-screenshot",
+        "mobile-app",
+        "cafe-station"
+      ],
+      "description": "App screenshot of the Bluewater Espresso mode set to 1.5 mL/L mineral level, with an orange gradient dial graphic.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.49,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "brew-mode-app": {
+      "nodeId": "69979:408",
+      "tags": [
+        "bluewater-app",
+        "brew-mode",
+        "ui-screenshot",
+        "mobile-app",
+        "cafe-station"
+      ],
+      "description": "App screenshot of the Bluewater Brew mode screen, showing a mineral-level slider for filter, pour-over, aeropress, and cold brew.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.49,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "coffee-app-display": {
+      "nodeId": "70324:2484",
+      "tags": [
+        "bluewater-app",
+        "phone-mockup",
+        "ui-showcase",
+        "mobile-app",
+        "cafe-station"
+      ],
+      "description": "Three phone mockups displayed side by side showing the Bluewater app's Filter, Espresso, and Brew mode screens.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-old-front": {
+      "nodeId": "70350:10",
+      "tags": [
+        "spirit-purifier",
+        "product-render",
+        "front-view",
+        "water-purifier",
+        "studio-shot"
+      ],
+      "description": "Front-view studio render of a gray tower-style Bluewater Spirit water purifier unit on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "spirit-old-perspective": {
+      "nodeId": "70350:11",
+      "tags": [
+        "spirit-purifier",
+        "product-render",
+        "perspective-view",
+        "water-purifier",
+        "studio-shot"
+      ],
+      "description": "Three-quarter perspective studio render of the gray Bluewater Spirit purifier unit on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "left",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "restaurant-station-2-st-andrews": {
+      "nodeId": "69966:403",
+      "tags": [
+        "st-andrews-cobrand",
+        "glass-bottle",
+        "water-fill",
+        "restaurant-station-2",
+        "product-detail"
+      ],
+      "description": "Close-up of a glass bottle bearing a gold St Andrews crest being filled with bubbling water from a tap, held by hand.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-cafe-station-booth": {
+      "nodeId": "70297:5860",
+      "tags": [
+        "cafe-station",
+        "event-booth",
+        "bluewater-x-nia",
+        "trade-show",
+        "woc-dubai"
+      ],
+      "description": "Wide shot of the Bluewater x NIA booth backdrop reading 'The Coffee Water' with the Café Station 1 product displayed below and a visitor and staff member at the counter.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-espresso-machine-detail": {
+      "nodeId": "70297:5858",
+      "tags": [
+        "espresso-machine",
+        "product-detail",
+        "cafe-station",
+        "dark-mood",
+        "woc-dubai"
+      ],
+      "description": "Close-up of an espresso machine's pressure gauge and controls with a blurred bokeh expo-floor background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-brew-demo-pouring": {
+      "nodeId": "70297:5859",
+      "tags": [
+        "brew-demo",
+        "cafe-station",
+        "event-booth",
+        "product-demo",
+        "woc-dubai"
+      ],
+      "description": "A person operating the coffee brewing device at the booth counter in front of the 'Why the Coffee World Needs Bluewater' wall text.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-brew-demo-hands": {
+      "nodeId": "70297:5861",
+      "tags": [
+        "brew-demo",
+        "hands",
+        "cafe-station",
+        "event-booth",
+        "woc-dubai"
+      ],
+      "description": "Close view of hands operating the brewing device at the booth counter with the branded wall text visible behind.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-booth-coffee-water-wall": {
+      "nodeId": "70297:5857",
+      "tags": [
+        "cafe-station",
+        "booth-wall",
+        "event-overview",
+        "bluewater-x-nia",
+        "woc-dubai"
+      ],
+      "description": "Overview of the booth's 'The Coffee Water' wall with the Café Station product on display and a few visitors browsing.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-booth-crowd-visitors": {
+      "nodeId": "70297:2",
+      "tags": [
+        "crowd",
+        "visitors",
+        "event-booth",
+        "trade-show",
+        "woc-dubai"
+      ],
+      "description": "Corner view of the booth with a hanging 'Coffee Water' sign and a crowd of visitors, some in traditional dress, gathered on the orange expo floor.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-visitors-conversation-wall": {
+      "nodeId": "70297:5862",
+      "tags": [
+        "booth-conversation",
+        "visitors",
+        "cafe-station",
+        "brand-wall",
+        "woc-dubai"
+      ],
+      "description": "Visitors chatting near the brewing device with the 'Why the Coffee World Needs Bluewater' headline text cropped in behind them.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.44,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "right",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-expo-floor-crowd": {
+      "nodeId": "70297:5863",
+      "tags": [
+        "expo-floor",
+        "crowd",
+        "trade-show",
+        "event-overview",
+        "woc-dubai"
+      ],
+      "description": "Wide atmospheric shot of the convention expo floor with the Bluewater booth sign overhead, a seated crowd, and neighboring exhibitor booths.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.44,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-city-station-visitor": {
+      "nodeId": "70297:5864",
+      "tags": [
+        "water-station",
+        "kiosk",
+        "visitor",
+        "event-floor",
+        "woc-dubai"
+      ],
+      "description": "A visitor interacting with a tall free-standing water kiosk near a green-branded exhibitor area on the expo floor.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-station-touch-panel": {
+      "nodeId": "70297:5865",
+      "tags": [
+        "touch-panel",
+        "blue-glow",
+        "station-interface",
+        "product-detail",
+        "woc-dubai"
+      ],
+      "description": "Close-up of a glowing blue touch button on a water station's control panel with a visitor's silhouette in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-city-station-expo-stand": {
+      "nodeId": "70297:5868",
+      "tags": [
+        "water-station",
+        "expo-stand",
+        "hyper-fresh-water",
+        "product-demo",
+        "woc-dubai"
+      ],
+      "description": "A man interacting with a silver Bluewater kiosk labeled 'Hyper Fresh Water' on the busy expo floor.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.44,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-visitor-using-station": {
+      "nodeId": "70297:5867",
+      "tags": [
+        "water-station",
+        "bottle-fill",
+        "visitor",
+        "hyper-fresh-water",
+        "woc-dubai"
+      ],
+      "description": "A man filling a bottle at the 'Hyper Fresh Water' kiosk station.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-bottle-fill-blue-light": {
+      "nodeId": "70297:5869",
+      "tags": [
+        "bottle-fill",
+        "blue-light",
+        "hydration-station",
+        "product-detail",
+        "woc-dubai"
+      ],
+      "description": "Close-up of a hand holding a bottle beneath a hydration station spout glowing with blue LED light.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-bottle-fill-hand-closeup": {
+      "nodeId": "70297:5870",
+      "tags": [
+        "bottle-fill",
+        "hand-closeup",
+        "blue-light",
+        "hydration-station",
+        "woc-dubai"
+      ],
+      "description": "Close-up of hands filling a bottle at the blue-lit hydration station spout, with a second hand pointing at the control panel.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-presenter-at-booth": {
+      "nodeId": "70297:5873",
+      "tags": [
+        "presenter",
+        "booth-talk",
+        "cafe-station",
+        "event",
+        "woc-dubai"
+      ],
+      "description": "A presenter speaking and gesturing at the booth counter in front of the branded wall text, holding papers.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-visitors-booth-discussion": {
+      "nodeId": "70297:5872",
+      "tags": [
+        "booth-overview",
+        "cafe-station",
+        "visitors",
+        "event",
+        "woc-dubai"
+      ],
+      "description": "Overview of the booth counter with the Café Station product on display and visitors browsing near the branded wall.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-visitors-booth-arabic": {
+      "nodeId": "70297:5874",
+      "tags": [
+        "booth-discussion",
+        "black-and-white",
+        "visitor",
+        "cafe-station",
+        "woc-dubai"
+      ],
+      "description": "Black-and-white photo of a man mid-conversation at the booth counter with the branded wall text behind him.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-booth-overview-crowd": {
+      "nodeId": "70297:5875",
+      "tags": [
+        "booth-conversation",
+        "visitors",
+        "traditional-dress",
+        "cafe-station",
+        "woc-dubai"
+      ],
+      "description": "A man in traditional Gulf dress speaking with two others at the booth counter, product visible on the table between them.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-cupping-demo-glasses": {
+      "nodeId": "70297:5876",
+      "tags": [
+        "cupping-demo",
+        "coffee-glasses",
+        "tasting",
+        "cafe-station",
+        "woc-dubai"
+      ],
+      "description": "A presenter speaking near the booth with cupping glasses and grinder equipment arranged on the counter in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-cupping-demo-visitors": {
+      "nodeId": "70297:5877",
+      "tags": [
+        "cupping-demo",
+        "visitors",
+        "siphon-brewer",
+        "cafe-station",
+        "woc-dubai"
+      ],
+      "description": "A group of visitors gathered around a siphon brewer and cupping-glass tasting setup in engaged discussion.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-cafe-station-demo-crowd": {
+      "nodeId": "70297:5883",
+      "tags": [
+        "cafe-station",
+        "product-demo",
+        "visitors",
+        "crowd",
+        "woc-dubai"
+      ],
+      "description": "Visitors gathered around the Café Station product on the counter, one showing something on a phone to the others.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-group-photo-press": {
+      "nodeId": "70297:5878",
+      "tags": [
+        "group-photo",
+        "press",
+        "media",
+        "cafe-station",
+        "woc-dubai"
+      ],
+      "description": "A group posing in front of 'The Coffee Water' backdrop while photographers capture the moment in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "woc-dubai-best-new-product-trophy": {
+      "nodeId": "70297:5886",
+      "tags": [
+        "award",
+        "trophy",
+        "best-new-product",
+        "achievement",
+        "woc-dubai"
+      ],
+      "description": "A glass 'Best New Product' award trophy displayed open in a velvet-lined box at the event.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-pink-loop-zoom": {
+      "nodeId": "70325:1760",
+      "tags": [
+        "steel-bottle",
+        "product-shot",
+        "red-accent",
+        "studio",
+        "water-droplets"
+      ],
+      "description": "Studio product shot of the full steel insulated bottle with a red loop strap accent at the neck, beaded with water droplets on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-pink-loop": {
+      "nodeId": "70325:1761",
+      "tags": [
+        "steel-bottle",
+        "close-up",
+        "red-accent",
+        "water-droplets",
+        "dark-mood"
+      ],
+      "description": "Close-up crop of the gunmetal-black bottle's neck and red loop strap, covered in water droplets against a dark background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-pink-loop-zoom-dark-11": {
+      "nodeId": "70325:1763",
+      "tags": [
+        "steel-bottle",
+        "macro-texture",
+        "water-droplets",
+        "dark-mood",
+        "abstract"
+      ],
+      "description": "Extreme macro shot of the bottle's textured metal surface beaded with water droplets, dark and abstract.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-bottle-pink-loop-zoom-dark-10": {
+      "nodeId": "70325:1762",
+      "tags": [
+        "steel-bottle",
+        "macro-texture",
+        "water-droplets",
+        "dark-mood",
+        "abstract"
+      ],
+      "description": "Extreme macro shot of the bottle's metal surface with water droplets, similar to the companion frame with slightly different lighting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "texture"
+        ],
+        "quality": "medium"
+      }
+    },
+    "steel-1000-d": {
+      "nodeId": "70325:1789",
+      "tags": [
+        "steel-bottle",
+        "product-shot",
+        "studio",
+        "1000ml",
+        "catalog"
+      ],
+      "description": "Clean studio catalog shot of the silver steel insulated bottle (1000ml) standing upright on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-400-d": {
+      "nodeId": "70325:1790",
+      "tags": [
+        "steel-bottle",
+        "product-shot",
+        "studio",
+        "400ml",
+        "catalog"
+      ],
+      "description": "Clean studio catalog shot of the silver steel insulated bottle (400ml) standing upright on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-800-d": {
+      "nodeId": "70325:1791",
+      "tags": [
+        "steel-bottle",
+        "product-shot",
+        "studio",
+        "800ml",
+        "catalog"
+      ],
+      "description": "Clean studio catalog shot of the silver steel insulated bottle (800ml) standing upright on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-hydrate-bottle-no-cap": {
+      "nodeId": "70348:4575",
+      "tags": [
+        "hydrate-bottle",
+        "glass-bottle",
+        "no-cap",
+        "product-shot",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with clear liquid, cap off, on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-hydrate-bottle-cap-14": {
+      "nodeId": "70348:4577",
+      "tags": [
+        "hydrate-bottle",
+        "glass-bottle",
+        "cap-on",
+        "product-shot",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with clear liquid, cap on, on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-zen-bottle-cap-15": {
+      "nodeId": "70348:4580",
+      "tags": [
+        "zen-bottle",
+        "glass-bottle",
+        "cap-on",
+        "pink-liquid",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with pale pink liquid, cap on, on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-hydrate-bottle-cap-13": {
+      "nodeId": "70348:4576",
+      "tags": [
+        "hydrate-bottle",
+        "glass-bottle",
+        "cap-on",
+        "product-shot",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with clear liquid, cap on, on a white background (companion render).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-zen-bottle-cap-16": {
+      "nodeId": "70348:4581",
+      "tags": [
+        "zen-bottle",
+        "glass-bottle",
+        "cap-on",
+        "pink-liquid",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with pale pink liquid, cap on, on a white background (companion render).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "bluewater-zen-bottle-no-cap": {
+      "nodeId": "70348:4586",
+      "tags": [
+        "zen-bottle",
+        "glass-bottle",
+        "no-cap",
+        "pink-liquid",
+        "beverage"
+      ],
+      "description": "Studio product shot of a clear glass bottle filled with pale pink liquid, cap off, on a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "500-glass-zoom": {
+      "nodeId": "70316:2111",
+      "tags": [
+        "insulated-bottle",
+        "cap-detail",
+        "product-shot",
+        "black-finish",
+        "studio"
+      ],
+      "description": "Close-up product shot of the black insulated bottle's smoked-glass lid and carry loop against a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "top",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "500-glass-hand": {
+      "nodeId": "70316:2112",
+      "tags": [
+        "insulated-bottle",
+        "held-in-hand",
+        "product-shot",
+        "black-finish",
+        "lifestyle"
+      ],
+      "description": "A hand holding the black insulated bottle, beaded with water droplets, against a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-studio-hero": {
+      "nodeId": "69966:347",
+      "tags": [
+        "kitchen-station",
+        "lifestyle",
+        "moody-lighting",
+        "wood-cabinetry",
+        "ambient"
+      ],
+      "description": "Moody, dimly lit kitchen scene with a black faucet, wood cabinetry, and a small glowing blue Kitchen Station device on the counter in a shaft of light.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "ks1-press-o": {
+      "nodeId": "70316:6",
+      "tags": [
+        "kitchen-station",
+        "button-press",
+        "blue-glow",
+        "product-detail",
+        "lifestyle"
+      ],
+      "description": "Dramatic close-up of a hand pressing the glowing blue top button of the Kitchen Station device in a dark setting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "flow-station-st-andrews-closeup-fill": {
+      "nodeId": "69966:350",
+      "tags": [
+        "flow-station",
+        "st-andrews",
+        "cobrand-bottle",
+        "bottle-fill",
+        "hospitality"
+      ],
+      "description": "Close-up of a hand filling a white St Andrews crest-branded bottle at the black Flow Station kiosk, lit by a blue ring light with 'Purer Healthier Planet Friendly' signage.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.57,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-booth-coffee-water-wall": {
+      "nodeId": "70296:5900",
+      "tags": [
+        "sca-houston",
+        "coffee-water",
+        "booth-counter",
+        "tradeshow",
+        "product-display"
+      ],
+      "description": "Bluewater trade show booth counter with product cartons and an espresso machine, backed by a screen reading 'The Coffee Water — Best New Product, World of Coffee Dubai 2025.'",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "top",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-branded-cups-stack": {
+      "nodeId": "70296:5901",
+      "tags": [
+        "sca-houston",
+        "branded-cups",
+        "cafe-station",
+        "close-up",
+        "event"
+      ],
+      "description": "Close-up of a row of stacked Bluewater-branded paper cups on a cafe counter with a person blurred in the background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-espresso-bar-cafe-station": {
+      "nodeId": "70296:5905",
+      "tags": [
+        "cafe-station-1",
+        "sca-houston",
+        "espresso-bar",
+        "product-collage",
+        "event"
+      ],
+      "description": "Composite frame showing baristas working the espresso bar at the SCA Houston booth above a 'Café Station 1™' product showcase with three studio product shots.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-visitor-portrait-cap": {
+      "nodeId": "70296:5904",
+      "tags": [
+        "sca-houston",
+        "visitor-portrait",
+        "cafe-station",
+        "event"
+      ],
+      "description": "Close portrait of a visitor in a green cap examining coffee equipment at the Bluewater booth under warm ambient lighting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-visitor-at-brew-bar": {
+      "nodeId": "70296:5902",
+      "tags": [
+        "sca-houston",
+        "brew-bar",
+        "visitor",
+        "cafe-station",
+        "event"
+      ],
+      "description": "A visitor in a cap leans over the brew bar counter at the Bluewater booth with stacked branded cups in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-barista-conversation-cups": {
+      "nodeId": "70296:5903",
+      "tags": [
+        "sca-houston",
+        "barista-conversation",
+        "espresso-bar",
+        "cafe-station",
+        "event"
+      ],
+      "description": "A Bluewater team member in a lanyard talks with a visitor across the espresso bar counter at the SCA Houston booth.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-visitors-espresso-bar": {
+      "nodeId": "70296:5906",
+      "tags": [
+        "sca-houston",
+        "visitors",
+        "espresso-bar",
+        "conversation",
+        "event"
+      ],
+      "description": "Close conversation between a Bluewater team member and a visitor holding a cup at the espresso bar, moody blue booth lighting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-espresso-machine-detail": {
+      "nodeId": "70296:5910",
+      "tags": [
+        "cafe-station",
+        "espresso-machine",
+        "product-detail",
+        "sca-houston",
+        "event"
+      ],
+      "description": "Close-up detail shot of the Café Station espresso grinder and portafilter dispensing into a glass cup on a scale.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-brew-scale-closeup": {
+      "nodeId": "70296:5911",
+      "tags": [
+        "cafe-station",
+        "espresso-machine",
+        "gauge-detail",
+        "product-detail",
+        "sca-houston"
+      ],
+      "description": "Macro shot of the Café Station's digital pressure gauge and wooden portafilter handle, with the booth blurred behind.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-staff-portrait-booth": {
+      "nodeId": "70296:5907",
+      "tags": [
+        "sca-houston",
+        "booth-crowd",
+        "product-display",
+        "event",
+        "visitors"
+      ],
+      "description": "Visitors gather around the Bluewater booth counter stocked with Coffee Water product cartons beneath event signage.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-crowd-at-booth": {
+      "nodeId": "70296:5909",
+      "tags": [
+        "sca-houston",
+        "booth-crowd",
+        "event",
+        "visitors",
+        "tradeshow"
+      ],
+      "description": "A crowd of attendees gathers at the roped-off Bluewater 'Coffee Water' booth during the SCA Houston expo.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-best-new-product-award": {
+      "nodeId": "70296:5908",
+      "tags": [
+        "award",
+        "best-new-product",
+        "sca-houston",
+        "cafe-station",
+        "trophy"
+      ],
+      "description": "The Specialty Coffee Association's 'Best New Product' award trophy displayed on the Bluewater booth counter.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-demo-conversation": {
+      "nodeId": "70296:5912",
+      "tags": [
+        "sca-houston",
+        "product-demo",
+        "cafe-station",
+        "conversation",
+        "event"
+      ],
+      "description": "A Bluewater team member gestures toward a cutaway Café Station demo unit while explaining it to a visitor.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "sca-houston-expo-floor-crowd": {
+      "nodeId": "70296:5914",
+      "tags": [
+        "sca-houston",
+        "expo-floor",
+        "crowd",
+        "tradeshow",
+        "wide-shot"
+      ],
+      "description": "Wide view of the busy SCA Houston expo floor with attendees walking between booths under a dark rigged ceiling.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-booth-crowd-wide": {
+      "nodeId": "70296:5913",
+      "tags": [
+        "sca-houston",
+        "booth-crowd",
+        "event",
+        "visitors",
+        "tradeshow"
+      ],
+      "description": "Attendees crowd around the Bluewater booth viewing the Coffee Water display during the SCA Houston show.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-visitors-cafe-station": {
+      "nodeId": "70296:5915",
+      "tags": [
+        "sca-houston",
+        "cafe-station",
+        "visitors",
+        "product-demo",
+        "event"
+      ],
+      "description": "Visitors gather to watch a Café Station demonstration at the Bluewater booth, with the machine visible on the counter.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-booth-busy-aisle": {
+      "nodeId": "70296:5917",
+      "tags": [
+        "sca-houston",
+        "booth-crowd",
+        "cafe-station",
+        "event",
+        "tradeshow"
+      ],
+      "description": "A busy aisle of visitors clustered around the Bluewater booth's cutaway Café Station display.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-machine-detail-dark": {
+      "nodeId": "70296:5918",
+      "tags": [
+        "cafe-station",
+        "product-detail",
+        "black-finish",
+        "sca-houston",
+        "dark"
+      ],
+      "description": "Dark, moody close-up of the Café Station's black housing with small branded product packets displayed beneath it.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-demo-pouring-water": {
+      "nodeId": "70296:5916",
+      "tags": [
+        "sca-houston",
+        "product-demo",
+        "cafe-station",
+        "event",
+        "demonstration"
+      ],
+      "description": "A Bluewater team member holds up a sample while demonstrating the Coffee Water system in front of the booth's backlit sign.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-staff-portrait-counter": {
+      "nodeId": "70296:5920",
+      "tags": [
+        "sca-houston",
+        "product-samples",
+        "booth-table",
+        "staff",
+        "event"
+      ],
+      "description": "A team member stands behind a table of small branded product samples and accessories at the SCA Houston booth.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "left",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "sca-houston-booth-visitors-queue": {
+      "nodeId": "70296:5921",
+      "tags": [
+        "sca-houston",
+        "booth-queue",
+        "cafe-station-1",
+        "event",
+        "visitors"
+      ],
+      "description": "Visitors queue near the 'Café Station 1' demo stand at the crowded SCA Houston expo booth.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.67,
+        "orientation": "portrait",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "card"
+        ],
+        "quality": "medium"
+      }
+    },
+    "cafe-station-espresso-brew-mode": {
+      "nodeId": "69966:331",
+      "tags": [
+        "cafe-station-1",
+        "product-render",
+        "studio-shot",
+        "espresso-brew",
+        "app-tablets"
+      ],
+      "description": "Studio render of the full Café Station 1 lineup — Brew and Espresso app tablets, smart kettle, filtered faucet, and espresso machine — on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-lineup-wide-alt": {
+      "nodeId": "69966:344",
+      "tags": [
+        "cafe-station-1",
+        "product-render",
+        "studio-shot",
+        "lineup",
+        "duplicate-render"
+      ],
+      "description": "Alternate studio render of the same Café Station 1 product lineup (Brew and Espresso tablets, kettle, faucet, machine) on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-espresso-tile": {
+      "nodeId": "69966:337",
+      "tags": [
+        "cafe-station-app",
+        "espresso-mode",
+        "app-interface",
+        "ui-mockup",
+        "mobile-app"
+      ],
+      "description": "Small crop of the Bluewater app interface showing the 'Espresso · 1.5' brew mode screen with an orange ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-espresso-mode-alt": {
+      "nodeId": "69966:339",
+      "tags": [
+        "cafe-station-app",
+        "espresso-mode",
+        "app-interface",
+        "ui-mockup"
+      ],
+      "description": "Bluewater app screen for 'Espresso · 1.5' mode, shown as a small isolated UI tile against white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-tile": {
+      "nodeId": "69966:340",
+      "tags": [
+        "cafe-station-app",
+        "brew-mode",
+        "app-interface",
+        "ui-mockup"
+      ],
+      "description": "Small isolated UI tile of the Bluewater app's 'Brew · 2.5' mode screen with an orange ring icon.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-brew-mode-alt": {
+      "nodeId": "69966:342",
+      "tags": [
+        "cafe-station-app",
+        "brew-mode",
+        "app-interface",
+        "ui-mockup"
+      ],
+      "description": "Bluewater app screen for 'Brew · 2.5' mode, isolated UI tile on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-espresso-mode": {
+      "nodeId": "69966:329",
+      "tags": [
+        "cafe-station-1",
+        "product-render",
+        "espresso-mode",
+        "studio-shot",
+        "kettle-faucet-machine"
+      ],
+      "description": "Studio render of the Café Station 1 espresso setup — app tablet, kettle, faucet, and espresso machine — on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-espresso-mode-alt": {
+      "nodeId": "69966:330",
+      "tags": [
+        "cafe-station-1",
+        "product-render",
+        "espresso-mode",
+        "studio-shot",
+        "duplicate-render"
+      ],
+      "description": "Alternate studio render of the Café Station 1 espresso setup (tablet, kettle, faucet, machine) on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cafe-station-app-espresso-mode-zoom": {
+      "nodeId": "69966:327",
+      "tags": [
+        "cafe-station-app",
+        "espresso-mode",
+        "app-interface",
+        "ui-mockup",
+        "zoomed-tile"
+      ],
+      "description": "Larger crop of the Bluewater app's 'Espresso · 1.5' mode screen shown as an isolated UI tile.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.66,
+        "orientation": "portrait",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-600-front": {
+      "nodeId": "70325:1844",
+      "tags": [
+        "steel-bottle",
+        "600ml",
+        "product-render",
+        "old-logo",
+        "studio-shot"
+      ],
+      "description": "Studio product render of the 600ml Bluewater steel bottle, brushed metal finish, on white (old logo version).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-800-front": {
+      "nodeId": "70325:1845",
+      "tags": [
+        "steel-bottle",
+        "800ml",
+        "product-render",
+        "old-logo",
+        "studio-shot"
+      ],
+      "description": "Studio product render of the 800ml Bluewater steel bottle, brushed metal finish, on white (old logo version).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-300-front": {
+      "nodeId": "70325:1768",
+      "tags": [
+        "steel-bottle",
+        "300ml",
+        "product-render",
+        "old-logo",
+        "studio-shot"
+      ],
+      "description": "Studio product render of the 300ml Bluewater steel bottle, brushed metal finish, on white (old logo version).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-300-ring-front": {
+      "nodeId": "70325:1767",
+      "tags": [
+        "steel-bottle",
+        "300ml",
+        "carry-ring",
+        "product-render",
+        "old-logo"
+      ],
+      "description": "Studio product render of the 300ml Bluewater steel bottle with a carry ring/handle, brushed metal finish, on white (old logo version).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-1000-front": {
+      "nodeId": "70325:1766",
+      "tags": [
+        "steel-bottle",
+        "1000ml",
+        "product-render",
+        "old-logo",
+        "studio-shot"
+      ],
+      "description": "Studio product render of the 1000ml Bluewater steel bottle, brushed metal finish, on white (old logo version).",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-cases-pier-lake": {
+      "nodeId": "65030:2",
+      "tags": [
+        "emergency-station",
+        "pier",
+        "lake",
+        "lifestyle",
+        "waterfront"
+      ],
+      "description": "A wooden pier extends over calm lake water past a concrete piling and rocky shoreline, in overcast lifestyle lighting.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-dock-lake-vertical": {
+      "nodeId": "65031:2",
+      "tags": [
+        "emergency-station",
+        "dock",
+        "lake",
+        "lifestyle",
+        "moody-sky"
+      ],
+      "description": "Moody overcast sky over a lake with a dock in the distance and rocks along the shoreline, vertical lifestyle framing.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "emergency-station-skeppsbron": {
+      "nodeId": "65047:2",
+      "tags": [
+        "emergency-station",
+        "skeppsbron",
+        "stockholm",
+        "lifestyle",
+        "portrait"
+      ],
+      "description": "Candid portrait of a man in a quilted vest and glasses at Skeppsbron waterfront in Stockholm, with another person blurred in the foreground.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "hero"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation3-media-render": {
+      "nodeId": "69966:268",
+      "tags": [
+        "flow-station-3",
+        "kiosk-render",
+        "product-render",
+        "media-screen",
+        "studio-shot"
+      ],
+      "description": "Studio render of the Flow Station 3 kiosk with its illuminated button and screen displaying promotional bottle imagery.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation3-render": {
+      "nodeId": "69966:269",
+      "tags": [
+        "flow-station-3",
+        "kiosk-render",
+        "product-render",
+        "studio-shot"
+      ],
+      "description": "Studio front-view render of the standalone Flow Station 3 kiosk in brushed gray with the Bluewater logo.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-2-app-pay": {
+      "nodeId": "69979:570",
+      "tags": [
+        "flow-station-2",
+        "mobile-app",
+        "payment",
+        "ui-mockup",
+        "product-render"
+      ],
+      "description": "Three phone mockups showing the Bluewater app's Pay, Beverages QR code, and Servings pricing screens.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-1000-front": {
+      "nodeId": "70325:1764",
+      "tags": [
+        "steel-bottle",
+        "1000ml",
+        "silver",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Silver 1000ml Bluewater steel bottle shown front-on against a white studio background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-1000-front-02": {
+      "nodeId": "70325:1765",
+      "tags": [
+        "steel-bottle",
+        "1000ml",
+        "silver",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Duplicate render of the silver 1000ml steel bottle, front view, on a white studio background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-black-co-lab-front": {
+      "nodeId": "70325:1769",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "co-brand",
+        "old-logo"
+      ],
+      "description": "Black 400ml steel bottle with a grey co-brand logo disc, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-black-back": {
+      "nodeId": "70325:1770",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "back-view",
+        "old-logo"
+      ],
+      "description": "Black 400ml steel bottle with a grey Bluewater logo icon, shown against a white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-black-front": {
+      "nodeId": "70325:1771",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "black",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Black 400ml steel bottle with the Bluewater wordmark near the base, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-blue-co-lab-back": {
+      "nodeId": "70325:1772",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy",
+        "co-brand",
+        "nordea",
+        "old-logo"
+      ],
+      "description": "Navy 400ml steel bottle co-branded with the Nordea wordmark, back view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-blue-co-lab-front": {
+      "nodeId": "70325:1773",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy",
+        "co-brand",
+        "old-logo"
+      ],
+      "description": "Navy 400ml steel bottle with a grey Bluewater co-brand logo disc, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-blue-back": {
+      "nodeId": "70325:1774",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy",
+        "back-view",
+        "old-logo"
+      ],
+      "description": "Plain navy 400ml steel bottle, back view with no visible branding, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-blue-front": {
+      "nodeId": "70325:1775",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "navy",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Navy 400ml steel bottle with the Bluewater wordmark, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-steel-co-lab-front": {
+      "nodeId": "70325:1776",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "brushed-steel",
+        "co-brand",
+        "old-logo"
+      ],
+      "description": "Brushed-steel 400ml bottle with a grey Bluewater co-brand logo disc, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-steel-back": {
+      "nodeId": "70325:1777",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "brushed-steel",
+        "back-view",
+        "old-logo"
+      ],
+      "description": "Plain brushed-steel 400ml bottle, back view with no visible branding, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-steel-front": {
+      "nodeId": "70325:1778",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "brushed-steel",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Brushed-steel 400ml bottle with the Bluewater wordmark, front view on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-400-white-co-lab-front": {
+      "nodeId": "70325:1779",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "co-brand",
+        "old-logo"
+      ],
+      "description": "White 400ml steel bottle with a grey Bluewater co-brand logo disc, front view on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-white-back": {
+      "nodeId": "70325:1780",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "back-view",
+        "old-logo"
+      ],
+      "description": "Plain white 400ml steel bottle, back view with no visible branding, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-400-white-front": {
+      "nodeId": "70325:1781",
+      "tags": [
+        "steel-bottle",
+        "400ml",
+        "white",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "White 400ml steel bottle with the Bluewater wordmark, front view on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-lineup-x3": {
+      "nodeId": "70325:1782",
+      "tags": [
+        "steel-bottle",
+        "lineup",
+        "product-family",
+        "old-logo"
+      ],
+      "description": "Three 400ml steel bottles side by side in navy, black, and brushed-steel finishes on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-lineup-x4": {
+      "nodeId": "70325:1783",
+      "tags": [
+        "steel-bottle",
+        "lineup",
+        "product-family",
+        "old-logo"
+      ],
+      "description": "Four 400ml steel bottles side by side in navy, white, black, and brushed-steel finishes on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-600-front": {
+      "nodeId": "70325:1784",
+      "tags": [
+        "steel-bottle",
+        "600ml",
+        "silver",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Silver 600ml steel bottle shown front-on against a white studio background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "steel-bottle-2-800-front": {
+      "nodeId": "70325:1786",
+      "tags": [
+        "steel-bottle",
+        "800ml",
+        "silver",
+        "front-view",
+        "old-logo"
+      ],
+      "description": "Silver 800ml steel bottle shown front-on against a white studio background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-ginger": {
+      "nodeId": "70316:2077",
+      "tags": [
+        "extract-bottle",
+        "ginger",
+        "navy-bottle",
+        "flavor-label",
+        "orange"
+      ],
+      "description": "Navy Bluewater Extract bottle with an orange 'Ginger' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-energy": {
+      "nodeId": "70316:2074",
+      "tags": [
+        "extract-bottle",
+        "energy",
+        "navy-bottle",
+        "flavor-label",
+        "orange"
+      ],
+      "description": "Navy Bluewater Extract bottle with an orange 'Energy' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-lemon": {
+      "nodeId": "70316:2080",
+      "tags": [
+        "extract-bottle",
+        "lemon",
+        "navy-bottle",
+        "flavor-label",
+        "yellow"
+      ],
+      "description": "Navy Bluewater Extract bottle with a yellow 'Lemon' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-focus": {
+      "nodeId": "70316:2095",
+      "tags": [
+        "extract-bottle",
+        "focus",
+        "navy-bottle",
+        "flavor-label",
+        "green"
+      ],
+      "description": "Navy Bluewater Extract bottle with a green 'Focus' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-orange": {
+      "nodeId": "70316:2083",
+      "tags": [
+        "extract-bottle",
+        "orange",
+        "navy-bottle",
+        "flavor-label"
+      ],
+      "description": "Navy Bluewater Extract bottle with an orange 'Orange' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-zen": {
+      "nodeId": "70316:2098",
+      "tags": [
+        "extract-bottle",
+        "zen",
+        "navy-bottle",
+        "flavor-label",
+        "red"
+      ],
+      "description": "Navy Bluewater Extract bottle with a red 'Zen' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-strawberry": {
+      "nodeId": "70316:2086",
+      "tags": [
+        "extract-bottle",
+        "strawberry",
+        "navy-bottle",
+        "flavor-label",
+        "red"
+      ],
+      "description": "Navy Bluewater Extract bottle with a crimson 'Strawberry' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-immune": {
+      "nodeId": "70316:2101",
+      "tags": [
+        "extract-bottle",
+        "immune",
+        "navy-bottle",
+        "flavor-label",
+        "orange"
+      ],
+      "description": "Navy Bluewater Extract bottle with an amber 'Immune' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-liquid-rock": {
+      "nodeId": "70316:2107",
+      "tags": [
+        "extract-bottle",
+        "liquid-rock",
+        "navy-bottle",
+        "flavor-label",
+        "teal"
+      ],
+      "description": "Navy Bluewater Extract bottle with a teal 'Liquid Rock' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-watermelon": {
+      "nodeId": "70316:2089",
+      "tags": [
+        "extract-bottle",
+        "watermelon",
+        "navy-bottle",
+        "flavor-label",
+        "green"
+      ],
+      "description": "Navy Bluewater Extract bottle with a green 'Watermelon' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-blackberry": {
+      "nodeId": "70316:2092",
+      "tags": [
+        "extract-bottle",
+        "blackberry",
+        "navy-bottle",
+        "flavor-label",
+        "purple"
+      ],
+      "description": "Navy Bluewater Extract bottle with a purple 'Blackberry' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "extract-bottle-bluevia": {
+      "nodeId": "70316:2104",
+      "tags": [
+        "extract-bottle",
+        "bluevia",
+        "navy-bottle",
+        "flavor-label",
+        "blue"
+      ],
+      "description": "Navy Bluewater Extract bottle with a blue 'Bluevia' flavor label, on white background.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-1-studio-two-bottles-running": {
+      "nodeId": "70332:3489",
+      "tags": [
+        "kitchen-station-1",
+        "spirit",
+        "faucet",
+        "glass-bottles",
+        "lifestyle"
+      ],
+      "description": "Moody kitchen counter scene with two glass Bluewater bottles beside a running tap and a blue-lit Spirit puck.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.94,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-1-studio-water-into-sink": {
+      "nodeId": "70332:3488",
+      "tags": [
+        "kitchen-station-1",
+        "spirit",
+        "faucet",
+        "water-pour",
+        "lifestyle"
+      ],
+      "description": "Dark reflective steel kitchen backdrop with water pouring into the sink beside glass bottles and a blue-lit Spirit puck.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.94,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-1-under-sink-spirit-view-1": {
+      "nodeId": "70332:3486",
+      "tags": [
+        "kitchen-station-1",
+        "spirit",
+        "under-sink",
+        "install",
+        "glass-bottle"
+      ],
+      "description": "Straight-on install shot of the Spirit unit and a glass bottle glowing warmly inside a dark under-cabinet nook.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.94,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-1-under-sink-spirit-view-2": {
+      "nodeId": "70332:3487",
+      "tags": [
+        "kitchen-station-1",
+        "spirit",
+        "under-sink",
+        "install",
+        "glass-bottle"
+      ],
+      "description": "Wider-angle install shot of the Spirit unit inside a dark under-cabinet nook, framed by ribbed glass cabinet doors.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.94,
+        "orientation": "square",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "ice-machine-clear-ice-drop": {
+      "nodeId": "70316:2065",
+      "tags": [
+        "ice-machine",
+        "clear-ice",
+        "ice-sphere",
+        "product-detail"
+      ],
+      "description": "Top-down close-up of a crystal-clear ice sphere resting in a glass, shot on white.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "ice-machine-spirit-connected-installation": {
+      "nodeId": "70316:2066",
+      "tags": [
+        "ice-machine",
+        "spirit",
+        "installation",
+        "under-counter"
+      ],
+      "description": "Dark under-counter installation shot of a black ice machine connected alongside a compact Spirit water unit in a warmly lit wood cabinet.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.75,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-purifier-old-front": {
+      "nodeId": "70350:2",
+      "tags": [
+        "cleone",
+        "purifier",
+        "under-cabinet",
+        "install",
+        "legacy"
+      ],
+      "description": "Front-on install shot of the legacy Cleone purifier unit and a glass bottle in a warmly lit under-cabinet nook.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cleone-purifier-old-perspective": {
+      "nodeId": "70350:4",
+      "tags": [
+        "cleone",
+        "purifier",
+        "under-cabinet",
+        "install",
+        "legacy"
+      ],
+      "description": "Angled perspective install shot of the legacy Cleone purifier unit in a dark, glass-paneled cabinet nook.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.33,
+        "orientation": "landscape",
+        "tone": "mixed",
+        "subject": "center",
+        "suitability": [
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "cobrand-bottle-st-andrews": {
+      "nodeId": "69966:384",
+      "tags": [
+        "co-brand",
+        "golf",
+        "st-andrews",
+        "bottle",
+        "lifestyle"
+      ],
+      "description": "White co-branded steel bottle with a St Andrews crest tucked into a golf bag pocket among clubs.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 0.75,
+        "orientation": "portrait",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "flowstation-2-hotel-lobby": {
+      "nodeId": "70316:1498",
+      "tags": [
+        "flow-station-2",
+        "hospitality",
+        "hotel-lobby",
+        "lifestyle",
+        "water-dispenser"
+      ],
+      "description": "Tall dark Flow Station dispenser standing in a warmly lit hotel lobby near the reception desk and lounge seating.",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.5,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "center",
+        "suitability": [
+          "hero",
+          "full-bleed"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
