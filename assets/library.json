@@ -18879,6 +18879,34 @@
         ],
         "quality": "medium"
       }
+    },
+    "water-filter-comparison-tube": {
+      "nodeId": "70537:20363",
+      "tags": [
+        "water",
+        "filter",
+        "purification",
+        "comparison",
+        "before-after",
+        "clarity",
+        "graphic"
+      ],
+      "description": "Horizontal glass tube showing a water clarity progression — dark sediment and contaminant particles at the left end clearing to pure transparent water at the right; before/after filtration comparison graphic",
+      "source": {
+        "type": "figma",
+        "importedAt": "2026-08-19"
+      },
+      "visual": {
+        "aspect": 1.64,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
