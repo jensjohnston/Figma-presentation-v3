@@ -81,6 +81,7 @@ Some product lines have a dedicated, finished Figma source deck to draw from bef
 - **Café / coffee** (Café Station): node `61731-2`
 - **Emergency**: node `61676-25087`
 - **Purifiers** (includes new Cleone): node `61219-14889`
+- **Company / brand overview** (Bluewater Group intro + product overview): node `63144-2`
 
 All nodes live in the main Bluewater 2026 Figma file (`GkUiwJTK5Xi65AKw4MOjTL`), e.g. `https://www.figma.com/design/GkUiwJTK5Xi65AKw4MOjTL/Bluewater-2026?node-id=<node>`.
 
