@@ -64,3 +64,18 @@ references page + registered families in registry.json (→ 221 templates).
   (0,0) instead of in the plot (Figma normalizes vectorPaths to the bbox origin; if the builder
   then sets x=0 it strands them). Fix: delete the strays, recreate vectors and set vectorPaths
   with frame-absolute coords WITHOUT re-zeroing x/y afterward.
+
+## 2026-07-24 — The no-widow rule covers ALL wrapped text, and width-balancing must respect the longest word
+**Correction:** On the BluePackage benefits deck the user flagged single-word and stubby last lines in card BODY copy ("40 hours" card, "…availability in check.") and asked why typography wasn't perfect on the first pass.
+
+**Root cause:** the codified "No widows" rule (and the `balanceTitle` helper) scoped widows to titles/display copy only, so the generator never checked card headings/bodies/bullets. Typography gates existed for the nodes the helpers were written for, not for every node the generator touches. Second bug found while fixing: my balance pass narrowed "Occupational pension" below the longest word's rendered width and Figma broke it mid-word ("Occupatio / nal") — line-count checks cannot detect mid-word breaks.
+
+**Fix:** extended design-system.md → "No widows & balanced rag (ALL wrapped text)": balance every wrapped node to its narrowest same-line-count width, floor the width at longest-word width + 4px (measured with a probe text node, never estimated), NBSP-bind the last two words, then screenshot-grade every slide (single-word last line, mid-word break, or <40%-width stub = FAIL).
+
+**Rule for myself:** a typography rule applies to the whole slide, not to the subset of nodes that have tooling. When the user asks "is this not built into the system?" the honest answer may be "the rule was scoped too narrowly" — fix the deck AND widen the rule at the source in the same session.
+
+## 2026-07-24 — Clone-and-fill inherits off-token text colors from the source template
+
+**What happened:** In the BluePackage deck, body copy read Gray/500 on some slides but Gray/800 on others. Root cause: some templates ship off-token fills (`template-bento-66-33` section-points and the bento/cover titles use Gray/800 #27272A instead of the spec's Gray/500 body / Gray/900 headings), and clone-and-fill copies fills verbatim — nothing audits color after a fill.
+
+**Rule:** After assembling a deck, run a color audit over every visible TEXT node: headings must be Gray/900 #18181B, body/supporting copy Gray/500 #71717A, eyebrows Gray/700, meta Gray/500 (per the "Presentation color roles" table in design-system.md). Normalize any deviation in the clones. Longer-term fix: correct the fills in the source templates on "Template references" so every clone starts on-token (needs a deliberate pass — touches the shared library).
