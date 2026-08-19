@@ -18907,6 +18907,136 @@
         ],
         "quality": "high"
       }
+    },
+    "kitchen-station-studio-open-faucet-hand": {
+      "nodeId": "70602:1893",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "faucet",
+        "hand",
+        "puck"
+      ],
+      "description": "Hand adjusting the steel Kitchen Station faucet lever, glowing blue puck to the left, bright white studio background",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.0,
+        "orientation": "square",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-hero": {
+      "nodeId": "69966:347",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "dark",
+        "faucet",
+        "puck"
+      ],
+      "description": "Dark moody kitchen scene — matte black faucet on wood cabinetry, glowing blue puck on the counter in warm side light",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "full-bleed",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-studio-press-puck-glow": {
+      "nodeId": "70316:6",
+      "tags": [
+        "lifestyle",
+        "kitchen-station",
+        "studio",
+        "puck",
+        "dark",
+        "interaction"
+      ],
+      "description": "Close-up of a finger pressing the top button of the glowing blue puck on a dark counter",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "dark",
+        "subject": "right",
+        "suitability": [
+          "hero",
+          "detail",
+          "card"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-puck-topdown-white": {
+      "nodeId": "70602:1895",
+      "tags": [
+        "bluewater-o",
+        "kitchen-station",
+        "puck",
+        "product",
+        "render"
+      ],
+      "description": "Top-down macro of the Bluewater O puck's glowing blue ring, isolated on white",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
+    },
+    "kitchen-station-app-original-screen": {
+      "nodeId": "70602:1894",
+      "tags": [
+        "app",
+        "kitchen-station",
+        "bluewater-o",
+        "screen",
+        "product"
+      ],
+      "description": "Hand holding a phone showing the Bluewater app “Original – Natural” water profile screen with the blue O mark",
+      "source": {
+        "type": "figma"
+      },
+      "visual": {
+        "aspect": 1.78,
+        "orientation": "landscape",
+        "tone": "light",
+        "subject": "center",
+        "suitability": [
+          "card",
+          "detail"
+        ],
+        "quality": "high"
+      }
     }
   }
 }
