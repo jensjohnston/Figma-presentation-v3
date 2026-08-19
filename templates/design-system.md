@@ -467,6 +467,8 @@ block.y = (cardHeight - 48) - block.height;   // cardHeight = 745 for a full-hei
 
 Re-read `block.height` AFTER the slot is hidden — an auto-layout frame only reports its shrunken height once the child is invisible.
 
+**The rule also applies after FILLING text, not just hiding it.** A bottom-anchored text block (`textAutoResize: HEIGHT`) grows **downward** when the new copy takes more lines than the template's placeholder, so a clone-and-fill silently pushes its bottom edge past y=1032 and off the slide. Seen live 2026-07-04: the left `body` on two `pitch-29-comparison-2card` clones was filled with longer copy and ran to y=1086 — visibly clipped at 1080. After every text fill, re-read the block's height and re-apply the anchor (`block.y = 1032 - block.height` at slide level, `block.y = (cardHeight - 48) - block.height` in-card), or shorten the copy. `auditSlide` now flags any visible text whose bottom edge passes y=1032, so run it after fills — not only after builds.
+
 **Currently tagged** (`bottomAnchored` in `registry.json`, applied automatically by `anchorBottom`): `split-portrait` (body → slide bottom), `comparison-3up` and `unit-economics-3up-scaling` (per-column metric/caption block → 48px above card bottom), `pillar-grid-3up-pricing` (per-column price block → 48px above card bottom). A coverage sweep verified that bento grids, pillar-grid product/functional/with-body, tables, timelines, metrics-4, checklist-bento, and pillar-grid-4up-image are **top-aligned or absolutely positioned** and do **not** float — so they need no tag. Always applies to **every escape-hatch build**. If you hid a slot and did not re-anchor, treat the slide as broken even though nothing errored. Pair this with `auditChrome` as a standing post-build check; when a newly-used template floats on slot-hide, add a `bottomAnchored` entry after verifying its frame name.
 
 ## Auto-layout
@@ -885,6 +887,12 @@ function auditSlide(slide, kind = "content") {
     if (Math.abs(L - CONTRACT.contentL) > 1) issues.push({ content:"left", at:Math.round(L), want:CONTRACT.contentL });
     if (Math.abs(R - CONTRACT.contentR) > 1) issues.push({ content:"right", at:Math.round(R), want:CONTRACT.contentR });
     if (B < CONTRACT.bottomY - 12 || B > CONTRACT.bottomY + 8) issues.push({ content:"bottom", at:Math.round(B), want:CONTRACT.bottomY });
+  }
+  // TEXT nodes are excluded from the box above, so overflowing filled copy needs its own
+  // check: no visible text may intrude into the 48px bottom margin (bleed guard, 2026-07-04).
+  for (const t of slide.findAll(x => x.type === "TEXT" && x.visible)) {
+    const tb = t.absoluteTransform[1][2] - slide.absoluteTransform[1][2] + t.height;
+    if (tb > CONTRACT.bottomY) issues.push({ node:t.name, textBottom:Math.round(tb), max:CONTRACT.bottomY });
   }
   return issues;
 }

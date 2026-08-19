@@ -64,3 +64,10 @@ references page + registered families in registry.json (→ 221 templates).
   (0,0) instead of in the plot (Figma normalizes vectorPaths to the bbox origin; if the builder
   then sets x=0 it strands them). Fix: delete the strays, recreate vectors and set vectorPaths
   with frame-absolute coords WITHOUT re-zeroing x/y afterward.
+- **Body copy bleeds after clone-and-fill (2026-07-04).** Two `pitch-29-comparison-2card`
+  clones shipped with the bottom-anchored left `body` running to y=1086 — filled copy took
+  more lines than the placeholder, and `textAutoResize: HEIGHT` grows downward. Rule: after
+  EVERY text fill, re-anchor bottom-anchored blocks (`block.y = 1032 - block.height`; in-card
+  `(cardHeight - 48) - block.height`) or shorten the copy, then run `auditSlide` — it now has
+  a text-overflow check (no visible text bottom past y=1032) because TEXT nodes were excluded
+  from its content-box check and this class of bleed was invisible to the gate.
