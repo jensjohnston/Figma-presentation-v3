@@ -55,6 +55,14 @@ These are **finished shells**: when a product slide fits an incoming slide, you 
 rewrite only the text** (Step 4 product-first rule). This is purely additive — if no product is
 detected or none fits, the pipeline behaves exactly as before (from-scratch with generic templates).
 
+### `brand/trademarks.json` (trademark dictionary)
+
+Also read `brand/trademarks.json`. This holds:
+- `terms[]` — brand/product names that trigger a ™ or ® node (e.g. `Café Station` → `™`, `Liquid Rock` → `®`)
+- `titleSuperscriptSpec` — rendering spec: `fontFamily` (Suisse Int'l), `fontStyle` (Regular), `sizeRatio` (0.25 = 25% of title size), `gapPx` (0px — flush after the glyph edge)
+
+You will use it in Step 5b after setting `title`, `eyebrow`, `cell-heading-N`, and `label` slots (defined in §5b). It is a no-op when no term in the dictionary matches. Pass `trademarks.inlineSuperscriptSpec.sizeRatio` for all non-title slots.
+
 ## Step 2: Read the Source PDF
 
 Use the Read tool to read the PDF file provided by the user. Claude can read PDFs natively.
@@ -390,9 +398,128 @@ async function setTextByIndex(parent, name, index, value) {
 // reference). Any findByName / findByNameAtIndex implementation must filter them out:
 //   if (n.name.startsWith('_legacy_')) return false;
 
-// Set all slot values for this template
-// For standard slots (findBy: "name"):
+// --- Trademark superscript node ---
+// trademarks = contents of brand/trademarks.json (loaded in Step 1)
+
+// Places a ™ or ® as a SEPARATE text node to the right of a title, eyebrow,
+// cell-heading-N, or label node.
+// DO NOT call for body, bullet-body, or any other prose/copy slot.
+// Triggered when the slot text contains a term from brand/trademarks.json.
+// tmName: name for the placed node — use '<slotName>-trademark' (e.g. 'cell-heading-1-trademark').
+// sizeRatio: overrides spec.sizeRatio — pass trademarks.inlineSuperscriptSpec.sizeRatio (0.5)
+//   for eyebrow / cell-heading / label; omit (defaults to titleSuperscriptSpec.sizeRatio = 0.25)
+//   for titles.
+// Idempotent: removes any existing node with the same tmName before placing.
+// MUST be called AFTER setting the slot text.
+async function placeTrademarkSuperscript(slide, titleNode, trademarks, tmName = 'title-trademark', sizeRatio = null) {
+  if (!titleNode || !trademarks) return null;
+  const match = trademarks.terms.find(({ term }) => titleNode.characters.includes(term));
+  if (!match) return null;
+  // Skip if the symbol is already present inline in the text (e.g. "Glass Bottle 1™")
+  if (titleNode.characters.includes(match.symbol)) return null;
+
+  // Remove any stale node (idempotent)
+  const stale = slide.findOne(n => n.type === 'TEXT' && n.name === tmName);
+  if (stale) stale.remove();
+
+  const spec = trademarks.titleSuperscriptSpec;
+  const tmFont = { family: spec.fontFamily, style: spec.fontStyle };
+  await figma.loadFontAsync(tmFont);
+
+  // Which line does the term appear on? (e.g. "Bluewater\nCafé Station 1" → line 1)
+  const lines = titleNode.characters.split('\n');
+  const termLine = Math.max(0, lines.findIndex(l => l.includes(match.term)));
+
+  // Line height in px — used to offset tm.y to the correct line for multi-line titles
+  const lh = titleNode.lineHeight;
+  const lineHeightPx = lh.unit === 'PIXELS'  ? lh.value
+                     : lh.unit === 'PERCENT' ? titleNode.fontSize * lh.value / 100
+                     :                         titleNode.fontSize * 1.2;  // AUTO ≈ 120%
+
+  // Measure the actual glyph width of the trademark line via a temp auto-sizing node.
+  // Title containers are often fixed-width (full content area), so absoluteBoundingBox.width
+  // ≠ actual text width — using it directly puts ™ in the far right margin.
+  const titleFont = titleNode.fontName === figma.mixed
+    ? titleNode.getRangeFontName(0, 1)
+    : titleNode.fontName;
+  await figma.loadFontAsync(titleFont);
+  const measureNode = figma.createText();
+  slide.appendChild(measureNode);
+  measureNode.fontName = titleFont;
+  measureNode.fontSize = titleNode.fontSize;
+  measureNode.textAutoResize = 'WIDTH_AND_HEIGHT';
+  measureNode.characters = lines[termLine] || titleNode.characters;
+  const glyphWidth = measureNode.width;
+  measureNode.remove();
+
+  const tm = figma.createText();
+  slide.appendChild(tm);
+  tm.name = tmName;
+  tm.fontName = tmFont;
+  tm.fontSize = Math.round(titleNode.fontSize * (sizeRatio ?? spec.sizeRatio));
+  tm.lineHeight = { unit: 'PERCENT', value: 110 };
+  tm.characters = match.symbol;
+
+  // Derive a single solid fill for the ™ from the title's visually dominant color.
+  // Titles often carry two fills: a solid fallback at index 0 (bottom) and a gradient
+  // at index 1 (top). Figma renders fills last-on-top, so fills[-1] is what's visible.
+  // For a gradient top fill: use the FIRST stop (lowest position) — the ™ is top-aligned
+  // with the title, so the color at the start of the gradient (the top) is the correct
+  // match. Never copy the gradient itself: applied to the ™'s tiny box it compresses oddly.
+  function solidFillFromTitle(fills) {
+    const top = fills[fills.length - 1];
+    if (!top) return [];
+    if (top.type.startsWith('GRADIENT')) {
+      const startStop = [...top.gradientStops].sort((a, b) => a.position - b.position)[0];
+      return [{ type: 'SOLID',
+                color: { r: startStop.color.r, g: startStop.color.g, b: startStop.color.b },
+                opacity: startStop.color.a ?? 1 }];
+    }
+    return [JSON.parse(JSON.stringify(top))];
+  }
+  tm.fills = solidFillFromTitle(titleNode.fills);
+  tm.textAutoResize = 'WIDTH_AND_HEIGHT';
+
+  // Position using absolute bounding boxes so nesting depth doesn't matter.
+  // x: after the GLYPH right edge (not container right edge — containers are often full-width).
+  // y: offset by line index so ™ top-aligns with the line carrying the trademark term.
+  const slideBB = slide.absoluteBoundingBox;
+  const titleBB  = titleNode.absoluteBoundingBox;
+  const containerX = titleBB.x - slideBB.x;
+  const align = titleNode.textAlignHorizontal;  // 'LEFT', 'CENTER', 'RIGHT'
+  const glyphLeft = align === 'CENTER' ? containerX + (titleBB.width - glyphWidth) / 2
+                  : align === 'RIGHT'  ? containerX + (titleBB.width - glyphWidth)
+                  :                      containerX;  // LEFT or MIXED
+  tm.x = glyphLeft + glyphWidth + (spec.gapPx ?? 0);
+  tm.y = (titleBB.y - slideBB.y) + termLine * lineHeightPx;
+
+  return { nodeId: tm.id, symbol: match.symbol, size: tm.fontSize,
+           x: Math.round(tm.x), y: Math.round(tm.y) };
+}
+
+// Set all slot values for this template using plain setText() for all slots.
+// After setting title and eyebrow, call placeTrademarkSuperscript — it is a no-op when
+// the slot text contains no term from brand/trademarks.json.
 await setText(clone, "title", "ACTUAL TITLE TEXT");
+const titleNode = findTextByName(clone, "title");
+await placeTrademarkSuperscript(clone, titleNode, trademarks);             // 'title-trademark'
+
+await setText(clone, "eyebrow", "ACTUAL EYEBROW TEXT");
+const eyebrowNode = findTextByName(clone, "eyebrow");
+await placeTrademarkSuperscript(clone, eyebrowNode, trademarks, 'eyebrow-trademark', trademarks.inlineSuperscriptSpec.sizeRatio);
+
+// Cell headings (bento grids) — check every cell-heading-N present on the clone
+const cellHeadings = clone.findAll(n => n.type === 'TEXT' && /^cell-heading-\d+$/.test(n.name));
+for (const ch of cellHeadings) {
+  await placeTrademarkSuperscript(clone, ch, trademarks, `${ch.name}-trademark`, trademarks.inlineSuperscriptSpec.sizeRatio);
+}
+
+// Label nodes — indexed so each gets a unique ™ node name
+const labelNodes = clone.findAll(n => n.type === 'TEXT' && n.name === 'label');
+for (let i = 0; i < labelNodes.length; i++) {
+  await placeTrademarkSuperscript(clone, labelNodes[i], trademarks, `label-${i}-trademark`, trademarks.inlineSuperscriptSpec.sizeRatio);
+}
+
 await setText(clone, "bullet-heading-1", "ACTUAL HEADING 1");
 await setText(clone, "bullet-body-1", "ACTUAL BODY 1");
 // ... continue for all slots defined in the registry for this template
@@ -457,6 +584,20 @@ const flags = [];
 flags.push(await fitShellText(clone, "title", "REWRITTEN TITLE"));   // condense to ~original length
 flags.push(await fitShellText(clone, "body",  "REWRITTEN BODY"));
 // duplicate-named cells: fitShellText resolves by name; for the Nth duplicate use the index variant.
+
+// Append ™/® superscript after title, eyebrow, cell-headings, and labels (each is a no-op if no term matches)
+const cloneTitleNode   = clone.findOne(n => n.type === 'TEXT' && n.name === 'title');
+const cloneEyebrowNode = clone.findOne(n => n.type === 'TEXT' && n.name === 'eyebrow');
+await placeTrademarkSuperscript(clone, cloneTitleNode,   trademarks);
+await placeTrademarkSuperscript(clone, cloneEyebrowNode, trademarks, 'eyebrow-trademark', trademarks.inlineSuperscriptSpec.sizeRatio);
+const cloneCellHeadings = clone.findAll(n => n.type === 'TEXT' && /^cell-heading-\d+$/.test(n.name));
+for (const ch of cloneCellHeadings) {
+  await placeTrademarkSuperscript(clone, ch, trademarks, `${ch.name}-trademark`, trademarks.inlineSuperscriptSpec.sizeRatio);
+}
+const cloneLabelNodes = clone.findAll(n => n.type === 'TEXT' && n.name === 'label');
+for (let i = 0; i < cloneLabelNodes.length; i++) {
+  await placeTrademarkSuperscript(clone, cloneLabelNodes[i], trademarks, `label-${i}-trademark`, trademarks.inlineSuperscriptSpec.sizeRatio);
+}
 
 // Re-chrome with THIS deck's labels + page number (update-or-create; covers keep their top label).
 await applyDeckChrome(clone, { metaLeftText: DECK_LABEL, slideNumber: SLIDE_INDEX + 1, totalSlides: DECK_TOTAL, isDark: SLIDE_IS_DARK });

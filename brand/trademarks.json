@@ -1,0 +1,34 @@
+{
+  "_doc": "Brand trademark dictionary. A ™ or ® superscript node is appended after any known product or technology term found in a slide's title, eyebrow, cell-heading-N, or label slots. Terms are matched by substring (e.g. 'Kitchen Station' covers 'Kitchen Station 1', 'Kitchen Station 2', etc.). Extend terms[] when a new trademarked product ships.",
+  "titleSuperscriptSpec": {
+    "fontFamily": "Suisse Int'l",
+    "fontStyle": "Regular",
+    "sizeRatio": 0.25,
+    "gapPx": 0,
+    "_note": "Used for the 'title' slot only. At 25% of a large title (64px+) the ™ sits in the cap-height zone without Figma's built-in superscript offset."
+  },
+  "inlineSuperscriptSpec": {
+    "fontFamily": "Suisse Int'l",
+    "fontStyle": "Regular",
+    "sizeRatio": 0.5,
+    "gapPx": 0,
+    "_note": "Used for eyebrow, cell-heading-N, and label slots. At 50% the mark stays readable at smaller base sizes (20–32px)."
+  },
+  "terms": [
+    { "term": "Kitchen Station",    "symbol": "™" },
+    { "term": "Café Station",       "symbol": "™" },
+    { "term": "House Station",      "symbol": "™" },
+    { "term": "Restaurant Station", "symbol": "™" },
+    { "term": "Emergency Station",  "symbol": "™" },
+    { "term": "Beverage Station",   "symbol": "™" },
+    { "term": "Flow Station",       "symbol": "™" },
+    { "term": "Steel Bottle",       "symbol": "™" },
+    { "term": "Glass Bottle",       "symbol": "™" },
+    { "term": "Restaurant Bottle",  "symbol": "™" },
+    { "term": "Retail Bottle",      "symbol": "™" },
+    { "term": "SuperiorOsmosis",    "symbol": "™" },
+    { "term": "Duragrade",          "symbol": "™" },
+    { "term": "Purifier 16",        "symbol": "™" },
+    { "term": "Liquid Rock",        "symbol": "®" }
+  ]
+}
