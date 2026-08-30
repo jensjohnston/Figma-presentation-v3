@@ -74,6 +74,17 @@ A **product-aware** layer on top of the generic templates. `products/registry.js
 2. Run `/index-product <slug>` — Claude names the layers semantically, indexes images into `assets/library.json`, proposes `role` + `matchHints` per slide (you confirm), and writes the `products/registry.json` entry.
 3. It runs `python3 tools/validate_products.py` — must end `OK`.
 
+## Product Source Decks
+
+Some product lines have a dedicated, finished Figma source deck to draw from before building from scratch — check the relevant node when a `/generate-presentation` input mentions one of these:
+
+- **Café / coffee** (Café Station): node `61731-2`
+- **Emergency**: node `61676-25087`
+- **Purifiers** (includes new Cleone): node `61219-14889`
+- **Company / brand overview** (Bluewater Group intro + product overview): node `63144-2`
+
+All nodes live in the main Bluewater 2026 Figma file (`GkUiwJTK5Xi65AKw4MOjTL`), e.g. `https://www.figma.com/design/GkUiwJTK5Xi65AKw4MOjTL/Bluewater-2026?node-id=<node>`.
+
 ## Email Renderer (Newsletters → HubSpot)
 
 A second output renderer alongside the Figma slide pipeline: turns a product into a
