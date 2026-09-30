@@ -426,10 +426,26 @@ is a slide-level note rather than an in-card label) is meta text, not reading pr
 apply the 45–75 ch measure or `fitBody` to it — that is exactly what plops a long note into a
 narrow ~498px column floating inside the chart. Render it as a single small strip:
 Suisse Int'l **Regular 14**, **Gray/500** (#71717a), **full content width** (x=48, width 1824),
-`textAlignHorizontal` CENTER (or LEFT), `textAutoResize=HEIGHT`, **bottom-anchored**
-(`y = 1032 − height`, ≈ y 994). It may exceed 75 ch on one line — that is fine; a long note
-wraps within the full width, it is never compressed into a column. Canonical reference: the
-`footnote` on `financial-report-06`. (In-card captions — chart min/max labels, "Fig 05.A",
+`textAlignHorizontal` LEFT, `textAutoResize=HEIGHT`. It may exceed 75 ch on one line — that
+is fine; a long note wraps within the full width, it is never compressed into a column.
+Canonical reference: the `footnote` on `financial-report-06`.
+
+**Caption placement + fill-to-bottom (Jens, 2026-09-30 — binding).** A footnote/caption sits
+**directly under the table or chart it explains, 24px below it** (stacked caption lines 8px
+apart), left-aligned to the content edge. It never floats alone at the slide bottom with an
+empty band above it. Instead, the **content block grows** (table rows get taller evenly, chart
+area gets taller on the same scale) until the **last caption's bottom edge lands exactly at
+y=1032**. Rule of thumb: on every content slide the last element ends at 1032 and the gap
+between content and its caption is 24px, never more. Same rule for every captioned slide in a
+deck.
+
+**Consistency across a deck (Jens, 2026-09-30 — binding).** Slides that serve the same
+function share one treatment:
+- **Tables:** one style per deck (same container, radius, header row, row height, divider
+  logic, cell padding). **No divider under the last row.**
+- **Charts, timelines and block diagrams:** one mark family per deck (same neutral fill, same
+  corner radius on every bar/block, one blue emphasis mark per chart). Never mix square bars on
+  one slide with pill-round or black blocks on another. (In-card captions — chart min/max labels, "Fig 05.A",
 dimension callouts, the 1–3-word labels of §line 77 — stay small beside their element and are
 also exempt from the measure; the band applies to paragraphs only.)
 
@@ -638,7 +654,7 @@ For charts, bars, technical drawings, and custom visualizations (slide 6 stats, 
 - **Grid / scaffolding lines**: Gray/200 at 50% opacity for subtle; Gray/300 for more prominent
 - **Accent / highlight**: Blue/600 (fills, filled cells); Blue/200 with 50% opacity for fills that shouldn't dominate
 - **Neutral strokes**: Gray/400 for 1px neutral strokes (trailer outline, generic shape edges); Gray/900 2px for structural outlines (IBC tank outer)
-- **Ground / axis lines**: Gray/900 2px (on light bg); White 50% (on dark bg)
+- **Ground / axis lines**: Gray/300 `#D4D4D8` **1px** (on light bg); White 30% 1px (on dark bg). Never the 2px Gray/900 line: it reads as aggressive next to Medium text (Jens, 2026-09-30)
 - No shadows, no gradients, no rounded corners beyond 4px on small cells
 
 Case-by-case detail is OK; this section is the baseline palette, not a full per-chart spec.
